@@ -1,0 +1,7 @@
+md2/**/*.png filter=lfs diff=lfs merge=lfs -text
+md2/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+md2/**/*.jpeg filter=lfs diff=lfs merge=lfs -text
+md2/**/*.gif filter=lfs diff=lfs merge=lfs -text
+md2/**/*.webp filter=lfs diff=lfs merge=lfs -text
+md2/**/*.svg filter=lfs diff=lfs merge=lfs -text
+**/*.pptx filter=lfs diff=lfs merge=lfs -text
