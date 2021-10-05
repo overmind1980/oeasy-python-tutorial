@@ -1,3 +1,6 @@
+[Github地址] (https://github.com/overmind1980/oeasypython
+[Gitee地址] (https://gitee.com/overmind1980/oeasypython)
+[蓝桥实验楼 邀请码:MPQYCAUU] (https://www.lanqiao.cn/courses/3584)
 - 语言基础
     - 先跑起来
         - [先跑起来](./md/10-87321-000101-先跑起来.sy.md)
@@ -5,7 +8,7 @@
         - [继续运行](./md/30-87333-000103-继续运行.sy.md)
         - [调试程序](./md/40-87374-000104-调试程序.sy.md)
         - [程序本质](./md/50-87382-000105-程序本质.sy.md)
-        - [helloworld](./md/60-87385-000106-hello world.sy.md)
+        - [helloworld](./md/60-87385-000106-hello-world.sy.md)
         - [字符本质](./md/70-87487-000107-字符本质.sy.md)
         - [ascii码表](./md/80-87675-000108-ascii码表.sy.md)
         - [换行字符](./md/90-87338-000109-换行字符.sy.md)
