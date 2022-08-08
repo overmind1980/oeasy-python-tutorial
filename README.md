@@ -85,7 +85,7 @@
         - [开方和对数运算](./md/076-189668-开方和对数运算.sy.md)
         - [虚数类型](./md/077-189669-虚数类型.sy.md)
         - [增强赋值运算符](./md/078-532047-增强赋值运算符.sy.md)
-        - [运算和表达式_expression_总结](./md/079-189673-运算和表达式 expression%20总结.sy.md)
+        - [运算和表达式_expression_总结](./md/079-189673-运算和表达式%20expression%20总结.sy.md)
     -  文件操作
         - [打开文件](./md/080-189722-打开文件.sy.md)
         - [读取细节](./md/081-189725-读取细节.sy.md)
@@ -197,13 +197,13 @@
         - [嵌套调用](./md/183-542953-嵌套调用.sy.md)
 - 爬虫
     -  requests和lxml
-        - [浏览过程 请求 响应 状态码](./md/184-192569-浏览过程 请求 响应%20状态码.sy.md)
+        - [浏览过程 请求 响应 状态码](./md/184-192569-浏览过程%20请求%20响应%20状态码.sy.md)
         - [requests-模块](./md/185-192576-requests-模块.sy.md)
         - [lxml 元素-树形结构](./md/186-192577-lxml%20元素-树形结构.sy.md)
         - [lxml-属性-attrib](./md/187-192598-lxml-属性-attrib.sy.md)
         - [lxml-文本-text](./md/188-192644-lxml-文本-text.sy.md)
         - [lxml-遍历-iteration](./md/189-192645-lxml-遍历-iteration.sy.md)
-        - [lxml-从 str 生成 etree](./md/190-192646-lxml-从 str 生成%20etree.sy.md)
+        - [lxml-从 str 生成 etree](./md/190-192646-lxml-从%20str%20生成%20etree.sy.md)
         - [lxml-结合-requests](./md/191-193105-lxml-结合-requests.sy.md)
         - [xpath-筛选](./md/192-193139-xpath-筛选.sy.md)
         - [xpath-属性筛选](./md/193-194109-xpath-属性筛选.sy.md)
