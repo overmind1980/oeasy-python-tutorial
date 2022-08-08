@@ -1,6 +1,6 @@
-- [Github地址] (https://github.com/overmind1980/oeasypython
-- [Gitee地址] (https://gitee.com/overmind1980/oeasypython)
-- [蓝桥实验楼 邀请码:MPQYCAUU] (https://www.lanqiao.cn/courses/3584)
+- [蓝桥实验楼](https://www.lanqiao.cn/courses/3584)
+- [Github地址](https://github.com/overmind1980/oeasypython)
+- [Gitee地址](https://gitee.com/overmind1980/oeasypython)
 
 - 语言基础
     -  先跑起来
