@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function login(){
+				var f = document.getElementById("f");
+				var login = document.getElementById("login"); 
+				f.action = "/login";
+				f.submit();
+			}
+		</script>
+	</head>
+	<body>
+		<form action="/regist" method="POST" id="f">
+			username:<input name="username"/><br/>
+			password:<input name="password"/><br/>
+			<input type="submit" name="regist" value="regist">
+			<input onclick="login()" type="button" value="login">
+			</input>
+			<br/>
+		</form>
+	</body>
+</html>

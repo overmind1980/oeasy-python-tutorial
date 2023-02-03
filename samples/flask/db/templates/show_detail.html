@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hello from Flask</title>
+</head>
+<body>
+<form id="d2" method="POST" action="/update">
+    <input type="hidden" value="{{ user }}" name="old_username"><br/>
+    <input type="input" value="{{ user }}" name="username"><br/>
+    <input type="input" value="{{ password }}" name="password"><br/>
+	<input type="submit"><br/>
+</form>
+</body>
+</html>
