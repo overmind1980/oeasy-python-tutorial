@@ -3,7 +3,7 @@
 - [蓝桥实验楼](https://www.lanqiao.cn/courses/3584)
 - python 语言基础
     - 先跑起来
-        - [先跑起来_python_IDLE_shell_虚拟机](./md/001-87321-先跑起来_python_IDLE_shell_虚拟机.sy.md)
+        - [[先跑起来]_python_IDLE_shell_虚拟机](./md/001-87321-先跑起来_python_IDLE_shell_虚拟机.sy.md)
         - [和python一起玩耍_python解释器_数学运算](./md/002-820839-和python一起玩耍_python解释器_数学运算.sy.md)
         - [你好世界_hello_world](./md/003-87323-你好世界_hello_world.sy.md)
         - [编写py文件_vi_vim编辑器_保存python文件](./md/004-564945-编写py文件_vi_vim编辑器_保存python文件.sy.md)
