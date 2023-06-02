@@ -4,34 +4,16 @@ version: 1.0
 enable_checker: true
 ---
 
-# 结尾字符串(end)
+# 画框的制作
 
 ## 回忆上次内容
 
-- `python3.8` 的程序 是
-	- 一个 5.3M的可执行文件
-    - `python3.8` 里的都是 cpu指令
-		- cpu可以执行的机器指令
-- 可以把 机器指令 对应到 汇编语句
-	- `objdump -d ~/python3 > python3.asm`
-- 汇编语句 是和当前机器架构的指令集 相关的
-	- `uname -a`可以 查询指令集
-- 执行的过程是
-  1. 系统先执行`python3.8` 这个可执行文件
-		- 在内存中 构建解释器
-  2. 将参数 `hello.py` 文件 
-		- 放入解释器
-  3. `python3.8`解释器 
-		- 对于`hello.py` 解释执行
-		- 在 显示器输出了`hello world`
-		- `python3.8` 解释器执行完毕
-  4. 把控制权还给 shell
-
-- 这就是执行`hello.py`的过程
-- 我想输出 稍微复杂点的东西
-	- 可以做 下面这个框架标题 吗？🤔
+- `\n`换行符 的字节形态 是 (`0a`)<sub>`16进制`</sub>
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210307-1615080578652)
+
+- 我们可以用换行符
+	- 给文本做个画框吗？🤔
 
 ### 尝试制作
 
@@ -47,7 +29,13 @@ vi banner.py
 
 - `:w|!python %` 执行脚本
 
+### 执行结果
+
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220930-1664544094383)
+
+- 回车之后回到编辑器
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230428-1682689378400)
 
 - :e test.py	
 	- 新开个 test.py做实验
@@ -68,10 +56,21 @@ vi banner.py
 	- 这里面 也没有 换行符(\n)啊？
 - help 一下
 
-### 查询帮助
+### 先去游乐场
+
+- !python3 
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230417-1681738703319)
 
 - 去游乐场
-	- help(print)
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230417-1681738788418)
+
+- 查看帮助
+
+### 查询帮助
+
+- help(print)
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220925-1664113074537)
 
@@ -177,8 +176,9 @@ print("hello")
 	- 还能控制
 		- 具体 在`哪`换行
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230120-1674205435395)
+- python语言
+	- 真的是很精细的一门语言
+- python语言
+	- 究竟是如何发展成今天这个样子的呢？🤔
 
-- 我想 输出点 别的
-	- 比如 当前⏰时间？🤔
 - 我们下次再说！👋

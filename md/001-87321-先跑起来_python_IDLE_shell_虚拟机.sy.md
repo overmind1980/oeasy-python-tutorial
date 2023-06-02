@@ -65,7 +65,7 @@ enable_checker: true
 
 ### 终端
 
-- 各种系统 
+- 三大主流系统 
 	- 都有 `终端`
 	- terminal
 - windows系统
@@ -75,19 +75,23 @@ enable_checker: true
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230211-1676118376556)
 
+### mac系统
+
 - mac系统
 	- termimal
 	- iterm2
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230211-1676118387887)
 
+### linux系统
+
 - linux 
 	- xfce terminal
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230211-1676118407108)
 
-- 为什么要在linux环境里面
-	- 用终端写python呢？
+- 为什么要在linux里
+	- 学习编程呢？
 
 ### 系统的选择
 
@@ -103,86 +107,58 @@ enable_checker: true
 
 - linux是
 	- 实战环境
-	- 是真正的战场
+		- 是真正的战场
+- 为什么不用图形用户界面(GUI)呢？
 
-### 终端与云端
-
-- 通过`终端`
-	- 可以 远程登录 到云上
-		- 玩 `云端`的东西
-- 云端 就是
-	- 远程的服务器
-
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230227-1677497757633)
-
-- 终端上 有界面 壳(shell)
-	- 壳与核(kernel)相对
-- 通过 `s`ecurity `sh`ell(安全终端)
-	- 远程登录 云端服务器
-		- 就可以让 服务器 做各种事情
-- 服务器 和 我们常用的 个人电脑
-	- 有什么区别吗？
-
-### 服务器
+### GUI vs CLI
 
 - 个人电脑
-	- 用鼠标点击图标和菜单组成的图形界面
+	- 用鼠标点击图标和菜单组成的图形界面(GUI)
+		- Graphic User Interface
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230325-1679754529631)
 
-- 服务器 使用敲命令和代码的方式
-	- 执行任务
-	- 我们叫它纯命令行终端
+- 服务器 使用敲命令的方式
+	- 命令行终端接口(CLI)
+		- Command Line Interface
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230325-1679754699525)
 
-### 实战环境
+- 终端(terminal)上运行的是什么呢？
 
-- 我们选择在linux上面
+### 终端 与 云端
+
+- 终端上 运行的是 壳(shell)
+	- 可以控制云上服务器的
+		- 内核(kernel)
+		- 其他软硬件资源
+
+- 在linux上面
 	- 使用终端运行程序
-- 而不是
-	- 在非实战环境中学习
+		- 是实战需要
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230325-1679754444633)
 
-- 因为我们要面向应用
-	- 到最终的实战环境去
-		- 真正地把python跑起来
-
-- 可以离开 图形界面
-	- 直接使用 `纯命令行终端` 么？
-
-### 纯终端
-
-- 打开 左侧的边栏
-	- 左上角 有个倒计时
-		- 不用 担心时间
-			- 到时间了 有提示 可以续
-	- 点击 切换界面 - 字符
-		- 进入了 纯命令行终端
-
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220830-1661828396648)
-
-- 和 桌面终端进入 很像
-- 不同点 是
-	- 纯命令行方式 
-		- 没有 图形用户界面(GUI)
-		- 只有 命令行接口(CLI)
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230426-1682511253942)
 
 ### 酷😎
 
-- 打开了 黑色异世界
-	- 这里 是 `一切开始的地方`！！！
+- 打开了 终端
+	- 就像 打开了 黑色异世界
+     	- 这里 是 `一切开始的地方`！！！
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220830-1661822828451)
 
-- 实际上 
-	- 这异世界 也是 `工作生活的地方`！！！
-- 少用 图形用户界面(GUI)
+- 图形用户界面(GUI)
 	- `G`raphic `U`ser `I`nterface
+		- 操作清晰明确 
+		- 但功能有限
 - 多用命令行界面(CLI)
 	- `C`ommand `L`ine `I`nterface
-- 才能 了解 根本
+		- 操作复杂
+		- 但是可以发挥出计算机的全部性能
+- 使用 终端的 shell
+	- 才能 了解 根本
 
 ### 根本
 
@@ -192,7 +168,7 @@ enable_checker: true
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220830-1661828698901)
 
-- 我们 要去研究根本
+- 要去研究根本
 	- 你 有信心 `走到底` 么？？？
 
 ## 总结
@@ -201,8 +177,8 @@ enable_checker: true
 	- GUI
 	- CLI
 - 使用 终端
-	- 具体说 就是 xfce终端
-	- 终端 是我们 连接云端的登陆点
+	- xfce终端
+		- 连接云端
 - 在终端里
 	- 通过shell 这个壳子
 		- 控制 云端的核 
