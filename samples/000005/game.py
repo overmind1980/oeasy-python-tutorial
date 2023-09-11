@@ -73,7 +73,7 @@ while bosshp >= 0 and hp >= 0:
     if hp <= 0:
         print("战败，大侠请从头来过（试试把自己等级提高，怪物等级降低，再运行一次～）")
     if bosshp <= 0:
-        print("恭喜你战胜了Boss，爆到石中剑一把。")
+            print("恭喜你战胜了Boss，爆到石中剑一把。")
         print('''
            ,
           / \\
