@@ -21,7 +21,7 @@ enable_checker: true
 		- 控制 云端的核 (kernal)
 			- 管理 云端的资源
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220830-1661829248204)
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231223-1703303513801)
 
 - 打开了终端之后
 	- 到底怎么用呢？
@@ -40,11 +40,11 @@ enable_checker: true
 
 - 使用面部在键盘上横滚
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231110-1699608918274)
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231223-1703303718700)
 
 - shell环境报错了
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231110-1699608813397)
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231223-1703303731195)
 
 - 红颜色意味着不能执行
 
@@ -111,7 +111,7 @@ enable_checker: true
 	- 意味着没有pw这条命令
 - 再按下<kbd>d</kbd>
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230912-1694489048571)
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231223-1703303754540)
 
 - pwd 文字变绿
 	- 说明 有pwd 这条命令
@@ -130,7 +130,7 @@ enable_checker: true
 - 回车执行pwd命令
 	- 显示出当前的文件夹
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230912-1694489149029)
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231223-1703303808601)
 
 - `pwd`
 	- `p`resent `w`orking `d`irectory
@@ -149,7 +149,7 @@ enable_checker: true
 	- 意思是将当前文件夹下的内容列出
 	- list	
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230912-1694488888148)
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231223-1703303836592)
 
 - Green Light 
 	- I'm searching for you
@@ -215,7 +215,7 @@ enable_checker: true
 | ls |  列出当前文件夹下的内容 |
 | python3 |  仿佛进入大于号黑洞 |
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230912-1694490681950)
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231223-1703303851450)
 
 - 这`python3` 怎么玩啊！😠
 	- 说好的`python`教程呢？🤔
