@@ -221,3 +221,4 @@ enable_checker: true
 	- 说好的`python`教程呢？🤔
 
 - 我们 下次再说！👋想办法
+- [视频总结](https://www.bilibili.com/video/BV1Ei4y1a7jr)
