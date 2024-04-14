@@ -1,0 +1,15 @@
+total 64
+-rw-r--r--  1 easyo  staff    0  9 15 15:40 list
+drwxr-xr-x  3 easyo  staff   96  9 15 15:40 o
+-rw-r--r--  1 easyo  staff  400  9 14 16:55 o.class
+-rw-r--r--  1 easyo  staff  104  9 13 09:45 o.java
+-rw-r--r--  1 easyo  staff  130  9 14 18:18 o1
+-rw-r--r--  1 easyo  staff   89  9 14 17:44 o2
+-rw-r--r--  1 easyo  staff   38  9 14 13:16 o2z.txt
+-rw-r--r--  1 easyo  staff   30  9 14 13:16 o3z.txt
+-rw-r--r--  1 easyo  staff   13  9 14 11:08 oeasy.txt
+-rw-r--r--@ 1 easyo  staff  544  9 14 07:09 platform.csv
+
+./o:
+total 8
+-rw-r--r--  1 easyo  staff  67  9 15 15:40 ooo.txt

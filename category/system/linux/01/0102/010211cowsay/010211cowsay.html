@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>查看内核版本uname</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="../../../tree/tree.js"></script>
+        <script type="text/javascript" src="../../../tree/init.js"></script>
+        <link href="../../../css/style.css"  rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header id="myHeader"></header>
+        <span id="leftbar">
+            <div id="SidebarClose" onclick="closeSidebar();"><</div>
+            <div id="simple-01-parent"></div>
+        </span>
+        <div id="content">
+
+
+<h3> 本章回顾</h3>
+
+<h4> 我们来回顾一下😌</h4>
+
+<h6> 上一部分我们都讲了什么?🤔</h6>
+<ul>
+<li>软件包工具是apt🔧</li>
+<li>软件包不但能下载</li>
+<li>也能升级</li>
+<li>也能删除</li>
+<li>还有个专门管理软件包的aptitude</li>
+<li>这次我们下载个牛说cowsay</li>
+</ul>
+
+<code> 
+sudo apt install cowsay
+</code>
+
+<h4> cowsay 牛说🐄</h4>
+<ul>
+<li>cow就是牛🐄</li>
+<li>say就是说🗣</li>
+<li>cowsay就是牛说</li>
+<li>牛说的东西作为参数给cowsay</li>
+</ul>
+
+
+<code> 
+cowsay oeasy
+</code>
+
+
+<img src="https://labfile.oss.aliyuncs.com/courses/2712/cowsay.png" />
+<ul>
+<li>还有什么好玩的呢?👁</li>
+<li>我们查查手册!📕</li>
+</ul>
+
+<h5> 表情</h5>
+<ul>
+<li>-b 极简主义Borg Mode</li>
+<li>-d 死亡状态dead</li>
+<li>-g 贪婪金钱greedy</li>
+<li>-p 偏执狂 paranoia</li>
+<li>-s 石化 stone</li>
+<li>-w 紧张睁大眼 wired</li>
+<li>-t 闭眼的</li>
+<li>-e 设置眼睛eye字符 后面眼睛字符</li>
+</ul>
+
+<code> 
+cowsay -p oeasy<br/>
+cowsay -s oeasy<br/>
+cowsay -e *- oeasy<br/>
+</code>
+
+<h6> 除了cowsay之外,cowthink也可以使用</h6>
+
+<code> 
+cowthink -p oeasy
+</code>
+<h5> 不同动物🐫</h5>
+<h6> 列出所有动物</h6>
+<ul>
+<li>-l 列出list</li>
+</ul>
+
+<code> 
+cowsay -l
+</code>
+<img src="https://labfile.oss.aliyuncs.com/courses/2712/cowsay_list.png" />
+
+<code> 
+cowsay -f apt oeasy
+</code>
+
+<h6> 让动物说出自己的名字!🐑</h6>
+
+<code> 
+cowsay -l|sed "s/ /\n/g"|xargs -I {} cowsay {} {} 
+</code>
+<ul>
+<li>这个用法优点复杂</li>
+<li>具体怎么做我们下一部分会介绍</li>
+</ul>
+
+
+
+<h5> 总结🤨</h5>
+<ul>
+<li>这次的cowsay可以做签名档</li>
+<li>可以改变动物类型😚</li>
+<li>可以改变动物表情</li>
+<li>能否把cowsay和figlet、toilet结合呢?</li>
+<li>下次再说!👋</li>
+</ul>
+<span id="prevChapter">
+</span>
+<a href="https://github.com/overmind1980/oeasy-linux-tutorial">参与制作</a>  <a href="http://oeasy.org/category/system/linux/shiyan.html">去做实验</a>
+<span id="nextChapter">
+</span>
+
+
+<div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到微信" class="bshare-weixin"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到QQ书签" class="bshare-qqshuqian"></a><a title="分享到复制网址" class="bshare-clipboard"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#style=-1&amp;uuid=&amp;pophcol=3&amp;lang=zh"></script><a class="bshareDiv" onclick="javascript:return false;"></a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+
+</div>
+</body>
+</html>

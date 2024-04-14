@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>查看内核版本uname</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="../../../tree/tree.js"></script>
+        <script type="text/javascript" src="../../../tree/init.js"></script>
+        <link href="../../../css/style.css"  rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header id="myHeader"></header>
+        <span id="leftbar">
+            <div id="SidebarClose" onclick="closeSidebar();"><</div>
+            <div id="simple-01-parent"></div>
+        </span>
+        <div id="content">
+
+
+<h3> 本章回顾</h3>
+
+<h4> 我们来回顾一下😌</h4>
+
+<h6> 上一部分我们都讲了什么?🤔</h6>
+<ul>
+<li>牛说cowsay</li>
+<li>牛可以有各种表情</li>
+<li>可以自定义眼睛</li>
+<li>可以变成各种别的小动物</li>
+<li>可以说也可以想cowthink</li>
+<li>我们也想让牛说出字符画的感觉</li>
+</ul>
+
+<h4> 回顾字符画</h4>
+
+<h6> 下载figlet和toilett</h6>
+
+<code> 
+sudo apt install figlet toilet<br/>
+figlet oeasy<br/>
+</code>
+
+<h6> 那我们怎么让牛说出字符画呢?</h6>
+
+<code> 
+figlet "oeasy" <br/>
+figlet "oeasy" | cowsay -f moose -n <br/>
+</code>
+
+<img src="https://labfile.oss.aliyuncs.com/courses/2712/cowsay_pipe.png" />
+
+<h4> pipe原理</h4>
+<ul>
+<li>中间的那条竖线 | (在键盘回车上面),就是pipe</li>
+<li>pipe,意思是管道</li>
+<li>原来figlet "oeasy"命令执行之后进行输出</li>
+<li>输出流,直接流到屏幕(stdout)上</li>
+<li>现在给他加了一个管道|</li>
+<li>figlet不直接输出到屏幕了</li>
+<li>figlet把输出结果流到了cowsay指令中</li>
+<li>cowsay接收到了流过来的figlet的结果做为参数</li>
+<li>cowsay的输出结果最终流到了屏幕(stdout)上</li>
+</ul>
+
+<img src="https://labfile.oss.aliyuncs.com/courses/2712/pipe.png" />
+
+
+<h5> 牛说各种</h5>
+<h6> 我们尝试一下让牛说出彩色字</h6>
+
+<code> 
+toilet  --gay oeasy | cowthink -n
+</code>
+<ul>
+<li>toilet是彩色字</li>
+<li>--gay是toilet的选项开关</li>
+<li>oeasy是toilet的参数</li>
+<li>toilet的输出流到cowthink中</li>
+<li>-n是cowthink的参数,解决回车问题</li>
+</ul>
+
+<code>
+# 牛说uname<br/>
+uname | cowsay -f moose -n <br/>
+<br/>
+#  牛说pwd,把pwd的结果给到cowsay<br/>
+pwd | cowsay -f moose -n <br/>
+<br/>
+#  牛说ls,把ls的结果给到cowsay<br/>
+ls | cowsay -f moose -n <br/>
+<br/>
+#  牛说ls /etc,把ls /etc的结果给到cowsay<br/>
+ls etc | cowsay -f moose -n <br/>
+<br/>
+#  把cowsay的内容输出到toilet染色<br/>
+cowsay -f moose "oeasy" | toilet --gay -f term<br/>
+</code>
+
+<img src="https://labfile.oss.aliyuncs.com/courses/2712/rainbow.png" />
+
+
+<h5>boxes</h5>
+<ul>
+<li>可以下载一个boxes也是类似的字符画</li>
+<li>也可以配置多种参数</li>
+<li>也可以使用管道</li>
+</ul>
+
+<img src="https://labfile.oss.aliyuncs.com/courses/2712/cat_clock.png" />
+
+
+<code>
+figlet oeasy | boxes -d peek -pa2t0b0<br/>
+watch -n1 "date '+%D%n%T'| figlet -k | boxes -a c -s 59 -d cat"<br/>
+</code>
+
+
+
+<h5> 总结🤨</h5>
+<ul>
+<li>管道的符号是|</li>
+<li>管道的作用是连接</li>
+<li>原来应该输出到屏幕内容</li>
+<li>通过管道流到了另一个命令做为参数</li>
+<li>是否可以让cow说出一些中文呢?</li>
+<li>下次再说!👋</li>
+</ul>
+<span id="prevChapter">
+</span>
+<a href="https://github.com/overmind1980/oeasy-linux-tutorial">参与制作</a>  <a href="http://oeasy.org/category/system/linux/shiyan.html">去做实验</a>
+<span id="nextChapter">
+</span>
+
+
+<div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到微信" class="bshare-weixin"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到QQ书签" class="bshare-qqshuqian"></a><a title="分享到复制网址" class="bshare-clipboard"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#style=-1&amp;uuid=&amp;pophcol=3&amp;lang=zh"></script><a class="bshareDiv" onclick="javascript:return false;"></a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+
+</div>
+</body>
+</html>

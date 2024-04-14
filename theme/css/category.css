@@ -1,0 +1,287 @@
+body {
+    color: #33290A;
+    margin:0;
+}
+html,body{
+    width:100%;
+}
+#about{
+    font-size:24px;
+    text-indent:2em;
+    margin:20px;
+}
+.category::before{
+    content: "ට";
+}
+.category{
+    font-size:46px;
+    margin-bottom:20px;
+}
+#content{
+    width:100%;
+}
+.subject{
+    border-radius:11px;
+    font-size:33px;
+    height:53px;
+    margin-bottom:15px;
+}
+
+.subjectTitle{
+    float: left;
+    width: 180px;
+    line-height: 53px;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: #FFF;
+    text-align: center;
+}
+
+.subjectLinks a{
+    font-size: 16px;
+    margin: 0 20px;
+    line-height: 53px;
+    display: inline-block;
+    text-decoration: none;
+}
+.subjectLinks a::before{
+    content: "ට";
+}
+#ps{
+    border: #56b6ff 2px dashed;
+}
+#ps .subjectTitle{
+    background:#56b6ff;
+}
+#ai{
+    border: #f4961a 2px dashed;
+}
+#ai .subjectTitle{
+    background:#f4961a;
+}
+
+#phoneCam{
+    border: #123456 2px dashed;
+}
+#phoneCam .subjectTitle{
+    background:#123456;
+    font-size:24px;
+}
+#pr{
+    border: #8e71a3 2px dashed;
+}
+#pr .subjectTitle{
+    background:#8e71a3;
+}
+
+#ae{
+    border: #320170 2px dashed;
+}
+#ae .subjectTitle{
+    background:#320170;
+}
+#circuit{
+    border: #123456 2px dashed;
+}
+#circuit .subjectTitle{
+    background:#123456;
+    font-size:24px;
+}
+#radio{
+    border: #123456 2px dashed;
+}
+#radio .subjectTitle{
+    background:#123456;
+    font-size:24px;
+}
+#chemical{
+    border: #123456 2px dashed;
+}
+#chemical .subjectTitle{
+    background:#123456;
+    font-size:24px;
+}
+#analog{
+    border: #123456 2px dashed;
+}
+#analog .subjectTitle{
+    background:#123456;
+    font-size:24px;
+}
+#linux{
+    border: #320170 2px dashed;
+}
+#linux .subjectTitle{
+    background:#320170;
+}
+#windows{
+    border: #320170 2px dashed;
+}
+#windows .subjectTitle{
+    background:#320170;
+}
+#ios{
+    border: #320170 2px dashed;
+}
+#ios .subjectTitle{
+    background:#320170;
+}
+#rust{
+    border: #320170 2px dashed;
+}
+#rust .subjectTitle{
+    background:#320170;
+}
+#danmu{
+    border: #320170 2px dashed;
+}
+#danmu .subjectTitle{
+    background:#320170;
+}
+#codeCombat{
+    border: #320170 2px dashed;
+}
+#codeCombat .subjectTitle{
+    background:#320170;
+}
+#html5{
+    border: #320170 2px dashed;
+}
+#html5 .subjectTitle{
+    background:#320170;
+}
+#css{
+    border: #320170 2px dashed;
+}
+#css .subjectTitle{
+    background:#320170;
+}
+#javascript{
+    border: #320170 2px dashed;
+}
+#javascript .subjectTitle{
+    background:#320170;
+}
+#flash{
+    border: #320170 2px dashed;
+}
+#flash .subjectTitle{
+    background:#320170;
+}
+#an{
+    border: #320170 2px dashed;
+}
+#an .subjectTitle{
+    background:#320170;
+}
+#live2d{
+    border: #320170 2px dashed;
+}
+#live2d .subjectTitle{
+    background:#320170;
+}
+#ch{
+    border: #320170 2px dashed;
+}
+#ch .subjectTitle{
+    background:#320170;
+}
+#mmd{
+    border: #320170 2px dashed;
+}
+#mmd .subjectTitle{
+    background:#320170;
+}
+#audition{
+    border: #320170 2px dashed;
+}
+#audition .subjectTitle{
+    background:#320170;
+}
+#flstudio{
+    border: #320170 2px dashed;
+}
+#flstudio .subjectTitle{
+    background:#320170;
+}
+#tiaoyin{
+    border: #123456 2px dashed;
+}
+#tiaoyin .subjectTitle{
+    background:#123456;
+    font-size:24px;
+}
+#mc{
+    border: #123456 2px dashed;
+}
+#mc .subjectTitle{
+    background:#123456;
+    font-size:24px;
+}
+#ce{
+    border: #123456 2px dashed;
+}
+#ce .subjectTitle{
+    background:#123456;
+    font-size:24px;
+}
+#word{
+    border: #320170 2px dashed;
+}
+#word .subjectTitle{
+    background:#320170;
+}
+#excel{
+    border: #320170 2px dashed;
+}
+#excel .subjectTitle{
+    background:#320170;
+}
+#ppt{
+    border: #320170 2px dashed;
+}
+#ppt .subjectTitle{
+    background:#320170;
+}
+#icon{
+    border: #320170 2px dashed;
+}
+#icon .subjectTitle{
+    background:#320170;
+}
+#font{
+    border: #123456 2px dashed;
+}
+#font .subjectTitle{
+    background:#123456;
+    font-size:24px;
+}
+#color{
+    border: #123456 2px dashed;
+}
+#color .subjectTitle{
+    background:#123456;
+    font-size:24px;
+}
+#tools{
+    border: #123456 2px dashed;
+}
+#tools .subjectTitle{
+    background:#123456;
+    font-size:24px;
+}
+#web{
+    border: #123456 2px dashed;
+}
+#web .subjectTitle{
+    background:#123456;
+    font-size:24px;
+}
+#shizi{
+    border: #123456 2px dashed;
+}
+#shizi .subjectTitle{
+    background:#123456;
+    font-size:24px;
+}

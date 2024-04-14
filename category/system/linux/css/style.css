@@ -1,0 +1,139 @@
+html,body{
+    padding:0px;
+    margin:0px;
+    font-size:14px;
+}
+#leftbar{
+    float:left;
+    width:32%;
+    overflow:scroll;
+    position:fixed;
+}
+#content{
+    width:65%;
+    float:right;
+    margin-left:8px;
+    padding-right:12px;
+}
+#tutorialContent{
+}
+
+h4{
+    background:#08bf91;
+    text-align:center;
+    border-left:16px solid #046049;
+    border-right:16px solid #046049;
+    padding:7px;
+    color:white;
+    font-size:24px;
+    border-top:4px solid #046049;
+    border-radius: 10px;
+    text-shadow: 3px 3px 1px #046049;
+    box-shadow: 13px 13px 5px #999;
+    margin:0 0 30px;
+}
+h3{
+    background:#08bf91;
+    text-align:center;
+    border-left:33px solid #046049;
+    border-right:33px solid #046049;
+    padding:7px;
+    color:white;
+    font-size:30px;
+    border-top:4px solid #046049;
+    border-radius: 10px;
+    text-shadow: 5px 5px 2px #046049;
+    box-shadow: 13px 13px 5px #999;
+    margin:20px 0 30px;
+}
+p{
+    color:#011510;
+    background:#f0f8f6;
+    padding:10px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 4px #aaa;
+    text-indent:2em;
+}
+h5{
+    background:#08bf91;
+    text-align:center;
+    border-left:14px solid #046049;
+    border-right:14px solid #046049;
+    padding:6px;
+    color:white;
+    font-size:21px;
+    border-top:2px solid #046049;
+    padding:8px;
+    border-radius: 8px;
+    text-shadow: 2px 2px 1px #046049;
+    box-shadow:10px 10px 5px #aaa;
+    margin:0 0 26px;}
+
+ul{
+    color:#011510;
+    background:#f0f8f6;
+    padding:10px;    
+    border-radius: 10px;
+    box-shadow: 8px 8px 4px #aaa;
+    width:300px;
+    padding-left:30px;
+    border-top:3px solid #fff;
+    border-left:3px solid #fff;
+}
+
+
+
+h6{
+    background:#08bf91;
+    text-align:center;
+    border-left:4px solid #046049;
+    border-right:4px solid #046049;
+    padding:4px;
+    color:white;
+    font-size:16px;
+    border-top:1px solid #046049;
+    padding:7px;
+    border-radius: 7px;
+    text-shadow: 2px 2px 1px #046049;
+    box-shadow:6px 6px 3px #aaa;
+    margin:30px 0 23px;}
+code{
+    display:block;
+    padding:15px;
+    background:#000;
+    color:white;
+    margin:30px;
+}
+header{
+    display:block;
+    width:100%;
+    height:30px;
+    background:#046049;
+    color:#fff;
+    position:fixed;
+    z-index:990;
+}
+
+header a{
+    color:#fff;
+    margin:0 10px;
+}
+#SidebarClose{
+/*    width:16px;
+    height:60px;
+    backgrud:#ccc;
+    position:absolute;
+    top:300px;
+    left:32%;
+    vertical-align:middle;
+    padding-top:40px;
+    border:1px solid #333;
+    cursor:pointer;
+*/
+display:none;
+}
+
+kbd{
+    border:1px solid black;
+    margin:0 10px;
+}

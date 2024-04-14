@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>查看内核版本uname</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="../../../tree/tree.js"></script>
+        <script type="text/javascript" src="../../../tree/init.js"></script>
+        <link href="../../../css/style.css"  rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header id="myHeader"></header>
+        <span id="leftbar">
+            <div id="SidebarClose" onclick="closeSidebar();"><</div>
+            <div id="simple-01-parent"></div>
+        </span>
+        <div id="content">
+
+<div class="markdown-body" data-v-4e329b06=""><h1 id="本章回顾">本章回顾</h1>
+<h2 id="我们来回顾一下-😌">我们来回顾一下 😌</h2>
+<p><strong>上一部分我们都讲了什么？</strong>🤔</p>
+<ul>
+<li>用 apt 查询并下载了 linuxlogo</li>
+<li>用字符画出了 linux 发行版的 logo</li>
+<li>还查了手册，通过改参数控制输出信息</li>
+</ul>
+<h4 id="我们还能玩点什么呢？🧸">我们还能玩点什么呢？🧸</h4>
+<p>这个实验我们想制作大字符画 (large character)，于是我们在源里面搜索 large character。</p>
+<pre><code class="language-shell hljs"><span class="hljs-meta">#</span><span class="bash"> 注意这里 large 和 character 有空格</span>
+apt search large character</code></pre>
+<checker style="display: none;">[{"name":"检查是否在命令历史中曾经出现过 uname","script":"cat /home/shiyanlou/.zsh_history | grep \"apt search large character\"\n","error":"您还没有查询 large character","timeout":1}]</checker><h4 id="找到两个命令-figlet-和-toilet">找到两个命令 figlet 和 toilet</h4>
+<pre><code class="language-shell hljs"><span class="hljs-meta">#</span><span class="bash"> 从源下载 figlet</span>
+apt search figlet</code></pre>
+<h2 id="figlet-灵魂三问-💡">figlet 灵魂三问 💡</h2>
+<p><strong>让我们来发起“灵魂三问”。</strong> 😉</p>
+<pre><code class="language-shell hljs">whatis figlet
+whereis -b figlet
+which figlet</code></pre>
+<p><img alt="figlet" src="https://labfile.oss.aliyuncs.com/courses/2712/figlet3.png"></p>
+<h4 id="具体用一下这个-figlet">具体用一下这个 figlet</h4>
+<pre><code class="language-shell hljs">figlet oeasy</code></pre>
+<p><strong>我们可以看到 oeasy 做为参数，被放大了，被做成了字符画，做成了签名档。</strong></p>
+<p><img alt="Image text" src="https://labfile.oss.aliyuncs.com/courses/2712/figlet.png"></p>
+<p><strong>还有什么细节吗？我们来查查手册！</strong>📕</p>
+<h3 id="figlet-细节">figlet 细节</h3>
+<ul>
+<li>对齐方式：<ul>
+<li>-l 左</li>
+<li>-c 中</li>
+<li>-r 右</li>
+</ul>
+</li>
+<li>改变字体：<ul>
+<li>-f fontfile</li>
+<li>figlet 字体文件 flf 在哪呢？🤔</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-shell hljs"><span class="hljs-meta">#</span><span class="bash">使用 find 命令在/(root) 下查找所有 flf 文件</span>
+sudo find / -name "*.flf"</code></pre>
+<p><img alt="Image text" src="https://labfile.oss.aliyuncs.com/courses/2712/figlet_font"></p>
+<p>字体 fif 文件都在 figlet 文件夹里，我们可以做各种各样的签名档了！</p>
+<h4 id="banner、签名档一览">banner、签名档一览</h4>
+<p><img alt="Image text" src="https://labfile.oss.aliyuncs.com/courses/2712/show_figlet.png"></p>
+<h3 id="疑问-🤔">疑问 🤔</h3>
+<p>我们突然有了一个疑问，那么大字符可以带有颜色吗？迅速在手册中搜索 <code>/color</code> 一下，没有结果～</p>
+<p>接下来我们我们去另一个大字符工具那里玩一下...</p>
+<p><strong>另一个工具 toilet 到底什么意思？🤔下次再说！👋</strong></p>
+</div>
+
+<div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到微信" class="bshare-weixin"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到QQ书签" class="bshare-qqshuqian"></a><a title="分享到复制网址" class="bshare-clipboard"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#style=-1&amp;uuid=&amp;pophcol=3&amp;lang=zh"></script><a class="bshareDiv" onclick="javascript:return false;"></a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+
+</div>
+</body>
+</html>

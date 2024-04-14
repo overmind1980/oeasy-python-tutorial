@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>查看内核版本uname</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="../../../tree/tree.js"></script>
+        <script type="text/javascript" src="../../../tree/init.js"></script>
+        <link href="../../../css/style.css"  rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header id="myHeader"></header>
+        <span id="leftbar">
+            <div id="SidebarClose" onclick="closeSidebar();"><</div>
+            <div id="simple-01-parent"></div>
+        </span>
+        <div id="content">
+
+
+<h3> 那啥在哪whereis</h3>
+
+<h4> 回忆上次内容😌</h4>
+
+
+<p> 上次讲了ls 的参数(arguement)和选项(option)的设置</p>
+
+<p> 现在我们要整这么一个列表🗒</p>
+<ul>
+<li>对于 /proc路径进行列表</li>
+<li>对子路径递归列表</li>
+<li>显示隐藏文件</li>
+<li>显示详细信息</li>
+<li>其中容量使用人们熟知的单位</li>
+</ul>
+<p> 你都忘了?!!!😱</p>
+<ul>
+<li>没关系 </li>
+<li>查手册啊📕</li>
+</ul>
+
+<p> 做完了之后思考,ls到底在哪?🤔</p>
+
+<h5> ls在哪?🤔</h5>
+<ul>
+<li>想要知道ls在哪就得用新命令whereis</li>
+<li>我们的命令(command)的名字是whereis</li>
+<li>我们whereis命令的参数是ls</li>
+<li>综合起来就是</li>
+</ul>
+
+
+<code>
+whereis ls
+</code>
+
+
+<ul>
+<li>我们得到了ls两个硬盘位置</li>
+    <li>  /bin/ls </li>
+    <li>  /usr/share/man/man1/ls.1.gz</li>
+<li>为什么在硬盘里?🤔</li>
+</ul>          
+
+<h5> 为什么ls在硬盘里?🤔</h5>
+<ul>
+<li>ls文件最开始在/bin这个位置</li>
+<li>当我在命令行敲击之后ls回车之后</li>
+<li>操作系统要求运行ls程序</li>
+<li>操作系统分配内存空间给ls</li>
+<li>操作系统把ls从硬盘加载到内存中</li>
+<li>操作系统分配cpu资源去执行程序</li>
+<li>最终把ls的结果输出到标准输出流(屏幕)上</li>
+</ul>
+
+<h5> 为什么两个位置??🤔</h5>
+
+<ul>
+<li>我们可以对whereis发出灵魂之问whatis</li>
+    <li>whatis whereis</li>
+    <li>whereis可以帮我们定位命令的位置</li>
+</ul>
+<p>whereis太简单了,这个恐怕要查文档</p>
+<ul>
+<li>我们查询whereis的手册man📕</li>
+    <li>man whereis</li>
+    <li>我们可以查询到whereis的手册📕</li>
+</ul>
+<img src="https://labfile.oss.aliyuncs.com/courses/2712/whereis.png" />
+
+
+<h5> 来试试选项的功能</h5>
+<ul>
+<li>whereis -b ls</li>
+    <ul>
+        <li>b的意思是binary二进制</li>
+        <li>查找whereis二进制</li>
+        <li>二进制文件在/bin里</li>
+    </ul>
+    </ul>
+    <ul>
+<li>whereis -m ls</li>
+    <ul>
+        <li>m的意思是manual文档</li>
+        <li>查找whereis的文档</li>
+        <li>文档在/usr/share/man里面</li>
+    </ul>
+    </ul>
+    <ul>
+    <li>  这两个</li>
+    <li>      一个是二进制命令</li>
+    <li>      另一个是帮助手册</li>
+ </ul>
+<p> 那ls的源文件在哪呢?这有点复杂...🧐</p>
+
+
+<h5>得到ls源文件</h5>
+<ul>
+<li>dpkg -S /bin/ls</li>
+    <li>dpkg是debian package是debian的包管理命令</li>
+    <li>-S是在已经安装的包里面查找search</li>
+    <li>/bin/ls是具体文件的位置</li>
+    <li>得到结果是coreutils(核心应用)</li>
+</ul>
+<h6>设置源</h6>
+<ul>
+    <li>sudo vi /etc/apt/sources.txt</li>
+    <ul>
+        <li>打开源的配置文件 </li>
+        <li>sudo 是使用管理员权限</li>
+        <li>vi 是文本编辑器</li>
+        <li>/etc/apt/sources.txt是源的配置文件</li>
+    <li>直接输入<kbd>G</kbd>(直接到最后一行Ground)</li>
+        <li>注意这个时候左下角是空白状态</li>
+    <li>直接输入<kbd>o</kbd>(在当前行后面添加一行)</li>
+        <li> 注意左下角变成了Insert(插入状态)</li>
+    <li> 将下面粘贴到最后一行</li>
+        <li>deb-src http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse</li>
+        <li>这条设置的是debian的源的位置</li>
+    <li>摁下<kbd>esc</kbd></li>
+        <li>注意左下角不再是Insert(插入状态),而是退回到了空白  </li>
+    <li>依次摁下</li>
+        <li><kbd>:</kbd></li>
+        <li><kbd>w</kbd></li>
+        <li><kbd>q</kbd></li>
+        <li><kbd>回车</kbd></li>
+        <li>保存并退出vi</li>
+        </ul>
+        </ul>
+<h6>用apt下载源代码</h6>
+<ul>
+    <li>apt是高级包管理的命令</li>
+    <li>运行sudo apt update(更新源)</li>
+    <li>sudo apt source coreutils(获得源代码)</li>
+    <li>在当前文件夹下找到coreutilsXXX文件夹</li>
+    <li>进入src源文件文件夹(source)</li>
+    <li>ls ls.*</li>
+    <li>找到了ls.c文件(ls的c语言源文件)</li>
+</ul>
+<h5> 思考🤔</h5>
+<ul>
+<li>我们真的可以获得ls源代码,这太棒了!👊</li>
+<li>可是如果有多个版本的命令比如</li>
+    <li>  java8</li>
+    <li>  java13</li>
+<li>  那我到底用的是那个版本的java呢?🙄</li>
+<li>  我们下次再说👋</li>
+</ul>
+<span id="prevChapter">
+</span>
+<a href="https://github.com/overmind1980/oeasy-linux-tutorial">参与制作</a>  <a href="http://oeasy.org/category/system/linux/shiyan.html">去做实验</a>
+<span id="nextChapter">
+</span>
+
+
+<div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到微信" class="bshare-weixin"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到QQ书签" class="bshare-qqshuqian"></a><a title="分享到复制网址" class="bshare-clipboard"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#style=-1&amp;uuid=&amp;pophcol=3&amp;lang=zh"></script><a class="bshareDiv" onclick="javascript:return false;"></a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+
+</div>
+</body>
+</html>

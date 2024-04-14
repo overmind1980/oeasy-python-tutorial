@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html manifest="offline.appcache">
+<head>
+    <meta charset="UTF-8" />
+	
+	<!-- This ensures the canvas works on IE9+.  Don't remove it! -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title>My Project</title>
+	<!-- Note: running this exported project from disk may not work exactly like preview, since browsers block some features on the file:// protocol.  Once you've uploaded it to a server, it should work OK. -->
+	
+    <!-- This outlines the canvas with a black border and makes the page background black. -->
+	<style type="text/css">
+		body { background-color: black; color: white; }
+		canvas { -ms-touch-action: none; }
+	</style>
+
+</head> 
+ 
+<body> 
+	<div id="fb-root"></div>
+	<div style="text-align: center;">
+
+	<script>
+	// Issue a warning if trying to preview an exported project on disk.
+	(function(){
+		// Check for running exported on file protocol
+		if (window.location.protocol.substr(0, 4) === "file")
+		{
+			alert("Exported games won't work until you upload them.");
+		}
+	})();
+	</script>
+
+		<!-- The canvas must be inside a div called c2canvasdiv -->
+		<div id="c2canvasdiv" style="margin: 0 auto; width: 800px; height: 800px;">
+		
+			<!-- The canvas the project will render to.  If you change its ID, don't forget to change the
+			ID the runtime looks for in the jQuery ready event (above). -->
+			<canvas id="c2canvas" width="800" height="800">
+				<!-- This text is displayed if the visitor's browser does not support HTML5.
+				You can change it, but it is a good idea to link to a description of a browser
+				and provide some links to download some popular HTML5-compatible browsers. -->
+				Your browser does not appear to support HTML5.  Try upgrading your browser to the latest version.  <a href="http://www.whatbrowser.org">What is a browser?</a>
+				<br/><br/><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx">Microsoft Internet Explorer</a><br/>
+				<a href="http://www.mozilla.com/firefox/">Mozilla Firefox</a><br/>
+				<a href="http://www.google.com/chrome/">Google Chrome</a><br/>
+				<a href="http://www.apple.com/safari/download/">Apple Safari</a><br/>
+				<a href="http://www.google.com/chromeframe">Google Chrome Frame for Internet Explorer</a><br/>
+			</canvas>
+			
+		</div>
+
+        <br />
+		
+		<!-- SCIRRA LTD LICENSE AGREEMENT
+			 FREE EDITION USERS ARE NOT ALLOWED TO REMOVE, MODIFY OR HIDE THE FOLLOWING
+			 LINES OF HTML5 CODE FROM THEIR EXPORTED GAMES. REMOVAL, MODIFICATION OR
+			 ATTEMPTS TO HIDE THIS MESSAGE WILL BE IN BREACH OF THE FREE EDITION LICENSE
+		-->
+		<!-- End of Scirra Ltd. free edition limitation -->
+		<a href="http://www.scirra.com" target="_blank" style="font-family:Arial;color:DodgerBlue;" title="Make games">Create your own games with Construct 2 &mdash; the HTML5 game maker</a>
+
+	</div>
+	
+	<!-- Pages load faster with scripts at the bottom -->
+	
+	<!-- Construct 2 exported games require jQuery.  To save bandwidth, by default
+	this is set to grab it off the Google content delivery network (CDN). Fall back to local if not available. -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write("<script src='jquery-1.7.1.min.js'>\x3C/script>")</script>
+
+
+	
+    <!-- The runtime script.  You can rename it, but don't forget to rename the reference here as well.
+    This file will have been minified and obfuscated if you enabled "Minify script" during export. -->
+	<script src="c2runtime.js"></script>
+
+    <script>
+		jQuery(window).resize(function() {
+			if (window.c2resizestretchmode === 1)
+			{
+				window.c2resizestretchmode = 2;		// put back when breaking back out of fullscreen
+				var canvas = document.getElementById("c2canvas");
+				window.c2oldcanvaswidth = canvas.width;
+				window.c2oldcanvasheight = canvas.height;
+				window.c2eventtime = Date.now();
+				var w = jQuery(window).width();
+				var h = jQuery(window).height();
+				cr_sizeCanvas(w, h);
+			}
+			else if (window.c2resizestretchmode === 2)
+			{
+				// Size event fires twice on FF + Chrome, ignore second trigger
+				if (Date.now() > window.c2eventtime + 50)
+				{
+					window.c2resizestretchmode = 0;
+					cr_sizeCanvas(window.c2oldcanvaswidth, window.c2oldcanvasheight);
+				}
+			}
+		});
+	
+		// Start the Construct 2 project running on window load.
+		jQuery(document).ready(function ()
+		{
+			// Create new runtime using the c2canvas
+			cr_createRuntime("c2canvas");
+		});
+		
+		// Pause and resume on page becoming visible/invisible
+		function onVisibilityChanged() {
+			if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+				cr_setSuspended(true);
+			else
+				cr_setSuspended(false);
+		};
+		
+		document.addEventListener("visibilitychange", onVisibilityChanged, false);
+		document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+    </script>
+</body> 
+</html> 

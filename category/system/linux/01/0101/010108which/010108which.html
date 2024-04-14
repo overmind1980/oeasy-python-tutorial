@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>查看内核版本uname</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="../../../tree/tree.js"></script>
+        <script type="text/javascript" src="../../../tree/init.js"></script>
+        <link href="../../../css/style.css"  rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header id="myHeader"></header>
+        <span id="leftbar">
+            <div id="SidebarClose" onclick="closeSidebar();"><</div>
+            <div id="simple-01-parent"></div>
+        </span>
+        <div id="content">
+
+
+
+<h3> 到底哪个which</h3>
+
+<h4> 回忆上次内容😌</h4>
+
+<p>我们上次讲了查找命令位置whereis</p>
+
+<p>我想找到whereis的位置怎么办?🤔</p>
+
+<code>
+whereis whereis
+</code>
+<ul>
+<li>命令有三种位置</li>
+<li>二进制代码binary</li>
+<li>源代码source</li>
+<li>帮助手册manual</li>
+</ul>
+
+<p>我们找到了ls对应的源代码的位置,但是我们有的时候会面对这样的问题,一个命令有多条二进制代码和他对应.我们到使用的是哪个?🤔</p>
+
+
+<h5> 到底哪个?which🤔</h5>
+
+<p> 比如我们想知道我们使用的java在哪里?🙄</p>
+
+<code>
+whereis java
+</code>
+<p> 我只想查java的二进制文件</p>
+
+<code>
+whereis -b java
+</code>
+
+<p> 也有好多,到底哪个?🤔</p>
+<p> 比如我们想知道我们使用的java在哪里?</p>
+
+<code>
+which java
+</code>
+
+
+<ul>
+<li>这样我们就得到了二进制里面的第一个,也就是我们执行命令时候对应硬盘的位置.</li>
+</ul>
+<h5> 我们来玩吧🤗</h5>
+
+<p> 各种命令都来当which的参数</p>
+<ul>
+<li>which pwd</li>
+<li>which uname</li>
+<li>which whatis</li>
+<li>which whereis</li>
+</ul>
+<p>现在我们有了三个灵魂之问了✊</p>
+<ul>
+<li>whatis 你是谁</li>
+<li>whereis 你在哪</li>
+<li>which 到底在哪</li>
+</ul>
+<p>通过这三个命令我们可以知道,任何命令的作用、位置,我们给这三个问号起名叫<b>灵魂三问 </b>!👊</p>
+
+<h5> 灵魂三问</h5>
+<p> 我们来对cat命令,试试这个灵魂三问</p>
+
+<code>
+whatis cat<br/>
+whereis cat<br/>
+which cat<br/>
+</code>
+
+
+<ul>
+<li>有了这三个命令</li>
+<li>我们就可以了解任何命令的基本信息了!</li>
+<li>我们再去问问什么命令呢?🤔</li>
+<li>下次再说!👋</li>
+</ul>
+
+
+
+<span id="prevChapter">
+</span>
+<a href="https://github.com/overmind1980/oeasy-linux-tutorial">参与制作</a>  <a href="http://oeasy.org/category/system/linux/shiyan.html">去做实验</a>
+<span id="nextChapter">
+</span>
+
+
+<div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到微信" class="bshare-weixin"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到QQ书签" class="bshare-qqshuqian"></a><a title="分享到复制网址" class="bshare-clipboard"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#style=-1&amp;uuid=&amp;pophcol=3&amp;lang=zh"></script><a class="bshareDiv" onclick="javascript:return false;"></a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+
+</div>
+</body>
+</html>

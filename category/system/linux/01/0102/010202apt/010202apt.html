@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>查看内核版本uname</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="../../../tree/tree.js"></script>
+        <script type="text/javascript" src="../../../tree/init.js"></script>
+        <link href="../../../css/style.css"  rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header id="myHeader"></header>
+        <span id="leftbar">
+            <div id="SidebarClose" onclick="closeSidebar();"><</div>
+            <div id="simple-01-parent"></div>
+        </span>
+        <div id="content">
+
+
+<h3> 本章回顾</h3>
+
+<h4> 我们来回顾一下😌</h4>
+
+<h6> 上一部分我们都讲了什么?🤔</h6>
+<ul>
+<li>yes命令</li>
+<li>持续输出某字符串</li>
+</ul>
+
+<code>
+yes oeasy
+</code>
+
+
+<h6> 还有什么好玩的命令吗?🤔</h6>
+
+<h4> 列出所有包</h4>
+
+<code>
+apt list
+</code>
+
+
+<h6> 这里好多文件啊,我们找找有没有yes</h6>
+
+<code>
+#  找到yes对应位置<br/>
+which yes <br/>
+#  /usr//bin/yes属于哪个包<br/>
+dpkg -S /usr/bin/yes<br/>
+#  在已经安装的包里面找到coreutil<br/>
+dpkg -l coreutils<br/>
+#  coreutils到底是干什么的?<br/>
+dpkg -s coreutils<br/>
+#  在已安装列表中搜索coreutils<br/>
+apt list coreutils<br/>
+#  在源中搜索coreutils<br/>
+apt search coreutils<br/>
+</code>
+<ul>
+<li>dpkg对应debian package 是传统包管理</li>
+<li>dpkg更多的是本地包的各种安装卸载查看</li>
+<li>早年间都是通过ftp下载到本地,再dkpg的</li>
+<li>apt是新的包管理工具😍</li>
+<li>apt更多的是网络包的安装卸载查看</li>
+<li>如果有些包你是从红帽系rpm下载的</li>
+<ul>
+<li>  可以用alien转化为deb</li>
+<li>  然后安装deb文件</li>
+<li>可以用apt下好玩的包吗?😂</li>
+</ul>
+</ul>
+
+<h4> apt🧩</h4>
+<ul>
+<li>apt是advanced package tools的意思</li>
+<li>apt是debian系发行版的软件包管理工具</li>
+<ul>
+<li>红帽系的yum、arch系的pacman也是很好的管理工具</li>
+    
+</ul>
+</ul>
+
+<h6> 为什么要用这个工具🔧?</h6>
+<ul>
+<li>不同的cpu架构要用不同的二进制文件</li>
+<li>你可以有两种方法得到某种架构(比如mips)的二进制文件</li>
+<ul>
+<li>直接下载这个架构的二进制文件</li>
+<li>下载这个软件包的源文件,自己编译⚙️</li>
+</ul>
+</ul>
+
+<h6> 但是这个得到的二进制文件还是有可能不能用</h6>
+<ul>
+<li>软件包之间是有依赖关系的</li>
+<li>这个软件包依赖的软件包不存在</li>
+<li>甚至被依赖的软件包所依赖的软件包不存在</li>
+<li>这就形成了一条链路</li>
+<li>我们需要把这条链路上所有的软件包都下载下来</li>
+</ul>
+
+<h5> 以上做法太麻烦了,我们只需要</h5>
+<ul>
+<li>使用apt把相关操作封装成接口</li>
+<li>我们直接调用apt就可以了</li>
+<li>所以叫做高级包管理工具</li>
+<li>当然你得有地方下载,这就需要镜像站.</li>
+</ul>
+
+<h4> 镜像站(mirrors)</h4>
+
+<h6> 软件包放在网络上</h6>
+<ul>
+<li>debian系的镜象列表是</li>
+<ul>
+<li>https://www.debian.org/mirror/list</li>
+<li>这里面其实对应的就是我们/etc/apt/sources.list</li>
+</ul>
+</ul>
+
+<h6> 镜像站一般也不只提供一个发行版的镜像</h6>
+<ul>
+<li>以清华镜像站为例</li>
+<ul>
+<li>https://mirror.tuna.tsinghua.edu.cn/</li>
+<li>有好多发行版</li>
+<li>点击发行版或软件包后面问号</li>
+<li>可以获得sources.list的相关清华源配置代码</li>
+    
+</ul>
+</ul>
+<img src="https://labfile.oss.aliyuncs.com/courses/2712/mirror.png" />
+
+<h6> 实验楼里面默认的是阿里源也很好用</h6>
+<ul>
+<li>我们要下载一个应用linuxlogo</li>
+<li>我先看看我设置的这些源里面有没有🤪</li>
+</ul>
+
+
+
+ 
+<h5> sources.list🗒</h5>
+
+<h6> sources.list语法是这样的</h6>
+<ul>
+<li>deb url distribution component1 component2 component3 [..] componentX</li>
+<li>deb-src url distribution component1 component2 component3 [..] componentX</li>
+<li>deb对应二进制文件</li>
+<li>deb-src对应源文件</li>
+<li>在地址后面有个版本号</li>
+<li>版本在dists(distribution)里面可以找到</li>
+<ul>
+<li>https://mirror.tuna.tsinghua.edu.cn/debian/dists/</li>
+<li>debian系列版本号都是玩具总动员中的角色</li>
+<li>ubuntu版本号来自于动物🦊</li>
+<li>main、contribute是文件夹的名字</li>
+<li>Buster版是最新的稳定版,适合拿来使用</li>
+<li>维护者维护的源头是源文件</li>
+<ul>
+<li>  有了源文件,可以编译成到各种架构的二进制文件</li>
+<li>  修改也是,先修改源文件</li>
+    
+</ul>
+</ul>
+</ul>
+<h6>各种版本的生命周期</h6>
+<img src="https://labfile.oss.aliyuncs.com/courses/2712/release-cycle.png" />
+
+
+<h5> package🎁</h5>
+<h6>软件包发布的过程生命周期</h6>
+<img src="https://labfile.oss.aliyuncs.com/courses/2712/package-lifecycle.png" />
+
+
+<code>
+#  搜索源里面有没有linuxlogo这个软件包<br/>
+apt search linuxlogo<br/>
+#  看看镜像站上面对于这个软件包的描述<br/>
+apt show linuxlogo<br/>
+#  下载安装这个软件包<br/>
+apt install linuxlogo<br/>
+</code>
+
+<ul>
+<li>search 查找到你的当前架构是否可以有这个软件包</li>
+<li>show 显示开发者 简介 大小 所在的源的位置</li>
+<ul>
+<li>我们可以apt show apt看看apt的依赖关系</li>
+<li>(A 或 B) 且 C 的关系写作 A | B, C</li>
+<li>第三条执行不下去,因为没有权限</li>
+</ul>
+</ul>
+<ul>
+<li>我怎么才能让他执行下去呢?🤔</li>
+<li>下次再说!👋</li>
+
+</ul>
+<span id="prevChapter">
+
+    
+</span>
+<a href="https://github.com/overmind1980/oeasy-linux-tutorial">参与制作</a>  <a href="http://oeasy.org/category/system/linux/shiyan.html">去做实验</a>
+<span id="nextChapter">
+</span>
+
+
+<div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到微信" class="bshare-weixin"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到QQ书签" class="bshare-qqshuqian"></a><a title="分享到复制网址" class="bshare-clipboard"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#style=-1&amp;uuid=&amp;pophcol=3&amp;lang=zh"></script><a class="bshareDiv" onclick="javascript:return false;"></a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+
+</div>
+</body>
+</html>
