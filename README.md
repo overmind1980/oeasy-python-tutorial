@@ -1,7 +1,7 @@
 - [Github地址] (https://github.com/overmind1980/oeasypython
 - [Gitee地址] (https://gitee.com/overmind1980/oeasypython)
 - [蓝桥实验楼 邀请码:MPQYCAUU] (https://www.lanqiao.cn/courses/3584)
-
+ 
 - 从零开始
     -  先跑起来
       - [先跑起来_python_三大系统选择_windows_mac_linux](./md/001-87321-先跑起来_python_三大系统选择_windows_mac_linux.sy.md)
