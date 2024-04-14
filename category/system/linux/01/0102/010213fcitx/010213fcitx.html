@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>查看内核版本uname</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="../../../tree/tree.js"></script>
+        <script type="text/javascript" src="../../../tree/init.js"></script>
+        <link href="../../../css/style.css"  rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header id="myHeader"></header>
+        <span id="leftbar">
+            <div id="SidebarClose" onclick="closeSidebar();"><</div>
+            <div id="simple-01-parent"></div>
+        </span>
+        <div id="content">
+
+
+<h3> 本章回顾</h3>
+
+<h4> 我们来回顾一下😌</h4>
+
+<h6> 上一部分我们都讲了什么?🤔</h6>
+<ul>
+<li>管道 ls | cowsay</li>
+<li>管道的符号是|</li>
+<li>管道的作用是连接</li>
+<li>原来应该输出到屏幕的内容</li>
+<li>通过管道流到了另一个命令做为参数</li>
+</ul>
+<h6> 这次是否可以让cow说出一些中文</h6>
+
+<h4>下载安装✏输入法️</h4>
+<h6>安装fxitx</h6>
+
+<code>
+sudo apt install fcitx
+</code>
+<h6> 下载搜狗🐶</h6>
+<ul>
+<li>去https://pinyin.sogou.com/linux/  下载</li>
+<li>下载之后安装软件包</li>
+</ul>
+
+
+<code>
+# 安装debian package<br/>
+sudo dpkg -i sogoupinyin_XXXX_amd64.deb<br/>
+# 如果存在冲突,进行修复或删除<br/>
+sudo apt-get -f install<br/>
+# 重启<br/>
+sudo reboot<br/>
+</code>
+
+<h4> 配置输入法⚙️</h4>
+<img src="https://labfile.oss.aliyuncs.com/courses/2712/fcitx.jpg" />
+<ul>
+<li>运行sogou</li>
+<li>在终端里面就可以输入中文了</li>
+<li>让牛作为dragon说"我会中文"</li>
+</ul>
+<img src="https://labfile.oss.aliyuncs.com/courses/2712/dragon.png" />
+
+
+
+<h5> 分析牛🐂说</h5>
+<h6> 牛说在哪?</h6>
+
+<code>
+whereis cowsay
+</code>
+
+<ul>
+<li>/usr/games/cowsay(命令的位置)</li>
+<li>/usr/share/cowsay/cow(素材的位置)</li>
+<li>动物的形象的文件都在.cow文件中</li>
+<li>比如meow.cow</li>
+</ul>
+
+
+<img src="https://labfile.oss.aliyuncs.com/courses/2712/cat.png" />
+
+
+<h5> 总结🤨</h5>
+<ul>
+<li>这次输出了中文</li>
+<li>并且找到了cowsay的图像素材的位置💡</li>
+<li>我们能否把现实世界的jpg文件变成图形文件呢?🤔</li>
+<li>下次再说!👋</li>
+</ul>
+<span id="prevChapter"></span>
+<a href="https://github.com/overmind1980/oeasy-linux-tutorial">参与制作</a>  <a href="http://oeasy.org/category/system/linux/shiyan.html">去做实验</a>
+<span id="nextChapter">
+</span>
+
+
+<div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到微信" class="bshare-weixin"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到QQ书签" class="bshare-qqshuqian"></a><a title="分享到复制网址" class="bshare-clipboard"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#style=-1&amp;uuid=&amp;pophcol=3&amp;lang=zh"></script><a class="bshareDiv" onclick="javascript:return false;"></a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+
+</div>
+</body>
+</html>

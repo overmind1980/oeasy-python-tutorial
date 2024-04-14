@@ -1,0 +1,19 @@
+﻿{
+	"name": "New project",
+	"start_url": "/index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"icons": [{
+		"src": "icon-16.png",
+		"sizes": "16x16",
+	}, {
+		"src": "icon-32.png",
+		"sizes": "32x32",
+	}, {
+		"src": "icon-128.png",
+		"sizes": "128x128",
+	}, {
+		"src": "icon-256.png",
+		"sizes": "256x256",
+	}]
+}

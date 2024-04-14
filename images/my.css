@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+*{font-family:黑体;color:#000}
+h1{font-size:100px;text-align:center;float:left; vertical-align:middle;height:100px; font-weight:600;}
+.item{width:100px;height:100px;text-align:center;vertical-align:middle;text-decoration:none;float:left;padding:3px 0;display:block;border-radius: 18px;-moz-border-radius: 18px;-webkit-border-radius: 18px; margin:6px;behavior: url(ie-css3.htc);}
+.ps{background:#56b6ff}
+.flash{background:#ff4747}
+.word{background:#0e6ac7}
+.excel{background:#75c379}
+.ppt{background:#d84612}
+.word{background:#0e6ac7}
+.tools{background:#c3c3c3}
+.html{background:#a0b932}
+.web{background:#2b7fcc}
+.circuit{background:#9bffbe}
+.win{background:#6d97e4}
+.au{background:#7ccdde}
+.tieba{background:#bfbcef;color:white;font-size:24px;}
+.zfb{background:#ddc9bb;color:white;font-size:24px;}
+.ykt{background:#9cf8c2;color:white;font-size:24px;}
+.wk{background:#ffcdc8;color:white;font-size:24px;}
+.heran{background:#9e9f53;color:white;font-size:24px;}
+h2{font-size:45px;height:50px;float:left;color:#FFF;margin:0 10 0 30px;border:0;padding:0;}
+.detail{float:left;font-size:16px;border:0;padding:0;width:120px;text-align:left;line-height:120%;margin-left:10px;}
+img{ border:0px;}
+a{color:black; text-decoration:none; border:0;}
+

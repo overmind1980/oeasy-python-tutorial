@@ -1,0 +1,14 @@
+```checker
+- name: 检查目录是否创建
+  script: |
+    #!/btn/bash
+    ls /home/shiyanlou/directory
+  error: /home/shiyanlou/directory
+  timeout: 1
+- name: 检查文件内容
+  script: |
+    #!/bin/bash
+    grep shiyanlou /home/shiyanlou/target.txt
+  error: target.txt文件中没有shiyanlou字符串
+  timeout: 2
+```

@@ -1,0 +1,315 @@
+---
+show: step
+version: 1.0
+enable_checker: true
+---
+
+
+<h3> 查看发行版distro</h3>
+
+<h4> 回忆上次内容</h4>
+
+<p>从帮助我们可以知道 name -a 可以得到全部信息</p>
+
+```shell
+uname -a
+```
+
+<p>从中,我们知道有ubuntu,他好像是一种发行版.<p>
+
+<p>那么,什么是发行版呢?<p>
+
+<h4> 什么是发行版?</h4>
+
+<p>只靠 linux内核,我们无法做任何事情,只有内核和各种应用程序在一起,我们才能使用.
+
+<p>发行版(distro)的英文原文是distribution,是内核和应用程序的集合.一个典型的Linux发行版包括：Linux内核，一些GNU程序库和工具，命令行shell,也会包含图形界面.<p>
+
+<h5> 都有哪些发行版呢?</h5>
+
+
+<h5> 发行版种类繁多</h5>
+
+<p>发行版非常多,你可以去<a href="https://distrowatch.com/">distrowatch</a>去看看各种个样的发行版的介绍!<p>
+
+<p>也可以看到当前各种发行版的排名.也可以搜索感兴趣的发行版!<p>
+
+<img src="https://labfile.oss.aliyuncs.com/courses/2712/distro_rank.png" />
+
+<h5> 我应该如何选择自己的发行版呢?</h5>
+
+<p>我们可以去内核官网,看看<a href="http://mirrors.kernel.org/">linux内核对于各种发行版的吐槽</a><p>
+
+<p>不同的发行版有不同的技能<p>
+<ul>
+<li> debian,适合系统管理和运维</li>
+<li> ubuntu 安装简单,界面友好,社区活跃.</li>
+<li> kali就适合做网络安全方面的操作</li>
+<li> deepin 国产的深度发行版,界面做的非常好看</li>
+<li> centos 服务器</li>
+<li> gentoo 深入底层,透明</li>
+</ul>
+
+<img src="https://labfile.oss.aliyuncs.com/courses/2712/tuxrardar.jpg" />
+
+
+<h6> 这里还有个网站能根据您回答问题的情况,帮您选个distro</h6>
+
+<a href="https://distrochooser.de/zh-cn/">distrochooser</a>
+
+<h6> 发行版这么多,这么乱,没有头绪啊</h6>
+
+<h6>没关系,不要着急我帮您来梳理一下...</h6>
+
+<h4> 发行版家族关系大梳理</h4>
+
+<img src="https://labfile.oss.aliyuncs.com/courses/2712/GNU_Linux_Distributions_Timeline.jpg" />
+
+<a href="https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg">原图</a>
+
+<p>这图里面内容太多了,我们再梳理一下.<p>
+
+<h5>linux发行版虽然很多,但是大体上是三大家族.</h5>
+
+<ul>
+<li> debian家族</li>
+<li> rhel家族</li>
+<li> suse家族</li>
+</ul>
+
+<img src="https://labfile.oss.aliyuncs.com/courses/2712/distro_family.jpg" />
+
+
+<p>我们分别来说一下:<p>
+
+<h4> debian家族</h4>
+<h5> debian['dɛbɪən]</h5>
+<p><a href="https://www.debian.org/">debian</a>是免费发行版,1993.12月第一次出现.Ian Murdock依据他女朋友的名字 Debra Lynn和他自己的名字,最终叫做“Debian”.<p>
+
+<p>各版本代号来自于玩具总动员中的角色.<p>
+
+<p>Debian是一个独立的组织,Debian组织着5万个以上的软件包和320百万行代码,各种项目的负责人是选出来的.<p>
+
+<p>支持的cpu指令集架构也多,比如中科院华为阿里押宝的risc-v,比如龙芯兼容的mips<p>
+
+<p>下图是他下载cd的截图.<p>
+
+<img src="https://labfile.oss.aliyuncs.com/courses/2712/debian_architecture.png" />
+
+
+<h5> ubuntu 和 mint</h5>
+<h6> ubuntu</h6>
+
+<p>其名称来自非洲南部祖鲁语或豪萨语的“ubuntu"一词，意思是“人性”“我的存在是因为大家的存在"，是非洲传统的一种价值观。<p>
+
+<p>发作“oo-boon-too”的音,如果你喜欢添加一些非洲撒哈拉的味道，你可以在第一个"u"，後面带些嗡嗡声：oom-boon-too。<p>
+
+<p>ubuntu是Canonical公司在debian稳定版(stable)基础上做出的发行版.私营公司做开源软件为什么许的呢?<p>
+
+<p>开源和商业并不是非黑即白的.<p>
+
+<h6> Canonical公司的现金主要来源于</h6>
+
+<ul>
+<li> 服务器集群管理工具Landscape的服务支持</li>
+<li> oem设备的预装系统费用</li>
+<li> ubuntu软件中心的付费位</li>
+<li> 代码托管平台launchpad.net服务费用</li>
+<li> 亚马逊云的相关广告</li>
+<li> ubuntu手机预装软件收费</li>
+<li> <a href="https://sourceforge.net/projects/uck/">甚至CD包内容都可以自己定制]</a>
+<ul>
+
+<p>ubuntu 是非常流行的发行版,整体上来说善于推广,比较讨巧.<p>
+
+<h6> mint</h6>
+<p>mint是基于ubuntu的,ubuntu是基于debian的,所以...mint很年轻.
+mint也是长期霸榜的存在,收入主要靠t恤和赞助.<p>
+
+
+<h6>你想过做自己的发行版吗?</h6>
+<p>从哪个发行版衍生呢?<p>
+
+<h5>Deepin深度</h5>
+
+<h6> 优点</h6>
+
+<ul>
+<li> 好看，特效非常好，渲染的也非常棒</li>
+<li> 贴合国人的使用习惯，有专门的软件商店，轻松安装QQ、搜狗输入法、WPS等</li>
+<li> 也曾常年前十,靠得住,爱酷炫界面人士可以用</li>
+<li> 仓库从ubuntu切换到了debian,稳定</li>
+</ul>
+
+<h6> 缺点</h6>
+<ul>
+<li> 图形效果需要cpu内存</li>
+<li> 被眼睛迷住,忘了其实linux的最关键的是命令行</li>
+</ul>
+<h6> 公司背景</h6>
+<p>这个发行版背后的公司是武汉深之度科技有限公司,成立于2011年，是专注基于Linux的操作系统研发与服务的商业公司，公司的主要产品为深度操作系统。<p>
+
+<p>诚迈科技和原来的深之度(股权由星辉360、深度、绿盟等控制)合成了新公司.
+感觉资金很多,希望能做出好东西.<p>
+
+
+
+<h5> kali</h5>
+<p>Kali 是一个基于 Debian 的 Linux 发行版。<p>
+<li> 他在debian的基础上装了好多工具,把你的笔记本变成一黑客工具.</li>
+<li> kali可以有效的学习相关知识,不过要小心!</li>
+<li> kali用的好,牢饭吃到饱.</li>
+
+<h4> red hat家族rhel</h4>
+
+<p>Rhel是最早的商业发行版1994出现,99年上市,首日收益历史第八,2012年10亿美元回报,在商用服务器上使用非常多,centos、fedora、mandriva等免费发行版都基于rhel企业版收费版的.<p>
+
+<p>免费版还能基于收费版?<p>
+
+<p>我们来一个个看看:<p>
+
+<h5>fedora</h5>
+
+<h6> fedora是rhel的实验室</h6>
+<ul>
+<li> 学了fedora就等于学了rhel</li>
+<li> 各种靠谱不靠谱的功能都往上招呼</li>
+<li> 你可充分的尝鲜</li>
+<li> 社区很强大</li>
+</ul>
+<p>fedora一直沿着开源思想之路发展，开放、测试、改进.<p>
+<p>最终稳定下来、靠得住的新特性的进入rhel。<p>
+
+<h5>rhel</h5>
+
+<h6> 红帽的名字跟它的创始人有关，它的创始人Marc Ewing在cmu读书的时候，就以在校园里面帮人解决linux问题而闻名，所以当时cmu校园里面流传着一句话，遇到了linux问题，就去找那个戴着红帽子的人来解决.</h6>
+
+<p>MarcEwing和Bob Young一起创建了自己的Linux发行版，并将其命名为红帽.<p>
+
+<img src="https://labfile.oss.aliyuncs.com/courses/2712/redhat.jpg" />
+
+<h6> 红帽的共享</h6>
+<ul>
+<li> 红帽技术很强,对各种开源技术贡献都很大</li>
+<li> 对于内核有很大贡献</li>
+<li> 用商业推动各种硬件的linux驱动</li>
+<li> 红帽加入RISC-V基金会</li>
+<li> 红帽有个认证,这个对于从业人员是一个说法</li>
+<li> 各种教材资料也特别多</li>
+</ul>
+
+<p>红帽工作时间可以答疑的那种标准服务799美元一年,高级会员1299美元一年.<p>
+
+<p>当然还有更厉害的企业级别的合作,总之红帽年收入超过 20 亿美元.<p>
+
+<p>Rhel是最早的商业发行版1994出现,99年上市,首日收益历史第八,2012年10亿美元回报,在商用服务器上使用非常多.<p>
+
+<p>红帽市值非常高已经被ibm的340亿所收购.<p>
+
+<p>Linux发行版本身是没法收费的——因为根据GPL协议你必须公开源代码，你收费了，别人直接拿源代码自己编译一个用就完了。centos就是编译之后的rhel<p>
+
+
+<h5> centos</h5>
+
+<h6> 把开源软件rhel编译之后形成的东西,在做成一个发行版就是centos.</h6>
+<ul>
+<li> centos都是在对应版本的rhel出来后隔段时间才出的。</li>
+<li> centos的代码与rhel完全一致</li>
+<li> 只是修改为符合开源协议的版本，以及修改发行版名称和源等内容-</li>
+<li> 把收费的组件和客户的支持都去掉了</li>
+</ul>
+<h6> 国内云服务器对centos支持很好</h6>
+<ul>
+<li> 国内的云服务器centos数量居多.</li>
+<li> 对于运维人员的培训,centos居多</li>
+</ul>
+<p>centos影响力太大,红帽把他收了.里面有什么交易不知道,反正centos加入了红帽公司.<p>
+
+<p>centos作为免费的基础部分,获得大量用户基础和好评.为rhel占下市场份额.这样的话,centos和rhel越来越一致也就很正常了.<p>
+
+<h4> Suse家族</h4>
+
+<h5> Suse[ˈsuːsə]</h5>
+
+<h6> Suse是德国 SuSE Linux AG公司发行维护的Linux发行版，是属于此公司的注册商标。第一个版本出现在1994年年初。2004年这家公司被Novell公司收购。</h6>
+<ul>
+<li> SUSE最早基于slackware,后来就不是了</li>
+<li> 公司位于德国</li>
+<li> 代码严谨,质量高.</li>
+<li> 华为、中兴、腾讯背书</li>
+<li> 不太重视中国市场</li>
+</ul>
+<h6>opensuse是SuSE的社区版本.</h6>
+
+<h5>Distro hop </h5>
+
+<h6>来做个Distro hop </h6>
+
+<p>Distro hop 是指 折腾Distro来玩的人<p>
+
+<p>您可以直接在<a href="https://distrotest.net/">DestroTest</a>,开一个虚拟机,直接跑各种各样的发行版.<p>
+
+
+<h5>除此之外还有非标准的linux</h5>
+<ul>
+<li> Google的安卓</li>
+<li> 三星的Tizen</li>
+<li> Ubuntu touch</li>
+<li> Lg的webos</li>
+<li> Firefox OS</li>
+</ul>
+<h5> 也还有其他类unix(unix-like)系统</h5>
+<ul>
+<li> Unix</li>
+<li> Bsd</li>
+<li> Solaris</li>
+</ul>
+<p>那我们怎么才能知道当前发行版的版本呢?<p>
+
+<h4> 最后我们来试一下看一下当前发行版的版本号</h4>
+
+<h5> 首先要知道发行版的版本号在哪里</h5>
+
+```shell
+ls 
+```
+
+<p>ls就是list命令,列出当前目录下有什么.<p>
+
+```shell
+ls /etc/*release
+```
+
+<ul>
+<li> ls是list命令的缩写</li>
+<li> /etc/*release 是ls命令的参数</li>
+    <ul>
+ <li> /是整个文件目录的根(root)下</li>
+ <li> /etc是根(root)下的etc文件夹下</li>
+ <li> /etc/*release是根(root)下的etc文件夹下的所有以release结尾的文件</li>
+ </ul>
+<li> 这条命令就是列出根(root)下的etc文件夹下的所有以release结尾的文件</li>
+</ul>
+
+<img src="https://labfile.oss.aliyuncs.com/courses/2712/release.png" />
+
+<p>我们可以发现有两个文件<p>
+<ul>
+<li>   /etc/lsb-release</li>
+<li>   /etc/os-release</li>
+ </ul>
+<h5> 然后我们要看这些文件里面的内容</h5>
+
+```shell
+cat /etc/*release
+```
+
+<ul>
+<li> cat是concatenate的命令的缩写</li>
+<li> /etc/*release是参数,指的是根(root)下的etc文件夹下的所有以release结尾的文件</li>
+<li> 整个命令是要把根(root)下的etc文件夹下的所有以release结尾的文件内容拼合输出</li>
+</ul>
+
+<p>这样我们就知道当前发行版的版本了.<p>
+
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>查看内核版本uname</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="../../../tree/tree.js"></script>
+        <script type="text/javascript" src="../../../tree/init.js"></script>
+        <link href="../../../css/style.css"  rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header id="myHeader"></header>
+        <span id="leftbar">
+            <div id="SidebarClose" onclick="closeSidebar();"><</div>
+            <div id="simple-01-parent"></div>
+        </span>
+        <div id="content">
+
+
+<h3> 本章回顾</h3>
+
+<h4> 我们来回顾一下😌</h4>
+
+<h6> 上一部分我们都讲了什么?🤔</h6>
+<ul>
+<li>下载安装✏输入法️</li>
+<li>输出中文</li>
+<li>找到cowsay的图形位置</li>
+<li>我们还想把一些画面变成字符画</li>
+</ul>
+
+
+<h5> 下载aview🅰️</h5>
+<ul>
+<li>字符画软件包aview、imagemagick</li>
+</ul>
+
+<code>
+sudo apt install aview<br/>
+sudo apt install imagemagick<br/>
+</code>
+<ul>
+<li>aview只接受专门的格式</li>
+<li>使用asciiview可以转化格式</li>
+<li>bmp格式更容易被接受⚠️</li>
+</ul>
+
+<code>
+asciiview panda.jpg
+</code>
+
+<img src="https://labfile.oss.aliyuncs.com/courses/2712/asciiview.png" />
+
+<h5>存储字符画</h5>
+<ul>
+<li>通过查询帮助📕,发现字符画可以保存</li>
+<li>可以把字符画保存为文本、网页等形式</li>
+<li>快捷键是s,然后一路下一步</li>
+<li>最后存在工作文件夹pwd</li>
+</ul>
+
+
+<img src="https://labfile.oss.aliyuncs.com/courses/2712/saveImage.png" />
+
+
+
+<h5> 结合cowsay🐄</h5>
+<code>
+#  在确认cowsay已经安装的情况下<br/>
+cd /usr/share/cowsay/cows<br/>
+#  复制一个cow文件<br/>
+sudo cp apt.cow oeasy.cow<br/>
+# 是用编辑器编辑<br/>
+sudo gedit oeasy.cow ~/Code/ooo.txt <br/>
+</code>
+<ul>
+<li>把原来的字符画删除</li>
+<li>配合上自己的字符画</li>
+<li>然后输出</li>
+</ul>
+
+<img src="https://labfile.oss.aliyuncs.com/courses/2712/ooo.png" />
+
+<h5> 总结🤨</h5>
+<ul>
+<li>把图像转化为了ascii🅰️字符画</li>
+<li>并且修改了cowsay的图像素材的位置💡</li>
+<li>我们能让cowsay随机讲讲笑话吗?</li>
+<li>下次再说!👋</li>
+</ul>
+<span id="prevChapter">
+</span>
+<a href="https://github.com/overmind1980/oeasy-linux-tutorial">参与制作</a>  <a href="http://oeasy.org/category/system/linux/shiyan.html">去做实验</a>
+<span id="nextChapter">
+</span>
+
+
+<div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到微信" class="bshare-weixin"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到QQ书签" class="bshare-qqshuqian"></a><a title="分享到复制网址" class="bshare-clipboard"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#style=-1&amp;uuid=&amp;pophcol=3&amp;lang=zh"></script><a class="bshareDiv" onclick="javascript:return false;"></a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+
+</div>
+</body>
+</html>

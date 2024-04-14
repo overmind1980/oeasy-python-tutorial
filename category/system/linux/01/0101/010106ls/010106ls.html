@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>查看内核版本uname</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="../../../tree/tree.js"></script>
+        <script type="text/javascript" src="../../../tree/init.js"></script>
+        <link href="../../../css/style.css"  rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header id="myHeader"></header>
+        <span id="leftbar">
+            <div id="SidebarClose" onclick="closeSidebar();"><</div>
+            <div id="simple-01-parent"></div>
+        </span>
+        <div id="content">
+
+
+<h3> 这儿都有啥ls</h3>
+
+<h4> 回忆上次内容😌</h4>
+
+
+<p> 上次查了ls的手册</p>
+
+<code>
+man ls
+</code>
+
+
+<ul>
+<li>感觉好长😓</li>
+<li>不要着急慢慢读🤫</li>
+<li>你得熟悉命令行的生活方式🤗</li>
+</ul>
+
+<h5> 为什么要用命令行查询?🤔</h5>
+
+<p> 我在图形界面(GUI)里面查询不是很方便吗?🤔</p>
+
+<img src="https://labfile.oss.aliyuncs.com/courses/2712/gui1.png" />
+
+<ul>
+<li>我们并不排斥使用GUI(Graphic User Interface)</li>
+<li>但是我们得明白CLI(Command Line Interface)是根本</li>
+</ul>
+<h5> 我们来看看ls的细节</h5>
+<img src="https://labfile.oss.aliyuncs.com/courses/2712/man_ls" />
+
+
+<ul>
+<li>第一条参数 -a</li>
+<li>他说不忽略以"."开始的</li>
+<li>linux中以"."开始的文件和文件夹是隐藏的</li>
+<li>如果不忽略以"."开始的,就是全都(all)显示的意思吧?!🤠</li>
+<li>我们来试试👉</li>
+
+</ul>
+<code>
+ls -a
+</code>
+
+
+
+<ul>
+<li>这下我们看到隐藏文件(以"."开头的)了!✌</li>
+<li>但是这些文件堆在一起</li>
+<li>看不到更多细节</li>
+<li>想看到大小、日期等细节怎么办呢?🤔</li>
+</ul>
+ 
+<h5> 列表 选项 -l</h5>
+<ul>
+<li>通过查询手册我们发现了 -l这个参数</li>
+<li>l的意思是list</li>
+<li>这个参数可以以列表方式查询文件</li>
+<li>快去试试</li>
+</ul>
+
+
+<code>
+ls -l
+</code>
+
+
+
+<ul>
+<li>我们确实可以以列表的方式查看文件</li>
+<li>但是我们看不见隐藏文件了😤</li>
+<li>我想</li>
+<li>既能看到隐藏文件</li>
+<li>又使用列表方式</li>
+<li>应该怎么办呢?🤔</li>
+
+</ul>
+
+<code>
+ls -l -a
+</code>
+<p> 或者</p>
+
+<code>
+ls -a -l
+</code>
+
+<p> 我们还可以把两个开关合并到一起</p>
+
+<code>
+ls -al<br/>
+ls -la<br/>
+</code>
+
+
+<h5> 还有什么开关吗?🤔</h5>
+
+<p> 选项-h,指的是人类可读</p>
+<ul>
+<li>原来的文件大小使用的是字节数量</li>
+<li>字节数量不利于阅读</li>
+<li>人们可以使用k,m,g,t等存储容量单位来观察了</li>
+<li>h的意思是 Human Readable</li>
+</ul>
+
+<code>
+ls -h
+</code>
+<ul>
+<li>并没有反应?!😱</li>
+<li>因为这里只显示文件名</li>
+<li>只有在列表模式下,才显示大小!!!👊</li>
+<li>所以我们-lh两个开关要一起用</li>
+</ul>
+
+<code>
+ls -lh
+</code>
+
+<h5> 递归查询文件</h5>
+
+<p> -R开关可以递归地查询子文件下的内容</p>
+
+<ul>
+<li>不但查询文件夹里面有什么</li>
+<li>就连子文件夹下面的东西也不放过</li>
+<li>R是大写的,对应Recuisive,意思是递归</li>
+<li>我们来试试</li>
+</ul>
+
+
+
+<code>
+ls -R
+</code>
+
+<p>好多文件啊</p>
+
+<ul>
+<li>我们可以使用终端的滚轮上下翻页</li>
+<li>我们可以加上这个参数 /etc</li>
+<li>也就是说要对/etc下面的文件递归地列表</li>
+</ul>
+
+
+
+<code>
+ls -R /etc
+</code>
+
+<ul>
+<li>ls是命令,起决定作用,决定这次是列表操作</li>
+<li>-R是参数,是一个开关,要把子文件夹也都翻遍</li>
+<li>/etc是参数,是ls执行的对象,就在这个文件夹里面翻</li>
+</ul>
+
+<h5> 进一步,再深入</h5>
+<ul>
+<li>如果我想要对/etc执行的ls操作</li>
+<li>不但要递归查询</li>
+<li>而且要列表</li>
+<li>不但要列表而且要用人类可读的方式列表</li>
+<li>而且还要显示出隐藏文件</li>
+<li>这个应该怎么写呢?🤔你自己试试吧</li>
+</ul>
+
+
+
+
+
+
+<span id="prevChapter">
+</span>
+<a href="https://github.com/overmind1980/oeasy-linux-tutorial">参与制作</a>  <a href="http://oeasy.org/category/system/linux/shiyan.html">去做实验</a>
+<span id="nextChapter">
+</span>
+
+
+<div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到微信" class="bshare-weixin"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到QQ书签" class="bshare-qqshuqian"></a><a title="分享到复制网址" class="bshare-clipboard"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#style=-1&amp;uuid=&amp;pophcol=3&amp;lang=zh"></script><a class="bshareDiv" onclick="javascript:return false;"></a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+
+</div>
+</body>
+</html>

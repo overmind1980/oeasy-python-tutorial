@@ -1,0 +1,74 @@
+*,body{
+    margin:0;
+    padding:0;
+    background-color: #d9bf9a;
+    text-align: center;
+}
+
+h1,div{
+    text-align: center;
+    font-size:36px;
+}
+
+.column{
+    background-color: #d9bf9a;
+    float:left;
+    background-image: url(images/ds.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity:0;
+}
+
+.row{
+    clear:both;
+}
+
+#playground{
+    margin:0 auto;
+}
+
+#boom{
+    z-index: 2;
+    position:absolute;
+    width:100px;
+    height:100px;
+    background:url('images/boom.png');
+    display: none;
+}
+
+
+.ShowMouse{
+    animation-name: show;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show
+{
+    0%   {opacity:0;}
+    100% {opacity:100;}
+}
+
+@-webkit-keyframes show /* Safari ºÍ Chrome */
+{
+    0%   {opacity:0;}
+    100% {opacity:100;}
+}
+
+.HideMouse{
+    animation-name: hide;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hide
+{
+    0%   {opacity:100;}
+    100% {opacity:0;}
+}
+
+@-webkit-keyframes hide /* Safari ºÍ Chrome */
+{
+    0%   {opacity:100;}
+    100% {opacity:0;}
+}
