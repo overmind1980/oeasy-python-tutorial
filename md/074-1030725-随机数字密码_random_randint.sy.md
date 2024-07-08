@@ -98,7 +98,7 @@ enable_checker: true
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20211103-1635946258321)
 
 - 现在左右翻页也很麻烦
-- 还在行尾添加`\`续行符
+	- 还在行尾添加`\`续行符
 
 ```
 import random

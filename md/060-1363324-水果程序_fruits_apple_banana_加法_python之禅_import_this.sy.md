@@ -8,38 +8,36 @@ enable_checker: true
 
 ## 回忆上次内容
 
-- 上次研究了 一行赋值多个变量
-	- a = b = 5
-	- a, b = 7, 8
-- 还研究了 标识符的惯用命名法
-	- python使用的是
-		- snake_case 
-			- 是蛇形命名法
-			- 是 用下划线 分隔开小写字母的 命名方法	
-		- 这样就可以 更合理地 命名变量了
+- 上次研究了 变量名的命名
+	- 最好用 英文单词的 蛇形命名法
+	- 中文拼音 的 蛇形命名法 也行
+	- 纯中文 变量名 不推荐
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231203-1701612939193)
 
-- 我们可以做一个像样点的程序吗？？🤔
+- 我们可以做个
+	- 大一点的程序吗？？🤔
 
 ### 编写程序fruit.py
 
+- 编辑 fruit.py
+
 ```python3
 a = input("How many apples do you have?\n")
-print("You got " + a + " apples!")
+print("You have " + a + " apples!")
 ```
 
 - 运行结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231126-1701004195119)
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240326-1711445892006)
 
-- 除了输入苹果数量之外
-	- 我还想要输入一个香蕉数量
-		- 并付给变量b
+- 除了 输入苹果数量之外
+	- 还想 输入香蕉数量
+	- 并 赋给变量b
 
 ### 照猫画虎
 
-- 想再来个变量b
+- 再来个变量b
 - 在正常模式下键入
 	- `:1,2t2`
 	- :1,2
@@ -51,25 +49,53 @@ print("You got " + a + " apples!")
 
 - 然后修改
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231126-1701004328543)
+### 尝试替换
 
+- `:3,4s/a/b/gc`
+	- ` 3,4s` 在3、4行中替换
+	- `/a/b/` 将a替换为b
+	- `g` 一行不止替换一次
+	- `c `每次确认 comfirm
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240326-1711446012296)
+
+- 每次确认 是否替换
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240326-1711446782014)
+
+### 再次替换
+
+- `:3,4s/apples/bananas/`
+	- ` 3,4s` 在3、4行中替换
+	- `/apples/bananas/` 
+		- 将apples替换为bananas
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240326-1711446854457)
+
+- 替换结果
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240326-1711446909912)
 
 ### 运行起来
 
+- 运行成功
+
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230517-1684314667203)
 
-- 运行成功
-- 还想要对数量做个汇总
+- 还想要对数量
+	- 做个汇总
 
 ### 汇总函数
 
+- 用加法汇总
+
 ```python3
 a = input("How many apples do you have?\n")
-print("You got " + a + " apples!")
+print("You have " + a + " apples!")
 b = input("How many bananas do you have?\n")
-print("You got " + b + " bananas!")
+print("You have " + b + " bananas!")
 total = a + b
-print("You got " + total + " fruits!")
+print("You have " + total + " fruits!")
 ```
 
 - 保存并运行
@@ -77,7 +103,7 @@ print("You got " + total + " fruits!")
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231126-1701004440429)
 
 - 2 + 3 = 23
-	- 就非常离谱了
+	- 就非常离谱了……
 
 ### 深入调试
 
@@ -89,7 +115,7 @@ print("You got " + total + " fruits!")
 
 ### 基本实验
 
-- 在vim中执行底行命令
+- 在vim中执行 底行命令
 	- :!python3 
 		- 注意这次没有 % 指代 当前缓存
 		- 直接进入游乐场
@@ -125,23 +151,32 @@ print("You got " + total + " fruits!")
 
 ```python3
 a = input("How many apples do you have?\n")
-print("You got " + a + " apples!")
+print("You have " + a + " apples!")
 b = input("How many bananas do you have?\n")
-print("You got " + b + " bananas!")
+print("You have " + b + " bananas!")
 total = int(a) + int(b)
-print("You got " + total + " fruits!")
+print("You have " + total + " fruits!")
 ```
 
 - 运行结果
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231126-1701004698938)
 
+### TypeError
+
 - 类型错误
 	- TypeError
 	- 字符串 和 整数 无法相加
 
+```
+"You have " + 3 
+```
+
+- 无法相加
+
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231125-1700878028240)
 
+- 如何修改？
 
 ### 转化函数
 
@@ -152,8 +187,13 @@ print("You got " + total + " fruits!")
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221029-1667042052812)
 
-- 好了
-	- 思路有了
+- 得到了整型数字 相加后
+	- 需要再转回 字符串类型
+
+```
+str(3)
+```
+
 - <kbd>ctrl</kbd> + <kbd>d</kbd> 退出游乐场
 	- 返回vim
 	- 整合到原来的 py 程序中吧
@@ -162,11 +202,11 @@ print("You got " + total + " fruits!")
 
 ```python3
 a = input("How many apples do you have?\n")
-print("You got " + a + " apples!")
+print("You have " + a + " apples!")
 b = input("How many bananas do you have?\n")
-print("You got " + b + " bananas!")
+print("You have " + b + " bananas!")
 total = int(a) + int(b)
-print("You got " + str(total) + " fruits!")
+print("You have " + str(total) + " fruits!")
 ```
 
 - 运行结果
@@ -181,6 +221,9 @@ print("You got " + str(total) + " fruits!")
 
 - plicare是
 	- 拉丁语词根折叠
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240326-1711447835512)
+
 - ex往外折叠
 	- explicit 
 		- 展开了
@@ -222,10 +265,10 @@ print("You got " + str(total) + " fruits!")
 	- 两边应该是同样类型的
 - 明了胜于晦涩
 	- 这句话确实
-		- 真有禅机
+	- 真有禅机
 
 - 这 python之禅 还说了些什么？
-	- 这些都是谁写的呢？
+	- 这些禅语 都是`谁`写的呢？
 
 ### python 之禅
 
@@ -268,11 +311,11 @@ print("You got " + str(total) + " fruits!")
 ```python3
 try:
     a = input("How many apples do you have?\n")
-    print("You got " + a + " apples!")
+    print("You have " + a + " apples!")
     b = input("How many bananas do you have?\n")
-    print("You got " + b + " bananas!")
+    print("You have " + b + " bananas!")
     total = int(a) + int(b)
-    print("You got " + str(total) + " fruits!")
+    print("You have " + str(total) + " fruits!")
 except ValueError:
     print("your input is invalid!")
     quit()
@@ -369,9 +412,9 @@ except ValueError:
 	- 整个程序运行正常
 
 
-- 可以把这程序拆分成
+- 可以把这程序`拆分`成
 	- 输入 和 输出
-	- 两个部分吗？
+	- `两个`部分吗？
 - 然后用import的方式导入模块？🤔
 - 我们下次再说👋
 

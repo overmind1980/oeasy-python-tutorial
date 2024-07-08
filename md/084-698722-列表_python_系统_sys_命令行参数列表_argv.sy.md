@@ -23,23 +23,33 @@ enable_checker: true
 	- 默认参数是pwd
 	- 当前文件夹
 
-
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231203-1701597008874)
 
-- ls后面加空格可以增加参数
-	- ls命令 
-		- 加上参数Desktop
-	- 查询 当前用户的桌面上 有什么
+- 可以查询到当前目录下有三个文件夹
+	- Code
+	- Desktop
+	- golang
+
+### 增加参数
+- ls 后面加空格 可以增加参数
+- ls命令 
+	- 后面 加上一个参数
+		- Desktop
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231203-1701597093601)
 
-- ls命令 还可以
-	- 加上参数golang
-	- 查询golang文件夹下有什么
+- 查询 Desktop文件夹下 有什么
+
+- ls命令 后面还可以
+	- 加上 两个参数
+		- Desktop
+		- golang
 
 ### ls命令配合多个参数
 
-- ls命令 可以有多个参数
+- 分别查询两个文件夹
+	- 先查询 Desktop 下内容
+	- 再查询 golang 下有什么
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231203-1701597201851)
 
@@ -48,8 +58,11 @@ enable_checker: true
 
 ### 参数
 
-- python3命令 也可以有参数
-	- 首先是要执行的py文件
+- python3命令 
+	- 后面也可以跟参数
+- 首先的参数 
+	- 就是要执行的py文件
+	- 比如下面的命令
 
 ```
 python3 test.py
@@ -61,43 +74,55 @@ python3 main.py
 	- 也可以运行 main.py
 - test.py 或者 main.py 就是 
 	- python3 命令的参数
-- 那python3命令也可以有多个参数吗？
+- 那python3命令
+	- 也可以 有`多`个参数吗？
 
 ### 多个参数
-
-```
-python3 write.py oeasy.txt
-```
 
 - python3命令 有两个 参数
 	- write.py
 	- oeasy.txt
 
 ```
-python3 shopping.py apple 3
+python3 write.py oeasy.txt
 ```
-- python3 命令有两个参数
-	- 一个是水果名字
-	- 另一个是水果数量
+
+- 可以编写write.py内容
+	- 然后 在命令行中 
+	- 指定输出文件名
+		- oeasy.txt 
+
+### 销售苹果
+
+- 我想做一个水果销售的程序
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240201-1706796341782)
+
+- 命令行中告诉我
+	- 水果
+	- 数量
+- 我来计算结果
 
 ```
+python3 shopping.py apple 3
 python3 shopping.py banana 5
 ```
 
-- 参数也可以是不同的水果名字和数量
 - 这种参数有什么意义吗？
 
 ### 参数的意义
 
-- 比如 我要计算苹果或者香蕉总量的价格
-	- 那原来 需要把 这个苹果和香蕉的数量
-		- 在py文件中写死
-	- 然后执行
+- 比如 我要
+	- 计算苹果或者香蕉总量的价格
+- 原来 需要把 这个苹果和香蕉的数量
+	- 在py文件中修改
+	- 保存之后再执行
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231203-1701598564639)
 
-- 但是 如果现在用我用的是参数
-	- 可以在命令行上动态地将参数传递给py文件
+- 但是 现在 通过使用命令行 参数
+	- 可以在命令行上
+	- 动态地将 参数传递给 py文件
 
 ```
 python3 shopping.py apple 5
@@ -112,7 +137,8 @@ python3 shopping.py banana 6
 - 或者计算6根香蕉的价格
 - 那我在py文件中
 	- 如何得到系统shell中 
-	- 给python3的参数呢？
+	- 传给python3的参数呢？
+- 搜索帮助
 
 ### 搜索
 
@@ -122,14 +148,31 @@ python3 shopping.py banana 6
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220211-1644561939723)
 
+- 需要引入sys包
+	- 并使用sys.argv来接受参数
+- 来看看这个
+	- sys.argv 具体是什么
+
 ### python程序
+
+- 直接输出
+	- sys.argv
 
 ```
 import sys
 print(sys.argv)
 ```
 
-- 尝试运行
+- 回忆 % 含义
+	- % 代表着 当前vim所编辑的缓存
+	- !python3 % 就相当于
+	- 在shell 运行下面这个命令
+
+```
+python3 shopping.py
+```
+
+### 尝试运行
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240101-1704109875117)
 
@@ -137,38 +180,52 @@ print(sys.argv)
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240101-1704109908883)
 
-- 输出了一个参数列表
-	- 列表中只有一个列表项
-	- 就是当前文件的文件名
-- 如果给他更多参数呢？
+- 输出了 参数列表
+	- 列表中 只有一个列表项
+	- 就是 当前文件的文件名
+- 如果 给他更多 参数呢？
 
 ### 更多参数
 
+- w|!python3 % apple 5
+	- % 代表当前文件缓存
+	- 即是 shopping.py
+
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240101-1704110019316)
+
+- 完整命令为
+
+```
+python3 shopping.py apple 5
+```
 
 - 运行结果
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240101-1704110032710)
 
-- 可以查询帮助吗？
+- 可以 查询帮助吗？
 
 ### 帮助文档
-
-- 去游乐场
 
 ```
 import sys
 help(sys)
 ```
 
-- 查询结果
+- 去游乐场
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240301-1709255412951)
+
+### 查询结果
+
+- 能看到
+	- argv是个 sys模块中的 列表
+	- 列表项 是个空串
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221115-1668499652394)
 
-- 只能看到argv
-	- 是个sys模块中的列表
-	- 列表项为一个空字符串
-- 可以操控这个列表吗？
+
+- 可以操控 这个列表吗？
 
 ### python程序 
 
@@ -184,7 +241,8 @@ print(args)
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240101-1704110338209)
 
-- 可以去掉shopping.py吗？
+- 可以去掉
+	- 列表中的shopping.py 吗？
 
 ### python程序
 
@@ -201,9 +259,18 @@ print(args)
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240101-1704110395075)
 
-- 可以让这个程序根据外部的参数来运算吗？
+- 可以让这个程序
+	- 根据 参数来 运算吗？
 
-### 修改程序
+### 计划流程
+
+- 不要翻页
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240201-1706797266451)
+
+- 试着写出程序
+
+### 完成程序
 
 ```
 import sys
@@ -220,6 +287,11 @@ else:
     print("There is no price of",fruit)
 ```
 
+- :wq 
+	- 从python3 退回到 shell
+- 带参数运行
+	- python3 shopping.py apple 30
+	- python3 shopping.py orange 130
 - 运行结果
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240101-1704110830663)
@@ -252,8 +324,10 @@ else:
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240101-1704111222477)
 
-- 但是调用实际过程中
-	- 参数可能给
-	- 也可能没给
-- 这可怎么办呢？?🤔
+- 但是 调用实际过程中
+	- 参数 可能给了
+	- 也可能没给！
+- 万一程序里需要给外部参数
+	- 但实际上没有给
+	- 这可怎么办呢？?🤔
 - 下次再说 👋

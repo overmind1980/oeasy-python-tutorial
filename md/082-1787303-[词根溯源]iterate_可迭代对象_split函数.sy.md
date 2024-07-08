@@ -32,39 +32,38 @@ enable_checker: true
 
 ### 构造环境
 
+- 首先要
+	- 写一个oeasy.txt
+
 ```txt
 oeasy
 o2z
 o3z
 ```
 
-- 写一个oeasy.txt
+- 写完之后保存并退出
+
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231227-1703684992028)
 
-- 具体怎么读写这个文件呢？
+- 具体怎么读取这个文件呢？
 
 ### 文件
 
 ```python
 with open("oeasy.txt") as f:
-    lines = f.readlines()
-    print(type(lines))
-    print(lines)
     l = list(f)
-    print(type(lines))
-    print(lines)
+    print(type(l))
+    print(l)
 ```
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221115-1668478997139)
+- 保存并运行 结果
 
-- 运行结果
-
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221115-1668479007016)
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240112-1705021405854)
 
 - 为什么文件f、字符串、range函数返回的结果
-	- 都是列表类型的呢？
-- 究竟应该如何理解列表呢？
+	- 都可以转化为 列表类型呢？
+- 究竟应该如何理解 列表类型 呢？
 
 ### 查看说明文档
 

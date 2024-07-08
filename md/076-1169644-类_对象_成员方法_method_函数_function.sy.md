@@ -10,11 +10,9 @@ enable_checker: true
 
 - 上轮实验内容比较杂
 	- 类型转化
-	- 进制转化
 	- 捕获异常
 	- 版本控制
 	- 生成帮助文档
-	- 变量的常用类型
 
 - 数据类型主要研究了两个
 	- 字符串
@@ -24,6 +22,7 @@ enable_checker: true
 
 - 字符串型 和 整型数字型变量 
 	- 是可以相互转化的
+
 - 加法运算逻辑 会根据操作变量的不同 而不同
 	- 整型变量的加法 是真的加
 	- 字符串的加法 是字符串拼接
@@ -70,17 +69,20 @@ enable_checker: true
 	- 也是橘子类(orange class)的
 		- 另一个实例对象 
 
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240523-1716470725968)
+
 ### 汽车
 
 - 汽车
 	- 是一个抽象的
 		- 类型 
 		- class
-- 具体的汽车
-	- 是隶属于汽车类(car class)的
-		- 一个实例对象 汽车乙
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231113-1699884181668)
+
+- 具体的汽车
+	- 是隶属于汽车类(car class)的
+	- 一个实例对象 汽车乙
 
 ### class
 
@@ -122,6 +124,13 @@ help(int)
 - s1、s2是str类的 
 	- 实例对象
 	- instance object
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240523-1716471610393)
+
+- str 是另一种类型
+	- 不同于 int
+
+### 查询帮助
 
 ```
 help(str)
