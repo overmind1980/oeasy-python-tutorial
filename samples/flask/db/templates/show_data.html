@@ -1,0 +1,109 @@
+{{pages}} {{current_page}}
+{{page_size}}
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	function delete_user(name){
+		f = document.getElementById("f");
+		u = document.getElementById("d_un");
+		u.value = name;
+		f.action = "/del_user";
+		f.submit();
+	}
+    function change_order(){
+		f = document.getElementById("search");
+		u = document.getElementById("user_order");
+        if (u.value == "desc"){
+            u.value = "asc"
+        }
+        else{
+            u.value = "desc"
+        }
+		f.submit();
+    }
+	function change_page(page){
+		f = document.getElementById("search");
+		p = document.getElementById("page");
+		p.value = page
+		f.submit()
+	}
+</script>
+<title>Hello from Flask</title>
+<style>
+   .row{
+    display: block;
+    width: 350px;
+    height: 20px;
+   }
+   .sel,.user,.del{
+        width: 60px;
+        border: 1px solid black;
+        margin: 0;
+        display: inline-block;
+   } 
+   .user{
+		width: 200px;
+   }
+   .page{
+		text-decoration: underline;
+		margin-left: 10px;
+	}
+	.page:hover{
+		cursor: hand;
+   	}
+</style>
+</head>
+<body>
+<form id="f" method="POST" action="">
+	<input id="d_un" name="d_un" type="hidden">
+</form>
+<form id="search" method="POST" action="./search">
+	<input id="s_usr" name="s_usr" type="input" value="{{search_user}}">
+    <input type="hidden" id="user_order" name="user_order" value="{{user_order}}">
+    <input type="hidden" id="page" name="page" value="{{current_page}}">
+    <select name="page_size">
+        {% for num in (10,15,20) %}
+        <option value="{{num}}"
+            {% if (page_size == num) %}
+                selected
+            {% endif %}
+        >
+        {{num}}/page
+        </option>
+        {% endfor %}
+    </select>
+	<input type="submit">
+</form>
+<form id="d2" method="POST" action="/del_users">
+<input type="submit" value="del" onclick="del_users()">{{username}} logon!
+</form>
+<br>
+<div class="row">
+    <span class="sel">select</span><span class="user" onclick="change_order()">username( {{user_order}} )</span><span class="del">delete</span>
+</div>
+<div>
+{% for d_un,password in l %}
+<div class="row">
+    <span class="sel">
+        <input type="checkbox" value="{{ d_un }}" name="users">
+    </span><span class="user">
+        <a href="./prepareUpdate?username={{d_un}}"> {{ d_un }}</a>
+    </span><span class="del">
+        <input type=button value="del" onclick="delete_user('{{d_un}}')"/>
+    </span>
+</div>
+{% endfor %}
+</div>
+<div class="row">
+{% for page in pages %}
+    <span class="page" onclick="change_page({{page}})" 
+    {% if current_page == page %}
+        style="font-size:30px"
+    {% endif %}
+    >{{page}}
+    </span>
+{% endfor%}
+</div>
+</body>
+</html>
