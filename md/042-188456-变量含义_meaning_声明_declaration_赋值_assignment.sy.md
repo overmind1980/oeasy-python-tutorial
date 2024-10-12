@@ -11,7 +11,7 @@ enable_checker: true
 - 上次了解了 
 	- print函数中的另一个参数
 		- end 结束符
-		- 默认是\n
+			- 默认是 换行符\n
 		- 可以换成任何字符串
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240318-1710747209825)
@@ -22,7 +22,9 @@ enable_checker: true
 	- 输出了ASCII码表
 - 序号 不断增大	
 	- 字符 不断变化
-- python是如何应对变化的呢？？🤔
+- python是如何应对变化的呢？？
+	-  先看看现实中的实时变量🤔
+
 
 ### 变化的温度
 
@@ -42,15 +44,15 @@ enable_checker: true
 	- 出发地、目的地 是 变量
 	- 发车时间 是 变量
 	- 具体车次 也是 变量
-- 如果 `搜索` 呢？
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210815-1628992722514)
+
 - 你就是在
 	- 根据 出发地、目的地
 	- 把 所有经过这段的 车次对象
 		- 筛选出来
 	- 选择 自己的车次 
 	- 购买 车票
-
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210815-1628992722514)
 
 - 当然乘车人身份证号 也是 变量
 	- 任何系统 其实都有 
@@ -59,7 +61,6 @@ enable_checker: true
 	- 里面 有什么 变量？
 
 ### 教务系统
-
 
 - 课程 是 变量
   - 一个课程 有 自己的编号
@@ -134,14 +135,14 @@ enable_checker: true
 
 - 这些东西 都在 内存里面
 	- 随时 可以 变化的
-		- 都是 变量
+	- 都是 变量
 - 那能否 用python
-	- 真正定义 一个变量 呢？
+	- 定义 一个变量 呢？
 
 ### 变量赋值
 
 - 如果我们直接输出`a`
-  - 没有反应
+  - 报了NameError
   - 因为系统不认识`a`是谁
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230503-1683116352891)
@@ -159,17 +160,17 @@ enable_checker: true
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231105-1699191170459)
 
-- 变量`a` 是个变量哦
-  - `a` 等于 整数0哦
+- 声明 变量`a` 是个变量哦
+- 然后 把0这个值 放进`a`这个变量名中 
 
 ### 使用
 
-- 声明了之后
+- 声明赋值了之后
 	- 就可以使用了
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231105-1699191256991)
 
-- 可以查看
+- 可以输出出来
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231105-1699191274676)
 
@@ -189,7 +190,7 @@ enable_checker: true
 
 - 交往 声明
 	- 那个谁谁谁 你们不要追 了
-	- 她和他 声明正在交往 了
+	- 她和那他 已经 声明正在交往 了
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220515-1652608990193)
 
@@ -202,26 +203,33 @@ enable_checker: true
 
 - 1776年
 	- 独立宣言
+	- The Unanimous Declaration of the Thirteen United States of America
+
+- 美洲上面的十三个殖民地 
+	- 宣布独立
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220519-1652964041630)
 
-- The Unanimous Declaration of the Thirteen United States of America
-- 美洲上面的十三个殖民地 
-	- 宣布独立
+
 - 让全世界
 	- 特别是 英国皇室和议会知道
 	- 摊牌了
+	- 不交税了
 - 这就是声明
 	- 就像我们声明一个变量一样
 	- 变量声明了之后呢？
 
 ### 使用变量
 
-- 以xx的名义
+- 以变量的名义来使用
+	- In the name of love
+	- 以爱的名义
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221029-1667009569843)
 
-- In the name of love
+- In name only
+	- 只是名义上的
+	- 空有其名
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221029-1667009627796)
 
@@ -251,13 +259,14 @@ enable_checker: true
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230415-1681561267962)
 
 - 因为 
-  - 0 是 数值
+  - 0 是 固定数值
   - x 是 容器
-  - 容器 里面的东西
+  - 常量 里
 	- 没法放到一个具体的数值上去
 	- cannot assign to literal
-- assign 指的是 分配
-	- 这里用 =表示 进行分配
+	- 无法对于 字面量 赋值 
+- assign 指的是 赋值
+	- 这里用 =表示 进行赋值
 	- x = 0 就是
 	- 把 0这个值 赋给 x这个变量名
 
@@ -303,7 +312,8 @@ chr(8592)
 
 - 咳😅
 	- 别挨骂了
-- 赋值的赋怎么理解呢？
+- 赋值的赋
+	- 怎么理解呢？🤔
 
 ### 赋
 
@@ -313,6 +323,8 @@ chr(8592)
 	- 代替 兵役的税款
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240318-1710757446873)
+
+- 直给的东西
 
 ### 陈述
 
@@ -336,13 +348,12 @@ chr(8592)
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220724-1658631277985)
 
-- 声明了变量 
-	- 并且 给变量赋了值
 - 声明就是 declaration
-  - 把标识符 和 具体值 联系起来
-  - 标识符就是 变量的标记符
+  - 把标识符 和 具体值 关联起来
+  - 标识符 就是 变量的名字
   - 具体值 就是 赋给变量的值
-- 过程就是 赋值
+
+- 赋值 就是 
 	- 就是 assignment
 	  - 可以给变量 具体的值
 - 可以调试一下赋值语句了吗？🤔

@@ -4,7 +4,7 @@ version: 1.0
 enable_checker: true
 ---
 
-# 编写 py 文件 🥊
+#  查看python文件_输出py文件_cat_运行python文件_shell  🥋
 
 ## 回忆上次内容
 

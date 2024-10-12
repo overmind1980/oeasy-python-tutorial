@@ -4,7 +4,7 @@ version: 1.0
 enable_checker: true
 ---
 
-# 你好世界 🥊
+#  print函数_字符串_display_电传打字机_程序员的浪漫 🥋
 
 ## 回忆上次内容
 
@@ -32,19 +32,25 @@ enable_checker: true
 
 ### 引号的`选择`
 
+- 注意⚠️
+	- 双引号 是一个单独的字符
+	- 而不是 两个单引号️
 - 在python3中
 	- 用 `单引号` 或 `双引号` 引起来的
 		- 都是字符串
 		- 是 `没有` 区别的
-- 用谁都行！
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240110-1704842857939)
+
+- 用谁都行！
+
+### 惯用方式
 
 - 在 python 中
 	- 一般 用 `单`引号
 - 毕竟
 	- 单引号 比 双引号 
-		- `少`按下一个<kbd>shift</kbd>
+	- `少`按下一个<kbd>shift</kbd>
 
 ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240110-1704843206513)
 

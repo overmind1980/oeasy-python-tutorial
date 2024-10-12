@@ -8,15 +8,21 @@ enable_checker: true
 
 ## 回忆
 
-- 上次我们研究了nonlocal
+- 上次研究了nonlocal
 - nonlocal是控制变量作用域(scope)的关键字
 - 目前学了3个
-	- global 全局可见
-	- local 本地可见
-	- nonlocal 非本地可见(上一层函数也可见)
+
+
+| 变量名|类型|英文|简称|
+|---|---|---|---|
+|global_temp|全局内|global|g|
+|outer_temp|闭包内|closure|c|
+|inner_temp|本地内|local|l|
+
 - 函数既然已经是封装(encapsulate)了的功能(function)
 - 为什么还要进一步封装呢？
 - 函数中的函数有什么意义呢？
+- 我们下次再说👋
 
 
 ### 封装举例

@@ -4,7 +4,7 @@ version: 1.0
 enable_checker: true
 ---
 
-# 设置断点 🥊
+#  [趣味拓展]女性程序员_Eniac_girls_bug_Grace 🥋
 
 ## 回忆上次内容
 
@@ -163,3 +163,4 @@ enable_checker: true
 - 到现在也没有遇到一个bug
 	- 如何才能让程序里面有bug 呢？
 - 我们下次再说！👋
+- https://www.bilibili.com/video/BV1NE421A7oR

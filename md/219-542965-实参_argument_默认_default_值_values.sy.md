@@ -26,7 +26,42 @@ enable_checker: true
 	- 并给这个参数一个默认值
 		- "white"
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220808-1659943925191)
+```
+def draw_pine(n=5,color="white"):
+    draw_pine_head(n,color)
+    draw_pine_body(n)
+
+def draw_pine_head(n,color="white"):
+    print(color)
+    print("\33["+d_colors[color]+"m",end="")
+    draw_pine_triangle(n)
+    draw_pine_triangle(n)
+
+def draw_pine_triangle(n,color="white"):
+    for i in range(n):
+        for j in range(n-i):
+            print(" ",end="",sep="")
+        for k in range(2*i+1):
+            print("*",end="",sep="")
+        print()
+
+def draw_pine_body(n):
+    for i in range(5):
+        for j in range(5):
+            print(" ",end="",sep="")
+        for k in range(3):
+            print("*",end="",sep="")
+        print()
+    for i in range(6):
+        for j in range(6-i):
+            print(" ",end="",sep=",")
+    print("\33[0m",end="")
+
+if __name__ =='__main__':
+    d_colors = {"green": "32", "yellow": "33", "white": "0"}
+    draw_pine(6,"green")
+
+```
 
 - 因为默认值的缘故
 - 期待的函数调用仍然能够完成
@@ -42,20 +77,6 @@ enable_checker: true
 - 仍能完成函数调用
 - 从汇编角度如何理解呢？
 
-### 汇编
-
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220808-1659947324323)
-
-- 有相应的值
-- 也有相应的语句设置默认值
-- 那么调用的时候如何分辨呢？
-
-### 调用
-
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220808-1659947645085)
-
-- 如果用的是默认值
-	- 就不再重新LOAD_CONST了
 - 函数默认值还有什么要注意的呢？
 
 ### 默认值
@@ -113,50 +134,30 @@ enable_checker: true
 
 ### 运行
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220808-1659945579477)
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240825-1724552804780/wm)
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220808-1659945591290)
-
-- 从汇编角度如何理解参数默认值呢？
-
-### 汇编角度
-
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220808-1659946250735)
-
-- 比较两个汇编
-
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220808-1659946499716)
-
-- 36行加载了第一个参数6
-- 37行加载了第二个参数"green"
-	- 这行就是分别所在
-	- 这行加载的就是color的参数的值
-		- 没有使用默认参数
-- 使用默认值的函数
 
 ### 代码
 ```
-def draw_pine(n,color="white"):
+def draw_pine(n=5,color="white"):
     draw_pine_head(n,color)
-    draw_pine_body()
+    draw_pine_body(n)
 
 def draw_pine_head(n,color="white"):
     print(color)
-    print("\\33["+d_colors[color]+"m",end="")
-    draw_pine_triangle()
-    draw_pine_triangle()
-    print("\\33[0m",end="")
+    print("\33["+d_colors[color]+"m",end="")
+    draw_pine_triangle(n)
+    draw_pine_triangle(n)
 
-def draw_pine_triangle():
-    for i in range(6):
-        for j in range(6-i):
+def draw_pine_triangle(n,color="white"):
+    for i in range(n):
+        for j in range(n-i):
             print(" ",end="",sep="")
         for k in range(2*i+1):
             print("*",end="",sep="")
         print()
 
-
-def draw_pine_body():
+def draw_pine_body(n):
     for i in range(5):
         for j in range(5):
             print(" ",end="",sep="")
@@ -166,10 +167,12 @@ def draw_pine_body():
     for i in range(6):
         for j in range(6-i):
             print(" ",end="",sep=",")
+    print("\33[0m",end="")
 
-if __name__ == '__main__':
-    d_colors = {"green":"32","yellow":"33","white":"0"}
-    draw_pine(6,"yellow")
+if __name__ =='__main__':
+    d_colors = {"green": "32", "yellow": "33", "white": "0"}
+    draw_pine(6,"green")
+
 ```
 
 - 这个树冠大小n是否可以也有个默认值？

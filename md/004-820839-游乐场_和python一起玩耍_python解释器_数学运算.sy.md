@@ -4,11 +4,9 @@ version: 1.0
 enable_checker: true
 ---
 
-# 和python玩耍 🥊
+#  游乐场_和python一起玩耍_python解释器_数学运算  🥋
 
-## Python
-
-#### 回忆
+## 回忆
 
 - 上次 了解shell环境中的命令
 

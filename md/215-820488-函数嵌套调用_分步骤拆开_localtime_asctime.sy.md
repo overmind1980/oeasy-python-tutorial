@@ -8,22 +8,21 @@ enable_checker: true
 
 ## 回忆上次内容
 
-- 通过 搜索
-	- 学会 `import` 导入 `time` 了
-- 当前时间 完整写法为
-  - asc_time = time.asctime( time.localtime( time.time()))
-
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221007-1665146302633)
-
-- 这一大长串的函数
-	- 究竟应该 如何理解呢？？🤔
+- 上次完成了
+	- 多参数的函数
+	- 多个参数形成一个参数列表
+	- 调用时
+		- 这些参数会依次序进行参数赋值
+		- 进行相加操作
+		- 把最终的和作为函数的返回值给到print
+		- print完成调用过程
+- 函数可以嵌套吗？🤔
 
 ### 复习代码
 
+
 ```python
-import time
-ascii_time = time.asctime( time.localtime( time.time()))
-print (ascii_time)
+print(add(a, b))
 ```
 
 - 首先要分清
@@ -54,6 +53,13 @@ print (ascii_time)
 
 - 这长串东西 是 有规律的
 	- 首先 什么是 time
+
+
+```python
+import time
+ascii_time = time.asctime( time.localtime( time.time()))
+print (ascii_time)
+```
 
 - time 是一个module(包)
 	- 这个包里面 有些什么呢？
