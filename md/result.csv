@@ -97,10 +97,7 @@
 097-745546-列表_赋值_assignment_拷贝_copy.sy.md
 098-192242-列表_加法_增强赋值_加等于_extend_扩展列表.sy.md
 099-748098-列表_乘法_空列表_None.sy.md
-1.csv
 100-192295-列表_排序_sort_比较大小.sy.md
-1000.csv
-1001.csv
 101-763909-列表_有序列表_在指定位置插入_insert_弹栈_pop.sy.md
 102-1787303-[词根溯源]iterate_可迭代对象_split函数.sy.md
 103-749448-列表_乱序_shuffle_扑克牌_升级_拖拉机.sy.md
@@ -715,5 +712,5 @@
 712-188730-主控程序_main_工业化_分工细化.sy.md
 713-188728-拆分模块_module_reusability_复用性.sy.md
 714-3002302-空白.sy.md
-999.csv
 README.md
+result.csv
