@@ -1,9 +1,12 @@
-# ai前端-oeasy教您玩转前端三剑客
+# ai编程-oeasy 教您玩转 python
 
-oeasy教您从零开始，学习网页基础知识内容。从不会制作网站，到能制作网站，甚至能制作会动起来的网站。
-https://github.com/overmind1980/oeasy-html5-tutorial
+深入底层的专业Python3 课程。从零开始，在 Linux 环境中使用 Vim，一步步带你玩转脚本语言 Python，深入细节。感受编程的乐趣，体会计算机文化。  
+本教程仓库:https://github.com/overmind1980/oeasy-python-tutorial
+qq群:190285216
+视频:https://www.bilibili.com/video/BV19N4y1N743
+欢迎关注与参与。
 
 - 作者: [oeasy](https://www.lanqiao.cn/users/1190679/)
-- 链接: https://www.lanqiao.cn/courses/3781
+- 链接: https://www.lanqiao.cn/courses/3584
 
-![](https://dn-simplecloud.shiyanlou.com/assets/1729057518121_960d31dc159bd21df3667ad762458aeb)
+![](https://dn-simplecloud.shiyanlou.com/assets/1642383644527_a8307857e9d44f990f5f6263c74c28d0)
