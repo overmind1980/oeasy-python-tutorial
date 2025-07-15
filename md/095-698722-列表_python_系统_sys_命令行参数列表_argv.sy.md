@@ -4,12 +4,13 @@ version: 1.0
 enable_checker: true
 ---
 
-# 列表 - 系统命令行参数
+# [oeasy]python095_列表_python_系统_sys_命令行参数列表_argv 
 
+- [配套视频](https://www.bilibili.com/video/BV1tMK4zWEom)
 ## 回忆
 
 - 上次研究了 midi音乐的制作
-	- 利用的是列表
+	- 使用 旋律列表 生成音乐
 
 ```
 # 《两只老虎》的音符序列
@@ -18,13 +19,13 @@ melody = [
 ]
 ```
 
-- 可以 写其他歌曲吗？
+- 这有什么用呢？
+	- 比如 按照调性  生成 随机旋律？🤔
 
 ![图片描述](https://doc.shiyanlou.com/courses/3584/labs/564944/uid1190679-20250315-1742032535099) 
 
-- 或许可以随机生成旋律？🤔
-	- 有时间 自己探索一下吧！
-- 列表还有啥应用？？？🤔
+- 除了 midi音乐 旋律列表 之外
+	- 列表 还有 `啥` 实际应用 吗？？？🤔
 
 ### 命令的参数列表
 
@@ -115,6 +116,8 @@ python3 shopping.py banana 5
 
 ![图片描述](https://doc.shiyanlou.com/courses/3584/labs/698722/uid1190679-20250325-1742867227472) 
 
+- ai生成的代码
+
 ```
 import sys
 
@@ -138,18 +141,6 @@ print(f"购买 {quantity} 个 {fruit} 的总价是: {total_price} 元")
 
 ### 参数的意义
 
-- 比如 我要
-	- 计算苹果或者香蕉总价
-- 原来 需要把 这个苹果和香蕉的数量
-	- 在py文件中修改
-	- 保存之后再执行
-
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231203-1701598564639)
-
-- 但是 现在 通过使用命令行 参数
-	- 可以在命令行上
-	- 动态地将 参数传递给 py文件
-
 - 计算 5个苹果的价格
 
 ```bash
@@ -162,8 +153,47 @@ python3 shopping.py apple 5
 python3 shopping.py banana 6
 ```
 
-- 那我在py文件中
-	- 如何得到参数呢？
+- 参数数量为3的时候
+	- 可以顺利计算
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/698722/uid1190679-20250425-1745584911864) 
+
+- 参数 如果不为3呢？
+
+### 参数 数量
+
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/698722/uid1190679-20250425-1745585235829) 
+
+- 如果 参数数量 不符合要求
+	- 直接 sys.exit(1)
+	- 退出py程序 运行过程
+
+```
+if len(sys.argv) != 3:
+    print("请按正确格式输入：python 脚本名.py <水果类型> <数量>")
+    sys.exit(1)
+```
+
+- 为什么 要使用参数呢？
+
+### 参数的必要性
+
+- 比如 我要
+	- 计算苹果或者香蕉总价
+- 原来 需要把 这个苹果和香蕉的数量
+	- 写死在py文件里
+	- 要改 也要在py文件中修改
+	- 保存之后 才能执行
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231203-1701598564639)
+
+- 但是 现在 通过使用命令行 参数
+	- 可以在命令行上
+	- 动态地将 参数传递给 py文件
+
+
+- python 的 命令行参数 怎么用？
 
 ### 询问ai
 
@@ -516,3 +546,5 @@ print(f"购买水果的总价是: {total_price} 元")
 
 - 列表(list)还有什么方法呢？🤔
 - 下次再说 👋
+- [配套视频](https://www.bilibili.com/video/BV1tMK4zWEom)
+v

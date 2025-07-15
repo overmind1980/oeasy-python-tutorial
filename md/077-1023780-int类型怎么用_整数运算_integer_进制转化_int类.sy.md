@@ -8,6 +8,7 @@ enable_checker: true
 
 ## 回忆上次内容
 
+- [配套视频](https://www.bilibili.com/video/BV1dporYtE4Q)
 - 上次了解的是 
 	- int词根溯源
 
@@ -348,3 +349,5 @@ help("keywords")
 	- 输出 到屏幕上区别
 - 这两个类型 区别在`哪`呢？？🤔
 - 下次再说👋🏻
+- [配套视频](https://www.bilibili.com/video/BV1dporYtE4Q)
+

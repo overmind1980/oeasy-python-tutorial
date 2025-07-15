@@ -8,6 +8,7 @@ enable_checker: true
 
 ## 回忆
 
+- [配套视频](https://www.bilibili.com/video/BV1h5f3YuE4A)
 - 上章节 实验内容 比较`杂`
 	- 捕获异常
 	- 进制转化
@@ -329,3 +330,4 @@ help(str)
 
 - 还有没有 `其他`变量类型呢 ?
 - 下次再说 👋
+- [配套视频](https://www.bilibili.com/video/BV1h5f3YuE4A)

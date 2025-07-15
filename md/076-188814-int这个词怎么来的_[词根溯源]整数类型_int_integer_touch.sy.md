@@ -8,6 +8,7 @@ enable_checker: true
 
 ## 回忆上次内容
 
+- [配套视频](https://www.bilibili.com/video/BV1iNX6YjEiv)
 - 上次 分辨了 语言类型
 	- 静态类型、动态类型 
 	- 强类型、弱类型
@@ -278,3 +279,5 @@ enable_checker: true
 
 - 如何理解 整型变量呢？🤔
 - 下次再说👋🏻
+- [配套视频](https://www.bilibili.com/video/BV1iNX6YjEiv)
+

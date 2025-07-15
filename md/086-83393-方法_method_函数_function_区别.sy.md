@@ -8,6 +8,7 @@ enable_checker: true
 
 ## 回忆
 
+- [配套视频](https://www.bilibili.com/video/BV1zcd4YpEKg)
 - 上次了解了 list 列表的操作
   - 追加列表项 append
   - 在列表的结尾处 追加列表项
@@ -344,4 +345,5 @@ help(chr)
 
 - append这个词 怎么来的呢？🤔
 - 下次再说 👋
+- [配套视频](https://www.bilibili.com/video/BV1zcd4YpEKg)
 

@@ -4,10 +4,11 @@ version: 1.0
 enable_checker: true
 ---
 
-# 列表 - 构造 range
+# 列表_构造_范围_range_start_end_step_步长 
 
 ## 回忆
 
+- [配套视频](https://www.bilibili.com/video/BV1TjLFziEXi)
 - 上次 学习了 list的新方法
 	- remove 删除
 	- 需要把被删除的列表项 作为参数
@@ -358,3 +359,4 @@ print(mon_list)
 
 - 可以找到更多的 比如日期吗？？🤔
 - 下次再说 👋
+- [配套视频](https://www.bilibili.com/video/BV1TjLFziEXi)

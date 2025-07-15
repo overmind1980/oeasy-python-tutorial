@@ -8,6 +8,7 @@ enable_checker: true
 
 ## 回忆上次内容
 
+- [配套视频](https://www.bilibili.com/video/BV1gKQUYREwY)
 - 上次直接从模块中导入变量、函数
 	- from my_file import pi
 		- 导入my_file.pi 
@@ -208,5 +209,5 @@ except ValueError:
 
 - 难道还有变量类型晦涩的情况？？🤔
 - 我们下次再说👋
-
+- [配套视频](https://www.bilibili.com/video/BV1gKQUYREwY)
 

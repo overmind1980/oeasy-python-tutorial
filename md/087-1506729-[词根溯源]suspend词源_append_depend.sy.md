@@ -8,6 +8,7 @@ enable_checker: true
 
 ## 回忆上次内容
 
+- [配套视频](https://www.bilibili.com/video/BV1wPd9YKEHZ)
 - 上次了解了 方法 和 函数的 不同之处
 
 |方法(method)|函数(function)|
@@ -399,3 +400,4 @@ enable_checker: true
 
 - 还有什么 方法呢？🤔
 - 我们下次再说！👋
+- [配套视频](https://www.bilibili.com/video/BV1wPd9YKEHZ)
