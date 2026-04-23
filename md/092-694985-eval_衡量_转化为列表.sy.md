@@ -1,0 +1,237 @@
+---
+show: step
+version: 1.0
+enable_checker: true
+---
+
+#  eval_衡量_转化为列表 
+
+## 回忆
+
+- [配套视频](https://www.bilibili.com/video/BV1FPLQziEd1)
+- 上次 深入了  index函数 
+	- 可以 找到某对象的位置
+	- 如果 列表中 有多个指定元素
+	- 可以通过 index函数的start和end参数 
+	- 指定位置列表的下标索引
+- 可以 用中括号 索引到 相应的元素
+	- 还可以 替换相应的元素
+	- 和 字符串 效果一样
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221122-1669081080569)
+
+- 字符串中字符
+	- 不能通过 索引下标 直接 修改?
+	- 这怎么办??🤔
+
+### 绕道
+
+```python
+s = "oeasy"
+char_list = list(s)
+char_list
+char_list[2] = "A"
+char_list
+s = ""
+for c in char_list:
+	s += c
+```
+
+- 通过list列表
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192241/uid1190679-20250107-1736260120099) 
+
+- 曲则全
+	- 枉则直
+	- 绕路才能到成功
+- 如果 字符串能转成 列表
+	- 那列表 能转化为 字符串 吗？
+
+### 尝试
+
+- 把 列表 再转化 为 字符串
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210828-1630125028365)
+
+- 最终 得到了
+	- 一个字符串
+	- 一个 内容 为列表的 字符串
+	- 这和我想象的不一样啊
+- 有 什么办法 能够
+	- 将 str(list("oeasy")) 这个字符串
+	- 转化回 列表 吗？🤔
+
+### eval
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/694985/uid1190679-20250107-1736255176095) 
+
+- eval 
+	- 可以把字符串
+	- 转化为对应的数据类型
+
+```
+# 这是你的字符串，它表示一个列表
+s = str(list("oeasy"))
+
+# 使用 eval() 将字符串转换回列表
+# 请确保字符串来源是安全的
+my_list = eval(s)
+
+# 打印结果
+print(my_list)
+```
+
+- 这次把 将列表转化为的字符串
+	- 转化回了列表
+- 既然是 evalute 
+	- 可以完成 字符串中的 计算吗？ 
+
+### 具体使用
+
+```
+eval("1 + 1")
+eval("1 * 1 + 2")
+```
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231227-1703684042259)
+
+- 如何理解 eval函数 呢？
+
+### eval
+
+```
+help(eval)
+```
+
+- eval函数的参数是 
+	- 字符串source
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701526257688)
+
+- eval函数
+	- 根据本地和全局的变量
+	- 将 source 
+	- 衡量 (evaluate)出来
+
+- 被衡量的字符串
+	- 可以使用 `变量` 吗？
+
+### 根据变量
+
+```
+a = 5
+eval("6 * a")
+```
+
+- 根据变量a的值
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231227-1703684193923)
+
+- 可以导入模块吗？
+
+### 导入模块
+
+```
+import math
+eval(str("math.pi"))
+eval(str("math.pi * 10 ** 2"))
+```
+
+- 确实是可以 导入模块的 
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/694985/uid1190679-20250314-1741930460291) 
+
+### 使用函数
+
+```
+eval("len(\"oeasy\")")
+eval("len(\"oeasy\") + 1")
+```
+
+- 尝试使用len函数
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701526344554)
+
+- 如果len被 赋值了呢？
+
+### len被赋值
+
+```
+len = 1
+len
+eval("len(\"oeasy\")")
+```
+
+- 果然出错了
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/694985/uid1190679-20250318-1742294800571) 
+
+- eval的时候
+	- 会执行 参数字符串 
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/694985/uid1190679-20250318-1742294891346) 
+
+- 不能 把数值 赋给 函数名
+	- 那样会 覆盖掉 函数
+- 命名的时候 有什么`禁忌`吗？
+
+### 变量命名的禁忌
+
+```
+int = 5
+int("5")
+```
+
+- int 是 `类名`
+	- 一旦 作为 `变量名`之后
+	- 就`不再`是 类名 了 
+	- 也没法完成 整型变量的 初始化 了
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20250226-1740536610930)
+
+- 类似的还有str
+
+```
+str = "oeasy"
+str("oeasy")
+```
+
+- str 如果成了变量
+	- 就不再是 str类型了 
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/694985/uid1190679-20250226-1740536695769) 
+
+- list 也会这样吗?
+
+### 问题
+
+- 本来 list 是一个 class
+  - 如果你把他赋值成了一个空列表
+	- list 就变成了一个对象的名字
+	- 一个变量 variable
+	- 就无法执行 list 类的构造函数了
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210828-1630123389239)
+
+- 类名 被覆盖
+	- 类 就不能用了  
+
+### 总结
+
+- 这次了解了eval函数
+	- 根据本地和全局的变量
+	- 将 source 
+	- 衡量 (evaluate)出来
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231227-1703684635657)
+
+- 要特别注意 
+	- 类名 str、int、list 不能作为变量名
+	- 那样 会 覆盖掉 类
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231128-1701169452013)
+
+- 字符串 中 索引值 可以 是 负数
+	- 列表中 索引值 可以是 负数吗？🤔
+- 下次再说 👋
+- [配套视频](https://www.bilibili.com/video/BV1FPLQziEd1)

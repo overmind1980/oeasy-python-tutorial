@@ -1,0 +1,389 @@
+---
+show: step
+version: 1.0
+enable_checker: true
+---
+
+#  列表_列表项的追加_append 
+
+## 回忆
+
+- [配套视频](https://www.bilibili.com/video/BV1dMRCYZEyd)
+- 上次理解了 空列表
+	- 有两种方式 构造空列表
+
+```
+lst = list()
+lst = []
+```
+
+- 空列表的类型
+	- 依然 是 列表(list)
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1169644/uid1190679-20241208-1733618917037) 
+
+
+
+- 什么 是 `method(方法)` 呢？
+
+
+
+### 类 方法
+
+- 去官网搜索 `什么是方法`
+	- https://docs.python.org/3/faq/programming.html#what-is-a-method
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701522683526)
+
+- 方法 就是 
+	- 用 对象来 
+	- 调用的 成员函数
+- 方法 和 函数 真的很像啊!
+
+### 函数和方法
+
+- 这种 后面带括号
+	- 括号里 放参数列表的 
+	- 不 就是 `函数(function)` 吗?
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192220/uid1190679-20250216-1739709524869) 
+
+- 方法(method) 和 函数(function) 
+	- 有什么不同呢?
+
+### 不同
+
+- 询问ai
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192220/uid1190679-20250106-1736171953278) 
+
+- 函数(function)  前面
+	- 没有调用对象
+- 方法(method) 前面 
+	- 有个 对象(instance) 完成调用
+	- 比如 lst.append中的 lst
+
+- 列表 里面 可以装中文词 吗？
+
+### 非空列表
+
+```
+list1 = 【‘刘备’， ‘关羽’,‘张飞’】
+```
+
+- 这样可以吗？
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/83392/uid1190679-20250303-1740972458004)
+
+- 我们需要修改
+
+### 修改
+
+- 要特别注意 
+	- 中括号、引号、逗号
+	- 都得是 英文 半角
+	- 把符号写好之后 再去写 中文词汇
+
+```
+list1
+type(list1)
+```
+
+- 将字符串用逗号隔开
+	- 放到中括号里面
+	- 可以得到 字符串列表
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1169644/uid1190679-20241208-1733618993249) 
+
+- 列表这类型 和
+	- 之前的整数类型、字符串类型
+	- 有什么不同吗？
+
+### 数字变量
+
+- 先看变量赋值
+	- https://pythontutor.com/visualize.html#mode=edit
+
+```
+i1 = 123
+f1 = 12.3
+s1 = "abc"
+```
+
+- 这些变量
+	- 在frame上能直接看到
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210829-1630209240049)
+
+- 什么是frame呢?
+
+### frame
+
+- 帧/画框
+	- 框里面的几个变量
+	- 都看得见
+	- 摸得着
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/83392/uid1190679-20250212-1739365792547) 
+
+- 这些变量在
+	- 帧栈空间(frame stack)上
+	- 都有自己的位置
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220903-1662158557838)
+
+- 那么列表变量  list1 呢？
+
+### 列表变量
+
+```
+list1 = ['刘备', '关羽','张飞']
+```
+
+- 可以看到 list1 在栈帧上有位置
+	- 或者说list1 在 globals() 里面
+	- 全局可见
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1169644/uid1190679-20241208-1733619166024) 
+
+### 容器类型
+
+- list1 是一个容器
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1169644/uid1190679-20241208-1733619076292) 
+
+- 注意那条带箭头的线
+	-  global frame 中 可见的 list1
+	-  list1 在 帧栈上的位置尾号2432
+	-  指向 堆空间中 一个列表对象
+- 栈帧上 
+	- 只能看见 list1 
+- 但无法 直接
+	- 访问 列表中的 列表项
+		- 刘备
+		- 关羽
+		- 张飞
+- 如何才能访问列表项呢？
+
+### 询问ai
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1169644/uid1190679-20250106-1736169913793) 
+
+- 能通过list1[0]
+	- 这种 下标索引的方式
+		- 来访问到list1[0]
+	- 得到list1[0] 里面 第0个对象
+	- 值为"刘备"
+
+```
+list1 = ["刘备", "关羽", "张飞"]
+liubei = list1[0]  # 获取索引为0的元素，即“刘备”
+print(liubei)  # 输出: 刘备
+```
+
+- 这索引 之前好像见过？🤔
+
+### 索引方式
+
+- 索引index 
+	- 来自于 食指
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231129-1701255108751)
+
+- 可以按照元素的编号
+	- 访问
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231128-1701168701386)
+
+- 注意编号 从零开始 ～
+
+### 列表赋值
+
+- 在中括号里面放上字符串
+	- 然后用逗号隔开
+	- 形成了 字符串列表
+
+```
+name_list = ['oeasy', 'o2z', 'o3z']
+name_list
+```
+
+- 叫做 名单name_list
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231114-1699969106024)
+
+- 这个 名单 name_list
+	- 是列表类的 
+		- 实例对象
+		- Instance Object
+- 那这个 名单
+	- 可以 追加(append) 吗？
+
+### append
+
+```
+name_list.append("o4z")
+```
+
+- 名单 追加 人名
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231114-1699969238362)
+
+- 追加成功
+	- 这 不是 和函数差不多?
+	- 有啥区别?
+
+### 帮助细节
+
+```
+help(list.append)
+```
+
+- list.append
+	- 有两个参数
+		- self
+		- object
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231128-1701180507340)
+
+- 第一个参数 是 `self`	
+	- 啥意思？
+
+### self
+
+- self 就是自己
+- 谁自己？
+  - 对象自己
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20250216-1739671804658)
+
+- 哪个对象自己？
+  - 哪个调用 append 函数 
+	- 就是哪个对象自己
+
+### 调用者
+
+```
+name_list.append("o4z")
+name_list
+```
+- 这个例子里
+	- 哪个调用 append?
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231114-1699969238362)
+
+- 调用者就是 name_list
+ 	- name_list.append("o4z")
+    - self 就是 name_list
+    - 意思是 为name_list 追加列表项
+
+### 具体的例子
+
+- 不同的对象
+	- 可以分别追加自己的 
+	- 列表项
+
+- 6号窗口 排队
+	- 追加在 自己后面
+	- 不影响 7号窗口的 列表
+	- 各排各的队
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/83393/uid1190679-20250216-1739711976724) 
+
+- 混着来不行吗?
+
+### 黑名单
+
+- 黑名单 和 白名单 混着来 
+	- 那不全乱了?
+	- 黑名单 append 的是 拒绝的
+	- 白名单 append 的是 允许的
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20250303-1740965590170)
+- 官网怎么理解self?
+
+### 官方文档
+
+- python3 的官方文档怎么说
+	- https://docs.python.org/3/faq/programming.html#what-is-self
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20211107-1636279564604)
+
+- self 只是 成员方法(member method)里面
+	- 名字 的 惯例
+
+- self 通常用来当做
+	- 成员方法的 第一个参数
+	- 成员方法 定义为 
+		- method(self, a, b, c)
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231128-1701180507340)
+
+- 在这里 
+	- self 就是 name_list
+	- append 就是 meth
+
+- name_list 和 append 之间的 
+	- 这个(.)点 怎么理解？
+
+### 成员方法
+
+- 这个.(点)
+	- 我们曾经用过
+	- 指的就是 `里面的`
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231122-1700649901184)
+
+- 我们复习一下time
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192220/uid1190679-20250216-1739685970363)
+
+### 复习time
+
+- time是 内建时间模块的 名字
+
+```
+time
+import time
+help(time)
+```
+
+- 如果没有引入time这个模块(module)
+	- 就不能调用
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192220/uid1190679-20250216-1739679444037) 
+
+- 引入了模块 之后
+	- 能 干什么 呢?
+
+### 使用模块中的函数
+
+- 如果 引入了time模块 
+	- 就可以使用 time模块 `里面的` 函数asctime
+	- time.asctime()
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192220/uid1190679-20250216-1739679504533) 
+
+- 注意asctime 是 
+	- time这个 模块中的
+	- 函数(function)
+- 我们还用过 
+	- `什么`模块吗?
+
+### 总结
+
+- 这次了解了 list 列表的操作
+  - 追加列表项 append
+  - 在列表的结尾处 追加列表项
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192220/uid1190679-20250106-1736174303921) 
+
+- lst.append
+	- lst 是 list类 的 实例对象
+	- append 是具体的方法
+	- 中间(.) 点 的意思 是 `里面的`
+	- 就像time.asctime()
+- 我们还学过什么模块来着？🤔
+- 下次再说 👋
+- [配套视频](https://www.bilibili.com/video/BV1dMRCYZEyd)
+

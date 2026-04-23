@@ -1,0 +1,270 @@
+---
+show: step
+version: 1.0
+enable_checker: true
+---
+
+# 集合运算
+
+## 回忆
+
+- 上次学习了集合的运算
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221214-1670990558797)
+
+- 集合总共四种运算
+
+| 运算名称   | 方法名               | 运算符 |
+|------------|----------------------|--------|
+| 交集       | intersection         | &      |
+| 并集       | union                | \|     |
+| 差集       | difference           | -      |
+| 对称差集   | symmetric_difference | ^      |
+
+- 这些运算可以做增强赋值吗？🤔
+
+### 回忆增强赋值
+
+```python
+a = 1
+a += 2
+a
+a += 3
+a
+```
+
+- += 增强赋值
+	- 先求和 
+	- 再赋值
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/791092/uid1190679-20260407-1775533571421) 
+
+- 四种运算
+
+| 运算名称   | 方法名               | 运算符 |
+|------------|----------------------|--------|
+| 交集       | intersection         | &      |
+| 并集       | union                | \|     |
+| 差集       | difference           | -      |
+| 对称差集   | symmetric_difference | ^      |
+
+- 先从交集开始
+
+### 交集并更新 intersection_update
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/791092/uid1190679-20260312-1773316235775) 
+
+- 观察集合所有方法
+
+```
+s.intersection_update
+```
+
+- 查询手册
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210830-1630309789149)
+
+### 具体效果
+
+```python
+s1 = {1, 2, 3}
+s2 = {3, 4, 5}
+s1.intersection(s2)
+s1
+s1.intersection_update(s2)
+s1
+s2
+```
+
+- 先求交集 再赋值
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/791092/uid1190679-20260407-1775533685866) 
+
+- 交集运算 可以做 增强赋值 吗？
+
+### &=
+
+```python
+s1 = {1, 2, 3}
+s2 = {3, 4, 5}
+s1 &= s2
+s1
+s2
+```
+
+- 效果相同
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/791092/uid1190679-20260312-1773316423493) 
+
+- 交集 可以更新
+	- 并集 可以更新 吗？
+
+### 求并更新
+
+- 没有找到union_update
+	- 但是找到了update
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/791092/uid1190679-20260313-1773400572723) 
+
+- update 这词 怎么来的？
+
+### update
+
+- date
+	- 以前 文档落款 有 日期时间
+	- 计算机时代 更新文档 会更新时间戳
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221214-1670991000940)
+
+- update
+	- 将文档、数据、程序向上(up)
+	- 更新到最新的日期(date)
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/791092/uid1190679-20260407-1775543053924) 
+
+- 跟上时代
+	- 与时俱进
+	- 与时偕行
+
+### update
+
+```python
+help(set.update)
+```
+
+- 查询帮助
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210830-1630311364130)
+
+### 具体使用
+
+- 通过定义可以知道
+	- update 函数是将当前集合和参数集合求并
+	- 然后更新
+
+```python
+s1 = {1, 2, 3}
+s2 = {3, 4, 5}
+s1.union(s2)
+s1
+s1.update(s2)
+s1
+s2
+```
+
+- 结果
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/791092/uid1190679-20260407-1775533865116) 
+
+- 可以用运算符完成吗？
+
+### 运算符
+
+- 求并集 的运算符是 |
+
+```python
+s1 = {1, 2, 3}
+s2 = {3, 4, 5}
+s1 |= s2
+s1
+s2
+```
+
+- 效果
+	- update 就是 求并后更新
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/791092/uid1190679-20260312-1773316737029) 
+
+### 求差并更新
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210830-1630311758607)
+
+- 这个规律还挺明显
+	- 先求差
+	- 再更新
+
+```python
+s1 = {1, 2, 3}
+s2 = {3, 4, 5}
+s1.difference(s2)
+s1
+s1.difference_update(s2)
+s1
+s2
+```
+
+- 效果
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/791092/uid1190679-20260407-1775534307629) 
+
+- 差集运算符 可以做 增强赋值 吗？
+
+### 求差集运算符
+
+- -是 集合 差集运算符
+
+```
+s1 = {1, 2, 3}
+s2 = {3, 4, 5}
+s1 -= s2
+s1
+s2
+```
+
+- 效果
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/791092/uid1190679-20260312-1773316867534) 
+
+- 除了 difference 之外
+	- 还有对称差集
+
+### 对称差集赋值
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210830-1630311980358)
+
+- 代码
+
+```
+s1 = {1, 2, 3}
+s2 = {3, 4, 5}
+s1.symmetric_difference(s2)
+s1
+s1.symmetric_difference_update(s2)
+s1
+s2
+```
+
+- 效果
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20260407-1775534355002)
+
+- 对称差运算符 可以做 增强赋值 吗？
+
+### 运算符
+
+```
+s1 = {1, 2, 3}
+s2 = {3, 4, 5}
+s1 ^= s2
+s1
+s2
+```
+
+- 效果
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/791092/uid1190679-20260312-1773316966306) 
+
+### 总结
+
+- 集合运算
+
+| 运算类型   | 基础运算符 | 增强赋值运算符 | 对应方法名          |
+|------------|------------|----------------|---------------------|
+| 交集       | &          | &=             | intersection        |
+| 并集       | \|         | \|=            | union               |
+| 差集       | -          | -=             | difference          |
+| 对称差集   | ^          | ^=             | symmetric_difference|
+
+- 集合 还有什么函数 吗？？🤔
+- 下次再说 👋
+

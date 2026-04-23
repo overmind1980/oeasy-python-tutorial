@@ -1,0 +1,368 @@
+---
+show: step
+version: 1.0
+enable_checker: true
+---
+
+# 列表 - 切片 - slice
+
+## 回忆
+
+- [配套视频](https://www.bilibili.com/video/BV1GrxDzmEqN)
+- 上次了解了count的词源
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240224-1708784551406)
+
+- count是列表中的计数函数
+- 列表 还可以进行什么操作 吗？🤔
+
+### 帮助
+
+- 搜索在线帮助
+	- https://docs.python.org
+	- 搜索 list
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192294/uid1190679-20250322-1742613452569) 
+
+- 点开合适的链接
+
+### 效果
+
+- 上下文 找到 
+	- 通用 序列 操作
+	- https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
+
+- 列表的本质是
+	- 内建的 可变序列
+	- built-in mutable sequence
+
+- 中括号 的 运算是 `索引`
+  - 得到列表中 第 i 个元素
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192294/uid1190679-20250322-1742613810111) 
+
+- 中括号里有冒号是什么意思？
+
+### 准备切片
+
+```
+nlist = list(range(5))
+nlist
+```
+
+- 生成数值列表
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192294/uid1190679-20250322-1742616065062) 
+
+### 前闭后开
+
+- slice(切片)  有 两个端点
+	1. 开始点
+	2. 结束点
+
+```
+nlist[1:3]
+nlist[1]
+nlist[3]
+nlist
+```
+
+- 前闭后开
+  - 前面 开始点  要包括的
+  - 后面 结束点  不包括的
+  - 所以结果是[1, 2]
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192294/uid1190679-20250322-1742616289294) 
+
+- 切片 这个词 怎么来的 呢？
+
+### 切片词源
+
+- 好几个单词同源
+	- slit
+	- split
+	- splinter
+	- slice
+	- 都是撕裂切开
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210829-1630225342064)
+
+- 把整体 切分成 
+	- 切片
+	- slice
+
+### 面包
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220805-1659704814872)
+
+- 就像 切片面包
+	- 切出 其中一段
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210829-1630225319763)
+
+- 切片无处不在
+
+### 切片
+
+- 吃鱼 也有切片
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220805-1659704882370)
+
+- 切头去尾？
+
+### 切头
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231203-1701605231989)
+
+### 切头
+
+```
+clist = list("oeasy")
+clist
+clist[0:3]
+clist[:3]
+```
+
+- 切头时 0可以省略	
+	- clist[0:3]
+	- 就是clist[:3]
+	- start如果为0可省
+	- 从头开始
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192294/uid1190679-20250322-1742618433941) 
+
+- 如果 鱼头 可省的话
+	- 鱼尾 可省 吗？
+
+### 去尾
+
+- 切片数字 要求是 
+	- 前闭后开
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231203-1701605249046)
+
+### 尝试
+
+```
+clist = list("oeasy")
+clist
+clist[2:5]
+clist[2:8]
+clist[2:]
+```
+
+- 结束位置
+	- 如果等于 列表长度
+		- 或者大于等于长度
+		- 或者省略
+	- 都可以 切下尾巴
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192294/uid1190679-20250322-1742618506867) 
+
+- 可以前后都省略吗？
+
+### 前后都省略
+
+```
+clist = list("oeasy")
+clist
+clist[:]
+```
+
+- 前后都省略
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192294/uid1190679-20250331-1743387551761) 
+
+- 从头到尾
+	- 整条鱼
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220805-1659704882370)
+
+- 中间 怎么 切 呢？
+
+### 切鱼
+
+- 还是 前闭后开
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231203-1701605449717)
+
+### 效果
+
+```
+clist = list("oeasy")
+clist
+clist[1:3]
+clist[2:3]
+clist[2:4]
+```
+
+- 控制
+	- 开始点
+	- 结束点
+	- 前闭后开
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192294/uid1190679-20250108-1736345325436) 
+
+- 如果 字符串列表中 
+	- 出现 转义字符
+	- 应该 如何切 呢？
+
+### 需要转义的字符
+
+```
+clist = list("o\ne\tasy")
+clist[1]
+clist[4]
+clist[1:4]
+```
+
+- 转义转义转换含义
+	- 转义字符仍然是一个字符
+	- 不影响索引和切片
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192294/uid1190679-20250322-1742618583891) 
+
+- 切片 在生活中 有什么案例吗？
+
+### 直播视频切片
+
+- 直播切片 
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240215-1707990925542)
+
+- 3小时直播
+	- 切的是 时间范围
+	- 精确到 帧
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240215-1707991477332)
+
+- 切片 支持负数 作为端点 吗？
+
+### 尝试
+
+```
+nlist = list(range(5))
+nlist
+```
+
+- 负数索引 不太熟悉
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192294/uid1190679-20250108-1736345688595) 
+
+- 把 负数 转化成 正数
+	- 就可以了
+
+### 转化工作
+
+- 将 负数索引前面 
+	- 加上 列表宽度
+	- len(nlist)
+
+```
+nlist 
+nlist[-3:-1]
+len(nlist)
+nlist[5-3:5-1]
+nlist[2:4]
+```
+
+- 问题解决了
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192294/uid1190679-20250322-1742635045581) 
+
+- 切片可以包括最后一片吗？
+
+### 给出stop
+
+- 最后一片 	面包4
+
+```
+nlist
+nlist[-3:5]
+nlist[-3:8]
+```
+
+- 只要给 stop 超过len的正数
+	- 可以 解决问题
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192294/uid1190679-20250323-1742725094221) 
+
+- 如果我 不想用 正数索引 呢？
+
+###  松手
+
+- 后面 是 开区间
+	- 即使 写成 -1
+	- 也没法包含 最后的列表项 
+- 因为 切片 规则 是 
+	- 前闭后`开`
+
+```
+nlist
+nlist[-3:-1]
+nlist[-3:]
+```
+ 
+- 干脆松手
+	- 反而 得到了
+	- 既然 stop 可以空
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192294/uid1190679-20250329-1743242617403) 
+
+- 那么 start 可以空 么？
+
+### 空
+
+- 都 可以 空
+	- 前面 空 要的是 鱼头
+
+```
+nlist[:2]
+nlist[2:]
+nlist[:]
+```
+
+- 后面 空 要的是 鱼尾
+	- 前后 都空 要的是 整条
+	- 空生万有
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192294/uid1190679-20250329-1743242676913) 
+
+- 切片 会改变 原列表 吗？
+
+### 列表 切片
+
+- 列表的切片 还是列表
+
+```
+clist = list("oeasy")
+clist[1:3]
+type(clist[1:3])
+clist
+```
+
+- 列表 不因切片 而变化
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192294/uid1190679-20250322-1742635625452) 
+
+- 但如果 就想要 改变原列表 呢？
+
+### 总结
+
+- 这次我们了解了
+	- 切片操作
+- 切片和索引 有点像
+	- 索引得到的是 `一个列表项`
+	- 切片得到的是 `列表项的列表`
+- 切片 主要 有2个端点
+  - 这两个端点 负责 位置
+  - start 开始 包括在内
+  - stop 结束 不包括在内
+  - 前闭后开
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221122-1669101884732) 
+
+- 可以通过 切片 改变原列表吗？？🤔
+- 下次再说 👋
+- [配套视频](https://www.bilibili.com/video/BV1GrxDzmEqN)
+
