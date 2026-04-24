@@ -46,7 +46,7 @@ cv.destroyAllWindows()
 
 - 输出时间
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240110-1704893646274)
+![图片描述](uid1190679-20240110-1704893646274.png)
 
 - 可以换一种字体吗？
 
@@ -92,7 +92,7 @@ cv2.destroyAllWindows()
 
 - 运行结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240110-1704894181663)
+![图片描述](uid1190679-20240110-1704894181663.png)
 
 ### 尝试融合
 
@@ -132,7 +132,7 @@ cv.destroyAllWindows()
 
 - 融合结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240110-1704894989095)
+![图片描述](uid1190679-20240110-1704894989095.png)
 
 - 可以自己定一个字体文件吗？
 
@@ -142,7 +142,7 @@ cv.destroyAllWindows()
 firefox https://www.fontke.com/font/128912666/
 ```
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240110-1704895295911)
+![图片描述](uid1190679-20240110-1704895295911.png)
 
 - 将字体下载后上传
 
@@ -184,7 +184,7 @@ cv.destroyAllWindows()
 
 - 字体效果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240110-1704895565546)
+![图片描述](uid1190679-20240110-1704895565546.png)
 
 - 冒号有点问题
 - 你能修复吗？
@@ -227,7 +227,7 @@ cv.destroyAllWindows()
 
 - 表盘
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240110-1704890331276)
+![图片描述](uid1190679-20240110-1704890331276.png)
 
 ### 时分秒指针
 ```
@@ -287,7 +287,7 @@ cv.destroyAllWindows()
 
 - 效果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240110-1704890399293)
+![图片描述](uid1190679-20240110-1704890399293.png)
 
 - 可以再加上文字效果吗？
 

@@ -13,7 +13,7 @@ enable_checker: true
 	- 计算机早期操作员 多是女性
 	- 她们最早发明了 bug🕷 这个概念
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231031-1698745117237)
+![图片描述](uid1190679-20231031-1698745117237.png)
 
 - 到现在也没有遇到一个bug
 	- 如何才能让程序里面有bug 呢？
@@ -45,7 +45,7 @@ print("2020------Guido in microsoft")
 	- 会报NameError 
 		- 之后直接退回shell
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230531-1685494464538)
+![图片描述](uid1190679-20230531-1685494464538.png)
 
 - 犯罪现场的各个变量的值
 	- 都无法取得
@@ -57,7 +57,7 @@ print("2020------Guido in microsoft")
 - 运行到第二行的时候
 	- 系统报了错误
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230224-1677247189136)
+![图片描述](uid1190679-20230224-1677247189136.jpg)
 
 - 发现错误
 	- 是好事
@@ -75,7 +75,7 @@ print("2020------Guido in microsoft")
 - 在错误发生的现场
 	- 观察当时环境中的变量和状态
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230531-1685512930088)
+![图片描述](uid1190679-20230531-1685512930088.png)
 
 - 可以在环境中观察
 	- print
@@ -93,7 +93,7 @@ print("2020------Guido in microsoft")
 - 找不到凶手的 时候
 	- 需要冷静地分析
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220722-1658495439185)
+![图片描述](uid1190679-20220722-1658495439185.png)
 
 - 找到凶手的 时候
 	- 那种快乐太真实了！！！
@@ -104,7 +104,7 @@ print("2020------Guido in microsoft")
 	- 并且 修改了
 	- 第二行pront的错误
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230224-1677246023019)
+![图片描述](uid1190679-20230224-1677246023019.png)
 
 - 但这一行行执行 
 	- 实在 有点慢啊
@@ -117,7 +117,7 @@ print("2020------Guido in microsoft")
 
 - 查询 until 的帮助
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230408-1680952622118)
+![图片描述](uid1190679-20230408-1680952622118.png)
 
 - 我们去试试
 
@@ -132,7 +132,7 @@ print("2020------Guido in microsoft")
 		- next 
 		- until
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230408-1680953047525)
+![图片描述](uid1190679-20230408-1680953047525.png)
 
 - 这样可以
 	- 快速捋到犯罪现场
@@ -149,7 +149,7 @@ print("2020------Guido in microsoft")
 	- cont
 	- c
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220916-1663316971884)
+![图片描述](uid1190679-20220916-1663316971884.jpg)
 
 - continue就是一路向前
 	- 直到 最后一行 
@@ -162,11 +162,11 @@ print("2020------Guido in microsoft")
 	- continue 会直接
 		- 从第一句 执行到 最后一句
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230531-1685495332967)
+![图片描述](uid1190679-20230531-1685495332967.png)
 
 - 如何让他在第3句之后停下来呢？
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230531-1685513095569)
+![图片描述](uid1190679-20230531-1685513095569.png)
 
 - q命令退出pdb
 - 然后去编辑guido.py
@@ -180,7 +180,7 @@ print("2020------Guido in microsoft")
 	- 不一定是 有bug的位置
 	- 而是 为了找bug而设置的 观测点
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230408-1680953451536)
+![图片描述](uid1190679-20230408-1680953451536.jpg)
 
 - 保存并退出vim
 - 重新用pdb3 运行 guido.py
@@ -192,7 +192,7 @@ print("2020------Guido in microsoft")
 	- 执行了三行代码
 	- 直接continue 到了断点(breakpoint)
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230531-1685513338428)
+![图片描述](uid1190679-20230531-1685513338428.png)
 
 - 断点位置
 	- 是写到程序里的
@@ -201,7 +201,7 @@ print("2020------Guido in microsoft")
 
 - 再continue一下
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230531-1685513432878)
+![图片描述](uid1190679-20230531-1685513432878.png)
 
 - 就直接又绕道开头了
 
@@ -219,7 +219,7 @@ print("2020------Guido in microsoft")
 	- 领导 让他 赶紧回家
 	- 他回复 死也不回家
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230209-1675911173810)
+![图片描述](uid1190679-20230209-1675911173810.png)
 
 - 妻子 听完后
 	- 安心地 挂上了电话
@@ -233,7 +233,7 @@ print("2020------Guido in microsoft")
 - 可以通过until命令
 	- 直接跳转到某行
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230408-1680953763730)
+![图片描述](uid1190679-20230408-1680953763730.jpg)
 
 - 还可以使用breakpoint()
 	- 在程序中 设置断点

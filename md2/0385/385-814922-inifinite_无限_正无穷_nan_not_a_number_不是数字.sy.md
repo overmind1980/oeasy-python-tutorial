@@ -12,12 +12,12 @@ enable_checker: true
 	- 还有 精准十进制(Decimal)的 nan 
 	- 他们的任何比较都是 False！
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210917-1631881993533)
+![图片描述](uid1190679-20210917-1631881993533.png)
 
 - nan
   - not-a-number
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220102-1641130238102)
+![图片描述](uid1190679-20220102-1641130238102.png)
 
 - 这和 ieee754 
 	- 对于 这个行为的定义 
@@ -39,7 +39,7 @@ decimal.Decimal("nan") == decimal.Decimal("nan")
 	- 都为 False
 - 但唯独除了一种情况
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/199155/uid1190679-20260327-1774573619832) 
+![图片描述](uid1190679-20260327-1774573619832.png) 
 
 - 哪种情况呢？
 
@@ -51,7 +51,7 @@ float("nan") != float("nan")
 
 - 不等于的 情况
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20211231-1640921960042)
+![图片描述](uid1190679-20211231-1640921960042.png)
 
 - NaN（not a number）
   - 在数学表示上表示一个无法表示的数
@@ -59,7 +59,7 @@ float("nan") != float("nan")
   - 无法描述的数也不等于无法描述的数
   - 和这个 nan 类似的 inf 是什么意思来着？
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220102-1641130189431)
+![图片描述](uid1190679-20220102-1641130189431.png)
 
 - 指数部分全 1 的话
   - 尾数部分不是全零就是 NaN
@@ -80,7 +80,7 @@ float("nan") != float("nan")
 	- 转化为 布尔类型
 	- 也就是数字化
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230114-1673666622891)
+![图片描述](uid1190679-20230114-1673666622891.png)
 
 - inf
   - infinite
@@ -93,12 +93,12 @@ float("nan") != float("nan")
 		- 无瑕疵的
 		- 纯度高的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230114-1673667522257)
+![图片描述](uid1190679-20230114-1673667522257.png)
 
 - 能分得出来的
 	- 最高质量的
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/814922/uid1190679-20260328-1774645515522) 
+![图片描述](uid1190679-20260328-1774645515522.png) 
 
 - to make fine
 	- 和解、解决争端
@@ -112,7 +112,7 @@ float("nan") != float("nan")
 	- 得找钱 
 	- 找人提供资金
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230114-1673677251581)
+![图片描述](uid1190679-20230114-1673677251581.png)
 
 - financial 
 	- 金融的
@@ -123,7 +123,7 @@ float("nan") != float("nan")
 	- re- 重新
 	- fine 提纯
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230114-1673674531887)
+![图片描述](uid1190679-20230114-1673674531887.png)
 
 - 如果不够锋利，就需要
 	- 精炼; 提纯; 
@@ -141,7 +141,7 @@ float("nan") != float("nan")
 	- 界限
 	- 边界
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/814922/uid1190679-20260328-1774651857507) 
+![图片描述](uid1190679-20260328-1774651857507.png) 
 
 
 - 生命的终点
@@ -161,7 +161,7 @@ float("nan") != float("nan")
 	- con- 全部
 	- fine 界限
  
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230114-1673675575014)
+![图片描述](uid1190679-20230114-1673675575014.png)
 
 - 到处都是界限
 	- confine
@@ -174,7 +174,7 @@ float("nan") != float("nan")
 	- de- 强调
 	- fine 边界
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230114-1673676909526)
+![图片描述](uid1190679-20230114-1673676909526.png)
 
 - 勾画出…的轮廓或外形：
 	- 边界明确
@@ -188,7 +188,7 @@ float("nan") != float("nan")
 - fix
 	- 精修之后
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230114-1673674750154)
+![图片描述](uid1190679-20230114-1673674750154.png)
 
 - finish、finished
 	- 已经完成了
@@ -201,15 +201,15 @@ float("nan") != float("nan")
 		- -ite 有什么性质的
 		- 有边界性质的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230114-1673677911561)
+![图片描述](uid1190679-20230114-1673677911561.jpg)
 
 - infinite
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230114-1673677900841)
+![图片描述](uid1190679-20230114-1673677900841.png)
 
 ### inf
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220803-1659523549966)
+![图片描述](uid1190679-20220803-1659523549966.png)
 
 - inf 和 nan 的不同在于
   - inf 是一个超过浮点表示范围的浮点数
@@ -218,7 +218,7 @@ float("nan") != float("nan")
   - 因此无法用浮点数表示(比如 1/0）
   - 而 nan 则一般表示一个非浮点数（比如无理数）
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210917-1631882178011)
+![图片描述](uid1190679-20210917-1631882178011.png)
 
 - 在数学上
     - inf==inf
@@ -234,7 +234,7 @@ float("nan") != float("nan")
 	- 判断一个数 是否是 nan
     - 可以直接判断 他是否与自身 相等
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20211231-1640922545040)
+![图片描述](uid1190679-20211231-1640922545040.png)
 
 - 如果就想要 直接判断呢？
 
@@ -247,7 +247,7 @@ math.isnan(x)
 ```
 - 使用数学模块
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210917-1631888015766)
+![图片描述](uid1190679-20210917-1631888015766.png)
 
 - math 包中的 isnan 函数
   - is 的意思是进行判断
@@ -262,7 +262,7 @@ math.isnan(x)
 - 这也由是 754中 对于inf的定义决定的
 - 你说这东西分这么细不是分别心么？
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210917-1631882486234)
+![图片描述](uid1190679-20210917-1631882486234.png)
 
 - 是的
 	- 就是分别心
@@ -297,13 +297,13 @@ math.isnan(x)
 | If the implementation is easy to explain, it may be a good idea.<br> | 如果实现易于解释，那或许是个好主意 |
 | Namespaces are one honking great idea -- let's do more of those!<br> | 命名空间是个超棒的主意，我们应该多用 |
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220803-1659523011634)
+![图片描述](uid1190679-20220803-1659523011634.png)
 
 ### 分析原因
 
 - 分析下面的不等式结果成因
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220803-1659523588165)
+![图片描述](uid1190679-20220803-1659523588165.png)
 
 - 这些不符合我们直觉结果的原因
 	- 是由于ieee754规则和相关运算规则确定的

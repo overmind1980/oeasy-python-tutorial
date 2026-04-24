@@ -23,7 +23,7 @@ enable_checker: true
 - 可以根据节点
 	- 找到 他的`父亲`、`孩子`、`哥哥`、`弟弟`吗？
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1138256/uid1190679-20250423-1745362306510) 
+![图片描述](../0525/uid1190679-20250423-1745362306510.png) 
 
 ### 父子兄弟
 
@@ -48,14 +48,14 @@ for num in range(3):
 - 可以用 方法 
 	- 得到 节点的 哥哥或弟弟 节点
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210901-1630460957729)
+![图片描述](../0526/uid1190679-20210901-1630460957729.png)
 
 - 可以 得到 
 	- 父级或者子级 节点 吗?
 
 ### 父级
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210901-1630460949130)
+![图片描述](../0526/uid1190679-20210901-1630460949130.png)
 
 - 得到父级
 
@@ -65,7 +65,7 @@ et_body.getparent()
 
 - body的 父亲 是 html
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192644/uid1190679-20250426-1745657417097) 
+![图片描述](../0526/uid1190679-20250426-1745657417097.png) 
 
 - html 的孩子有谁呢？
 
@@ -77,13 +77,13 @@ et_html.getchildren()
 
 - 子集 得到
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240531-1717149499113)
+![图片描述](../0526/uid1190679-20240531-1717149499113.png)
 
 ### 关系
 
 - 伦理清晰
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240401-1711935972891)
+![图片描述](../0526/uid1190679-20240401-1711935972891.png)
 
 - 准备验证
 
@@ -104,7 +104,7 @@ print(et_head.getnext())
   - body哥哥head
   - head弟弟body
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240531-1717149609557)
+![图片描述](../0526/uid1190679-20240531-1717149609557.png)
 
 ### 整体输出
 
@@ -114,13 +114,13 @@ print(etree.tostring(et_html,pretty_print=True).decode())
 
 - 目前 层级间 缩进两格
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1138256/uid1190679-20250421-1745201075540) 
+![图片描述](../0526/uid1190679-20250421-1745201075540.png) 
 
 - 可以 把缩进 改为4空格吗？
 
 ### 控制缩进
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210901-1630505528348)
+![图片描述](../0526/uid1190679-20210901-1630505528348.png)
 
 - 根据文档
 	- 再次输出
@@ -132,7 +132,7 @@ print(etree.tostring(et_html,pretty_print=True).decode())
 
 - 效果	
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192644/uid1190679-20250426-1745657490431) 
+![图片描述](../0526/uid1190679-20250426-1745657490431.png) 
 
 - 这棵dom树 架子有了
 	- 但却是 空架子	
@@ -145,7 +145,7 @@ print(etree.tostring(et_html,pretty_print=True).decode())
 	- etree元素 的 成员属性
     - 就像 标签(tag) 一样
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210901-1630462348659)
+![图片描述](../0526/uid1190679-20210901-1630462348659.png)
 
 - text 成员的类型是
 	- 字符串
@@ -167,7 +167,7 @@ print(etree.tostring(et_html,pretty_print=True).decode())
 - 这里出现的四个元素
 	- 都没有text成员
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220912-1662977673434)
+![图片描述](../0526/uid1190679-20220912-1662977673434.png)
 
 - 给title添加
 	- text成员
@@ -185,7 +185,7 @@ print(etree.tostring(et_html,pretty_print=True).decode())
 - 可以看到设置了 title中的 文本(text)
 	- 网页有了标题
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20250422-1745304061790)
+![图片描述](../0526/uid1190679-20250422-1745304061790.png)
 
 - 可以 让body `也`有text吗？
 
@@ -198,7 +198,7 @@ print(etree.tostring(et_html,pretty_print=True).decode())
 
 - 运行结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221125-1669382284546)
+![图片描述](../0526/uid1190679-20221125-1669382284546.png)
 
 - 元素树(element tree)
 	- 可以 生成得 更快些 吗?
@@ -208,7 +208,7 @@ print(etree.tostring(et_html,pretty_print=True).decode())
 - etree.Element函数
 	- 作用是构建etree的Element
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210901-1630463450183)
+![图片描述](../0526/uid1190679-20210901-1630463450183.png)
 
 - etree.SubElement函数
 	- 不但 构建etree的Element
@@ -235,7 +235,7 @@ for element in et_html:
 
 - 和原来的代码等效
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240531-1717150984911)
+![图片描述](../0526/uid1190679-20240531-1717150984911.png)
 
 - 除了 text 成员
 	- `还有`啥 也代表着 
@@ -247,7 +247,7 @@ for element in et_html:
 	- 追加尾部文本
 	- tail
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210901-1630462571298)
+![图片描述](../0526/uid1190679-20210901-1630462571298.png)
 
 - tail 是什么意思呢？
 
@@ -255,7 +255,7 @@ for element in et_html:
 
 - tail就是尾巴
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221125-1669383030883)
+![图片描述](../0526/uid1190679-20221125-1669383030883.png)
 
 - 具体怎么用呢？
 
@@ -276,7 +276,7 @@ for element in et_html:
 
 - body中的文本只有o2z吗?
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240531-1717150350431)
+![图片描述](../0526/uid1190679-20240531-1717150350431.png)
 
 - 为什么body中的文本
 	- 只有o2z?
@@ -288,17 +288,17 @@ for element in et_html:
   - 也是 字符串类型的
   - 只不过在元素结束标签的后面
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221125-1669385229895)
+![图片描述](../0526/uid1190679-20221125-1669385229895.jpg)
 
 - 怎么 把body中的文本 `都` 提取出来呢?
 
 ### 查找帮助
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221125-1669382445393)
+![图片描述](../0526/uid1190679-20221125-1669382445393.png)
 
 - 好像可以试试
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221125-1669382486173)
+![图片描述](../0526/uid1190679-20221125-1669382486173.jpg)
 
 - etree.tostring(et_body, method="text")
 
@@ -320,7 +320,7 @@ print(etree.tostring(et_html[1], method="text").decode())
 	- 把 标签都去除
 	- 筛出 纯文本 来
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240531-1717151189302)
+![图片描述](../0526/uid1190679-20240531-1717151189302.png)
 
 - 但是 单词 都 粘在一起
 	- 分不开了 
@@ -351,7 +351,7 @@ print(etree.tostring(et_html[1], method="text").decode())
   - pretty_print = True 
 	- 可以控制输出结果包含缩进信息
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192644/uid1190679-20250423-1745362457112) 
+![图片描述](../0526/uid1190679-20250423-1745362457112.png) 
 
 - 想要把 节点下面
 	- 所有的节点 的文本

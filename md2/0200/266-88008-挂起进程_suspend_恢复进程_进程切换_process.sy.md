@@ -26,7 +26,7 @@ enable_checker: true
 	1. 在~/.zshrc最后一行写下
 		- `export PATH=$PATH:~`
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221009-1665299270427)
+![图片描述](../0264/uid1190679-20221009-1665299270427.png)
 
 - <kbd>ctrl</kbd>+<kbd>c</kbd>会停止 进程
 	- 如何才能让 进程继续跑呢？🤔
@@ -36,7 +36,7 @@ enable_checker: true
 - 怎么查看进程呢？
 	- 运行 `ps`命令
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230126-1674720458570)
+![图片描述](../0266/uid1190679-20230126-1674720458570.png)
 
 - 但是如果 `show.py` 持续输出时间
 	- 怎么运行 `ps`命令呢？🤔
@@ -55,7 +55,7 @@ while True:
 - 我需要把 `sleep.py` 转到后台运行
 	- 然后查询进程信息
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210221-1613901469592)
+![图片描述](../0266/uid1190679-20210221-1613901469592.png)
 
 
 ### 切到后台
@@ -68,7 +68,7 @@ while True:
 	- 就是不给他用cpu了
 	- suspended(挂起了)
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210221-1613901550053)
+![图片描述](../0266/uid1190679-20210221-1613901550053.png)
 
 - 如何理解suspended呢？
 
@@ -77,7 +77,7 @@ while True:
 - pend 悬挂
 	- pending 悬而未决的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230413-1681396705344)
+![图片描述](../0266/uid1190679-20230413-1681396705344.png)
 
 - impending 
 	- im 加强语气
@@ -88,7 +88,7 @@ while True:
 - pendulum
 	- [ˈpendjələm]
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230126-1674721536608)
+![图片描述](../0266/uid1190679-20230126-1674721536608.png)
 
 - 钟摆
 
@@ -99,7 +99,7 @@ while True:
 	- 悬挂
 	- 悬挂在某物下→靠...支撑→依靠
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230126-1674721750590)
+![图片描述](../0266/uid1190679-20230126-1674721750590.png)
 
 - dependable 可依赖的
 - dependant 靠他人生活的
@@ -110,7 +110,7 @@ while True:
 - dependence 依靠依赖
 - independence 不依赖 独立
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240402-1712054902062)
+![图片描述](../0266/uid1190679-20240402-1712054902062.png)
 
 - co-dependence 互相依存
 - inter-dependence 相互倚重
@@ -124,7 +124,7 @@ while True:
 - appendix
 	- 附加的、附录、阑尾
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230126-1674722083226)
+![图片描述](../0266/uid1190679-20230126-1674722083226.png)
 
 - appendagen
 	- 附加物
@@ -136,7 +136,7 @@ while True:
 	- sus- 同sub 从下面来的
 	- 在什么下面悬挂
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230126-1674722245741)
+![图片描述](../0266/uid1190679-20230126-1674722245741.png)
 
 - suspended
 	- 被挂起的
@@ -148,7 +148,7 @@ while True:
 
 - suspend = sus + pend
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221222-1671717103266)
+![图片描述](../0266/uid1190679-20221222-1671717103266.png)
 
 - sus来自于sub 下面
 	- sustain 
@@ -178,7 +178,7 @@ while True:
 	- 挂起
 	- 吊，悬挂；推迟，暂停
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230126-1674739277939)
+![图片描述](../0266/uid1190679-20230126-1674739277939.png)
 
 - 挂起来和推迟有啥关系？
 
@@ -188,7 +188,7 @@ while True:
 	- 刃朝上
 	- 抽出来 就是要战斗
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221222-1671717759925)
+![图片描述](../0087/uid1190679-20221222-1671717759925.png)
 
 - 挂起来
 	- sustain 维持了 
@@ -202,7 +202,7 @@ while True:
 - 可以 直接后台运行
 	- 但是 不输出到屏幕 吗？
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230126-1674739277939)
+![图片描述](../0266/uid1190679-20230126-1674739277939.png)
 
 ## 总结
 
@@ -210,7 +210,7 @@ while True:
 	- <kbd>ctrl</kbd> + <kbd>z</kbd> 把当前进程
 		- 切换到后台并暂停
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240402-1712055128803)
+![图片描述](../0266/uid1190679-20240402-1712055128803.png)
 
 - 如何 把进程
 	- 切换回 前台 

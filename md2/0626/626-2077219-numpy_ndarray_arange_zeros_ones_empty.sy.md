@@ -36,14 +36,14 @@ cv2.destroyAllWindows()
 
 - 结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240225-1708829962793)
+![图片描述](uid1190679-20240225-1708829962793.png)
 
 - 类型是numpy
 - 有官网吗？
 
 ### 官网
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240225-1708830090400)
+![图片描述](uid1190679-20240225-1708830090400.png)
 
 - 核心就是 快速的 
 	- N-dimensional 
@@ -54,7 +54,7 @@ cv2.destroyAllWindows()
 	- Numerical Python
 	- python数字计算
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240225-1708830157833)
+![图片描述](uid1190679-20240225-1708830157833.png)
 
 - https://numpy.org/doc/stable/user/absolute_beginners.html
 
@@ -72,7 +72,7 @@ print(a.shape)
 - 具体来说就是1维数组
 	- 数组里面有6个元素
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240225-1708831046474)
+![图片描述](uid1190679-20240225-1708831046474.png)
 
 - 这和列表有什么区别？
 
@@ -82,7 +82,7 @@ print(a.shape)
 	- 可以不同类型
 	- [1,"2",b"3"]
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240225-1708831202794)
+![图片描述](uid1190679-20240225-1708831202794.png)
 
 - numpy中的ndarray 必须
 	- 相同类型
@@ -102,7 +102,7 @@ print(a.shape)
 	- 所有元素的 类型相同
 	- 都是dtype
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240225-1708837171289)
+![图片描述](uid1190679-20240225-1708837171289.png)
 
 ```
 a = np.array([1, 2, 3, 4, 5, 6])
@@ -115,11 +115,11 @@ print(a.dtype)
 	- int64
 	- 8-byte 的 整数
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240225-1708837316365)
+![图片描述](uid1190679-20240225-1708837316365.png)
 
 ### 构造函数
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240225-1708837507122)
+![图片描述](uid1190679-20240225-1708837507122.png)
 
 ```
 import numpy as np
@@ -131,7 +131,7 @@ print(a.dtype)
 
 - 默认类型是float类型的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240225-1708837578976)
+![图片描述](uid1190679-20240225-1708837578976.png)
 
 - 可以 设置 数据类型吗？
 
@@ -147,7 +147,7 @@ print(a.dtype)
 
 - 可以设置 类型
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240225-1708837649197)
+![图片描述](uid1190679-20240225-1708837649197.png)
 
 - 可以看到 这个数组吗？
 
@@ -165,7 +165,7 @@ key = cv2.waitKey()
 
 - 两个黑格子
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240225-1708837766648)
+![图片描述](uid1190679-20240225-1708837766648.png)
 
 - 还有其他 生成数组的方法吗？
 
@@ -184,7 +184,7 @@ key = cv2.waitKey()
 - 结果还是很黑
 	- 但是 数值 是 1
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240225-1708838066550)
+![图片描述](uid1190679-20240225-1708838066550.png)
 
 - 可以变成 纯白色的吗？
 
@@ -192,7 +192,7 @@ key = cv2.waitKey()
 
 - 借助broadcast特性
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240225-1708865448018)
+![图片描述](uid1190679-20240225-1708865448018.png)
 
 - 乘法 发生在 每个格子里
 
@@ -210,14 +210,14 @@ key = cv2.waitKey()
 
 - 1 * 255 = 255
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240225-1708838139882)
+![图片描述](uid1190679-20240225-1708838139882.png)
 
 - 得到白色
 - 还有什么生成数组的方法？
 
 ### empty
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240225-1708838267383)
+![图片描述](uid1190679-20240225-1708838267383.png)
 
 ```
 import cv2
@@ -233,7 +233,7 @@ key = cv2.waitKey()
 	- 而是 根据内存状况	
 	- 直接生成 数组
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240225-1708838293182)
+![图片描述](uid1190679-20240225-1708838293182.png)
 
 - 可以生成连续的吗？
 
@@ -251,7 +251,7 @@ key = cv2.waitKey()
 
 - 结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240225-1708839117069)
+![图片描述](uid1190679-20240225-1708839117069.png)
 
 - 尝试可视化
 
@@ -271,7 +271,7 @@ key = cv2.waitKey()
 
 - 结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240225-1708839528872)
+![图片描述](uid1190679-20240225-1708839528872.png)
 
 ###  查询帮助
 
@@ -282,7 +282,7 @@ help(np.arange)
 
 - 方法和range相似
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240225-1708839397347)
+![图片描述](uid1190679-20240225-1708839397347.png)
 
 |英文|含义|
 |---|---|
@@ -306,13 +306,13 @@ key = cv2.waitKey()
 
 - 结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240225-1708839589586)
+![图片描述](uid1190679-20240225-1708839589586.png)
 
 - 还有其他构造函数吗？
 
 ### linespace
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240225-1708841039043)
+![图片描述](uid1190679-20240225-1708841039043.png)
 
 - 讲一个数值范围分成 几段
 
@@ -330,7 +330,7 @@ key = cv2.waitKey()
 
 - 结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240225-1708841074408)
+![图片描述](uid1190679-20240225-1708841074408.png)
 
 ### 观察 二维数组
 
@@ -351,7 +351,7 @@ key = cv2.waitKey()
 
 - 可以看到 12个颜色
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240225-1708854896519)
+![图片描述](uid1190679-20240225-1708854896519.png)
 
 - 可以变化这个矩阵吗？
 
@@ -374,7 +374,7 @@ key = cv2.waitKey()
 
 - 变换
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240225-1708855005977)
+![图片描述](uid1190679-20240225-1708855005977.png)
 
 
 

@@ -18,7 +18,7 @@ enable_checker: true
 |基于类的对象 | 独立的|
 |需要self|不需要self|
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192220/uid1190679-20250216-1739681031839) 
+![图片描述](uid1190679-20250216-1739681031839.png) 
 
 - append这个词 怎么来的呢？🤔
 
@@ -27,7 +27,7 @@ enable_checker: true
 - pend 来自于 *(s)pen-
 	- 意思是悬挂 拖拽
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221222-1671717328723)
+![图片描述](uid1190679-20221222-1671717328723.png)
 
 - 上面这些单词你认识谁呢？
 
@@ -37,13 +37,13 @@ enable_checker: true
 	- 手指 拉伸 的 宽度
 	- 一拃
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1506729/uid1190679-20250216-1739690183127) 
+![图片描述](uid1190679-20250216-1739690183127.png) 
 
 ### 物体间的距离
 
 - 宽度
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701489954080)
+![图片描述](uid1190679-20231202-1701489954080.png)
 
 ### spanner
 
@@ -51,7 +51,7 @@ enable_checker: true
 	- span 拧紧
 	- -er 工具 或 人
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1506729/uid1190679-20250107-1736214851454) 
+![图片描述](uid1190679-20250107-1736214851454.png) 
 
 - 紧螺丝 用的
 	- 扳手
@@ -62,11 +62,11 @@ enable_checker: true
 	- span 拉伸宽度
 	- en 动词
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701490194681)
+![图片描述](uid1190679-20231202-1701490194681.png)
 
 - 绷紧 紧张
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1506729/uid1190679-20250216-1739690438084) 
+![图片描述](uid1190679-20250216-1739690438084.png) 
 
 - 上弦
 
@@ -79,7 +79,7 @@ enable_checker: true
 	- 正悬而未决的
 	- 暂停的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701484118552)
+![图片描述](uid1190679-20231202-1701484118552.png)
 
 - 待办的
 
@@ -91,7 +91,7 @@ enable_checker: true
 	- pend 悬挂
 	- 在悬挂里面的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701485678771)
+![图片描述](uid1190679-20231202-1701485678771.png)
 
 - 悬而未决的
 
@@ -103,7 +103,7 @@ enable_checker: true
 	- -ing 正在 	
 	- 正悬而未决的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701485748458)
+![图片描述](uid1190679-20231202-1701485748458.png)
 
 - 即将来临
 
@@ -114,7 +114,7 @@ enable_checker: true
 	- pend 悬挂
 	- ant 人或者东西
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701485932286)
+![图片描述](uid1190679-20231202-1701485932286.png)
 
 - 挂坠
 
@@ -123,11 +123,11 @@ enable_checker: true
 - 悬垂摆动的
 	- /ˈpendjələs/
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701488508349)
+![图片描述](uid1190679-20231202-1701488508349.png)
 
 - 麦穗
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701488524628)
+![图片描述](uid1190679-20231202-1701488524628.png)
 
 - 肚子
 
@@ -137,7 +137,7 @@ enable_checker: true
 	- /ˈpendjələm/
 	- 摆动的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701488680563)
+![图片描述](uid1190679-20231202-1701488680563.png)
 
 - 钟摆
 	- 单摆
@@ -151,7 +151,7 @@ enable_checker: true
 	- ular 相关的东西
 	- 垂下来的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701489006408)
+![图片描述](uid1190679-20231202-1701489006408.png)
 
 - 垂直的
 
@@ -163,7 +163,7 @@ enable_checker: true
 	- (下面)悬挂的
 - 依赖(上面)的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701482847110)
+![图片描述](uid1190679-20231202-1701482847110.png)
 
 - depend on
 	- 依赖于
@@ -175,7 +175,7 @@ enable_checker: true
 	- ent 的 人或事
 	- 依赖上面的人
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701483753663)
+![图片描述](uid1190679-20231202-1701483753663.png)
 
 - 需要照料的
 
@@ -186,7 +186,7 @@ enable_checker: true
 	- dependent 需要照料的
 	- 不需要 照料的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701483948027)
+![图片描述](uid1190679-20231202-1701483948027.png)
 
 - 独立的
 
@@ -196,7 +196,7 @@ enable_checker: true
 	- 从 悬挂 到 称重
 	- 从 称重 到 衡量
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701482652485)
+![图片描述](uid1190679-20231202-1701482652485.png)
 
 - 衡量
 
@@ -206,7 +206,7 @@ enable_checker: true
 	- dis 分发
 	- pense 称重
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701489569053)
+![图片描述](uid1190679-20231202-1701489569053.png)
 
 - 配药
 
@@ -215,7 +215,7 @@ enable_checker: true
 - pound
 	- 称重单位
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701483366217)
+![图片描述](uid1190679-20231202-1701483366217.png)
 
 - 称重 金属
 	- 成为 货币 单位
@@ -226,11 +226,11 @@ enable_checker: true
 - 西班牙、菲律宾、墨西哥、阿根廷口音
 	- 称 pound 为 peso
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701489196837)
+![图片描述](uid1190679-20231202-1701489196837.png)
 
 - 比索
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701489261923)
+![图片描述](uid1190679-20231202-1701489261923.png)
 
 ### ponder
 
@@ -238,7 +238,7 @@ enable_checker: true
 	- 支出多少
 	- 得衡量、思考 的 人
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701484243750)
+![图片描述](uid1190679-20231202-1701484243750.png)
 
 - 思考者		
 
@@ -246,7 +246,7 @@ enable_checker: true
 
 - 支付方式
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701488903250)
+![图片描述](uid1190679-20231202-1701488903250.png)
 
 - pension
 	- 养老金
@@ -257,7 +257,7 @@ enable_checker: true
 	- ex 向外
 	- pend 支付
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701484303828)
+![图片描述](uid1190679-20231202-1701484303828.png)
 
 - expend
 	- 往外支付
@@ -270,7 +270,7 @@ enable_checker: true
 - 公司支出
 	- 薪水之类的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701484568614)
+![图片描述](uid1190679-20231202-1701484568614.png)
 
 - expenditure
 	- 购买实体资产的费用
@@ -280,7 +280,7 @@ enable_checker: true
 - expensive
 	- 昂贵的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701484739079)
+![图片描述](uid1190679-20231202-1701484739079.png)
 
 ### compensate
 
@@ -290,7 +290,7 @@ enable_checker: true
 	- pensate 衡量
 	- 一起来衡量
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701485026686)
+![图片描述](uid1190679-20231202-1701485026686.png)
 
 - compensate
 	- 补偿
@@ -302,7 +302,7 @@ enable_checker: true
 	- ation 的东西
 	- 补偿的东西 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701485184445)
+![图片描述](uid1190679-20231202-1701485184445.png)
 
 - 拆迁补偿
 
@@ -315,7 +315,7 @@ enable_checker: true
 		- 从下面来的 挂着的
 	- 挂起
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1506729/uid1190679-20250107-1736215487199) 
+![图片描述](uid1190679-20250107-1736215487199.png) 
 
 - suspended
 	- 被挂起的
@@ -326,7 +326,7 @@ enable_checker: true
 	- 悬而未决的
 	- 焦虑
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1506729/uid1190679-20250107-1736215597903) 
+![图片描述](uid1190679-20250107-1736215597903.png) 
 
 - suspend 
 	- 挂起
@@ -340,7 +340,7 @@ enable_checker: true
 	- 刃朝上
 	- 抽出来 就是要战斗
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221222-1671717759925)
+![图片描述](uid1190679-20221222-1671717759925.png)
 
 - 挂起来
 	- suspend 维持了 
@@ -355,7 +355,7 @@ enable_checker: true
 	- pend 悬挂
 	- 强调悬挂
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701486676127)
+![图片描述](uid1190679-20231202-1701486676127.png)
 
 - 继续往下挂
 	- 追加
@@ -365,17 +365,17 @@ enable_checker: true
 - 在列表结尾处
 	- 继续追加
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701486760724)
+![图片描述](uid1190679-20231202-1701486760724.png)
 
 ### appendix
 
 - appendix
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701486891251)
+![图片描述](uid1190679-20231202-1701486891251.png)
 
 - 挂在最后的附录
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701486912042)
+![图片描述](uid1190679-20231202-1701486912042.png)
 
 - 挂在大肠后面的阑尾
 
@@ -384,7 +384,7 @@ enable_checker: true
 - append 来自于 
 	- pend 悬挂
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701491570142)
+![图片描述](uid1190679-20231202-1701491570142.png)
 
 - append 
 	- 在尾部 
@@ -396,7 +396,7 @@ enable_checker: true
 	- append
 	- 追加
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210827-1630073691369)
+![图片描述](uid1190679-20210827-1630073691369.png)
 
 - 还有什么 方法呢？🤔
 - 我们下次再说！👋

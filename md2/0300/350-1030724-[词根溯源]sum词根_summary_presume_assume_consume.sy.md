@@ -26,7 +26,7 @@ enable_checker: true
 - 把 数量 加到一起的 总数
 	- 就是 和
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230808-1691496935496)
+![图片描述](../0350/uid1190679-20230808-1691496935496.png)
 
 ### summation
 
@@ -35,7 +35,7 @@ enable_checker: true
 	- ation 行为，过程，状态，结果 
 	- 总数
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230808-1691497350018)
+![图片描述](../0350/uid1190679-20230808-1691497350018.png)
 
 ### summit
 
@@ -45,7 +45,7 @@ enable_checker: true
 	- 最高的 
 	- 顶峰
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230808-1691498183253)
+![图片描述](../0350/uid1190679-20230808-1691498183253.png)
 
 
 ### summary
@@ -56,7 +56,7 @@ enable_checker: true
 	- 内容总括 
 	- 摘要
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230808-1691497274194)
+![图片描述](../0350/uid1190679-20230808-1691497274194.png)
 
 - summarize
 	- summar〔y〕
@@ -71,7 +71,7 @@ enable_checker: true
 	- 预先拿住 
 	- 假定
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230808-1691498404113)
+![图片描述](../0350/uid1190679-20230808-1691498404113.png)
 
 - presumption
 	- pre 前；预先 
@@ -89,7 +89,7 @@ enable_checker: true
 	- 假设 承担〔责任〕
 	- 毫无依据的假设
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230808-1691498555679)
+![图片描述](../0350/uid1190679-20230808-1691498555679.png)
 
 - assumption
 	- as 表加强 
@@ -107,7 +107,7 @@ enable_checker: true
 	-  重新拿起 
 	-  恢复
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230808-1691499226845)
+![图片描述](../0350/uid1190679-20230808-1691499226845.png)
 
 - 简历
 
@@ -119,7 +119,7 @@ enable_checker: true
 	- 重新取回
 	- 再采取
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230808-1691499853343)
+![图片描述](../0350/uid1190679-20230808-1691499853343.png)
 
 ### consume
 
@@ -129,7 +129,7 @@ enable_checker: true
 	- e → 拿完 
 	- 消费
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230808-1691500263007)
+![图片描述](../0350/uid1190679-20230808-1691500263007.png)
 
 - consumer
 	- consume 的名词 
@@ -144,7 +144,7 @@ enable_checker: true
 	- consume的形容词 
 	- 消耗性的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230808-1691500289284)
+![图片描述](../0350/uid1190679-20230808-1691500289284.png)
 
 - consumerism
 	- 消费主义
@@ -163,7 +163,7 @@ enable_checker: true
 	- 完全的
 	- 完美的技巧
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230808-1691500671609)
+![图片描述](../0350/uid1190679-20230808-1691500671609.png)
 
 - 引申义
 	- 圆房
@@ -176,7 +176,7 @@ enable_checker: true
 
 - 这次了解了sum词根的含义
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230808-1691501180976)
+![图片描述](../0350/uid1190679-20230808-1691501180976.png)
 
 - sum 就是 求 两个数的和
 	- 可以 让程序 

@@ -18,7 +18,7 @@ enable_checker: true
 | <kbd>i</kbd> |  切换到  插入模式 |
 | <kbd>h</kbd> <kbd>j</kbd> <kbd>k</kbd> <kbd>l</kbd> | 左 下 上 右 移动|
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240116-1705413175510)
+![图片描述](uid1190679-20240116-1705413175510.png)
 
 - 温习了 底行命令
 
@@ -56,12 +56,12 @@ print("oeasy")
 	- 直接 控制手指 进行打字
 	- 效率高
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240116-1705410793639)
+![图片描述](uid1190679-20240116-1705410793639.png)
 
 - 不要把 右手手腕 移动到方向键区域
 	- 尝试 双手正位 移动光标
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240116-1705410608114)
+![图片描述](uid1190679-20240116-1705410608114.png)
 
 - 但是<kbd>esc</kbd>有点遥远
 	- 有什么办法 解决 吗？
@@ -70,17 +70,17 @@ print("oeasy")
 
 - 在mac系统中
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240116-1705410892676)
+![图片描述](uid1190679-20240116-1705410892676.png)
 
 - 然后将大写锁定直接改为<kbd>esc</kbd>
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240116-1705410859779)
+![图片描述](uid1190679-20240116-1705410859779.png)
 
 - windows系统应该如何修改呢？
 
 ### windows系统修改键位
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240116-1705415032277)
+![图片描述](uid1190679-20240116-1705415032277.png)
 
 -  将下列代码保存为caps.reg文件，运行即可。
 
@@ -93,7 +93,7 @@ Windows Registry Editor Version 5.00
 
 - 注意编码格式和保存类型
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240422-1713751195724)
+![图片描述](uid1190679-20240422-1713751195724.png)
 
 
 ### 原理
@@ -133,14 +133,14 @@ Windows Registry Editor Version 5.00
 	- 2行
 	- 30个字符
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240116-1705413343098)
+![图片描述](uid1190679-20240116-1705413343098.png)
 
 - 新手法
 	- 可以通过<kbd>h</kbd> <kbd>j</kbd> <kbd>k</kbd> <kbd>l</kbd> 移动了
 	- 用<kbd>caps lock</kbd> 代替<kbd>esc</kbd> 
 	- 双手保持正位
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240116-1705413403402)
+![图片描述](uid1190679-20240116-1705413403402.png)
 
 ### 回顾流程流程
 
@@ -151,7 +151,7 @@ Windows Registry Editor Version 5.00
 	- 再在 shell中运行
 		- python3 oeasy.py
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230219-1676812039087)
+![图片描述](uid1190679-20230219-1676812039087.png)
 
 - 回顾一下vim的三种状态
 
@@ -159,7 +159,7 @@ Windows Registry Editor Version 5.00
 
 - 这是vim中三种状态切换的地图
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230401-1680315839628)
+![图片描述](uid1190679-20230401-1680315839628.png)
 
 - 需要的话 拍下来
 
@@ -174,13 +174,13 @@ Windows Registry Editor Version 5.00
 |  <kbd>capslock</kbd> | 替换  <kbd>esc</kbd> 切回 正常模式 |
 | <kbd>h</kbd> <kbd>j</kbd> <kbd>k</kbd> <kbd>l</kbd> | 左 下 上 右 移动|
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240422-1713761262547)
+![图片描述](uid1190679-20240422-1713761262547.jpg)
 
 - 每次都要 退出vim编辑器😴
 	- 才能 在shell中 运行python程序
 	- 有点麻烦
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240130-1706574006481)
+![图片描述](uid1190679-20240130-1706574006481.png)
 
 - 想要 不退出vim
 	- 直接在 vim应用 中 

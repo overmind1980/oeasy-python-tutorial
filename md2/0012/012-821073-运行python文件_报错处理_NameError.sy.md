@@ -17,7 +17,7 @@ enable_checker: true
 	- `python3 oeasy.py`
 		- 用 python3 `运行` oeasy.py
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240112-1705033172180)
+![图片描述](uid1190679-20240112-1705033172180.png)
 
 - 空格之前的 是
 	- `命令` 
@@ -37,7 +37,7 @@ enable_checker: true
 	- 就 重新输入
 	- 用<kbd>i</kbd> 进入`插入`模式
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220909-1662711990844)
+![图片描述](uid1190679-20220909-1662711990844.png)
 
 - 把`oeasy.py`修改成
 	- 上图的样子
@@ -47,7 +47,7 @@ enable_checker: true
 - <kbd>esc</kbd> 退出插入模式
 	- 左下角的`---插入(粘贴)---`消失
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230218-1676726985447)
+![图片描述](uid1190679-20230218-1676726985447.png)
 
 - `:w`
 	- write保存
@@ -59,13 +59,13 @@ enable_checker: true
 	- 1行、15个字符
 	- 已写入
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230218-1676727025902)
+![图片描述](uid1190679-20230218-1676727025902.png)
 
 - `:q`
 	- quit 退出 (vim应用)
 	- 回到 shell环境
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230218-1676727073622)
+![图片描述](uid1190679-20230218-1676727073622.png)
 
 - 准备运行程序
 
@@ -74,7 +74,7 @@ enable_checker: true
 - 输入 `python3 oeasy.py` 
 	- 运行程序
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230218-1676727219924)
+![图片描述](uid1190679-20230218-1676727219924.png)
 
 - 不出所料
 	- 报错了！🤗
@@ -95,14 +95,14 @@ enable_checker: true
 - 出错(bug)是
 	- 最正常的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240116-1705405560625)
+![图片描述](uid1190679-20240116-1705405560625.png)
 
 - Error
 	- 不是 我们无能的标志
 	- 而是 我们努力的标志
 	- 更是 进步的阶梯
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230603-1685745892517)
+![图片描述](uid1190679-20230603-1685745892517.png)
 
 - 这个报错信息
 	- 和IDLE(游乐场)`一样` 吗？
@@ -113,7 +113,7 @@ enable_checker: true
 	- 跑一下
 	- pront("oeasy")
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230218-1676727505366)
+![图片描述](uid1190679-20230218-1676727505366.jpg)
 
 - 程序运行 和 游乐场运行
 	- 几乎 `一样`
@@ -131,7 +131,7 @@ enable_checker: true
 	- 虽然 都在 报错信息 第2行
 	- 但是 `文件来源` 不同
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220919-1663585343620)
+![图片描述](uid1190679-20220919-1663585343620.jpg)
 
 - 上面的 报错
 	- 来自 `oeasy.py`
@@ -154,7 +154,7 @@ enable_checker: true
 	- 出现[+]
 	- 但先不保存文件
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240228-1709077579248)
+![图片描述](uid1190679-20240228-1709077579248.png)
 
 - 此时如果 再开一个终端 
 	- 会冲突吗？
@@ -166,7 +166,7 @@ enable_checker: true
 - 又新打开
 	- 一个终端
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240228-1709077674702)
+![图片描述](uid1190679-20240228-1709077674702.png)
 
 - 键入
 	- vi oeasy.py 
@@ -179,7 +179,7 @@ enable_checker: true
 	- <span style="background:red;color:white;">E325: 注意</span>
 	- 说明vim 发现了问题
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240228-1709077729451)
+![图片描述](uid1190679-20240228-1709077729451.png)
 
 - 因为 之前的终端 
 	- 已经打开了 oeasy.py
@@ -224,7 +224,7 @@ ls -lah oeasy.py
 	- 会保留你这次的所有操作步骤
 	- 这样就不会丢失之前的工作步骤
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240228-1709077821404)
+![图片描述](uid1190679-20240228-1709077821404.png)
 
 - 那第二个终端窗口 
 	- 还能打开这个文件吗？
@@ -238,7 +238,7 @@ ls -lah oeasy.py
 	- 退出<kbd>q</kdb> 
 	- 终止<kbd>a</kdb>
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240117-1705459261598)
+![图片描述](uid1190679-20240117-1705459261598.png)
 
 - 选哪个？
 
@@ -248,7 +248,7 @@ ls -lah oeasy.py
 	- 选择 <kbd>r</kbd>
 	- 直接<kbd>r</kbd>ecovery  缓存
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240228-1709077881431)
+![图片描述](uid1190679-20240228-1709077881431.png)
 
 - 我们发现 第一个窗口 里面
 	- 修改后 还没有 保存的 文档
@@ -269,7 +269,7 @@ vi oeasy.py
 
 - 还是那个界面
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/821073/uid1190679-20250301-1740836670913) 
+![图片描述](uid1190679-20250301-1740836670913.png) 
 
 - 这次我们选择
 	- 直接编辑
@@ -280,12 +280,12 @@ vi oeasy.py
 - 出现了 保存之前的版本
 	- 对比 <kbd>r</kbd>ecovery 的是 未保存的新状态
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/821073/uid1190679-20250301-1740836766564) 
+![图片描述](uid1190679-20250301-1740836766564.png) 
 
 - 我们进行修改
 	- 并且保存
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231025-1698227587335)
+![图片描述](uid1190679-20231025-1698227587335.png)
 
 - 保存并退出
 	- 现在文件 都关闭了 
@@ -304,7 +304,7 @@ ls -l .oeasy.py.swp
 	- 已经 存到了硬盘
 	- 缓存文件 应该自动消失了
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240304-1709540758995)
+![图片描述](uid1190679-20240304-1709540758995.png)
 
 - 万一 缓存没消失
 
@@ -320,7 +320,7 @@ ls -l .oeasy.py.swp
 
 - 缓存已确认消失
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240309-1709987788014)
+![图片描述](uid1190679-20240309-1709987788014.png)
 
 - 如果 再用vim打开文件
 	- 还会出现 <span style="background:red;color:white;">E325</span> 吗？
@@ -329,11 +329,11 @@ ls -l .oeasy.py.swp
 
 - 直接打开
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240304-1709540831692)
+![图片描述](uid1190679-20240304-1709540831692.png)
 
 - 尝试运行oeasy.py
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230911-1694439298275)
+![图片描述](uid1190679-20230911-1694439298275.png)
 
 - 成功 运行了程序！
 
@@ -347,7 +347,7 @@ ls -l .oeasy.py.swp
 - 错误拼写 pront 导致
 	- 运行时 出现了NameError
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230911-1694440141825)
+![图片描述](uid1190679-20230911-1694440141825.png)
 
 - 错误(Error)
 	- 不是 我们 无能的标记

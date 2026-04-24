@@ -20,7 +20,7 @@ enable_checker: true
 		- 说明书里 还有 
 			- 我们的老梗 呢！
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1163691/uid1190679-20241112-1731380867285) 
+![图片描述](uid1190679-20241112-1731380867285.png) 
 
 - 什么老梗？🤔
 
@@ -30,7 +30,7 @@ enable_checker: true
 	- hello world 
 	- 程序员的浪漫
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230303-1677805675869)
+![图片描述](uid1190679-20230303-1677805675869.png)
 
 - 这个案例 
 	- 成书 之前 就有了
@@ -42,7 +42,7 @@ enable_checker: true
 	- 主函数 叫做 `main`
 	- 输出函数 叫 `printf`
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210220-1613787458918)
+![图片描述](uid1190679-20210220-1613787458918.png)
 
 - 为什么 输出字符串
 	- 要用`printf` 来当`函数名` ?
@@ -55,7 +55,7 @@ enable_checker: true
 	- 是向上`送纸`用的
 	- 就像胶片 通过机械 上胶卷 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220917-1663383261312)
+![图片描述](uid1190679-20220917-1663383261312.png)
 
 - 当时的打字机(printer) 
 	- 就是 今天的显示器
@@ -66,7 +66,7 @@ enable_checker: true
 - 两个函数
 	- 后面 都跟`小括号`
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1163691/uid1190679-20241109-1731155533245) 
+![图片描述](uid1190679-20241109-1731155533245.png) 
 
 - `小括号` 从那个时候 开始
 	- 就和 函数调用 相关
@@ -82,7 +82,7 @@ enable_checker: true
 - `双引号` 引起来 意味着
 	- `hello world` 是 `字符串`
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1163691/uid1190679-20241109-1731155666623) 
+![图片描述](uid1190679-20241109-1731155666623.png) 
 
 - 这一切 
 	- 今天 已经 司空见惯
@@ -99,7 +99,7 @@ enable_checker: true
 - 受到c影响的
 	- 不只是 python 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210220-1613786932296)
+![图片描述](uid1190679-20210220-1613786932296.png)
 
 - 很多语言 
 	- 代码例子 第一个例子 都是
@@ -112,7 +112,7 @@ enable_checker: true
 	- 第一个例子
 		- 也`都`是`hello world`
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210220-1613786792262)
+![图片描述](uid1190679-20210220-1613786792262.png)
 
 - 这个梗 
 	- 适用范围
@@ -124,7 +124,7 @@ enable_checker: true
 	- 持续将 unix商业化
 	- bsd 面临绝境
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230303-1677806312850)
+![图片描述](uid1190679-20230303-1677806312850.jpg)
 
 - 不论 unix 还是 bsd 系统
 	- 都在 使用 `c语言` 编程
@@ -137,7 +137,7 @@ enable_checker: true
 	- 发起 自由软件运动
 	- 组织起`GNU` 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20241109-1731156949284)
+![图片描述](uid1190679-20241109-1731156949284.png)
 
 - 用c 写了 shell环境
 	- 缺少 一个内核
@@ -148,19 +148,19 @@ enable_checker: true
 	- linus 做出了 `新`内核
 	- linux
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231030-1698634882525)
+![图片描述](uid1190679-20231030-1698634882525.png)
 
 - linux内核 补完了 GNU的shell
 	- 吸引了 unix 和 bsd 的 用户
 
 ### 新基础
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230601-1685625534687)
+![图片描述](uid1190679-20230601-1685625534687.png)
 
 - `linux`内核 
 	- 就是用纯c编的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230918-1695008245941)
+![图片描述](uid1190679-20230918-1695008245941.png)
 
 - 这和我们有什么关系吗？
 
@@ -169,13 +169,13 @@ enable_checker: true
 - 蓝桥系统是 
 	- `GNU/Linux` 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230531-1685515780436)
+![图片描述](uid1190679-20230531-1685515780436.png)
 
 - 安卓和很多嵌入式设备
 	- 用的也是linux内核
 	- 都是基于c的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230531-1685519434061)
+![图片描述](uid1190679-20230531-1685519434061.png)
 
 - python `也`是用c写的吗？
 
@@ -184,7 +184,7 @@ enable_checker: true
 - `python`的源代码 
 	- 核心部分 也是用纯c编的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230601-1685625579557)
+![图片描述](uid1190679-20230601-1685625579557.png)
 
 - c语言 目前排名如何？
 
@@ -197,7 +197,7 @@ enable_checker: true
 	4. c 
 	5. c#
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1163691/uid1190679-20241109-1731117600732) 
+![图片描述](uid1190679-20241109-1731117600732.png) 
 
 - c语言老了吗？
 
@@ -207,7 +207,7 @@ enable_checker: true
 	- 众多 编程语言
 	- 都是在 c的基础上 实现的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230918-1695007694434)
+![图片描述](uid1190679-20230918-1695007694434.png)
 
 - 今天 
 	- 他们的势头 比c还大
@@ -215,7 +215,7 @@ enable_checker: true
 
 ### 笑话
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240318-1710747189429)
+![图片描述](uid1190679-20240318-1710747189429.png)
 
 ### 总结
 
@@ -225,12 +225,12 @@ enable_checker: true
 - print、小括号 和 双引号
 	- 也来自于 `c`语言
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230531-1685518717156)
+![图片描述](uid1190679-20230531-1685518717156.jpg)
 
 - python `标识符` 的 命名规则
 	- 依然 完全 学习 `c`语言 惯例
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240318-1710762334835)
+![图片描述](uid1190679-20240318-1710762334835.png)
 
 - 需要满足 isidentifier() 之后
 	- `标识符` 就 `一定` 能当变量用 吗?

@@ -28,7 +28,7 @@ enable_checker: true
 	- document文档 包含 多个 prargraph段落
 	- prargraph段落 包含 多个 run文本
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240313-1710336759716)
+![图片描述](uid1190679-20240313-1710336759716.png)
 
 - 现在新加了一个容器 section
 - 而且看起来 paragraphs 也是可以放到 section中的
@@ -44,7 +44,7 @@ sect.
 
 - sect有点像个容器
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240331-1711854354089)
+![图片描述](uid1190679-20240331-1711854354089.png)
 
 - paragraph 应该是
 	- 隶属于 某个section的
@@ -66,7 +66,7 @@ doc.save('oeasy.docx')
 
 - 观察结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240331-1711859478232)
+![图片描述](uid1190679-20240331-1711859478232.png)
 
 - section 和 paragraph 是如何隶属的呢？
 
@@ -91,7 +91,7 @@ doc.save('oeasy.docx')
 
 - 结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240331-1711859540768)
+![图片描述](uid1190679-20240331-1711859540768.png)
 
 - 一开始 的段落
 	- 插入在 默认的section[0]中
@@ -125,13 +125,13 @@ document.save('oeasy.docx')
 	- 可以设置不同的 纸张朝向
 	- 可以设置不同的 页面边距
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240331-1711859879578)
+![图片描述](uid1190679-20240331-1711859879578.png)
 
 - 章节 这个概念 是怎么来的呢？
 
 ### sek总结
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230919-1695088502663)
+![图片描述](uid1190679-20230919-1695088502663.png)
 
 - section 就是一个 部门
 
@@ -146,13 +146,13 @@ document.save('oeasy.docx')
 	- pilcrow (¶)
 	- 段落标记
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240331-1711860441237)
+![图片描述](uid1190679-20240331-1711860441237.png)
 
 - §§ 13–21
 	- sections 13 through 21
 	- 13章 21节
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240331-1711860773002)
+![图片描述](uid1190679-20240331-1711860773002.png)
 
 - chapter 1 
 	- section 2
@@ -182,7 +182,7 @@ document.save('oeasy.docx')
 
 - 效果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240401-1711975083859)
+![图片描述](uid1190679-20240401-1711975083859.png)
 
 - 原因是 节的起始位置
 
@@ -190,7 +190,7 @@ document.save('oeasy.docx')
 
 - 这是一个枚举类型
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240401-1711975142899)
+![图片描述](uid1190679-20240401-1711975142899.png)
 
 - 我们不用 
 	- 节起始于 连续 
@@ -228,7 +228,7 @@ document.save('oeasy.docx')
 	- 都从 新页面开始
 	- NEW_PAGE
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240401-1711975306191)
+![图片描述](uid1190679-20240401-1711975306191.png)
 
 - 节开始于 奇数页 或 偶数页
 	- 是什么意思？
@@ -241,7 +241,7 @@ document.save('oeasy.docx')
 	- 都从 奇数页面开始
 	- ODD_PAGE
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240401-1711975948062)
+![图片描述](uid1190679-20240401-1711975948062.png)
 
 - 上图为 
 	- 书籍的正反面 打印
@@ -253,23 +253,23 @@ document.save('oeasy.docx')
 
 ### 分栏
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240401-1711977355980)
+![图片描述](uid1190679-20240401-1711977355980.png)
 
 - 选中这段文字
 	- 菜单 Insert
 		- Section
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240401-1711977400985)
+![图片描述](uid1190679-20240401-1711977400985.png)
 
 ### 设置栏宽
 
 - 可以栏宽 不相等
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240401-1711977430537)
+![图片描述](uid1190679-20240401-1711977430537.png)
 
 - 最后展示结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240401-1711977445799)
+![图片描述](uid1190679-20240401-1711977445799.png)
 
 - 但这种 
 	- 分栏操作 
@@ -309,7 +309,7 @@ document.save('two_column_layout.docx')
 
 - 结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240402-1712017222220)
+![图片描述](uid1190679-20240402-1712017222220.png)
 
 ## 总结🤔
 

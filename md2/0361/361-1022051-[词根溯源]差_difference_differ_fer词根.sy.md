@@ -11,7 +11,7 @@ enable_checker: true
 - 上次学习了减法
 	- subtract
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230805-1691232849890)
+![图片描述](uid1190679-20230805-1691232849890.png)
 
 - 减法 运算
 	- 支持 数字 减法
@@ -31,7 +31,7 @@ enable_checker: true
 		- -fer
 			- 拿
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230805-1691237714095)
+![图片描述](uid1190679-20230805-1691237714095.png)
 
 - differ
 	- 分开拿
@@ -43,7 +43,7 @@ enable_checker: true
 	- 来自于 *bher-
 	- 拿
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230805-1691238052352)
+![图片描述](uid1190679-20230805-1691238052352.png)
 
 ### ferry
 
@@ -52,7 +52,7 @@ enable_checker: true
 - -ry
 	- 名词
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230805-1691244030581)
+![图片描述](uid1190679-20230805-1691244030581.png)
 
 - 拿的地方
 	- 运输点
@@ -67,7 +67,7 @@ enable_checker: true
 	- fer
 		- 拿
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230805-1691237934749)
+![图片描述](uid1190679-20230805-1691237934749.png)
 
 - prefer
 	- 预先拿
@@ -81,7 +81,7 @@ enable_checker: true
 	- -tile
 		- 覆盖
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230805-1691243332563)
+![图片描述](uid1190679-20230805-1691243332563.png)
 
 - fertile
 	- 能拿得出来营养的覆盖
@@ -97,7 +97,7 @@ enable_checker: true
 	- fer
 		- 拿
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230805-1691238180849)
+![图片描述](uid1190679-20230805-1691238180849.png)
 
 - offer
 	- 强调 拿出来的
@@ -110,7 +110,7 @@ enable_checker: true
 
 > Reynard the Fox, after telling his story about the treasure to the king, proffers a straw to Lion, surrendering the treasure to him
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230805-1691243666628)
+![图片描述](uid1190679-20230805-1691243666628.png)
 
 > 列那狐讲完宝藏的故事，给狮子低了根烟，并且献宝
 
@@ -127,7 +127,7 @@ enable_checker: true
 		- sub-
 		- 从下面拿的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230805-1691238495243)
+![图片描述](uid1190679-20230805-1691238495243.png)
 
 - suffer
 	-  变差; 变糟
@@ -140,7 +140,7 @@ enable_checker: true
 	- in-
 		- 从里面
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230805-1691238694503)
+![图片描述](uid1190679-20230805-1691238694503.png)
 
 - infer
 	- 从里面拿出来的
@@ -156,7 +156,7 @@ enable_checker: true
 		- together 
 		- 一起
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230805-1691242932966)
+![图片描述](uid1190679-20230805-1691242932966.png)
 
 - confer
 	- 一起拿出来的
@@ -170,7 +170,7 @@ enable_checker: true
 	- ence
 		- 名词
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230805-1691242775523)
+![图片描述](uid1190679-20230805-1691242775523.png)
 
 - conference
 	- 会议
@@ -186,7 +186,7 @@ enable_checker: true
 		- ex-
 		- 向外
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230805-1691243134079)
+![图片描述](uid1190679-20230805-1691243134079.png)
 
 - efferent
 	- [ˈɛfɛrənt]
@@ -204,12 +204,12 @@ enable_checker: true
 		- 再次拿来
 		- 提到
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230805-1691244273116)
+![图片描述](uid1190679-20230805-1691244273116.png)
 
 - reference
 	- 参考、提及、引用
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230805-1691244498340)
+![图片描述](uid1190679-20230805-1691244498340.png)
 
 ### transfer
 
@@ -220,7 +220,7 @@ enable_checker: true
 	- 带来，拿来 
 	- 转送；转移
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230805-1691244683175)
+![图片描述](uid1190679-20230805-1691244683175.png)
 
 - transfer learning
 	- 迁移学习
@@ -234,7 +234,7 @@ enable_checker: true
 		- 拿
 	- 分开拿
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230823-1692796737269)
+![图片描述](uid1190679-20230823-1692796737269.png)
 
 - difference 
 	- 不同之处
@@ -248,7 +248,7 @@ enable_checker: true
 - 麦子 收割之后
 	- 可以用手搓开
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230803-1691069031024)
+![图片描述](uid1190679-20230803-1691069031024.png)
 
 - 再根据 质量上的差别 
 	- 使用工具 
@@ -261,14 +261,14 @@ enable_checker: true
 	- 太差
 	- 差劲
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230803-1691069052977)
+![图片描述](uid1190679-20230803-1691069052977.png)
 
 - 无差别
 	- 分毫不差
 
 ### 差事
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230803-1691069102608)
+![图片描述](uid1190679-20230803-1691069102608.png)
 
 - 干这个活 是个
 	- 差事
@@ -278,7 +278,7 @@ enable_checker: true
 
 - 通过工具控制晾晒
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230803-1691069281666)
+![图片描述](uid1190679-20230803-1691069281666.png)
 
 - 晾晒之后
 	- 麦穗变得干燥
@@ -291,7 +291,7 @@ enable_checker: true
 - 43 就是 
 	- 2023 和 1980 之间的差
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230823-1692797568587)
+![图片描述](uid1190679-20230823-1692797568587.png)
 
 - 这是 
 	- 字面量减法
@@ -304,7 +304,7 @@ enable_checker: true
 - 首先回顾 
 	- 什么是变量
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210815-1628992691650)
+![图片描述](uid1190679-20210815-1628992691650.png)
 
 - 可以变的量
 - 怎么变呢？
@@ -313,7 +313,7 @@ enable_checker: true
   - 可以通过随机算法赋值
   - 也可以通过运算赋值
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230823-1692797785672)
+![图片描述](uid1190679-20230823-1692797785672.png)
 
 - 这就是 数字减法
 
@@ -323,13 +323,13 @@ enable_checker: true
 	- difference
 	- 来自于dif + fer
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230805-1691245123728)
+![图片描述](uid1190679-20230805-1691245123728.png)
 
 - subtract
 	- 往下拽 出来的 就是
 		- 差距值 difference
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230802-1690986953669)
+![图片描述](uid1190679-20230802-1690986953669.png)
 
 - 被减数 为什么叫做 minuend呢？🤪
 - 下次再说 👋

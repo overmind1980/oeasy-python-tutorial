@@ -22,7 +22,7 @@ enable_checker: true
 	- 但是 继承者们 只学到了皮毛
 	- 没有学到 内核
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240108-1704707857295)
+![图片描述](uid1190679-20240108-1704707857295.png)
 
 - 就像摇滚、朋克、嘻哈一样
 	- 嬉皮士元素 最终
@@ -38,12 +38,12 @@ enable_checker: true
 - 毒品 成为 消费品
 	- 进一步 控制 反叛的年轻人
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240108-1704708062275)
+![图片描述](uid1190679-20240108-1704708062275.png)
 
 - 自由化  用来
 	-  对外 文化输出
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240108-1704708411672)
+![图片描述](uid1190679-20240108-1704708411672.png)
 
 - 嬉皮士 最终 被污名化
 	- 性滥交
@@ -61,7 +61,7 @@ enable_checker: true
 - 有人 开始研究
 	- 电话 网络 系统
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221112-1668256434534)
+![图片描述](uid1190679-20221112-1668256434534.png)
 
 - DTMF
 	- dual-tone multifrequency
@@ -77,7 +77,7 @@ enable_checker: true
 	- 外线电话 通过 
 		- Trunk Lines来控制
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221112-1668256888215)
+![图片描述](uid1190679-20221112-1668256888215.png)
 
 - 通断与否 靠的是一个频率
 	- 2600Hz
@@ -90,7 +90,7 @@ enable_checker: true
 	- 拨号的时候 吹口哨
 	- 可以 免费打长途电话
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221112-1668257111775)
+![图片描述](uid1190679-20221112-1668257111775.png)
 
 - 虽然 
 	- 不是100%成功
@@ -106,7 +106,7 @@ enable_checker: true
 	- 再吹 就是2600Hz
 	- 可以接入 长途线路
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221112-1668257211312)
+![图片描述](uid1190679-20221112-1668257211312.png)
 
 - 从此 John Draper
 	- 就成了Captain Crunch
@@ -116,7 +116,7 @@ enable_checker: true
 - 电话时代 很快 
 	- 演化到 计算机时代
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231208-1702034327554)
+![图片描述](uid1190679-20231208-1702034327554.png)
 
 - 电话网络 
 	- 演化到 阿帕网 
@@ -130,7 +130,7 @@ enable_checker: true
 - 然后
 	- 尝试 去再次远程登录
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221112-1668257755118)
+![图片描述](uid1190679-20221112-1668257755118.png)
 
 - 同好者建立bbs
 	- 使用电话线和拨号群构建起社区
@@ -140,7 +140,7 @@ enable_checker: true
 - Phreaking 通常是指非法操纵或入侵电话系统
 	- 拨打免费或未经授权的电话
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231208-1702034519662)
+![图片描述](uid1190679-20231208-1702034519662.png)
 
 - Phreak 一词是对"怪胎"（freak）一词的谐音
 	- 指的是这种黑客行为的早期使用者
@@ -155,7 +155,7 @@ enable_checker: true
 		- 《先生》esquire
 			- 报道了
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221112-1668259484549)
+![图片描述](uid1190679-20221112-1668259484549.png)
 
 - 一个年轻人看到这个消息
 
@@ -163,7 +163,7 @@ enable_checker: true
 
 - 他从小就跟他爸玩无线电
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230108-1673175257596)
+![图片描述](uid1190679-20230108-1673175257596.png)
 
 
 - 他叫Steve Wozniac
@@ -173,7 +173,7 @@ enable_checker: true
 - 他 打算做个
 	- 长途电话盒子
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221112-1668259697049)
+![图片描述](uid1190679-20221112-1668259697049.png)
 
 - 然后去 图书馆 
 	- 查阅 贝尔公司的 专利
@@ -183,7 +183,7 @@ enable_checker: true
 - Wozniac 成功 做出了
 	- 蓝色的盒子
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221112-1668259672001)
+![图片描述](uid1190679-20221112-1668259672001.png)
 
 - 被称为 伯克利的蓝
 
@@ -192,7 +192,7 @@ enable_checker: true
 - Wozniac把蓝盒子
 	- 拿给朋友Jobs看
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221112-1668259787632)
+![图片描述](uid1190679-20221112-1668259787632.png)
 
 - 俩人打长途玩
 	- 一起冒充基辛格
@@ -211,7 +211,7 @@ enable_checker: true
 	- 再到 个人爱好者(hobbists) 
 		- 鼓捣 出来的小玩意儿
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221112-1668260810120)
+![图片描述](uid1190679-20221112-1668260810120.png)
 
 - IBM 还没有适应 
 	- 这个新变化
@@ -224,7 +224,7 @@ enable_checker: true
 - 个人计算机的普及
 	- 将 极客文化 扩散开来
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221112-1668260873944)
+![图片描述](uid1190679-20221112-1668260873944.png)
 
 - 当时 纸质的杂志
 	- 对于 这类文化 有很好的传播
@@ -234,7 +234,7 @@ enable_checker: true
 - 尝试 使用计算机
 	- 自动拨通 各种号码
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230106-1672998449398)
+![图片描述](uid1190679-20230106-1672998449398.png)
 
 - 找到服务器 然后远程登录
 	- 这是当时很酷的事情
@@ -245,7 +245,7 @@ enable_checker: true
 - 年轻人 把商业公司的 电话系统
 	- 当成 一个大玩具 来玩
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221113-1668301346806)
+![图片描述](uid1190679-20221113-1668301346806.png)
 
 - 从 电话网络 
 	- 进化到 计算机网络 之后
@@ -254,7 +254,7 @@ enable_checker: true
 
 - 极客网站2600.com
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221112-1668260919534)
+![图片描述](uid1190679-20221112-1668260919534.png)
 
 - 我们今天
 	- 在linux上
@@ -268,7 +268,7 @@ enable_checker: true
 - 发源于 
 	- 电话飞客 进入电话网络
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230222-1677046184724)
+![图片描述](uid1190679-20230222-1677046184724.png)
 
 - 发祥于 
 	- 小型机组成阿帕网

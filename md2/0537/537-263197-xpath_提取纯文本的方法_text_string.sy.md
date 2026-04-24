@@ -10,7 +10,7 @@ enable_checker: true
 - xpath 是
 	- 整个爬取的核心
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240609-1717932671660)
+![图片描述](uid1190679-20240609-1717932671660.png)
 
 - 如果我只想爬取文本
 	- 而且是跨元素地爬取文本
@@ -40,7 +40,7 @@ firefox http://localhost &
 
 - 启动服务器
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231022-1697976420944)
+![图片描述](uid1190679-20231022-1697976420944.png)
 
 - 在浏览器中确认可以访问
 
@@ -61,13 +61,13 @@ for et_element in l_et_element:
 
 - 运行结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240609-1717935411656)
+![图片描述](uid1190679-20240609-1717935411656.png)
 
 - 实际网页
 	- 很明显 最后一段
 	- 文本并不是None
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240609-1717935422552)
+![图片描述](uid1190679-20240609-1717935422552.png)
 
 - 为什么会这样？
 
@@ -95,7 +95,7 @@ for et_element in l_et_element:
 	- 不能找到em中的文本
 	- 所以结果为None
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231022-1697976734297)
+![图片描述](uid1190679-20231022-1697976734297.png)
 
 - 怎么办？
 
@@ -105,7 +105,7 @@ for et_element in l_et_element:
 	- 可以得到根节点下
 	- 所有的文本
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210901-1630463341760)
+![图片描述](uid1190679-20210901-1630463341760.png)
 
 - "//text()"
 	- 可以得到任意路径下
@@ -138,7 +138,7 @@ print(l)
 	- xpath("string()") 可以得到纯文本
 	- xpath("//text()") 可以得到文本列表
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231022-1697976860750)
+![图片描述](uid1190679-20231022-1697976860750.png)
 
 - 第一种不利于分词
 - 第二种需要处理列表和回车
@@ -147,21 +147,21 @@ print(l)
 
 - 默认页面 挺简单的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20211106-1636203855264)
+![图片描述](uid1190679-20211106-1636203855264.png)
 
 - 那这棵树长什么样呢？
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20211106-1636203907913)
+![图片描述](uid1190679-20211106-1636203907913.png)
 
 - 可以用这次新了解的方式吗？
 
 ### string()
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221203-1670042746666)
+![图片描述](uid1190679-20221203-1670042746666.png)
 
 - 列表方式
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221203-1670042798312)
+![图片描述](uid1190679-20221203-1670042798312.png)
 
 - 表现形式还是不好
 
@@ -169,7 +169,7 @@ print(l)
 
 - 最开始有一个h1元素
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20211106-1636206093561)
+![图片描述](uid1190679-20211106-1636206093561.png)
 
 - 第一段
   - 全是文本
@@ -204,7 +204,7 @@ for element in l_element:
 
 - 输出结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221203-1670043126002)
+![图片描述](uid1190679-20221203-1670043126002.png)
 
 ### 对比
 
@@ -217,12 +217,12 @@ for element in l_element:
   - 不能 自动把 嵌套的 子元素拼接
   - 但是能明确地拿到本层的字符串
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20211106-1636204374562)
+![图片描述](uid1190679-20211106-1636204374562.png)
 
 - 另外还有 etree.tostring 方法
   - 配合 method="text"
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20211106-1636206437341)
+![图片描述](uid1190679-20211106-1636206437341.png)
 
 ### 得到 具体实现
 
@@ -239,11 +239,11 @@ print(etree.tostring(et_body,method="text").decode())
 
 - 用传统方法得到body元素的text
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221203-1670041449359)
+![图片描述](uid1190679-20221203-1670041449359.png)
 
 - 输出得到的结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221203-1670041466297)
+![图片描述](uid1190679-20221203-1670041466297.png)
 
 ### 总结
 
@@ -257,7 +257,7 @@ print(etree.tostring(et_body,method="text").decode())
     - et_html.xpath("string()")
       - 返回的拼接好的字符串
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240609-1717932552000)
+![图片描述](uid1190679-20240609-1717932552000.png)
 
 - 另外还有 etree.tostring 方法
   - 配合 method="text"

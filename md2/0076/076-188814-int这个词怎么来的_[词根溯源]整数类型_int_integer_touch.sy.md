@@ -17,7 +17,7 @@ enable_checker: true
 	- 对 初学者很友好
 	- 类型 容易 混淆
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/188798/uid1190679-20241202-1733119918414) 
+![图片描述](uid1190679-20241202-1733119918414.png) 
 
 - 整型变量(int) 为什么叫做 int 呢？🤔
 - `int`是什么意思呢？
@@ -27,7 +27,7 @@ enable_checker: true
 - int 全称 integer
 	- 意思是整的数
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210817-1629186711123)
+![图片描述](uid1190679-20210817-1629186711123.png)
 
 - 整的
 	- 和零碎的(fraction)相反
@@ -41,7 +41,7 @@ enable_checker: true
 - tag
 	- tact 接触
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230806-1691330884659)
+![图片描述](uid1190679-20230806-1691330884659.png)
 
 - 标签
 
@@ -50,18 +50,18 @@ enable_checker: true
 - touch 
 	- 接触
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230806-1691316121899)
+![图片描述](uid1190679-20230806-1691316121899.png)
 
 - 接触到
 	- 才能贴标签
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240904-1725439366520)
+![图片描述](uid1190679-20240904-1725439366520.png)
 
 ### tact
 
 - 触觉
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230806-1691316282283)
+![图片描述](uid1190679-20230806-1691316282283.png)
 
 - 在单细胞阶段
 	- 就很强烈的觉知
@@ -71,7 +71,7 @@ enable_checker: true
 - tact 
 	- 接触 	
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230806-1691317677733)
+![图片描述](uid1190679-20230806-1691317677733.png)
 
 - tactility 
 	- [tæk'tɪlɪtɪ]
@@ -84,7 +84,7 @@ enable_checker: true
 	- tact 接触 
 	- -ual 有…性质的 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230806-1691317885542)
+![图片描述](uid1190679-20230806-1691317885542.png)
 
 - 触觉的
 
@@ -94,7 +94,7 @@ enable_checker: true
 	-  con 加强 
 	-  tact 接触 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230806-1691329984483)
+![图片描述](uid1190679-20230806-1691329984483.png)
 
 -  加强接触 联系
 
@@ -102,7 +102,7 @@ enable_checker: true
 
 - contacts
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230806-1691330001573)
+![图片描述](uid1190679-20230806-1691330001573.png)
 
 - 联系人
 
@@ -114,7 +114,7 @@ enable_checker: true
 	- tag 接触 
 	- ion 表名词 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230806-1691330206257)
+![图片描述](uid1190679-20230806-1691330206257.png)
 
 - 共同接触到 → 传染
 	- 蔓延
@@ -127,7 +127,7 @@ enable_checker: true
 	- tag 接触 
 	- ious …的 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230806-1691330216069)
+![图片描述](uid1190679-20230806-1691330216069.png)
 
 - 传染的
 
@@ -139,7 +139,7 @@ enable_checker: true
 	- ics …学 
 	- 〔和别人〕接触的学问 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230806-1691317744916)
+![图片描述](uid1190679-20230806-1691317744916.png)
 
 - 策略
 	- 战术
@@ -150,7 +150,7 @@ enable_checker: true
 	- 切线 
 	- tangent
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230806-1691330426480)
+![图片描述](uid1190679-20230806-1691330426480.png)
 
 - secant 
 	- [ˈsiːkənt]
@@ -164,7 +164,7 @@ enable_checker: true
 	- [tænˈdʒenʃl]
 	-  （几何）切向的，切线的，正切的; 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240929-1727579340054)
+![图片描述](uid1190679-20240929-1727579340054.png)
 
 - 不在圈里
 	-  不相干的
@@ -179,7 +179,7 @@ enable_checker: true
 	- ible 能…的 
 	- 能接触的 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230806-1691318074285)
+![图片描述](uid1190679-20230806-1691318074285.png)
 
 - 可触摸的
 
@@ -187,7 +187,7 @@ enable_checker: true
 
 - intagible
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230806-1691318101785)
+![图片描述](uid1190679-20230806-1691318101785.png)
 
 - intagible assets
 	- 无形资产
@@ -198,7 +198,7 @@ enable_checker: true
 	- in- 否定前缀
 	- tact 触觉
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230806-1691316379740)
+![图片描述](uid1190679-20230806-1691316379740.png)
 
 - 没有接触过的
 	- 没有受伤的
@@ -215,7 +215,7 @@ enable_checker: true
 	-  完备的
 	-  作为组成部分的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230806-1691316766811)
+![图片描述](uid1190679-20230806-1691316766811.png)
 
 - 整体
 	- 积分 
@@ -225,12 +225,12 @@ enable_checker: true
 - integrate
 	- 整合、积分
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230806-1691318689208)
+![图片描述](uid1190679-20230806-1691318689208.png)
 
 - integrated circuit
 	- 集成电路
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230806-1691318879824)
+![图片描述](uid1190679-20230806-1691318879824.png)
 
 - integrated science
 	- 综合科学
@@ -244,7 +244,7 @@ enable_checker: true
 	- 没有被碰过的特性
 		- 完整性
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230806-1691318345128)
+![图片描述](uid1190679-20230806-1691318345128.png)
 
 - 没有被污染的
 	- 出淤泥而不染的完人
@@ -264,18 +264,18 @@ enable_checker: true
 	- 是完整的
 	- 整数
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230806-1691316445857)
+![图片描述](uid1190679-20230806-1691316445857.png)
 
 - entire
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230806-1691316506315)
+![图片描述](uid1190679-20230806-1691316506315.png)
 
 ### 总结
 
 - 这次了解的是 
 	- int词根溯源
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20241019-1729332655472)
+![图片描述](uid1190679-20241019-1729332655472.png)
 
 - 如何理解 整型变量呢？🤔
 - 下次再说👋🏻

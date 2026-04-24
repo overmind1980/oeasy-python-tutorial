@@ -22,7 +22,7 @@ firefox https://baidu.com &
 
 - 复制 找到的请求头
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240615-1718460238749)
+![图片描述](uid1190679-20240615-1718460238749.png)
 
 - 可以 直接把所有的header
 	- 复制到剪贴板中
@@ -38,7 +38,7 @@ firefox https://baidu.com &
 - 这就需要更彻底地模仿浏览器
 	- 需要把这个请求头做成字典
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240615-1718460357908)
+![图片描述](uid1190679-20240615-1718460357908.png)
 
 - 还有什么更快更好的办法吗?
 
@@ -46,27 +46,27 @@ firefox https://baidu.com &
 
 - 复制curl命令
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231017-1697550740318)
+![图片描述](uid1190679-20231017-1697550740318.png)
 
 ### 执行
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231017-1697550850527)
+![图片描述](uid1190679-20231017-1697550850527.png)
 
 - 执行结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231017-1697550866031)
+![图片描述](uid1190679-20231017-1697550866031.png)
 
 ### curlconverter
 
 - www.curlconverter.com
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231017-1697550937646)
+![图片描述](uid1190679-20231017-1697550937646.png)
 
 - 可以直接构造headers和cookie
 
 ### 程序直接构造
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231017-1697552124289)
+![图片描述](uid1190679-20231017-1697552124289.png)
 
 - 也可以用uncurl 命令 获得相应的py程序
 - 感觉这还是不太本质可以自己根据curl命令获得headers吗？
@@ -75,11 +75,11 @@ firefox https://baidu.com &
 
 - curl 命令本质上是个字符串
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231222-1703214842084)
+![图片描述](uid1190679-20231222-1703214842084.png)
 
 - 最终需要构成的headers是一个字典
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231222-1703234306991)
+![图片描述](uid1190679-20231222-1703234306991.png)
 
 ### 尝试写程序
 
@@ -114,7 +114,7 @@ print("response = requests.get('"+url+"',headers=headers)")
 	- 也可以用 uncurl命令 
 	- 将curl命令转化为 py程序 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221229-1672298307566)
+![图片描述](uid1190679-20221229-1672298307566.png)
 
 - 百度这种搜索引擎是怎么形成的呢？🤔
 - 下次再说

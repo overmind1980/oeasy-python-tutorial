@@ -14,14 +14,14 @@ enable_checker: true
     - prompt 
     - 提示词
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1982785/uid1190679-20241110-1731206017957) 
+![图片描述](uid1190679-20241110-1731206017957.png) 
 
 - 我想写一个程序
 	- 输入名字
 	- 然后对他说hello
 	- 并欢迎
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231125-1700878217592)
+![图片描述](uid1190679-20231125-1700878217592.png)
 
 - 具体怎么写呢？🤔
 
@@ -44,7 +44,7 @@ print(name)
 - `:w|!python3 %`
   - 保存并运行
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3043247/uid1190679-20241110-1731206658651) 
+![图片描述](uid1190679-20241110-1731206658651.png) 
 
 - 但是 这个 有点没头没尾
 	- 能否 有点提示(prompt) ？
@@ -62,7 +62,7 @@ print("And Welcome!")
 - :w|!python3 %
 	- 保存并运行当前文件
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231127-1701081850939)
+![图片描述](uid1190679-20231127-1701081850939.png)
 
 - 对着输入的名字
 	- 打招呼
@@ -74,7 +74,7 @@ print("And Welcome!")
 |输入|input| prompt 提示词|
 |输出|print|values 值<br>sep 分隔符<br>end 换行符<br>|
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231125-1700878217592)
+![图片描述](uid1190679-20231125-1700878217592.png)
 
 |函数|操作对象|英文名|
 |---|---|---|
@@ -88,7 +88,7 @@ print("And Welcome!")
 - 给ai提示符
 	- prompt
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3043247/uid1190679-20241110-1731206524792) 
+![图片描述](uid1190679-20241110-1731206524792.png) 
 
 - 代码细节 完全看懂
 	- 蛇形命名 
@@ -111,7 +111,7 @@ print("There are", apple_count, "apples.")
 - `:w|!python3 %`
 	- 保存并运行
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3043247/uid1190679-20241110-1731206896404) 
+![图片描述](uid1190679-20241110-1731206896404.png) 
 
 - 运行成功
 
@@ -121,7 +121,7 @@ print("There are", apple_count, "apples.")
 	- 写代码完成了 输入和输出
 	- 关于vim 又练了一回
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3043247/uid1190679-20241110-1731207266561) 
+![图片描述](uid1190679-20241110-1731207266561.png) 
 
 - 对于vim和shell
 	- 我们 要好好`总结`一下

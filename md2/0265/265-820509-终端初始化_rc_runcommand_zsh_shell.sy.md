@@ -21,7 +21,7 @@ enable_checker: true
 	- 在任意路径下被找到
 	- 在哪里都可以被执行了
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221009-1665299270427)
+![图片描述](uid1190679-20221009-1665299270427.png)
 
 - 但是 一旦 重启终端
 	- $PATH 就被还原
@@ -45,7 +45,7 @@ enable_checker: true
 	- <kbd>o</kbd> 在下方
 	- 插入一个新行并进入编辑模式
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220315-1647346246251)
+![图片描述](uid1190679-20220315-1647346246251.png)
 
 - 试着加一行输出
 
@@ -53,7 +53,7 @@ enable_checker: true
 
 - 然后重新打开 一个xfce终端
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220310-1646914501998)
+![图片描述](uid1190679-20220310-1646914501998.png)
 
 - 新开终端的时候
 	- 确实会执行
@@ -78,7 +78,7 @@ vi ~/.zshrc
 	- 在尾行下面加一句话
 	- `export PATH=$PATH:~`
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220313-1647175309737)
+![图片描述](uid1190679-20220313-1647175309737.jpg)
 
 - 以后 只要是进 zsh
 	- $PATH 列表
@@ -87,7 +87,7 @@ vi ~/.zshrc
 
 ### 新开终端
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230413-1681396203395)
+![图片描述](uid1190679-20230413-1681396203395.jpg)
 
 
 - 关闭新开的终端
@@ -100,7 +100,7 @@ vi ~/.zshrc
 
 - 先看看运行之前的$PATH
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220318-1647611729922)
+![图片描述](uid1190679-20220318-1647611729922.jpg)
 
 
 - source ~/.zshrc
@@ -129,7 +129,7 @@ source ~/.zshrc
     - ls 看不见
     - ls -a 才能看见
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220318-1647611406002)
+![图片描述](uid1190679-20220318-1647611406002.jpg)
 
 - zshrc
 	- zsh 指的是 当前shell 
@@ -151,7 +151,7 @@ source ~/.zshrc
 	- ~/.vimrc
 	- ~/.bashrc
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210812-1628740962094)
+![图片描述](uid1190679-20210812-1628740962094.png)
 
 - 这个 初始化 程序 
 	- 对于 新建的终端窗口 是好用的
@@ -163,7 +163,7 @@ source ~/.zshrc
    - 配置`~/.zshrc` 就可以
 		- 设置 `zsh` 下默认的 `$PATH`
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230414-1681437244376)
+![图片描述](uid1190679-20230414-1681437244376.png)
 
 - 在 当前路径 运行`show.py`
   - 在 `python`程序第 1 行
@@ -194,7 +194,7 @@ source ~/.zshrc
 	1. 在~/.zshrc最后一行写下
 		- `export PATH=$PATH:~`
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221009-1665299270427)
+![图片描述](uid1190679-20221009-1665299270427.png)
 
 - <kbd>ctrl</kbd>+<kbd>c</kbd>会停止 进程
 	- 如何才能让 进程继续跑呢？🤔

@@ -50,7 +50,7 @@ for elem in et_html:
 	- head 
 	- body
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240331-1711891679920)
+![图片描述](uid1190679-20240331-1711891679920.png)
 
 - body下面还有ul元素呢？
 - 怎么 `往下`遍历 呢？
@@ -69,7 +69,7 @@ for elem in et_html[1]:
 - et_body里面
 	- 只有一个et_ul元素
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240331-1711891721084)
+![图片描述](uid1190679-20240331-1711891721084.png)
 
 - 突然发现
 	- ul 之前 还有个h1
@@ -101,7 +101,7 @@ for elem in et_html[1]:
 	- h1
 	- ul
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231215-1702633706544)
+![图片描述](uid1190679-20231215-1702633706544.png)
 
 - 在ul已经append之后
 	- 想要再追加h1
@@ -112,7 +112,7 @@ for elem in et_html[1]:
 
 - 目前的结构是这样的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220711-1657535798685)
+![图片描述](uid1190679-20220711-1657535798685.png)
 
 - 如果`et_body.append(et_h1)`
 	- 会导致h1会被追加append
@@ -130,7 +130,7 @@ et_body.
 
 - 按<kbd>Tab</kbd> 进行提示
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240331-1711891940672)
+![图片描述](uid1190679-20240331-1711891940672.png)
 
 - 那怎么查到insert帮助呢？
 
@@ -142,11 +142,11 @@ help(et_body.insert)
 
 - 看起来和list.insert很像
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220711-1657535977679)
+![图片描述](uid1190679-20220711-1657535977679.png)
 
 - 在指定位置插入元素
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220711-1657535983720)
+![图片描述](uid1190679-20220711-1657535983720.png)
 
 ### 回忆列表
 
@@ -159,7 +159,7 @@ lst
 
 - 确实 可以在 指定位置之前 插入 列表项
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1138256/uid1190679-20250420-1745133623463) 
+![图片描述](uid1190679-20250420-1745133623463.png) 
 
 - etree节点
 	- 也是这样insert吗？🤔
@@ -186,7 +186,7 @@ print(etree.tostring(et_html,pretty_print=True).decode())
 
 - 结果
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1138256/uid1190679-20250420-1745133806721) 
+![图片描述](uid1190679-20250420-1745133806721.png) 
 
 - 这etree节点 和 列表 为什么 如此相像？
 	- append
@@ -201,13 +201,13 @@ print(etree.tostring(et_html,pretty_print=True).decode())
 	- 最早 就是从 列表类(list)
 	- 派生出来的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221119-1668833468151)
+![图片描述](uid1190679-20221119-1668833468151.jpg)
 
 - 所以
 	- 继承了 很多列表的 特性
 	- 比如方法名、索引、切片、遍历
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221119-1668833758091)
+![图片描述](uid1190679-20221119-1668833758091.jpg)
 
 - etree.Element 
 	- 不同于 一般的列表类对象
@@ -223,11 +223,11 @@ for elem in et_html[1]:
 
 - 输出 元素 标签
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221119-1668834508282)
+![图片描述](uid1190679-20221119-1668834508282.png)
 
 - 结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221119-1668834517512)
+![图片描述](uid1190679-20221119-1668834517512.png)
 
 - etree元素 还有什么 自己的特征吗？
 
@@ -235,7 +235,7 @@ for elem in et_html[1]:
 
 - 在帮助中 举了这么一个 列表的例子
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221119-1668834583336)
+![图片描述](uid1190679-20221119-1668834583336.jpg)
 
 
 ```
@@ -246,7 +246,7 @@ lst
 
 - 元素赋值
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1138256/uid1190679-20260323-1774266030548) 
+![图片描述](uid1190679-20260323-1774266030548.png) 
 
 - etree.Element 和列表不同
   - 赋值的时候
@@ -285,7 +285,7 @@ for elem in et_body:
 - 把老零h1
 	- 直接变成老一ul
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240603-1717405302391)
+![图片描述](uid1190679-20240603-1717405302391.png)
 
 - 原来的老零h1
 	- 就从家族树里面消失了吗？
@@ -328,7 +328,7 @@ print(etree.tostring(et_html,pretty_print=True).decode())
 	- 被替换的元素
 	- 就被从这颗树里择出去了
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221119-1668835318422)
+![图片描述](uid1190679-20221119-1668835318422.jpg)
 
 - 如果想要 像列表那样
 	- 复制 一个`新`元素 
@@ -340,7 +340,7 @@ print(etree.tostring(et_html,pretty_print=True).decode())
 	- 新建一个类似的 etree 节点
 	- 可以考虑深拷贝
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210901-1630460822360)
+![图片描述](uid1190679-20210901-1630460822360.png)
 
 - 先 恢复 原始结构
 
@@ -380,7 +380,7 @@ for elem in et_html[1]:
 
 - 然后观察结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240531-1717149265752)
+![图片描述](uid1190679-20240531-1717149265752.png)
 
 - et_body[0]和et_body[1]
 	- 相互独立
@@ -402,6 +402,6 @@ for elem in et_html[1]:
 - 可以根据节点
 	- 找到 他的`父亲`、`孩子`、`哥哥`、`弟弟`吗？
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1138256/uid1190679-20250423-1745362306510) 
+![图片描述](uid1190679-20250423-1745362306510.png) 
 
 - 下次再说

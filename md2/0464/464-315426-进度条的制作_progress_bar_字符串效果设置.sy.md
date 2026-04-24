@@ -31,32 +31,32 @@ for align, text in zip("<^>", ["left", "center", "right"]):
     print("{0:{fill}{align}16}".format(text, fill=align, align=align))
 ```
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230217-1676601016523)
+![图片描述](uid1190679-20230217-1676601016523.png)
 
 - 先回忆 构成字符串格式的
 	- 设置规则
 
 ### 总的范式
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230217-1676630337312)
+![图片描述](uid1190679-20230217-1676630337312.png)
 
 #### 对齐方式
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230217-1676630371012)
+![图片描述](uid1190679-20230217-1676630371012.png)
 
 #### 正负号设置
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230217-1676630407365)
+![图片描述](uid1190679-20230217-1676630407365.png)
 
 ### 数字格式
 
 #### 整数格式设置
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230217-1676630444190)
+![图片描述](uid1190679-20230217-1676630444190.png)
 
 #### 浮点型格式设置
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230217-1676630482967)
+![图片描述](uid1190679-20230217-1676630482967.png)
 
 - 回忆结束
 - 现在需要你来写了
@@ -73,7 +73,7 @@ for percent in range(1,101):
 
 - 先做一个基本的百分比
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230217-1676638341270)
+![图片描述](uid1190679-20230217-1676638341270.png)
 
 ### 最终代码
 
@@ -91,7 +91,7 @@ for percent in range(1,101):
 
 - 最终效果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230217-1676638984927)
+![图片描述](uid1190679-20230217-1676638984927.png)
 
 - 可以再好看一点吗？
 
@@ -107,7 +107,7 @@ for i in range(1, 101):
 
 - 运行结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240202-1706880617730)
+![图片描述](uid1190679-20240202-1706880617730.png)
 
 - 再把耗费时长显示出来
 
@@ -133,7 +133,7 @@ for i in range(t + 1):
 |->{}|need_do|待完成|直出|
 |{:.2f}s|dur|耗时|精度2位 浮点型|
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240202-1706880857506)
+![图片描述](uid1190679-20240202-1706880857506.png)
 
 - 还有什么其他方法吗？
 
@@ -141,7 +141,7 @@ for i in range(t + 1):
 
 - https://pypi.org/project/tqdm/
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240202-1706881478550)
+![图片描述](uid1190679-20240202-1706881478550.png)
 
 - tqdm 意思是 进度
 	- 来自于阿拉伯语
@@ -167,7 +167,7 @@ for i in tqdm(range(1, 60)):
 
 - 运行结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240202-1706881677265)
+![图片描述](uid1190679-20240202-1706881677265.png)
 
 - 还可以有其他类库吗？
 
@@ -176,7 +176,7 @@ for i in tqdm(range(1, 60)):
 - 去pypi搜索
 	- https://pypi.org/search/?q=progress+bar&o=-created
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240202-1706881957934)
+![图片描述](uid1190679-20240202-1706881957934.png)
 
 - 类库还是相当多的
 	- 排序方法两种
@@ -191,7 +191,7 @@ for i in tqdm(range(1, 60)):
 	- 我们就可以知道 
 	- 下载 或者 安装的进度
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230217-1676639426889)
+![图片描述](uid1190679-20230217-1676639426889.png)
 
 - 还能玩点什么呢？🤔
 - 下次再说👋🏻

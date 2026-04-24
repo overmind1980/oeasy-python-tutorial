@@ -12,7 +12,7 @@ enable_checker: true
 		- time
 		- datetime
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706929503123)
+![图片描述](uid1190679-20240203-1706929503123.png)
 
 - 日期中的年份应该如何理解呢？？
 
@@ -20,7 +20,7 @@ enable_checker: true
 
 - 一年365天
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706930067635)
+![图片描述](uid1190679-20240203-1706930067635.png)
 
 - 地球围绕太阳 `公转`一周
 	- revolution
@@ -34,7 +34,7 @@ enable_checker: true
 	- 有点象声词的感觉
 	- ver～ver～ver～
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/2058767/uid1190679-20241207-1733537917929) 
+![图片描述](uid1190679-20241207-1733537917929.png) 
 
 - 押韵的 诗句
 	- 循环起来
@@ -44,7 +44,7 @@ enable_checker: true
 
 - version
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706933175608)
+![图片描述](uid1190679-20240203-1706933175608.png)
 
 - 版本
 	- 一个版本
@@ -55,7 +55,7 @@ enable_checker: true
 - 转了之后又转
 	- 反转
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706933223842)
+![图片描述](uid1190679-20240203-1706933223842.png)
 
 ```
 l = [1, 2, 3]
@@ -68,11 +68,11 @@ print(l)
 - 你要这么转
 - 他要那么转
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/2058767/uid1190679-20241207-1733538205896)
+![图片描述](uid1190679-20241207-1733538205896.png)
 
 - 对抗
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/2058767/uid1190679-20241207-1733538258579) 
+![图片描述](uid1190679-20241207-1733538258579.png) 
 
 ### versatile
 
@@ -81,7 +81,7 @@ print(l)
 	- tile 的性质
 	- 可以转向的性质
 	
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706966300736)
+![图片描述](uid1190679-20240203-1706966300736.png)
 
 - 多面手
 
@@ -92,11 +92,11 @@ print(l)
 	- verse 转 
 	- 使注意力转向
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706967295338)
+![图片描述](uid1190679-20240203-1706967295338.png)
 
 - 作广告
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706967343891)
+![图片描述](uid1190679-20240203-1706967343891.png)
 
 - advertisement
 	- 广告
@@ -110,13 +110,13 @@ print(l)
 
 > The division operation is the inverse of the multiplication operation.
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706966017487)
+![图片描述](uid1190679-20240203-1706966017487.png)
 
 - 逆运算、反转
 
 > The operator "not in" is defined to have the inverse truth value of "in".
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706966032569)
+![图片描述](uid1190679-20240203-1706966032569.png)
 
 - 反函数
 
@@ -127,7 +127,7 @@ print(l)
 	- verse 卷
 	- 内向
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706965860515)
+![图片描述](uid1190679-20240203-1706965860515.png)
 
 - extroverse
 	- extro 往外面
@@ -142,13 +142,13 @@ print(l)
 	- 围着一个东西旋转
 	- 合成一体
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706966371590)
+![图片描述](uid1190679-20240203-1706966371590.png)
 
 - 宇宙
 
 - university
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706966468975)
+![图片描述](uid1190679-20240203-1706966468975.png)
 
 - 所有人在一起研究
 	- 大学
@@ -160,14 +160,14 @@ print(l)
 	- verse 转
 	- 往两个方向转
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706967534489)
+![图片描述](uid1190679-20240203-1706967534489.png)
 
 - 不同的
 - diversity
 	- 多种多样的
 	- 多样性
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706967710348)
+![图片描述](uid1190679-20240203-1706967710348.png)
 
 - biological diversity
 	- 生物多样性
@@ -179,11 +179,11 @@ print(l)
 	- vert 转
 	- 一起转
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706967941691)
+![图片描述](uid1190679-20240203-1706967941691.png)
 
 - 转化
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706967953436)
+![图片描述](uid1190679-20240203-1706967953436.png)
 
 > convert water power into electricity
 
@@ -195,7 +195,7 @@ print(l)
 	- sation 情况
 	- 一起转头 脸对脸
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706968111434)
+![图片描述](uid1190679-20240203-1706968111434.png)
 
 - 谈话, 交谈
 
@@ -209,7 +209,7 @@ print(l)
 - adverse fortune
 - adverse conditions 厄运; 逆境
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706968370138)
+![图片描述](uid1190679-20240203-1706968370138.png)
 
 - averse
 	- a 离开
@@ -223,7 +223,7 @@ print(l)
 	- vert 转
 	- ical ...的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706968582165)
+![图片描述](uid1190679-20240203-1706968582165.png)
 
 - 转到 垂直的 程度
 
@@ -235,7 +235,7 @@ print(l)
 	- ary 的
 	- 每年旋转一次
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706966926911)
+![图片描述](uid1190679-20240203-1706966926911.png)
 
 - 周年纪念日
 
@@ -243,7 +243,7 @@ print(l)
 
 - 滚滚向前
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706934224720)
+![图片描述](uid1190679-20240203-1706934224720.png)
 
 - 汽车
 
@@ -251,7 +251,7 @@ print(l)
 
 - valve 旋转的东西
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706966538523)
+![图片描述](uid1190679-20240203-1706966538523.png)
 
 - 阀门
 
@@ -261,19 +261,19 @@ print(l)
 - 古代莎草纸 
 	- 卷起来
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706933819779)
+![图片描述](uid1190679-20240203-1706933819779.png)
 
 - 今天图书也说
 	- 第几卷
 	- Volume Ⅲ
 - 卷轴越长 体积越大
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706961427102)
+![图片描述](uid1190679-20240203-1706961427102.png)
 
 - 放大音量
 	- 如同拉开卷轴
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706960498966)
+![图片描述](uid1190679-20240203-1706960498966.png)
 
 ### voluble
 
@@ -282,7 +282,7 @@ print(l)
 	- ble 能够
 	- 舌头 能够旋转不停的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706961656428)
+![图片描述](uid1190679-20240203-1706961656428.png)
 
 - 口若悬河
 	- 滔滔不绝
@@ -294,11 +294,11 @@ print(l)
 	- volve 旋转、卷
 	- 卷到里面
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706960774126)
+![图片描述](uid1190679-20240203-1706960774126.png)
 
 - 涉及
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706960783073)
+![图片描述](uid1190679-20240203-1706960783073.png)
 
 
 ### convolution
@@ -308,7 +308,7 @@ print(l)
 	- volve 卷
 	- tion 名词
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706965616836)
+![图片描述](uid1190679-20240203-1706965616836.png)
 
 - 卷积
 
@@ -319,11 +319,11 @@ print(l)
 	- volve 旋转
 	- 反复旋转
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706961000450)
+![图片描述](uid1190679-20240203-1706961000450.png)
 
 - 旋转循环
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706961013556)
+![图片描述](uid1190679-20240203-1706961013556.png)
 
 - revolve around
 	- 以...为中心
@@ -334,7 +334,7 @@ print(l)
 	- revolv 旋转
 	- er 家伙
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706962404030)
+![图片描述](uid1190679-20240203-1706962404030.png)
 
 - 左轮手枪
 
@@ -345,11 +345,11 @@ print(l)
 	-  -ute, 过去分词格
 	-  -ion, 名词后缀
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706965488384)
+![图片描述](uid1190679-20240203-1706965488384.png)
 
 - 公转、革命
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240203-1706971793577)
+![图片描述](uid1190679-20240203-1706971793577.png)
 
 - 公转一周就产生了一年四季
 
@@ -358,7 +358,7 @@ print(l)
 	- verse
 	- volve
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240204-1707021839766)
+![图片描述](uid1190679-20240204-1707021839766.png)
 
 - 如何知道某天属于什么季节呢？🤔
 - 下次再说👋🏻

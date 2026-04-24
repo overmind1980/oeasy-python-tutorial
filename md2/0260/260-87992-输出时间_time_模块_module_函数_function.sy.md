@@ -23,7 +23,7 @@ enable_checker: true
 	- 还能控制
 		- 具体 在`哪`换行
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230120-1674205435395)
+![图片描述](uid1190679-20230120-1674205435395.png)
 
 - 我想 输出点 别的🤔
 	- 比如 用python 输出当前时间？⏰
@@ -32,7 +32,7 @@ enable_checker: true
 
 - 百度`python3 + 输出时间`
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210220-1613827429497)
+![图片描述](uid1190679-20210220-1613827429497.png)
 
 - 寻找例程
 
@@ -43,7 +43,7 @@ enable_checker: true
 		- 如果想要 输出时间 
 		- 需要 这段代码
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210221-1613861789161)
+![图片描述](uid1190679-20210221-1613861789161.png)
 
 - 第1句 
   - `#`号后面的都是注释
@@ -56,11 +56,11 @@ enable_checker: true
 - 先键入python3
 	- 进入游乐场
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230412-1681306768659)
+![图片描述](uid1190679-20230412-1681306768659.png)
 
 - `import` 就是导入
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220925-1664114503398)
+![图片描述](uid1190679-20220925-1664114503398.jpg)
 
 - 导入模块 之后
 	- 就会在 全局变量中出现 这个模块的Name
@@ -79,7 +79,7 @@ enable_checker: true
 - 除了time模块之外
 	- 还可以导入其他的模块吗？
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230418-1681825429614)
+![图片描述](uid1190679-20230418-1681825429614.jpg)
 
 - import 这个单词怎么来的呢？
 - port是港口 
@@ -104,7 +104,7 @@ enable_checker: true
 	- 文件夹
 	- 作品集
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230120-1674213108310)
+![图片描述](uid1190679-20230120-1674213108310.png)
 
 - import 
 	- 导入
@@ -117,7 +117,7 @@ enable_checker: true
 - 键入keywords
 	- 查询所有关键字
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230418-1681825843722)
+![图片描述](uid1190679-20230418-1681825843722.jpg)
 
 - 在帮助模式下
 	- help>下
@@ -129,12 +129,12 @@ enable_checker: true
 - 导入的东西 是模块(modules)
 	- 那什么 又是模块(modules)?
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230412-1681304687117)
+![图片描述](uid1190679-20230412-1681304687117.png)
 
 - 按<kbd>q</kbd>退出import的帮助
 - 再按下回车退回到游乐场
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230418-1681826098916)
+![图片描述](uid1190679-20230418-1681826098916.png)
 
 ### 啥是modules？
 
@@ -144,7 +144,7 @@ enable_checker: true
 	- help>下
   - 先查一下 都有些什么 topic
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230418-1681826372290)
+![图片描述](uid1190679-20230418-1681826372290.jpg)
 
 - 键入大写的MODULES查询
 	- 关于模块的帮助
@@ -156,7 +156,7 @@ enable_checker: true
 - 导入了m模块
 	- 就可以使用m模块中的函数和变量
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230418-1681826417575) 
+![图片描述](uid1190679-20230418-1681826417575.png) 
 
 - 有些模块是解释器内建的模块
 - 还有些模块位于在文件中
@@ -167,7 +167,7 @@ enable_checker: true
 - 在游乐场中键入小写的modules
 	- 查看所有的 modules
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210221-1613862532753)
+![图片描述](uid1190679-20210221-1613862532753.png)
 
 - 这里面有很多现成的模块
 	- 一个模块就像一个工具箱
@@ -192,7 +192,7 @@ enable_checker: true
 - 这次的 time
 	- 确实可以 在modules中找到
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220311-1646959538999)
+![图片描述](uid1190679-20220311-1646959538999.jpg)
 
 - 根据 例程
 	- 直接打上time.time()
@@ -202,7 +202,7 @@ enable_checker: true
 
 - 程序可以跑通
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230412-1681304955999)
+![图片描述](uid1190679-20230412-1681304955999.png)
 
 - 但是结果是小数
 	- 看不懂
@@ -222,7 +222,7 @@ for num in range(9):
 
 - 得到本地时间元组
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192304/uid1190679-20260308-1772931283723) 
+![图片描述](uid1190679-20260308-1772931283723.png) 
 
 ### 找到函数
 
@@ -230,7 +230,7 @@ for num in range(9):
 	- 键入<kbd>tab</kbd>可以列出
 		- time模块中所有的函数
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230412-1681305119771)
+![图片描述](uid1190679-20230412-1681305119771.jpg)
 
 - 其中的asctime是什么意思？
 - 去试试
@@ -239,13 +239,13 @@ for num in range(9):
 
 - 尝试调用
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230412-1681305283797)
+![图片描述](uid1190679-20230412-1681305283797.png)
 
 - 以字符串的形式展现时间日期
 
 - help(time.asctime)
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230412-1681305223474)
+![图片描述](uid1190679-20230412-1681305223474.png)
 
 - 这回的结果
 	- 可以看懂了
@@ -257,15 +257,15 @@ for num in range(9):
 
 - quit()从游乐场退出来
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230412-1681306836755)
+![图片描述](uid1190679-20230412-1681306836755.png)
 
 - vi show.py
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230412-1681306939292)
+![图片描述](uid1190679-20230412-1681306939292.png)
 
 - 运行结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230412-1681306950007)
+![图片描述](uid1190679-20230412-1681306950007.png)
 
 ## 总结
 
@@ -276,7 +276,7 @@ for num in range(9):
   - 体会到 第一次跑出时间的成就感 了吗？
   - 自己动手打出来的啊！😁😁😁
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230412-1681307056623)
+![图片描述](uid1190679-20230412-1681307056623.png)
 
 - 可以让python 持续报时吗？🤔
 - 下次再说！👋

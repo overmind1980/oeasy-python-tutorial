@@ -24,7 +24,7 @@ enable_checker: true
 - 根据ascii中的 字符序号
 	- 能够 把字符存储进 计算机的字节 了
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220925-1664108814250)
+![图片描述](uid1190679-20220925-1664108814250.jpg)
 
 - 终于知道 
 	- 字符对应的字节 
@@ -54,7 +54,7 @@ cd oeasy-python-tutorial/samples/000016
 ll
 ```
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220925-1664108951470)
+![图片描述](uid1190679-20220925-1664108951470.png)
 
 - 如果github无法下载的话
 	- 怎么办呢？
@@ -68,15 +68,15 @@ ll
 	- 从百度网盘下载
 		- 链接: https://pan.baidu.com/s/1IzuIMVEpiCIGklCW5YWmSg?pwd=mfjb 提取码: mfjb
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230323-1679529027270)
+![图片描述](uid1190679-20230323-1679529027270.jpg)
 
 ### 上传到云
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230323-1679529172481)
+![图片描述](uid1190679-20230323-1679529172481.jpg)
 
 - 然后可以在~/Code文件夹下找到
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230329-1680091021646)
+![图片描述](uid1190679-20230329-1680091021646.jpg)
 
 ### 在终端中观察
 
@@ -84,7 +84,7 @@ ll
 	- 每个Byte 对应一个 字符
 		- 整个小说 共 31w+ 个英文字符
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230323-1679529303342)
+![图片描述](uid1190679-20230323-1679529303342.jpg)
 
 - 打开这个小说对应的文本文件 
 
@@ -98,7 +98,7 @@ vi anderson_fairy_tales.txt
 
 - 这文档 就是 纯文本的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220925-1664109266044)
+![图片描述](uid1190679-20220925-1664109266044.png)
 
 - 如何 转化为 字节形态呢？
 
@@ -108,7 +108,7 @@ vi anderson_fairy_tales.txt
 	- dump的本意是 倾倒垃圾
 	- 这里 指的是 转储
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210303-1614751353811)
+![图片描述](uid1190679-20210303-1614751353811.png)
 
 - 把文件转储为 
 	- 16进制 字节形态
@@ -118,7 +118,7 @@ vi anderson_fairy_tales.txt
 - 转化为字节模式
 	- :%!xxd
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230330-1680137203613)
+![图片描述](uid1190679-20230330-1680137203613.jpg)
 
 - `:%!xxd –r` 可以还原回到纯文本状态 😉
 	- `:%!xxd` 转成字节形态
@@ -138,7 +138,7 @@ vi anderson_fairy_tales.txt
 		- 希腊语 六的发音
 			- 落实到 英文字母的状态
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220303-1646313056225)
+![图片描述](uid1190679-20220303-1646313056225.png)
 
 ### 词根
 
@@ -146,7 +146,7 @@ vi anderson_fairy_tales.txt
 	- 有不同领域擅长的方面
 		- 最终融汇到 英语词典
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230115-1673754385992)
+![图片描述](uid1190679-20230115-1673754385992.png)
 
 - hexa 我们理解了 
 	- hexa 对应着 six
@@ -154,7 +154,7 @@ vi anderson_fairy_tales.txt
 
 ### decimal
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230115-1673752501738)
+![图片描述](uid1190679-20230115-1673752501738.png)
 
 - decimal 就是 ten
 	- hex-decimal 就是 six-teen
@@ -163,11 +163,11 @@ vi anderson_fairy_tales.txt
 
 ### 转化回 十进制
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221003-1664805325276)
+![图片描述](uid1190679-20221003-1664805325276.png)
 
 - 和二进制 是相同的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221003-1664806627902)
+![图片描述](uid1190679-20221003-1664806627902.png)
 
 - 二进制是0b开头
 	- 0 代表数字
@@ -181,12 +181,12 @@ vi anderson_fairy_tales.txt
 - 这次看到了
 	- 安德森仙话这个文本文件的 字节状态
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230330-1680137203613)
+![图片描述](uid1190679-20230330-1680137203613.jpg)
 
 - 每个字符都被编码为
 	- 一个字节
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220925-1664108814250)
+![图片描述](uid1190679-20220925-1664108814250.jpg)
 
 - 在vim中可以用
 	- :%!xxd 将文件

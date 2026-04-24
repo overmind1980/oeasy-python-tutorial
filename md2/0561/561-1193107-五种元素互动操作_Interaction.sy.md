@@ -24,17 +24,17 @@ enable_checker: true
 
 - https://www.selenium.dev/documentation/webdriver/elements/interactions/
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1193107/uid1190679-20241212-1733963646526) 
+![图片描述](uid1190679-20241212-1733963646526.png) 
 
 - 总共五种
 
 ### 自动翻页之类的交互
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1193107/uid1190679-20241212-1733968324218) 
+![图片描述](uid1190679-20241212-1733968324218.png) 
 
 ### 询问ai
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1193107/uid1190679-20241212-1733970667791) 
+![图片描述](uid1190679-20241212-1733970667791.png) 
 
 - 代码可以翻页
 
@@ -86,7 +86,7 @@ driver.quit()
 	- 通过比照
 	- 找到合适的xpath
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1193107/uid1190679-20241212-1733969998970) 
+![图片描述](uid1190679-20241212-1733969998970.png) 
 
 - 得到数量后
 	- 向下翻页
@@ -138,7 +138,7 @@ driver.quit()
 
 - 结果
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1193107/uid1190679-20241212-1733971715811) 
+![图片描述](uid1190679-20241212-1733971715811.png) 
 
 ### click
 

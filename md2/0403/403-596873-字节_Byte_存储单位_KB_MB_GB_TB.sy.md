@@ -18,7 +18,7 @@ enable_checker: true
 	  - 判断字符 是否是字母 也很容易
   - 获得了 IBM以外公司的 支持
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221102-1667358627226)
+![图片描述](uid1190679-20221102-1667358627226.jpg)
 
 - 为什么 ASA X3.4-1963 是 7-bit 编码？
 	- 8-bit 不是才 `正好`一个字节 吗？🤔
@@ -30,7 +30,7 @@ enable_checker: true
 - 但是 
 	- `没有`提到Byte
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221102-1667358627226)
+![图片描述](uid1190679-20221102-1667358627226.jpg)
 
 - 那时候 
 	- 还有没有 Byte这个词
@@ -42,7 +42,7 @@ enable_checker: true
 	- 第一次 使用了`bite` 来描述8-bit
 	- 开音节读作[bait]
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221102-1667360554702)
+![图片描述](uid1190679-20221102-1667360554702.png)
 
 - `bite` 在1956年 太过超前
 
@@ -55,7 +55,7 @@ enable_checker: true
 	- 电压表
 	- 示波器 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221102-1667360407312)
+![图片描述](uid1190679-20221102-1667360407312.png)
 
 - bite这个词
 	- 流传于Rand、 MIT、IBM
@@ -74,7 +74,7 @@ enable_checker: true
 	- IBM之外的其他公司 想要统一通信标准
 		- 到 7-bit的 ASA X3.4-1963 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221102-1667361061275)
+![图片描述](uid1190679-20221102-1667361061275.png)
 
 - IBM 之外的公司 从产品层面跟进
 	- IBM `仍`想要 主导标准
@@ -86,7 +86,7 @@ enable_checker: true
 	- 存储容量单位 为 Byte (8-bit)
 		- 首款机型 4096 Byte
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221102-1667361531177)
+![图片描述](uid1190679-20221102-1667361531177.png)
 
 - Byte 这个单词
 	- 作为 营销话语中的 概念
@@ -98,7 +98,7 @@ enable_checker: true
 	- 编码规则 从6-bit的 BCDIC 
 		- 直接跳到 8-bit的 EBCDIC
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230210-1676021117136)
+![图片描述](uid1190679-20230210-1676021117136.png)
 
 - 这是 IBM`最后的`倔强 
 
@@ -111,7 +111,7 @@ enable_checker: true
 			- 也就是 后来的ASCII
 			- 字符编码大战尘埃落定
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230210-1676020759391)
+![图片描述](uid1190679-20230210-1676020759391.png)
 
 - 可是为什么 ASCII编码 `只`用 7-bit
 	- 1个字节 却要 8-bit 呢？
@@ -126,7 +126,7 @@ enable_checker: true
 	- 7-bit的ASCII
 	- 8-bit的EBCDIC
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221102-1667357946432)
+![图片描述](uid1190679-20221102-1667357946432.png)
 
 - 为什么 字节是 8-bit
 	- 而不是 7-bit 呢？
@@ -140,13 +140,13 @@ enable_checker: true
 - 每根 手指
 	- 可以代表 (10)<sub>2进制</sub>种状态
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220918-1663471107059)
+![图片描述](uid1190679-20220918-1663471107059.png)
 
 - 就像 电路 只有
 	- 通
 	- 断
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220918-1663474212477)
+![图片描述](uid1190679-20220918-1663474212477.png)
 
 - 电灯 只有
 	- 亮
@@ -159,7 +159,7 @@ enable_checker: true
 		- 可以 代表(100)<sub>2进制</sub>种状态
 			- 4种状态
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221103-1667432095655)
+![图片描述](uid1190679-20221103-1667432095655.png)
 
 - 这就是 2-4 `译码器(decoder)`
 - 如果 有更多手指 呢？
@@ -173,7 +173,7 @@ enable_checker: true
 - 这就是 `3-8译码器`(decoder)
 	- 或者说是 `3-8解码器`
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221103-1667433307399)
+![图片描述](uid1190679-20221103-1667433307399.png)
 
 - 再往后呢？
 
@@ -184,7 +184,7 @@ enable_checker: true
 		- 可以代表(10000)<sub>2进制</sub>种状态
 			- 16种状态
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221103-1667433518877)
+![图片描述](uid1190679-20221103-1667433518877.png)
 
 - 再往上呢？😁
 
@@ -192,7 +192,7 @@ enable_checker: true
 
 - 从4-bit 直接跳到 8-bit
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221103-1667433694230)
+![图片描述](uid1190679-20221103-1667433694230.png)
 
 - (1000)<sub>2进制</sub>根手指
 	- 8根手指
@@ -213,7 +213,7 @@ enable_checker: true
 - 1 GB = 1024 MB
 - 1 TB = 1024 GB
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221103-1667436745498)
+![图片描述](uid1190679-20221103-1667436745498.png)
 
 - 这都是 基于Byte的单位
 - Byte 就是 8-bit
@@ -229,7 +229,7 @@ enable_checker: true
 - 后面的 `7-bit`
 	- 是 ascii 字符数值
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221021-1666359398445)
+![图片描述](uid1190679-20221021-1666359398445.jpg)
 
 - 如果 标志位 是0
 	- 那么 这个字符 就是ascii字符

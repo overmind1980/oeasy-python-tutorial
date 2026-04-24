@@ -47,7 +47,7 @@ enable_checker: true
 	- 生成 etree 元素节点(Element)
 
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192646/uid1190679-20250427-1745713678971) 
+![图片描述](uid1190679-20250427-1745713678971.png) 
 
 - 你给他一个字符串
 	- 他给你一个 etree 根节点
@@ -65,14 +65,14 @@ etree.tostring(root)
 - 节点的根目录标签
 	- 取决于字符串最外层的标签
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192646/uid1190679-20250427-1745713788872) 
+![图片描述](uid1190679-20250427-1745713788872.png) 
 
 - 能否用一个网页文本
 	- 来生成一棵etree树呢？
 
 ### 生成 etree
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210901-1630466004301)
+![图片描述](uid1190679-20210901-1630466004301.png)
 
 ```python
 from lxml import etree
@@ -83,7 +83,7 @@ print(etree.tostring(root,pretty_print=True).decode())
 
 - 结果
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192646/uid1190679-20250427-1745713859091) 
+![图片描述](uid1190679-20250427-1745713859091.png) 
 
 - 我们就把 
 	- 从 字符串 和 etree 
@@ -105,11 +105,11 @@ print(etree.tostring(root,pretty_print=True).decode())
 
 - 确实 可以生成 p元素节点
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192646/uid1190679-20250427-1745714064053) 
+![图片描述](uid1190679-20250427-1745714064053.png) 
 
 - 但是 整个html的框架 不完整
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210901-1630451887662)
+![图片描述](uid1190679-20210901-1630451887662.png)
 
 - 想要 补充完整
 
@@ -122,7 +122,7 @@ print(etree.tostring(root,pretty_print=True).decode())
 	- 可以将 不那么标准的HTML
 	- 生成 etree
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20211017-1634436427443)
+![图片描述](uid1190679-20211017-1634436427443.png)
 
 - Parsing HTML
   - HTML 就是网页
@@ -144,7 +144,7 @@ print(etree.tostring(root,pretty_print=True).decode())
 	- 更换为 HTML方法
 	- 这样会 补全 HTML 框架结构
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221126-1669467386432)
+![图片描述](uid1190679-20221126-1669467386432.png)
 
 - 如果 html 是错乱的标签
 	- 还能生成树么？🤔
@@ -158,7 +158,7 @@ print(etree.tostring(root,pretty_print=True).decode())
   - 这也可以生成一棵完成的 etree 吗？
   - https://lxml.de/parsing.html#parsing-html
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20211017-1634436427443)
+![图片描述](uid1190679-20211017-1634436427443.png)
 
 - 浏览器也经常面对这类情况
   - 它能够容错
@@ -176,7 +176,7 @@ print(etree.tostring(root,pretty_print=True).decode())
 
 - 字符串中 标签 不完整
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220712-1657599575592)
+![图片描述](uid1190679-20220712-1657599575592.png)
 
 - 绝大多数情况下
 	- 会 补全 结束标签
@@ -195,7 +195,7 @@ print(etree.tostring(root,pretty_print=True).decode())
 - p元素 本该属于 body
 	- 不过这里隶属于 head元素
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220712-1657599630558)
+![图片描述](uid1190679-20220712-1657599630558.png)
 
 - 这种情况 很少
 	- 错的 实在太离谱
@@ -204,7 +204,7 @@ print(etree.tostring(root,pretty_print=True).decode())
 
 ### 移除空格
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210901-1630504914540)
+![图片描述](uid1190679-20210901-1630504914540.png)
 
 - 照猫画虎
 
@@ -220,7 +220,7 @@ print(etree.tostring(root,pretty_print=True).decode())
 
 - 标签之间没有意义的空格被删除掉了
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210901-1630505103633)
+![图片描述](uid1190679-20210901-1630505103633.png)
 
 - 注意删除的空格是 标签`之间`的
   - 而不是 标签`内部`的
@@ -232,7 +232,7 @@ print(etree.tostring(root,pretty_print=True).decode())
 	- 通过 etree.HTML()函数
 	- 将网页源文件进行 parse(语法分析)生成一棵 etree
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240401-1711961966480)
+![图片描述](uid1190679-20240401-1711961966480.png)
 
 - 要总装了 
 	- 把一切串联起来

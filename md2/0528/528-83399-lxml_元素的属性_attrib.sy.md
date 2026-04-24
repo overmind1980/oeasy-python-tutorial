@@ -17,7 +17,7 @@ enable_checker: true
 	- 可以`筛`元素 
     - 深度优先遍历
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240829-1724901390428)
+![图片描述](uid1190679-20240829-1724901390428.png)
 
 - `怎么` 把etree上的文本
 	- ` 都`输出来着？🤔
@@ -39,7 +39,7 @@ print(etree.tostring(et_html,method="text").decode())
 
 - 输出结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240401-1711940567281)
+![图片描述](uid1190679-20240401-1711940567281.png)
 
 - 除了method 之外
 	- tostring 还有啥参数？
@@ -54,7 +54,7 @@ help(etree.tostring)
 
 - 观察参数
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221125-1669385568520)
+![图片描述](uid1190679-20221125-1669385568520.jpg)
 
 - 可以在 tostring 函数中
   - 用 with_tail=False 参数控制 tail 成员不显示
@@ -69,11 +69,11 @@ print(etree.tostring(et_html[1][0],method="text",with_tail=False).decode())
 - 对比
 
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/2811712/uid1190679-20250426-1745631161550) 
+![图片描述](uid1190679-20250426-1745631161550.png) 
 
 - 确实把tail省略了
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221125-1669385229895)
+![图片描述](uid1190679-20221125-1669385229895.jpg)
 
 ### 继续
 
@@ -81,7 +81,7 @@ print(etree.tostring(et_html[1][0],method="text",with_tail=False).decode())
 	- 有属性 lang
 	- 值 为 zh-cn
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/83399/uid1190679-20250426-1745634751541) 
+![图片描述](uid1190679-20250426-1745634751541.png) 
 
 - 这 属性 是 `咋`生成的 呢？
 
@@ -93,7 +93,7 @@ et_html.
 
 - 按下<kbd>Tab</kbd>进行提示
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20250426-1745634997936)
+![图片描述](uid1190679-20250426-1745634997936.png)
 
 - 这属性看起来像什么？
 
@@ -106,7 +106,7 @@ help(et_html.attrib)
 
 - 这个attrib 说是 很像字典
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/83399/uid1190679-20250426-1745635113280) 
+![图片描述](uid1190679-20250426-1745635113280.png) 
 
 - 我们就把attrib当成字典
 
@@ -126,7 +126,7 @@ print(etree.tostring(et_html,pretty_print=True).decode())
 	- 类型 确实是 字典
 	- 存放着 元素键值对
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240401-1711941151199)
+![图片描述](uid1190679-20240401-1711941151199.png)
 
 - 怎么访问key为lang 的字典项呢？
 
@@ -139,7 +139,7 @@ et_html.attrib["lang"]
 
 - 效果
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/83399/uid1190679-20250426-1745643843985) 
+![图片描述](uid1190679-20250426-1745643843985.png) 
 
 - 如果元素有两个属性呢？
 
@@ -154,7 +154,7 @@ print(etree.tostring(et_html,pretty_print=True).decode())
 
 - 能看到 两个属性 吗？
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/83399/uid1190679-20250426-1745642666983) 
+![图片描述](uid1190679-20250426-1745642666983.png) 
 
 - 可以看到
 
@@ -169,7 +169,7 @@ et_html.attrib["id"]
 
 - 还可以分别访问
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/83399/uid1190679-20250426-1745643941143) 
+![图片描述](uid1190679-20250426-1745643941143.png) 
 
 ## 总结
 

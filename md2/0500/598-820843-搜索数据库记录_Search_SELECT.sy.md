@@ -25,7 +25,7 @@ enable_checker: true
 
 - 尝试提交
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230209-1675948023937)
+![图片描述](../0598/uid1190679-20230209-1675948023937.png)
 
 - 可以提交表单数据
 - 准备编辑/user/search对应的处理函数

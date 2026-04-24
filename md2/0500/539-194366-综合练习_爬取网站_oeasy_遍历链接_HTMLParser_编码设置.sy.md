@@ -27,12 +27,12 @@ sudo service nginx start
 firefox http://localhost/oeasyorg/index.html &
 ```
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220604-1654324037955)
+![图片描述](../0539/uid1190679-20220604-1654324037955.png)
 
 - 在浏览器里面 能打开
 	- 并且 观察到编码格式是`utf-8`
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210903-1630651569966)
+![图片描述](../0539/uid1190679-20210903-1630651569966.png)
 
 - 目标是 
 	- 把 红框里面的 菜单
@@ -43,7 +43,7 @@ firefox http://localhost/oeasyorg/index.html &
 - 右键"爱情"
 	- 检查元素
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210902-1630587857006)
+![图片描述](../0539/uid1190679-20210902-1630587857006.png)
 
 - 右键a元素
 	- 复制 xpath
@@ -63,7 +63,7 @@ firefox http://localhost/oeasyorg/index.html &
 - 综合可以 得到整体的xpath 是
 	- /html/body/header/nav/ul/li/a
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220713-1657719955413)
+![图片描述](../0539/uid1190679-20220713-1657719955413.png)
 
 - 含义是
 	- 根下的html下的
@@ -81,7 +81,7 @@ firefox http://localhost/oeasyorg/index.html &
 	- 下面步骤 
 	- 在 本地 火狐中完成体验
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240414-1713100050119)
+![图片描述](../0539/uid1190679-20240414-1713100050119.png)
 
 - 点击插件和主题
 
@@ -89,11 +89,11 @@ firefox http://localhost/oeasyorg/index.html &
 
 - 搜索xpath
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240414-1713100165116)
+![图片描述](../0539/uid1190679-20240414-1713100165116.jpg)
 
 - 安装插件
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240414-1713100178715)
+![图片描述](../0539/uid1190679-20240414-1713100178715.png)
 
 ### 通过url 反选
 
@@ -101,7 +101,7 @@ firefox http://localhost/oeasyorg/index.html &
 	- 在expression中
 	- 粘贴xpath
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230111-1673403116683)
+![图片描述](../0539/uid1190679-20230111-1673403116683.png)
 
 - 点击 Excute 执行
 
@@ -113,7 +113,7 @@ firefox http://localhost/oeasyorg/index.html &
 /html/body/header/nav/ul/li/a
 ```
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230111-1673403132031)
+![图片描述](../0539/uid1190679-20230111-1673403132031.png)
 
 - 可以选中多个标签
 
@@ -153,7 +153,7 @@ for anchor in et_targets:
 
 - 运行结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210902-1630588074620)
+![图片描述](../0539/uid1190679-20210902-1630588074620.png)
 
 - 运行成功
 
@@ -166,7 +166,7 @@ for anchor in et_targets:
 - 去源头
 	- 找官网帮助
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210902-1630588320923)
+![图片描述](../0539/uid1190679-20210902-1630588320923.png)
 
 - 找到 etree 节点之后
 	- 找到他的 attrib 成员
@@ -190,7 +190,7 @@ for anchor in et_targets:
 
 - 运行结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240415-1713150552604)
+![图片描述](../0539/uid1190679-20240415-1713150552604.png)
 
 - 输出结果
 	- 只需要链接
@@ -211,17 +211,17 @@ for anchor in et_targets:
 
 - 输出链接
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240415-1713150634492)
+![图片描述](../0539/uid1190679-20240415-1713150634492.png)
 
 ### 存入文件
 
 - 代码没有变
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220713-1657720735051)
+![图片描述](../0539/uid1190679-20220713-1657720735051.png)
 
 - 输出重定向到`urls.txt`
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220713-1657720819256)
+![图片描述](../0539/uid1190679-20220713-1657720819256.png)
 
 - 目前存储的是
 	- 相对链接
@@ -258,7 +258,7 @@ for anchor in et_targets:
 
 - 打开urls.txt 如下图所示
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240415-1713150731632)
+![图片描述](../0539/uid1190679-20240415-1713150731632.png)
 
 ### 总结
 
@@ -273,7 +273,7 @@ for anchor in et_targets:
 	- 然后切片并拼接为绝对链接地址
 	- 并且存储到了 urls.txt 中
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220713-1657722223759)
+![图片描述](../0539/uid1190679-20220713-1657722223759.png)
 
 - 能进入 这些得到的链接
 	- 再去 深入爬取 吗？🤔

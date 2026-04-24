@@ -17,15 +17,15 @@ enable_checker: true
 
 ### 顶点组的概念
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250217-1739784384341) 
+![图片描述](../0743/uid1190679-20250217-1739784384341.png) 
 
 - 先有一个Plane平面
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3622854/uid1190679-20260102-1767306658687) 
+![图片描述](../0743/uid1190679-20260102-1767306658687.png) 
 
 - 然后设置细分曲面
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250217-1739784516955) 
+![图片描述](../0743/uid1190679-20250217-1739784516955.png) 
 
 - 分割数 为 3
 
@@ -34,22 +34,22 @@ enable_checker: true
 - 选择对象数据属性
 	- 添加顶点组
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250217-1739784789139) 
+![图片描述](../0743/uid1190679-20250217-1739784789139.png) 
 
 ### 为顶点组指定顶点
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250217-1739785077656) 
+![图片描述](../0743/uid1190679-20250217-1739785077656.png) 
 
 - 指派之后怎么用呢?
 
 ### 选择顶点
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250217-1739785169700)
+![图片描述](../0743/uid1190679-20250217-1739785169700.png)
 
 - 可以恢复顶点组的选择状态
 	- 然后可以对选中的顶点组 操作
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250217-1739785201615) 
+![图片描述](../0743/uid1190679-20250217-1739785201615.png) 
 
 - 可以有多个顶点组
 	- 不同程度低控制顶点
@@ -60,7 +60,7 @@ enable_checker: true
 制作一个圆柱体，圆面 6 顶点，直径和高度比一比 2.
 ```
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250217-1739799499651) 
+![图片描述](../0743/uid1190679-20250217-1739799499651.png) 
 
 ### 生成圆柱体
 
@@ -97,11 +97,11 @@ bpy.ops.object.mode_set(mode='OBJECT')
 	- 在圆柱上切下
 	- 找到环切选项
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250217-1739800010405) 
+![图片描述](../0743/uid1190679-20250217-1739800010405.png) 
 
 - 将圆柱切成八段
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250217-1739800093895) 
+![图片描述](../0743/uid1190679-20250217-1739800093895.png) 
 
 ### 代码实现 
 
@@ -161,11 +161,11 @@ bpy.ops.object.mode_set(mode='OBJECT')
 
 ### 添加骨架
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250217-1739800829709) 
+![图片描述](../0743/uid1190679-20250217-1739800829709.png) 
 
 - 添加骨架
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250217-1739800960969)
+![图片描述](../0743/uid1190679-20250217-1739800960969.png)
 
 - 如何看到这个骨架呢?
 
@@ -174,11 +174,11 @@ bpy.ops.object.mode_set(mode='OBJECT')
 - 从布局工作区
 	- 切到四视图
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250217-1739801006353)
+![图片描述](../0743/uid1190679-20250217-1739801006353.png)
 
 - 还是被遮挡
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250217-1739801128981)
+![图片描述](../0743/uid1190679-20250217-1739801128981.png)
 
 ### 着色和景别
 
@@ -186,21 +186,21 @@ bpy.ops.object.mode_set(mode='OBJECT')
 	- 着色为线框wireframe
 	- 景别为全景Frame_Al
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250217-1739801229448) 
+![图片描述](../0743/uid1190679-20250217-1739801229448.png) 
 
 - 骨架 里面 只有一根 骨骼
 	- 骨骼看起来像 飞镖
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250217-1739801485311) 
+![图片描述](../0742/uid1190679-20250217-1739801485311.png) 
 
 
 ### 移动骨架
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250217-1739801506241) 
+![图片描述](../0743/uid1190679-20250217-1739801506241.png) 
 
 - 控制骨架的移动和景别
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3622854/uid1190679-20260102-1767310208093) 
+![图片描述](../0743/uid1190679-20260102-1767310208093.png) 
 
 - 可以在solid着色下
 	- 看到骨骼吗?
@@ -212,7 +212,7 @@ bpy.ops.object.mode_set(mode='OBJECT')
 	- 找到 视窗显示 ViewPort Display
 	- 在最前 In Front	
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3622854/uid1190679-20260102-1767310419195) 
+![图片描述](../0743/uid1190679-20260102-1767310419195.png) 
 
 ### 挤出骨骼
 
@@ -220,7 +220,7 @@ bpy.ops.object.mode_set(mode='OBJECT')
 	- 选择编辑模式
 	- 挤出骨骼
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3622854/uid1190679-20260102-1767310584009) 
+![图片描述](../0743/uid1190679-20260102-1767310584009.png) 
 
 ### 骨架变化
 
@@ -228,15 +228,15 @@ bpy.ops.object.mode_set(mode='OBJECT')
 	- 产生了 新的骨骼
 	- 并设定了 父子关系
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250218-1739839581256) 
+![图片描述](../0743/uid1190679-20250218-1739839581256.png) 
 
 ### 显示名称
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3622854/uid1190679-20260102-1767310743038) 
+![图片描述](../0743/uid1190679-20260102-1767310743038.png) 
 
 ### 改名
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250218-1739840585928) 
+![图片描述](../0743/uid1190679-20250218-1739840585928.png) 
 
 - 骨架(armature) 改名为 手臂(arm)
 	- Bone 改名为 大臂(upper_arm)
@@ -246,7 +246,7 @@ bpy.ops.object.mode_set(mode='OBJECT')
 
 ### 建立骨骼
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250218-1739852107749) 
+![图片描述](../0743/uid1190679-20250218-1739852107749.png) 
 
 ```
 import bpy
@@ -286,7 +286,7 @@ bpy.ops.object.mode_set(mode='OBJECT')
 	- 对象模式
 	- Object Mode
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250218-1739844781551) 
+![图片描述](../0743/uid1190679-20250218-1739844781551.png) 
 
 - 先选中 圆柱 Cylinder(亮黄色)
 	- ctrl 加选 骨架armature
@@ -309,7 +309,7 @@ bpy.ops.object.mode_set(mode='OBJECT')
 		1. forearm 小臂
 		2. upper_arm 大臂
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250218-1739845011700) 
+![图片描述](../0743/uid1190679-20250218-1739845011700.png) 
 
 - 代码如何实现
 
@@ -413,7 +413,7 @@ bpy.ops.object.parent_set(type="ARMATURE_AUTO")
 - 旋转小臂骨骼
 	- 圆柱体 上面的Mesh随之而动
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250218-1739845304655) 
+![图片描述](../0743/uid1190679-20250218-1739845304655.png) 
 
 - 为什么圆柱体 会随着 骨骼的 旋转而变化呢?
 
@@ -426,19 +426,19 @@ bpy.ops.object.parent_set(type="ARMATURE_AUTO")
 	- 找到 z轴数值
 	- 清零
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250218-1739846619871) 
+![图片描述](../0743/uid1190679-20250218-1739846619871.png) 
 
 - 骨骼还原
 	- 圆柱体 还原
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250218-1739846749000) 
+![图片描述](../0743/uid1190679-20250218-1739846749000.png) 
 
 ### 具体顶点权重配置
 
 - 进入编辑模式
 	- 点中(不是框选) 某个顶点
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3622854/uid1190679-20260102-1767342078795) 
+![图片描述](../0743/uid1190679-20260102-1767342078795.png) 
 
 - 按下<kbd>n</kbd>可以看到
 	- 当前顶点收到哪些骨骼的影响
@@ -455,7 +455,7 @@ bpy.ops.object.parent_set(type="ARMATURE_AUTO")
 	- 选择 前臂 forearm
 	- 点击 选择 Select
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250218-1739845861563) 
+![图片描述](../0743/uid1190679-20250218-1739845861563.png) 
 
 - 可以看到 前臂骨 的控制范围
 
@@ -464,7 +464,7 @@ bpy.ops.object.parent_set(type="ARMATURE_AUTO")
 - 选中 圆柱体(Cylinder) 网格(Mesh)
 	- 选择 权重涂抹模式 (Weight Paint)
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250218-1739846969939) 
+![图片描述](../0743/uid1190679-20250218-1739846969939.png) 
 
 - 每个顶点都有相应的权重
 	- 权重是 一个 从0到1 的数值
@@ -478,7 +478,7 @@ bpy.ops.object.parent_set(type="ARMATURE_AUTO")
 	- 观察 不同骨骼 对应的 不同顶点组
 	- 权重 如何 变化
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250218-1739847343868) 
+![图片描述](../0743/uid1190679-20250218-1739847343868.png) 
 
 - 如何修改权重呢?
 
@@ -493,13 +493,13 @@ bpy.ops.object.parent_set(type="ARMATURE_AUTO")
 	- 半径
 	- 力度
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250218-1739848176470) 
+![图片描述](../0743/uid1190679-20250218-1739848176470.png) 
 
 - 画笔细节
 	- 权重基于点(Vertex)
 	- 显示的时候 使用 点模式
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250218-1739848765852) 
+![图片描述](../0743/uid1190679-20250218-1739848765852.png) 
 
 - 画笔(Brush)
 	- 取消勾选 
@@ -509,12 +509,12 @@ bpy.ops.object.parent_set(type="ARMATURE_AUTO")
 
 ### 绘制结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20250218-1739848901630)
+![图片描述](../0743/uid1190679-20250218-1739848901630.png)
 
 - 将 过渡区域 
 	- 极化(polarized)
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250218-1739849342820) 
+![图片描述](../0743/uid1190679-20250218-1739849342820.png) 
 
 ### 观察效果
 
@@ -524,7 +524,7 @@ bpy.ops.object.parent_set(type="ARMATURE_AUTO")
 	- 对小臂 影响 更深 
 	- 对大臂 影响 更浅
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250218-1739849552435) 
+![图片描述](../0743/uid1190679-20250218-1739849552435.png) 
 
 - 小臂骨 对应的 顶点组范围 更明确
 	- 对小臂 影响 更深 
@@ -546,7 +546,7 @@ bpy.ops.object.parent_set(type="ARMATURE_AUTO")
 	- 骨骼 通过 权重(Weights) 影响 顶点(Vertex)
 	- 各个 顶点(Vertex) 形成了 网格(Mesh) 的最终状态
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250218-1739851038738) 
+![图片描述](../0743/uid1190679-20250218-1739851038738.png) 
 
 - Rigging 这个词怎么来的?
 
@@ -555,12 +555,12 @@ bpy.ops.object.parent_set(type="ARMATURE_AUTO")
 - 来自于 北欧的挪威语言
 	- 意思 是 绑、系
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250218-1739851208033) 
+![图片描述](../0743/uid1190679-20250218-1739851208033.png) 
 
 - 捆绑固定 风帆
 	- 控制航向
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250218-1739851492412) 
+![图片描述](../0743/uid1190679-20250218-1739851492412.png) 
 
 ### 操纵
 
@@ -568,7 +568,7 @@ bpy.ops.object.parent_set(type="ARMATURE_AUTO")
 	- 在blender中
 	- 意思是 绑定
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3594697/uid1190679-20250218-1739851699558) 
+![图片描述](../0743/uid1190679-20250218-1739851699558.png) 
 
 - 绑定之后
 	- 如何控制关键帧呢？
@@ -581,11 +581,11 @@ bpy.ops.object.parent_set(type="ARMATURE_AUTO")
 	- 姿势 - 动画 - 插入关键帧
 	- 选择位置旋转缩放
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3622854/uid1190679-20260102-1767344328953) 
+![图片描述](../0743/uid1190679-20260102-1767344328953.png) 
 
 - 在时间轴上观察
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3622854/uid1190679-20260102-1767344427935) 
+![图片描述](../0743/uid1190679-20260102-1767344427935.png) 
 
 - 插入了关键帧
 
@@ -596,11 +596,11 @@ bpy.ops.object.parent_set(type="ARMATURE_AUTO")
 	- 选中 上臂 
 	- 选择 姿势 菜单
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3622854/uid1190679-20260102-1767344972779) 
+![图片描述](../0743/uid1190679-20260102-1767344972779.png) 
 
 - 姿势 - 动画 - 插入关键帧
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3622854/uid1190679-20260102-1767345165533) 
+![图片描述](../0743/uid1190679-20260102-1767345165533.png) 
 
 ### 动画代码
 
@@ -743,11 +743,11 @@ bpy.context.scene.frame_set(1)
 
 - 准备渲染
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3622854/uid1190679-20260102-1767345249002) 
+![图片描述](../0743/uid1190679-20260102-1767345249002.png) 
 
 ### 渲染设置
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3622854/uid1190679-20260102-1767352313912) 
+![图片描述](../0743/uid1190679-20260102-1767352313912.png) 
 
 ### 最终代码
 
@@ -949,7 +949,7 @@ yes | sudo apt install feh
 feh /tmp
 ```
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3622854/uid1190679-20260102-1767352760020) 
+![图片描述](../0743/uid1190679-20260102-1767352760020.png) 
 
 
 ### 总结
@@ -957,7 +957,7 @@ feh /tmp
 	- 骨架的基础
 	- 并且完成了渲染！
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/3622854/uid1190679-20260102-1767354159030) 
+![图片描述](../0743/uid1190679-20260102-1767354159030.png) 
 
 - 能做个人形的骨架吗？
 	- 我们下次再说！

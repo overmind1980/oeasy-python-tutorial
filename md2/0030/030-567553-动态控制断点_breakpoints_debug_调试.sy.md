@@ -16,7 +16,7 @@ enable_checker: true
 - 也可以通过continue命令
 	- 一路到底
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230408-1680953763730)
+![图片描述](uid1190679-20230408-1680953763730.jpg)
 
 - 还可以使用breakpoint()
 	- 在程序中 设置断点
@@ -49,7 +49,7 @@ print("2020------Guido in microsoft")
 	- 没有breakpoint()
 	- 如果有的话需要删除
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220927-1664286061599)
+![图片描述](uid1190679-20220927-1664286061599.jpg)
 
 - vi guido.py
 	- 进入底行命令模式
@@ -62,7 +62,7 @@ print("2020------Guido in microsoft")
 - 这次 在vim里面 
 	- 直接运行pdb3
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220916-1663316179521)
+![图片描述](uid1190679-20220916-1663316179521.jpg)
 
 - :w|!pdb3 %
 	- : 进入底行命令模式
@@ -81,7 +81,7 @@ print("2020------Guido in microsoft")
 - 进入pdb3之后
 	- 可以用help查看已经学习的命令
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230225-1677330779678)
+![图片描述](uid1190679-20230225-1677330779678.jpg)
 
 - h(elp)
 	- 查询帮助
@@ -104,7 +104,7 @@ print("2020------Guido in microsoft")
 	- 直到遇到断点
 		- breakpoint 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231031-1698728389569)
+![图片描述](uid1190679-20231031-1698728389569.png)
 
 - 如何动态 打断点 呢？
 
@@ -113,7 +113,7 @@ print("2020------Guido in microsoft")
 - 查询帮助
 	- 找到 有分段作用的命令
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230225-1677330953823)
+![图片描述](uid1190679-20230225-1677330953823.jpg)
 
 - break在英文中是打断的意思
 	- 可以用这个break命令
@@ -125,7 +125,7 @@ print("2020------Guido in microsoft")
 
 - break 的缩写 是 b
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220916-1663316426529)
+![图片描述](uid1190679-20220916-1663316426529.jpg)
 
 - 可以 对于py文件的行号
 	- 设置`断点`
@@ -135,7 +135,7 @@ print("2020------Guido in microsoft")
 - 给第5行
 	- 添加了一个`断(break)点(point)`
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220916-1663316737970)
+![图片描述](uid1190679-20220916-1663316737970.jpg)
 
 - next 一下
 	- 向下执行了一行
@@ -154,7 +154,7 @@ print("2020------Guido in microsoft")
 	- cont
 	- c
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220916-1663316971884)
+![图片描述](uid1190679-20220916-1663316971884.jpg)
 
 - 真的可以
 	- 让 流程快速流转 到 `断点` 吗？
@@ -169,7 +169,7 @@ print("2020------Guido in microsoft")
 - continue 让程序
 	- 直接流到 断点处
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220916-1663317086358)
+![图片描述](uid1190679-20220916-1663317086358.png)
 
 - 为什么流程
 	- 不往下 `继续`流 了呢？
@@ -180,7 +180,7 @@ print("2020------Guido in microsoft")
 	- 就是 截`断`流程的 `点`
 	- 流程流到这里 必须`断`开 的 点
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220916-1663318588293)
+![图片描述](uid1190679-20220916-1663318588293.png)
 
 - 断点 就像 一个阀门(valve) [vælv]或大坝
 	- 会让水流停止
@@ -193,7 +193,7 @@ print("2020------Guido in microsoft")
 - 由于 第五行后面
 	- `没有`断点
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220916-1663318649919)
+![图片描述](uid1190679-20220916-1663318649919.png)
 
 - continue 会 一直流到py程序结尾
 	- 把 后面两行 都输出完成
@@ -208,7 +208,7 @@ print("2020------Guido in microsoft")
 - 只要 断点存在
 	 - continue 就会 流到断点
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220916-1663318731454)
+![图片描述](uid1190679-20220916-1663318731454.png)
 
 - 遇到断点 
 	- 必须要 停下来
@@ -220,7 +220,7 @@ print("2020------Guido in microsoft")
 - clear 清除 断点
 	- cl 是clear的缩写
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220916-1663318874663)
+![图片描述](uid1190679-20220916-1663318874663.jpg)
 
 - 有`两`种清除方法
 	 - clear 文件名:行号
@@ -232,7 +232,7 @@ print("2020------Guido in microsoft")
 - b后面不加参数
 	- 可以显示所有断点
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220916-1663319565055)
+![图片描述](uid1190679-20220916-1663319565055.jpg)
 
 - clear guido.py:5
 	- 清除 guido.py第5行的 断点
@@ -248,12 +248,12 @@ print("2020------Guido in microsoft")
 		- b 5
 		- 这个断点 是2号断点
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230531-1685514048063)
+![图片描述](uid1190679-20230531-1685514048063.png)
 
 - 1号断点 已经被clear了
 	- 现在 断点 从2开始 编号
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220916-1663319919972)
+![图片描述](uid1190679-20220916-1663319919972.jpg)
 
 - clear 2 
 	- 可以 清除 这个2号断点
@@ -268,12 +268,12 @@ print("2020------Guido in microsoft")
 - 想要 找到程序中的问题
 	- 一步一步next 太慢
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220916-1663320209428)
+![图片描述](uid1190679-20220916-1663320209428.jpg)
 
 - 所以 只有通过断点
 	- 才能 直接跳到 某个位置
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230531-1685514206613)
+![图片描述](uid1190679-20230531-1685514206613.png)
 
 - 就像排除线路故障
 	- 需要 在中间位置 建立观测点
@@ -285,7 +285,7 @@ print("2020------Guido in microsoft")
 	- :!pdb3 %
 	- 要设置 `更多`断点
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220916-1663320478722)
+![图片描述](uid1190679-20220916-1663320478722.png)
 
 - 1, 3, 6行
 	- 各一个断点
@@ -295,7 +295,7 @@ print("2020------Guido in microsoft")
 - 断点 可以把万行程序 分几段
 	- 从而 分段排查问题
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220916-1663320754424)
+![图片描述](uid1190679-20220916-1663320754424.jpg)
 
 - 尝试删除 第2个断点
 
@@ -305,7 +305,7 @@ print("2020------Guido in microsoft")
 	- 要删除 2号断点
 	- 位于guido.py的第3行
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220916-1663320815015)
+![图片描述](uid1190679-20220916-1663320815015.png)
 
 - 删除 成功
 	- 还剩 两个断点
@@ -316,11 +316,11 @@ print("2020------Guido in microsoft")
 
 - 查看帮助
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231108-1699433014013)
+![图片描述](uid1190679-20231108-1699433014013.png)
 
 - 可以根据行号删除断点
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231108-1699433031822)
+![图片描述](uid1190679-20231108-1699433031822.png)
 
 - 现在 可以更快速地 
 	- 进行调试(debug)了！！😁

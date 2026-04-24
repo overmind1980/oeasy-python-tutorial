@@ -38,7 +38,7 @@ enable_checker: true
 - 控制台与主机 直接物理连接
   - 无法 远程操作
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210221-1613916532296)
+![图片描述](../0309/uid1190679-20210221-1613916532296.png)
 
 - `terminal`终端
   - 主机网络中 最终的端点
@@ -70,7 +70,7 @@ enable_checker: true
 			- 出了这个边界 
 				- 就要 付违约金
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220219-1645237994755)
+![图片描述](../0310/uid1190679-20220219-1645237994755.png)
 
 - `term` 作为 行业的术语
 	- 俗话说 隔行如隔山
@@ -88,7 +88,7 @@ enable_checker: true
 - 终结
 	- 放到 边界上
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230728-1690539763469)
+![图片描述](../0310/uid1190679-20230728-1690539763469.png)
 
 - 到头了
 
@@ -96,14 +96,14 @@ enable_checker: true
 
 - 终结者
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230728-1690539922960)
+![图片描述](../0310/uid1190679-20230728-1690539922960.png)
 
 ### exterminate
 
 - ex- 
 	- 向外
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230728-1690544381860)
+![图片描述](../0310/uid1190679-20230728-1690544381860.png)
 
 - exterminate
 	- 赶到 边界之外
@@ -114,7 +114,7 @@ enable_checker: true
 - de-
 	- 向下
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230728-1690544596928)
+![图片描述](../0310/uid1190679-20230728-1690544596928.png)
 
 - determine
 	- 向下到边界
@@ -129,7 +129,7 @@ enable_checker: true
 		- 点 是 线段的边缘(term)
 		- 线 是 面的边缘(term)
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230104-1672833582699)
+![图片描述](../0310/uid1190679-20230104-1672833582699.png)
 
 - 航线的端点 就是 Terminal
 	- 所以航站楼(T1、T2) 一般都是 T打头
@@ -150,7 +150,7 @@ enable_checker: true
 - terminal 
 	- 来自于词源 term
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230728-1690545029168)
+![图片描述](../0309/uid1190679-20230728-1690545029168.png)
 
 - term的意思 是 边缘
 	- 在最边缘上的 就是 终端terminal

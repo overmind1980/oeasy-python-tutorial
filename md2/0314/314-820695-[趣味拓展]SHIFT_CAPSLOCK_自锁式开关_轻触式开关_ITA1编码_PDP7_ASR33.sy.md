@@ -33,22 +33,22 @@ enable_checker: true
 	- caps lock 
 	- shift 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220408-1649381068444)
+![图片描述](uid1190679-20220408-1649381068444.png)
 
 - capslock 是自锁式的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230121-1674260169427)
+![图片描述](uid1190679-20230121-1674260169427.png)
 
 ### 轻触式开关
 
 - shift 是 轻触式的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230129-1674957782822)
+![图片描述](uid1190679-20230129-1674957782822.png)
 
 - 换挡键 使得 键盘
 	- 表示字符的数量 大大增加
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230121-1674260508915)
+![图片描述](uid1190679-20230121-1674260508915.png)
 
 - 这种编码最终形成了`ITA1`编码
 
@@ -63,7 +63,7 @@ enable_checker: true
 	  - FIGS
 	  - LTRS
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210223-1614083402089)
+![图片描述](uid1190679-20210223-1614083402089.jpg)
 
 - 在当时
   - 回车 和 换行 
@@ -92,7 +92,7 @@ enable_checker: true
 - `ASR-33`是当时的一代机皇
 	- `A`utomatic `S`end-`R`eceive
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221022-1666401458347)
+![图片描述](uid1190679-20221022-1666401458347.png)
 
 - 可以看到 当时的io设备
 	- 纸带 存储
@@ -110,7 +110,7 @@ enable_checker: true
 		- 1000万美元
 - 这就是 开发multics的 时代背景
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221022-1666401926491)
+![图片描述](uid1190679-20221022-1666401926491.png)
 
 - 项目失败后
 	- 无所事事的两人
@@ -137,7 +137,7 @@ enable_checker: true
 	- 而且 键盘和主机 是 集成在一起
 	- 没有独立的键盘
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230108-1673183832806)
+![图片描述](uid1190679-20230108-1673183832806.png)
 
 - 最后 
 	- 找到 ASR33电传打字机
@@ -160,7 +160,7 @@ enable_checker: true
   - 符号包括数字
   - 控制字符
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210223-1614083549476)
+![图片描述](uid1190679-20210223-1614083549476.png)
 
 - 特殊字符 
 	- 在`ascii`时代 
@@ -181,7 +181,7 @@ enable_checker: true
 	- 继续如何变化呢？
 	- 会进化到我们熟悉的ASCII编码吗？
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230129-1674959059173)
+![图片描述](uid1190679-20230129-1674959059173.png)
 
 - 黑暗森林里面的东西
 	- 已经发现了`\n` 和 `\r`

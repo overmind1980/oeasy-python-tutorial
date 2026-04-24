@@ -14,7 +14,7 @@ enable_checker: true
   - head
   - body
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20250420-1745118101910)
+![图片描述](uid1190679-20250420-1745118101910.png)
 
 - requests 得到的是 字节序列 
 	- 全都 连在一起
@@ -26,7 +26,7 @@ enable_checker: true
 - 把 字节序列 变成 一棵dom树
 	- 这个术语 叫 `解析HTML`
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1138255/uid1190679-20250420-1745117887958) 
+![图片描述](uid1190679-20250420-1745117887958.png) 
 
 - 我们选择后者
 	- 效率高
@@ -38,7 +38,7 @@ enable_checker: true
   - lxml
   - 是第三方的包
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210901-1630453359293)
+![图片描述](uid1190679-20210901-1630453359293.png)
 
 - 哪里查询帮助呢？
 
@@ -49,7 +49,7 @@ enable_checker: true
     - http://lxml.de
 	- github 的地址也指向这里
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1138255/uid1190679-20250420-1745118248140) 
+![图片描述](uid1190679-20250420-1745118248140.png) 
 
 - lxml 是 处理 xml 的 liberay
   - l 的意思是 library
@@ -64,7 +64,7 @@ enable_checker: true
   - 使用 python语法 调用
   - 生成著名的 ElementTree
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210901-1630453454445)
+![图片描述](uid1190679-20210901-1630453454445.png)
 
 - 他可以解析 xml
   - 也可以解析 html
@@ -76,7 +76,7 @@ enable_checker: true
 - 本想 读取网页
 	- 然后再生成树
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210901-1630453747733)
+![图片描述](uid1190679-20210901-1630453747733.png)
 
 - 目前看起来  
 	- 要 先用代码 直接生成树
@@ -91,7 +91,7 @@ enable_checker: true
 - 元素树树是
 	- 由元素节点构成的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221119-1668824641142)
+![图片描述](uid1190679-20221119-1668824641142.png)
 
 - 哪个元素
 	- 是整棵树的根呢？
@@ -118,7 +118,7 @@ print("et_html.tag", et_html.tag)
 
 - 运行结果
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1138255/uid1190679-20260323-1774263226084) 
+![图片描述](uid1190679-20260323-1774263226084.png) 
 
 - 先把 根扎下之后
   - 需要 开枝散叶
@@ -136,7 +136,7 @@ print("et_body:", et_body)
 	- et_html
 	- et_body
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1138255/uid1190679-20260323-1774263508008) 
+![图片描述](uid1190679-20260323-1774263508008.png) 
 
 - 但是 html节点 和 body节点 
 	- 怎么 建立 关系 呢？？
@@ -151,7 +151,7 @@ et_html.append(et_body)
 	- append body节点
 	- 父子关系由 append 函数确定
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1138255/uid1190679-20260323-1774264784017) 
+![图片描述](uid1190679-20260323-1774264784017.png) 
 
 - 可以为 html 元素节点 
 	- 追加 (append)
@@ -169,7 +169,7 @@ et_html.append(et_body)
 	- 是 body 元素节点
 	- 是儿子
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1138255/uid1190679-20250420-1745119178132) 
+![图片描述](uid1190679-20250420-1745119178132.png) 
 
 - 所以主动调用的意义
 	- 是多么的重要啊！
@@ -184,7 +184,7 @@ et_html.append(et_body)
 - 最好 的html解析工具 是
 	- lxml
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192577/uid1190679-20260323-1774264877292) 
+![图片描述](uid1190679-20260323-1774264877292.png) 
 
 - html 是 body 的 爸爸
 	- 如何看到 这`父子关系`呢？🤔

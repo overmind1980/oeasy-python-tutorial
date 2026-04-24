@@ -24,7 +24,7 @@ enable_checker: true
 - 现在的问题是
 	- 日期时间 输出格式 非常复杂
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230128-1674902945544)
+![图片描述](../0276/uid1190679-20230128-1674902945544.png)
 
 - 想要只输出 时分秒 
 	- 再送 figlet 、 cowsay 、lolcat
@@ -37,7 +37,7 @@ enable_checker: true
 	- show.py 文件
 - 搜索
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230420-1681946296652)
+![图片描述](../0276/uid1190679-20230420-1681946296652.jpg)
 
 - 查询一下time包中的 strftime函数
 
@@ -56,13 +56,13 @@ help(time.strftime)
 
 - 查找 time包中的 strftime函数
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/820672/uid1190679-20250907-1757210648547) 
+![图片描述](../0276/uid1190679-20250907-1757210648547.png) 
 
 - strftime 是 time模块中的 函数
   - str 是字符串 string 的意思
   - f 是 format
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220331-1648711364409)
+![图片描述](../0276/uid1190679-20220331-1648711364409.png)
 
 - strftime 函数 把一个 time.localtime() 
 	- 格式化为一个字符串
@@ -72,7 +72,7 @@ help(time.strftime)
 
 ### 具体效果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230120-1674221782677)
+![图片描述](../0276/uid1190679-20230120-1674221782677.png)
 
 - 只要时分秒
 
@@ -87,11 +87,11 @@ print(localtime,end="")
 
 ### 具体理解
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220331-1648711485748)
+![图片描述](../0276/uid1190679-20220331-1648711485748.jpg)
 
 - 缺省参数就是当前时间
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221231-1672449502716)
+![图片描述](../0276/uid1190679-20221231-1672449502716.png)
 
 ```python
 #!/usr/bin/python3
@@ -110,14 +110,14 @@ print(time.strftime('%H:%M:%S'),end="")
 		- %S是秒钟
 		- 中间用:分割
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220331-1648711587529)
+![图片描述](../0276/uid1190679-20220331-1648711587529.jpg)
 
 - 把时间 送进管道
 	- 流给 后面的进程
 
 ### 直接运行 sh
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220408-1649377873706)
+![图片描述](../0276/uid1190679-20220408-1649377873706.png)
 
 - 目前 搭配起来 
 	- 确实 `可以`运行 了！
@@ -126,7 +126,7 @@ print(time.strftime('%H:%M:%S'),end="")
 
 ### 搜索
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221009-1665310670472)
+![图片描述](../0276/uid1190679-20221009-1665310670472.png)
 
 - 看起来是把
 	- for i in {0..100}
@@ -135,17 +135,17 @@ print(time.strftime('%H:%M:%S'),end="")
 
 ### 替换 效果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221231-1672449767743)
+![图片描述](../0276/uid1190679-20221231-1672449767743.png)
 
 - 效果 还行
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210812-1628752817259)
+![图片描述](../0276/uid1190679-20210812-1628752817259.png)
 
 ### 更多 效果
 
 - 哈哈 火鸡turkey也能说话
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220408-1649378017159)
+![图片描述](../0276/uid1190679-20220408-1649378017159.png)
 
 - 这依靠的是 time.strftime
 	- 就是字符串(str) 格式(format)的 时间(time)
@@ -156,7 +156,7 @@ print(time.strftime('%H:%M:%S'),end="")
 - format 来自于 form
 	- 形成一个形式
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230128-1674908723467)
+![图片描述](../0276/uid1190679-20230128-1674908723467.png)
 
 - format 是 形式的套路
 	- 一种格式
@@ -168,7 +168,7 @@ print(time.strftime('%H:%M:%S'),end="")
 	- 格式
 	- 相关
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230128-1674908798191)
+![图片描述](../0276/uid1190679-20230128-1674908798191.png)
 
 - 如果 我想 
 	- 不通过 `sh loop.sh` 运行
@@ -190,7 +190,7 @@ chmod u+x loop.sh
 
 - 然后再运行
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220211-1644585241380)
+![图片描述](../0276/uid1190679-20220211-1644585241380.jpg)
 
 - 绿色说明可以运行了
 - 不过前面还是需要当前路径`./`
@@ -208,7 +208,7 @@ export PATH=$PATH:.
 	- 后面的`$PATH`有$ 
 - `.(点)` 指的是当前的路径
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220211-1644586410528)
+![图片描述](../0276/uid1190679-20220211-1644586410528.jpg)
 
 - 这样
 	- 就可以 直接运行 当前路径下的 程序 了
@@ -224,7 +224,7 @@ export PATH=$PATH:.
 	- `每`次 进入zsh
 		- `都`会执行 这个 rc配置文件
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220211-1644586721011)
+![图片描述](../0276/uid1190679-20220211-1644586721011.png)
 
 - 这样
 	- 重开zsh
@@ -238,7 +238,7 @@ export PATH=$PATH:.
 - nohup
 	- 后台输出到文件
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220211-1644586816899)
+![图片描述](../0276/uid1190679-20220211-1644586816899.png)
 
 - 这是 我们之前 就接触过的内容 了！
 	- 啊~
@@ -259,7 +259,7 @@ export PATH=$PATH:.
 	- 在~/.zshrc中设置$PATH
 	- 让loop.sh成为通用命令
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230128-1674911360310)
+![图片描述](../0276/uid1190679-20230128-1674911360310.jpg)
 
 - 可以`diy`一个小动物 
 	- 来报时吗？🤔

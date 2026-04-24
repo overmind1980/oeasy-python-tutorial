@@ -14,7 +14,7 @@ enable_checker: true
   - 又退出了 `python`
   - 反复进入退出
  
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240106-1704504240916)
+![图片描述](uid1190679-20240106-1704504240916.jpg)
 
 - 恭喜您在终端里
 	- `存活`了下来！
@@ -39,7 +39,7 @@ enable_checker: true
 	- 比较正确的姿势
 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240107-1704573547837)
+![图片描述](uid1190679-20240107-1704573547837.png)
 
 - 打字 
 	- 也有
@@ -54,7 +54,7 @@ enable_checker: true
 	- 左手食指 抚摸<kbd>f</kbd>上的小凸起
 	- 右手食指 抚摸<kbd>j</kbd>上的小凸起
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240107-1704573589520)
+![图片描述](uid1190679-20240107-1704573589520.webp)
 
 - 双手 展开
 - 舒展 十指
@@ -65,7 +65,7 @@ enable_checker: true
 	- 提高 打字效率
 	- 而且 非常优雅
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240107-1704573607635)
+![图片描述](uid1190679-20240107-1704573607635.jpg)
 
 - 强迫自己 一定用正确的指法
 	- 开始 双手 十指并用！
@@ -76,7 +76,7 @@ enable_checker: true
 - 键入 python3
 	- 进入python3游乐场 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230911-1694436900609)
+![图片描述](uid1190679-20230911-1694436900609.png)
 
 - 貌似程序 都是从 hello world 开始的
 	- 想要在游乐场 `hello world！`
@@ -91,7 +91,7 @@ hello world
 ### 运行结果
 - <span style="color:red;font-size:50px;">出错啦！！！</span>
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230510-1683679709395)
+![图片描述](uid1190679-20230510-1683679709395.png)
 
 - 系统  报告了 
 	- `错误`<span style="color:red;font-size:50px;"> (Error)😡 </span>
@@ -106,7 +106,7 @@ hello world
 - invalid syntax
 	- 出现了 不合法的语法
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240107-1704573625741)
+![图片描述](uid1190679-20240107-1704573625741.jpg)
 
 - python3 游乐场 
 	- 为什么 还会 报错？！
@@ -121,7 +121,7 @@ hello world
 		- 出了`什么`错
 - 就知道 `怎么`改了
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240107-1704573641383)
+![图片描述](uid1190679-20240107-1704573641383.png)
 
 - 报错 
 	- 不是 我们无能的标志
@@ -134,7 +134,7 @@ hello world
 	- 有助于 我们快速调整
 	- 实时互动
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231107-1699356636681)
+![图片描述](uid1190679-20231107-1699356636681.png)
 
 - 这 就是
 	- python 游乐场 好处😌
@@ -149,7 +149,7 @@ hello world
 		- 语法错误 
 - python3 不认识 `hello world`
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240107-1704573705915)
+![图片描述](uid1190679-20240107-1704573705915.png)
 
 - `hello world` 是 
 	- 要输出的字符串
@@ -165,7 +165,7 @@ hello world
 	- 跳转到 命令行 开头
 	- 再打上 一个双引号
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230213-1676293110607)
+![图片描述](uid1190679-20230213-1676293110607.jpg)
 
 - 把"hello world" `引`起来
 	- 再回车
@@ -175,7 +175,7 @@ hello world
 - 这回 
 	- 真的 输出了！！！😄
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230213-1676293255551)
+![图片描述](uid1190679-20230213-1676293255551.jpg)
 
 - 输出 也用了 引号 
 	- 但 用的是是 单引号
@@ -201,7 +201,7 @@ hello world
 - hello world
 	- 两边 都改成 `单`引号
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220909-1662706016968)
+![图片描述](uid1190679-20220909-1662706016968.png)
 
 - 不管输入的 
 	- `是` 单引号
@@ -234,7 +234,7 @@ hello world
 		- 可以 是 `单`引号
 		- 也可以 是 `双`引号
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240107-1704573718609)
+![图片描述](uid1190679-20240107-1704573718609.png)
 
 - 那该 选哪种引号呢？🤔
 - 下次再说！👋

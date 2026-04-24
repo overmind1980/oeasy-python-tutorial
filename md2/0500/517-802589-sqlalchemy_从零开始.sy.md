@@ -15,13 +15,13 @@ sudo apt update
 sudo apt install postgresql
 ```
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221229-1672299781292)
+![图片描述](../0510/uid1190679-20221229-1672299781292.png)
 
 ### 建库建表
 
 - 可以参考[oeasy教您玩转postgres](https://www.lanqiao.cn/courses/2782?tab=labsList)
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221229-1672300171261)
+![图片描述](../0517/uid1190679-20221229-1672300171261.jpg)
 
 - 先建库
 - 再进库
@@ -32,7 +32,7 @@ sudo apt install postgresql
 - 找到帮助手册
 	- https://docs.sqlalchemy.org/en/14/intro.html#installation-guide
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221229-1672300409267)
+![图片描述](../0517/uid1190679-20221229-1672300409267.png)
 
 ### 安装
 
@@ -43,7 +43,7 @@ pip install SQLAlchemy
 - 安装这个包
 - 安装包并查看版本
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221229-1672300801031)
+![图片描述](../0517/uid1190679-20221229-1672300801031.png)
 
 - 这个alchemy什么意思呢？
 
@@ -53,18 +53,18 @@ pip install SQLAlchemy
 	- 再从中世纪的拉丁到法国
 	- 这个词的意思中世纪的化学
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221229-1672300821381)
+![图片描述](../0517/uid1190679-20221229-1672300821381.png)
 
 - 说人话呢？
 
 ### 炼金术
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221229-1672300946372)
+![图片描述](../0517/uid1190679-20221229-1672300946372.png)
 
 - 可以搜索oeasy+炼金术士
 	- 获得一系列视频
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221229-1672301044370)
+![图片描述](../0517/uid1190679-20221229-1672301044370.png)
 
 - 简单来说呢
 
@@ -72,7 +72,7 @@ pip install SQLAlchemy
 
 - 炼金术是将一般金属转化成金或者银的一种法术
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221229-1672301107566)
+![图片描述](../0517/uid1190679-20221229-1672301107566.png)
 
 - 可能来自于黑土地
 - 后续发展为化学
@@ -83,7 +83,7 @@ pip install SQLAlchemy
 	- postgres数据库
 	- sqlalchemy包
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221229-1672301482275)
+![图片描述](../0517/uid1190679-20221229-1672301482275.png)
 
 - sqlalchemy如何对postgresql数据库点石成金呢？
 - 我们下次再说

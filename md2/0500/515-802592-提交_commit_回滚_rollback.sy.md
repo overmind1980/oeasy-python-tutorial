@@ -26,7 +26,7 @@ print(psycopg.connect(conninfo).execute("SELECT * FROM test").fetchall())
 - 原来with方式的好处
 	- 是结束时会自动关闭网络连接
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221230-1672366495124)
+![图片描述](../0515/uid1190679-20221230-1672366495124.jpg)
 
 - 红框中的代码
 	- 可以将conn作为上下文的管理器
@@ -72,14 +72,14 @@ with psycopg.connect(conninfo) as conn:
 	- 不会进行 Commit
 	- 111 也白插入了 要回滚
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230406-1680776235468)
+![图片描述](../0515/uid1190679-20230406-1680776235468.png)
 
 - 数据这次
 	- 是否真的插入了数据库呢？
 
 ### 观察
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230406-1680776459759)
+![图片描述](../0515/uid1190679-20230406-1680776459759.png)
 
 - 这是怎么一个流程呢？
 
@@ -91,7 +91,7 @@ with psycopg.connect(conninfo) as conn:
 	- 输出commit
 	- 并且提交
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240524-1716538324129)
+![图片描述](../0515/uid1190679-20240524-1716538324129.png)
 
 - 如果执行过程 
 	- 出了一些错误代码会如何呢？
@@ -105,11 +105,11 @@ with psycopg.connect(conninfo) as conn:
 	- 输出rollback
 	- 并且提交
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240524-1716538324129)
+![图片描述](../0515/uid1190679-20240524-1716538324129.png)
 
 - 执行结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230330-1680187146502)
+![图片描述](../0515/uid1190679-20230330-1680187146502.png)
 
 - 报了错误
 	- 进行了回滚
@@ -141,7 +141,7 @@ with psycopg.connect(conninfo) as conn:
 
 - 运行结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240524-1716538783754)
+![图片描述](../0515/uid1190679-20240524-1716538783754.png)
 
 - 如果前面的语句SQL语句能执行
 - 后面报错了
@@ -164,14 +164,14 @@ WHERE
 
 - 并没有插入成功！
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240524-1716538918145)
+![图片描述](../0515/uid1190679-20240524-1716538918145.png)
 
 ### rollback的含义
 
 - 所谓rollback
 	- 回滚
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230406-1680777427460)
+![图片描述](../0515/uid1190679-20230406-1680777427460.png)
 
 - 在上一次回滚(rollback)或者提交(commit)之后
 	- 会执行很多sql事物(transaction)
@@ -180,7 +180,7 @@ WHERE
 	- 执行确认commit
 	- 全部确认
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230406-1680777631154)
+![图片描述](../0515/uid1190679-20230406-1680777631154.png)
 
 - 否则的话
 	- 进入except子句

@@ -17,7 +17,7 @@ enable_checker: true
 	- count统计 列表项出现次数
 	- len统计 列表的长度
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/743981/uid1190679-20250108-1736317824279) 
+![图片描述](uid1190679-20250108-1736317824279.png) 
 
 - count 这个词怎么来的呢？🤔
 
@@ -26,12 +26,12 @@ enable_checker: true
 - 来自于 com-
 	- 一起
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240224-1708781197063)
+![图片描述](uid1190679-20240224-1708781197063.png)
 
 - 加在一起
 	- 往上加
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240224-1708781100545)
+![图片描述](uid1190679-20240224-1708781100545.png)
 
 - 计数、数数
 
@@ -40,7 +40,7 @@ enable_checker: true
 - 在原有数字基础上
 	- 再累加计数
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240224-1708781370304)
+![图片描述](uid1190679-20240224-1708781370304.png)
 
 - count on
 	- 算数、作数
@@ -49,7 +49,7 @@ enable_checker: true
 
 - 算得上
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240224-1708781252546)
+![图片描述](uid1190679-20240224-1708781252546.png)
 
 - 指望、依靠、期望
 
@@ -57,7 +57,7 @@ enable_checker: true
 
 - 报数
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240224-1708781449015)
+![图片描述](uid1190679-20240224-1708781449015.png)
 
 ### account
 
@@ -66,11 +66,11 @@ enable_checker: true
 	- count 计数
 	- 强化计数
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240224-1708782304963)
+![图片描述](uid1190679-20240224-1708782304963.png)
 
 - 解释说明
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240224-1708782328823)
+![图片描述](uid1190679-20240224-1708782328823.png)
 
 - 账户
 
@@ -81,7 +81,7 @@ enable_checker: true
 	- count 计数
 	- 不计数
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240224-1708781557930)
+![图片描述](uid1190679-20240224-1708781557930.png)
 
 - 打折
 
@@ -92,11 +92,11 @@ enable_checker: true
 	- count 计算
 	- 重新计算
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240224-1708782155041)
+![图片描述](uid1190679-20240224-1708782155041.png)
 
 - 重温、回忆
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240224-1708782189628)
+![图片描述](uid1190679-20240224-1708782189628.png)
 
 - 再详细描述
 
@@ -107,7 +107,7 @@ enable_checker: true
 	- down 往下
 	- 往下计数
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240224-1708782413256)
+![图片描述](uid1190679-20240224-1708782413256.png)
 
 - 倒数
 	- 倒计时
@@ -119,7 +119,7 @@ enable_checker: true
 	- able 可以
 	- 可以计数的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240224-1708781642921)
+![图片描述](uid1190679-20240224-1708781642921.png)
 
 - 可数/可数 的
 
@@ -130,7 +130,7 @@ enable_checker: true
 	- less 不用
 	- 不用计数的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240224-1708782013547)
+![图片描述](uid1190679-20240224-1708782013547.png)
 
 - 数不清的
 
@@ -141,11 +141,11 @@ enable_checker: true
 	- er 的人
 	- 计数的人
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240224-1708781741001)
+![图片描述](uid1190679-20240224-1708781741001.png)
 
 - 计数器
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240224-1708781754241)
+![图片描述](uid1190679-20240224-1708781754241.png)
 
 - 结账的吧台
 
@@ -156,7 +156,7 @@ enable_checker: true
 	- y 的
 	- 柜台的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240224-1708782895587)
+![图片描述](uid1190679-20240224-1708782895587.png)
 
 - 彼此相对的 城邦/国家
 
@@ -168,7 +168,7 @@ enable_checker: true
 	- 在吧台里
 	- 面对面
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240224-1708781879760)
+![图片描述](uid1190679-20240224-1708781879760.png)
 
 - 遇到
 
@@ -179,7 +179,7 @@ enable_checker: true
 	- part 部分
 	- 吧台部分
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240224-1708782710756)
+![图片描述](uid1190679-20240224-1708782710756.png)
 
 - 对立
 	- 对接人
@@ -194,7 +194,7 @@ help(list.count)
 
 - 帮助手册
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/2077218/uid1190679-20250112-1736655019762) 
+![图片描述](uid1190679-20250112-1736655019762.png) 
 
 - 这个self什么意思来着？
 
@@ -207,7 +207,7 @@ help(list)
 - 这些方法 第一个参数都是 self
 	- 为什么呢？
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20211107-1636283051308)
+![图片描述](uid1190679-20211107-1636283051308.png)
 
 - python 如何理解 self呢？
 
@@ -219,7 +219,7 @@ help(list)
 	- 谁调用的方法 
 	- 就是谁自己！
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20211107-1636283140023)
+![图片描述](uid1190679-20211107-1636283140023.png)
 
 - self作用 总共三点
   1. 明确 这个方法是 `成员`方法
@@ -230,7 +230,7 @@ help(list)
 
 - 这次了解了count的词源
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240224-1708784551406)
+![图片描述](uid1190679-20240224-1708784551406.png)
 
 - count是列表中的计数函数
 - 列表 还可以进行什么操作 吗？🤔

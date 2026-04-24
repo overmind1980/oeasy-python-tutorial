@@ -1,5 +1,5 @@
 
- ![图片描述](https://doc.shiyanlou.com/courses/3584/labs/2716071/uid1190679-20250120-1737344060703) 
+ ![图片描述](../0710/uid1190679-20250120-1737344060703.png) 
 
 ```
 import bpy
@@ -61,7 +61,7 @@ def create_triangular_pyramid(base_radius=1, height=1):
 triangular_pyramid = create_triangular_pyramid()
 ```
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240611-1718108716515)
+![图片描述](../0710/uid1190679-20240611-1718108716515.png)
 
 
 ### 上材质
@@ -91,7 +91,7 @@ def create_triangular_pyramid(base_radius=1, height=1):
 triangular_pyramid = create_triangular_pyramid()
 ```
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240611-1718108983172)
+![图片描述](../0710/uid1190679-20240611-1718108983172.png)
 
 ### 灯光、摄影机、渲染
 
@@ -145,7 +145,7 @@ init()
 render()
 ```
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240611-1718109353466)
+![图片描述](../0710/uid1190679-20240611-1718109353466.png)
 
 
 ### 多棱柱
@@ -179,12 +179,12 @@ def create_hexagonal_prism(radius=1, height=2):
 hexagonal_prism = create_hexagonal_prism()
 ```
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240613-1718283755717)
+![图片描述](../0710/uid1190679-20240613-1718283755717.png)
 
 
 ### emoji
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/2716071/uid1190679-20250212-1739349718266)
+![图片描述](../0710/uid1190679-20250212-1739349718266.png)
 
 ```
 import bpy

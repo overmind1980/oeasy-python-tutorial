@@ -16,7 +16,7 @@ enable_checker: true
 - 最里面是
 	- 调用一下<span style="color:red">time</span>.<span style="color:green">time()</span>看看
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210813-1628837973195)
+![图片描述](uid1190679-20210813-1628837973195.png)
 
 - <span style="color:red">time</span>.<span style="color:green">time()</span>返回的这一串长长的数字是什么意思呢？🤔
 
@@ -25,7 +25,7 @@ enable_checker: true
 
 - 还是得 返回来 看 帮助文件
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210813-1628837778251)
+![图片描述](uid1190679-20210813-1628837778251.png)
 
 - 返回的是 一个`浮点数`
 	- 浮 是 `浮`动的浮
@@ -35,7 +35,7 @@ enable_checker: true
 	- 从 Epoch到当前的时间
 	- 总共 过了 多少秒
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220318-1647599035064)
+![图片描述](uid1190679-20220318-1647599035064.png)
 
 - 那什么 又是Epoch呢？
 
@@ -47,7 +47,7 @@ enable_checker: true
 	- 万历十五年 是 大明万历皇帝 纪年法
 	- 令和四年 是 日本德仁天皇 纪年法
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220925-1664115667284)
+![图片描述](uid1190679-20220925-1664115667284.png)
 
 - 那python中的 Epoch年号
 	- 又是 谁的年号呢？
@@ -64,7 +64,7 @@ enable_checker: true
 	- 所以Epoch也叫做
 		- seconds since the Epoch
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230120-1674220670778)
+![图片描述](uid1190679-20230120-1674220670778.png)
 
 - 为什么是1970-01-01呢？
 
@@ -77,7 +77,7 @@ enable_checker: true
 	- `Kenneth Thompson`和`Dennis Ritchie`
 		- 一拍脑门定下来了 这个 起始时间点
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230120-1674220984220)
+![图片描述](uid1190679-20230120-1674220984220.png)
 
 - 1971年
 	- 第一版unix的正式发布
@@ -96,7 +96,7 @@ enable_checker: true
 	- Posix Time
 	- UNIX Epoch Time
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220127-1643289652075)
+![图片描述](uid1190679-20220127-1643289652075.png)
 
 - time.time()得到的 是一个浮点数
 	- 但是我们要的是
@@ -114,7 +114,7 @@ enable_checker: true
 - 把 time.time()得到的 浮点数
 	- 交给 time.localtime处理
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210813-1628837796010)
+![图片描述](uid1190679-20210813-1628837796010.png)
 
 - time 还是包名
   - 这次的函数名变成了 localtime
@@ -126,7 +126,7 @@ enable_checker: true
 		- 时分秒
 		- 这些具体的信息
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210813-1628838009501)
+![图片描述](uid1190679-20210813-1628838009501.png)
 
 - 如果不给time.localtime函数任何参数
 	- 又会如何呢？
@@ -136,13 +136,13 @@ enable_checker: true
 - time.localtime默认使用
 	- 当前时间 作为参数
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230120-1674221260562)
+![图片描述](uid1190679-20230120-1674221260562.jpg)
 
 -  time.time() 刚才研究过
 	- time.time() 就是
 		- 当前时间的unix时间戳
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220311-1646960906335)
+![图片描述](uid1190679-20220311-1646960906335.png)
 
 - 这两个结果是一样的
 - 我们再看看最外层的asc_time
@@ -154,13 +154,13 @@ enable_checker: true
 		- time.localtime()输出的时间元组
 	- 输出为一个字符串
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210813-1628837821286)
+![图片描述](uid1190679-20210813-1628837821286.png)
 
 - asctime函数 接收时间元组产生 ascii 字符串
 	- ascii 就是 ascii编码
 	- asctime 就是 用ascii方式显示的 time
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220930-1664546111567)
+![图片描述](uid1190679-20220930-1664546111567.png)
 
 - asctime函数也有默认缺省参数么？
 
@@ -170,13 +170,13 @@ enable_checker: true
 
 - 如果不给 asctime函数 任何参数
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230120-1674221383388)
+![图片描述](uid1190679-20230120-1674221383388.jpg)
 
 - asctime默认使用 time.localtime() 作为参数
 	- time.localtime()
 		- 就是 当前时间的 时间元组
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220311-1646961145760)
+![图片描述](uid1190679-20220311-1646961145760.png)
 
 ### 最后输出
 
@@ -185,13 +185,13 @@ enable_checker: true
 - 把最后的结果 交给 print()
 	- 最终还能 得到当前的时间！🤪
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220311-1646961221721)
+![图片描述](uid1190679-20220311-1646961221721.png)
 
 ### 步骤分拆
 
 - 当前函数的返回值 是 下一个函数的参数
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221011-1665477919057)
+![图片描述](uid1190679-20221011-1665477919057.jpg)
 
 - 可以刷新时间来报时吗？
 
@@ -200,18 +200,18 @@ enable_checker: true
 - 需要手动刷新 得到 `asc_time`
 	- 然后 输出 `asc_time`
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220317-1647499282065)
+![图片描述](uid1190679-20220317-1647499282065.png)
 
 - 但我想 自动刷新时间
 	- 先去编个 py程序
 
 ### 编写程序
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220930-1664546772299)
+![图片描述](uid1190679-20220930-1664546772299.png)
 
 - 运行结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220311-1646961360615)
+![图片描述](uid1190679-20220311-1646961360615.png)
 
 
 ## 总结
@@ -233,7 +233,7 @@ enable_checker: true
 - 简略的写法为
     - asc_time = time.asctime()
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230412-1681302979031)
+![图片描述](uid1190679-20230412-1681302979031.png)
 
 - 可以自己定义层层嵌套的函数吗？
 - 我们下次再说！👋

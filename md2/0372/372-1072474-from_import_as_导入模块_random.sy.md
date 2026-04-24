@@ -10,7 +10,7 @@ enable_checker: true
 
 - 上次了解到 complement 补码的词根
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230831-1693445320240)
+![图片描述](uid1190679-20230831-1693445320240.png)
 
 - plus、minus 都来自于
 	- 中世纪的商业语言
@@ -28,7 +28,7 @@ enable_checker: true
 
 >Product is the result of multiplication. 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230802-1690988879348)
+![图片描述](uid1190679-20230802-1690988879348.png)
 
 >In the given example, the multiplication of 8 and 11 is performed where 11 is the multiplier, 8 is multiplicand, and 88 is the product. There is a ‘*’sign(asterisk) that is used to represent multiplication.
 
@@ -36,12 +36,12 @@ enable_checker: true
 
 - 乘法 本质上 是 连加
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230903-1693747103209)
+![图片描述](uid1190679-20230903-1693747103209.png)
 
 - 乘法符号是 <kbd>\*</kbd>
 	- 输入法是 <kbd>shift</kbd> + <kbd>8</kbd>
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230903-1693747137138)
+![图片描述](uid1190679-20230903-1693747137138.png)
 
 - 左右操作数 
 	- 可以是整数
@@ -59,7 +59,7 @@ enable_checker: true
 	- multiplier
 	- ['mʌltɪplaɪə(r)] 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230803-1691047357681)
+![图片描述](uid1190679-20230803-1691047357681.png)
 
 - 这个东西能否
 	- 简化一下呢？
@@ -75,13 +75,13 @@ enable_checker: true
 	- 游乐场就不认识 random包了
 	- 重新来导入
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230903-1693747329487)
+![图片描述](uid1190679-20230903-1693747329487.png)
 
 - 使用 from random import randint 的方式
 	- 导入了 randint函数
 	- 而没有导入 random包
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230903-1693747697948)
+![图片描述](uid1190679-20230903-1693747697948.png)
 
 - 这样可以
 	- 只引入这个 randint 这个函数
@@ -94,12 +94,12 @@ enable_checker: true
 - 直接调用randint函数
 	- 就可以可以得到随机数
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230903-1693747844822)
+![图片描述](uid1190679-20230903-1693747844822.png)
 
 - 对比原来 
 	- 确实简化了一些
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230903-1693747885268)
+![图片描述](uid1190679-20230903-1693747885268.png)
 
 - 还可以再简化么？
 
@@ -116,7 +116,7 @@ from random import randint as r
 	- randint函数 
 		- 改名为r
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230903-1693748149426)
+![图片描述](uid1190679-20230903-1693748149426.png)
 
 - 这样 导入
 	- 无法识别 
@@ -125,7 +125,7 @@ from random import randint as r
 	- 但是 可以识别 
 		- randint函数的 别名r
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230903-1693748302780)
+![图片描述](uid1190679-20230903-1693748302780.png)
 
 - r写起来 
 	- 比 randint 又简单了一些
@@ -134,7 +134,7 @@ from random import randint as r
 
 - r函数 确实好用了
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230827-1693124519479)
+![图片描述](uid1190679-20230827-1693124519479.png)
 
 - random 和 randint 都不认识了
 	- 发生NameError
@@ -150,7 +150,7 @@ from random import randint as r
 	- 既认识 randint函数
 	- 又认识 r这个别名
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230903-1693748559918)
+![图片描述](uid1190679-20230903-1693748559918.png)
 
 ## 总结
 
@@ -161,7 +161,7 @@ from random import randint as r
 - 导入的是随机函数 
 	- 可以得到随机的整数(integer)
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230903-1693748735143)
+![图片描述](uid1190679-20230903-1693748735143.png)
 
 - 负数 也可以进行乘法吗？？🤪
 - 下次再说 👋

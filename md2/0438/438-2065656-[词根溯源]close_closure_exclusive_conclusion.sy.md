@@ -26,7 +26,7 @@ enable_checker: true
 
 - 为什么要close？
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708308766362)
+![图片描述](uid1190679-20240219-1708308766362.png)
 
 - 有开就有关
 	- 关 是 为了 别人更好地开
@@ -46,12 +46,12 @@ enable_checker: true
 	- 读写 完了 就要 赶紧关闭
 	- 交给下个 申请者
  
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708309098906)
+![图片描述](uid1190679-20240219-1708309098906.png)
 
 - 读写 数据库中的数据时
 	- 也要避免 脏数据的问题
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708309392401)
+![图片描述](uid1190679-20240219-1708309392401.png)
 
 - 完成 读写 操作 
 	- 赶紧确认 
@@ -65,7 +65,7 @@ enable_checker: true
 
 - 关闭、封闭的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708310468900)
+![图片描述](uid1190679-20240219-1708310468900.png)
 
 - 不能进入的
 
@@ -74,11 +74,11 @@ enable_checker: true
 - 封闭
 	- 不接受外界信息的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708310874583)
+![图片描述](uid1190679-20240219-1708310874583.png)
 
 - 和开放相对
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708310910828)
+![图片描述](uid1190679-20240219-1708310910828.png)
 
 - 封闭图形
 	- 距离有限
@@ -92,7 +92,7 @@ enable_checker: true
 	- close 封闭
 	- 使...进入封闭空间
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708311714577)
+![图片描述](uid1190679-20240219-1708311714577.png)
 
 - 围绕；装入；放入封套
 
@@ -103,7 +103,7 @@ enable_checker: true
 	- ure 的东西
 	- 围绕的东西
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708319369962)
+![图片描述](uid1190679-20240219-1708319369962.png)
 
 - 附件；围场；围墙
 
@@ -112,7 +112,7 @@ enable_checker: true
 - clause 
 	- 封闭完整的一句话
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708319527519)
+![图片描述](uid1190679-20240219-1708319527519.png)
 
 - 子句
 
@@ -120,7 +120,7 @@ enable_checker: true
 
 - 关在里面
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708311206067)
+![图片描述](uid1190679-20240219-1708311206067.png)
 
 - 壁橱
 
@@ -130,7 +130,7 @@ enable_checker: true
 	- close 关闭
 	- ure 名词后缀
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708316952392)
+![图片描述](uid1190679-20240219-1708316952392.png)
 
 - 封闭、完成、闭包
 
@@ -141,7 +141,7 @@ enable_checker: true
 	- close 封闭
 	- 不封闭
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708311436574)
+![图片描述](uid1190679-20240219-1708311436574.png)
 
 - 揭露
 
@@ -152,11 +152,11 @@ enable_checker: true
 	- clude 封闭
 	- 一起封闭
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708312058849)
+![图片描述](uid1190679-20240219-1708312058849.png)
 
 - 完成、终止
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708311926392)
+![图片描述](uid1190679-20240219-1708311926392.png)
 
 - conclusion
 	- 结论
@@ -168,11 +168,11 @@ enable_checker: true
 	- sive 的
 	- 结论的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708314680307)
+![图片描述](uid1190679-20240219-1708314680307.png)
 
 - 决定性的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708314691257)
+![图片描述](uid1190679-20240219-1708314691257.png)
 
 - 定义性质的
 	- 命名性质的
@@ -184,7 +184,7 @@ enable_checker: true
 	- clude 封闭
 	- 孤立;隐居
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708321286999)
+![图片描述](uid1190679-20240219-1708321286999.png)
 
 - seclude
 	- 和别人隔离;隐居
@@ -196,7 +196,7 @@ enable_checker: true
 	- clude 封闭 包含
 	- 把...关在外面
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708312199384)
+![图片描述](uid1190679-20240219-1708312199384.png)
 
 - 不包括
 
@@ -205,11 +205,11 @@ enable_checker: true
 - exclusion
 	- 排除
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708312668677)
+![图片描述](uid1190679-20240219-1708312668677.png)
 
 - 开除
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708312722830)
+![图片描述](uid1190679-20240219-1708312722830.png)
 
 ### exclusive
 
@@ -217,7 +217,7 @@ enable_checker: true
 	- 不包含的
 	- 专用的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708313045327)
+![图片描述](uid1190679-20240219-1708313045327.png)
 
 - 不包含 与结果的 或
 	- 异或
@@ -228,7 +228,7 @@ enable_checker: true
 	- 专用的 
 	- 独家的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708314445360)
+![图片描述](uid1190679-20240219-1708314445360.png)
 
 - 排他、独家
 
@@ -239,7 +239,7 @@ enable_checker: true
 	- clude 封闭 包含
 	- 往里面 包含
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708312884143)
+![图片描述](uid1190679-20240219-1708312884143.png)
 
 - 包括
 	- 把...算入 
@@ -249,7 +249,7 @@ enable_checker: true
 - inclusive
 	- 包含各种各样的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708315567227)
+![图片描述](uid1190679-20240219-1708315567227.png)
 
 - 范围广的、无歧视的
 
@@ -259,7 +259,7 @@ enable_checker: true
 	- include 包含
 	- sion 的东西 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708316494032)
+![图片描述](uid1190679-20240219-1708316494032.png)
 
 - 包含物
 
@@ -270,7 +270,7 @@ enable_checker: true
 	- clude 关闭
 	- 提前关闭
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708313536567)
+![图片描述](uid1190679-20240219-1708313536567.png)
 
 - 使行不通；使不可能；
 - 妨碍；阻止
@@ -280,7 +280,7 @@ enable_checker: true
 - preclusion
 	- 预防
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708313828951)
+![图片描述](uid1190679-20240219-1708313828951.png)
 
 - preclusive
 	- 预防的
@@ -292,7 +292,7 @@ enable_checker: true
 	- clude 封闭
 	- 强调封闭
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708321391545)
+![图片描述](uid1190679-20240219-1708321391545.png)
 
 - 闭塞,堵塞
 
@@ -302,7 +302,7 @@ enable_checker: true
 	- 写了 文件之后 
 	- 需要 关闭文件
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240219-1708327664822)
+![图片描述](uid1190679-20240219-1708327664822.png)
 
 - 计算机中不都是使用二进制吗？
 - 可以用二进制的方式读写文件吗？🤔

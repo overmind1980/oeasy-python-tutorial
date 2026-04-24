@@ -17,7 +17,7 @@ enable_checker: true
 	- 但是 print这个词 一点不能错
 	- 就连 大小写 也不能错
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240110-1704849030974)
+![图片描述](uid1190679-20240110-1704849030974.png)
 
 - 错了 不要怕 
 	- 改对 就好了  
@@ -30,7 +30,7 @@ enable_checker: true
 
 - 要离开游乐场 去写真正的 `python程序`
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240111-1704933527403)
+![图片描述](uid1190679-20240111-1704933527403.png)
 
 - 游乐场 不也可以写程序 吗？
 - `为什么` 要离开 
@@ -44,7 +44,7 @@ enable_checker: true
 - 适合 
 	- 快速`验证` 一些小实验
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240111-1704933549475)
+![图片描述](uid1190679-20240111-1704933549475.png)
 
 - 但是 不适合 
 	- 编辑 大型程序
@@ -58,12 +58,12 @@ enable_checker: true
 	- 就得 先退出 `游乐场`
 	- 回到 shell 环境
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230214-1676380854296)
+![图片描述](uid1190679-20230214-1676380854296.png)
 
 - 回到 `shell` 后
 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240111-1704933570260)
+![图片描述](uid1190679-20240111-1704933570260.jpg)
 
 - 准备编辑 oeasy.py文件
 
@@ -72,7 +72,7 @@ enable_checker: true
 - 在编辑之前
 	- 要确保 双手正位
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240111-1704933586379)
+![图片描述](uid1190679-20240111-1704933586379.jpg)
 
 - 保持 盲打
 	- 保持 手腕稳定
@@ -84,7 +84,7 @@ enable_checker: true
 - 输入
 > vi 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230214-1676380957599)
+![图片描述](uid1190679-20230214-1676380957599.png)
 
 - vi 发出绿光
 	- Green Light 
@@ -104,7 +104,7 @@ enable_checker: true
 - 让我们去 
 	- 实战中磨练自己的技艺
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240111-1704933604567)
+![图片描述](uid1190679-20240111-1704933604567.png)
 
 - `vi` 编辑器
 	- 用来 编辑 `谁` 呢？
@@ -117,7 +117,7 @@ enable_checker: true
 	- 表示 用 <span style="color:green;font-weight: bold;">vi</span> 这个命令 
 	- 打开 <span style="color:grey;font-weight: bold;">oeasy.py</span> 这个文件
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230214-1676381055762)
+![图片描述](uid1190679-20230214-1676381055762.png)
 
 - <span style="color:grey;font-weight: bold;">oeasy.py</span> 是 程序的完整名字
 	- <span style="color:grey;font-weight: bold;">oeasy</span> 是 我的id
@@ -129,7 +129,7 @@ enable_checker: true
 - 文件名 可以 根据中间的点(.)
 	- 分成 `两`块
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240111-1704933619370)
+![图片描述](uid1190679-20240111-1704933619370.png)
 
 1. 点前面的是
 	- 文件名
@@ -146,7 +146,7 @@ enable_checker: true
 		- index.html
 		- song.wav
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240111-1704933639170)
+![图片描述](uid1190679-20240111-1704933639170.jpg)
 
 - 一般作为文件的尾缀
 
@@ -155,7 +155,7 @@ enable_checker: true
 - `oeasy.py` 表明
 	- 这是一个python文件
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240111-1704933654883)
+![图片描述](uid1190679-20240111-1704933654883.png)
 
 - 里面存是 python源程序
 
@@ -170,7 +170,7 @@ vi oeasy.py
 	- 进入 `vi`编辑器界面 了
 - 注意终端 `左下角`！！
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220909-1662710195120)
+![图片描述](uid1190679-20220909-1662710195120.png)
 
 - `左下角` 写的是 `"oeasy.py" [新文件]`
 	-  说明 文件是新建的
@@ -187,7 +187,7 @@ vi oeasy.py
   - 确实进入了 `插入模式`
   - insert mode
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240304-1709515388645)
+![图片描述](uid1190679-20240304-1709515388645.png)
 
 - vi 从默认模式 
 	- 进入 插入模式
@@ -200,14 +200,14 @@ vi oeasy.py
 - 插入模式 下 
 	- 敲键盘 可以直接 录入文字 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240304-1709515491179)
+![图片描述](uid1190679-20240304-1709515491179.png)
 
 - 注意 
 	- 蓝框 光标处
 	- 红框 位置
 - 按下<kbd>p</kbd>
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240304-1709515603531)
+![图片描述](uid1190679-20240304-1709515603531.png)
 
 - 蓝框处 插入了一个字符p
 - 红框处出现了 [+]
@@ -217,7 +217,7 @@ vi oeasy.py
 ### 继续输入
 - 输入 `print("oeasy")`
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220909-1662710362743)
+![图片描述](uid1190679-20220909-1662710362743.png)
 
 - 时刻注意 `左下角`
 	- vi 仍然处于 `插入模式`
@@ -232,13 +232,13 @@ vi oeasy.py
     - `--插入(粘贴)--` 不显示了
 	- 回到`正常模式`
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240111-1704930328348)
+![图片描述](uid1190679-20240111-1704930328348.png)
 
 - oeasy.py 后面 有个`[+]`
 	- `[+]`意味着 当前文件 
 	- 还!没!存！
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230911-1694419161033)
+![图片描述](uid1190679-20230911-1694419161033.png)
 
 - 怎么 `存` 呢？🤔
 
@@ -250,7 +250,7 @@ vi oeasy.py
 	- 先放开 右手小指
 	- 再放开 左手小指
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240111-1704933671928)
+![图片描述](uid1190679-20240111-1704933671928.png)
 
 - 通过组合键 按出了 <kbd>:</kbd> 
 	- 从 `正常模式` 
@@ -259,7 +259,7 @@ vi oeasy.py
 	- CommandLine Mode
 - 再观察`左下角`
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220909-1662710471154)
+![图片描述](uid1190679-20220909-1662710471154.png)
 
 - 出现`:`
 	- 可以 在`底行` 执行`命令` 了
@@ -271,7 +271,7 @@ vi oeasy.py
 	- 执行的是 保存命令
 	- 写(`write`)文件
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220909-1662710512004)
+![图片描述](uid1190679-20220909-1662710512004.png)
 
 - `write`的意思是 
 	- 将 当前缓存 写(`write`)到 硬盘文件 
@@ -283,7 +283,7 @@ vi oeasy.py
 	- oeasy.py后面的`[+]`
 	- 还在 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240111-1704933691336)
+![图片描述](uid1190679-20240111-1704933691336.png)
 
 - 先别按回车
 	- 提前打开
@@ -299,14 +299,14 @@ vi oeasy.py
 	- 意味着 
 		- 文件 已经 保存
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220909-1662710576118)
+![图片描述](uid1190679-20220909-1662710576118.png)
 
 - 出现 `[新] 1L, 15C[w]`
 	- `[新]`文件 已经写入(`w`rite)了
 		- `1`行(`L`ine)
 		- `15`个字符(`C`haracter)
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240304-1709515795091)
+![图片描述](uid1190679-20240304-1709515795091.png)
 
 - 字符发出绿光
  	- Green Light 
@@ -320,7 +320,7 @@ vi oeasy.py
 - 文件管理器中
 	- 出现了oeasy.py
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240111-1704933705074)
+![图片描述](uid1190679-20240111-1704933705074.png)
 
 - vim中 出现过 `几种` 模式 了？
 
@@ -332,7 +332,7 @@ vi oeasy.py
 	- 底行命令模式 负责执行命令
 - 下面 是 切换地图
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240111-1704933718674)
+![图片描述](uid1190679-20240111-1704933718674.png)
 
 - 怕忘了的话 
 	- 就拍下来
@@ -348,7 +348,7 @@ vi oeasy.py
 	- :write 进入 底行命令模式 保存
 	- 将文件 保存在了 本地的硬盘上
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230815-1692080488167)
+![图片描述](uid1190679-20230815-1692080488167.png)
 
 - 把程序 写到文件里	
 	- 有什么好处吗？🤔

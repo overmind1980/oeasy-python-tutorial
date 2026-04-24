@@ -18,7 +18,7 @@ enable_checker: true
 
 ### 新文件夹结构
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230207-1675766315997)
+![图片描述](uid1190679-20230207-1675766315997.png)
 
 - 主要有两个文件
 	- `templates/show_data.html`
@@ -55,19 +55,19 @@ if __name__ == "__main__":
 
 - 将l传入模版
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230206-1675690286340)
+![图片描述](uid1190679-20230206-1675690286340.png)
 
 - 现在需要从数据库得到数据集
 
 ### 参照数据库教程
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230123-1674446918471)
+![图片描述](uid1190679-20230123-1674446918471.png)
 
 - 进入oeasydb数据库
 	- 确保test表中
 		- 有两条以上数据
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230123-1674447138493)
+![图片描述](uid1190679-20230123-1674447138493.png)
 
 ### 修改代码
 
@@ -93,7 +93,7 @@ if __name__ == "__main__":
 
 - 运行结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230526-1685103783181)
+![图片描述](uid1190679-20230526-1685103783181.png)
 
 - 可以在前端的网页中
 	- 访问后端 数据库里面的信息了
@@ -102,7 +102,7 @@ if __name__ == "__main__":
 
 ### 数据库的准备
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230123-1674464596177)
+![图片描述](uid1190679-20230123-1674464596177.png)
 
 - 准备login表
 
@@ -115,7 +115,7 @@ CREATE TABLE IF NOT EXISTS login(
 
 - 并插入一些数据
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230123-1674469696092)
+![图片描述](uid1190679-20230123-1674469696092.png)
 
 - 这些数据准备
 	- 是属于后端的准备
@@ -125,7 +125,7 @@ CREATE TABLE IF NOT EXISTS login(
 - 大师傅根据食材来产出内容
 - 使用psql查询数据一点问题没有
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220521-1653122140253)
+![图片描述](uid1190679-20220521-1653122140253.png)
 
 - 不过重启之后我这些数据库啥的都没了
 - 我可以自己把这个流程做个批处理么？
@@ -143,7 +143,7 @@ INSERT INTO test(num, data) VALUES (456, 'ooo');
 
 - 专门做一个负责数据库初始化的文件
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230526-1685104120665)
+![图片描述](uid1190679-20230526-1685104120665.png)
 
 - 让数据库自己恢复出来 
 	- 这一切靠的是数据库引擎
@@ -154,7 +154,7 @@ sudo -u postgres psql -d oeasydb -f ./db/pg.sql
 
 ### 引擎
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220501-1651358775158)
+![图片描述](uid1190679-20220501-1651358775158.png)
 
 - 引擎(engine)也叫发动机
 - 能够让一个火车动起来的主动力来源
@@ -168,14 +168,14 @@ sudo -u postgres psql -d oeasydb -f ./db/pg.sql
 
 - engineer
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220501-1651357965424)
+![图片描述](uid1190679-20220501-1651357965424.png)
 
 - 这些搞engine的人
 	- 数据库工程师
 	- 系统工程师
 	- 电气工程师
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220501-1651359321990)
+![图片描述](uid1190679-20220501-1651359321990.png)
 
 - 他们玩的是不同的engine
 	- 形成了专业术语、行业
@@ -190,7 +190,7 @@ sudo -u postgres psql -d oeasydb -f ./db/pg.sql
 	- 后来人们把这句习语引申到人身上，比喻人像蒸汽机这种情况一样，没有精力，精疲力尽
 	- 甚至变成了铅字
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220817-1660721929033)
+![图片描述](uid1190679-20220817-1660721929033.png)
 
 - let off steam
 	- to do or say something that helps you to get rid of strong feelings or energy
@@ -204,7 +204,7 @@ sudo -u postgres psql -d oeasydb -f ./db/pg.sql
 	- 软件工程
 	- 数据工程
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220501-1651359804781)
+![图片描述](uid1190679-20220501-1651359804781.jpg)
 
 - 如何理解通过servlet链接postgres
 
@@ -213,7 +213,7 @@ sudo -u postgres psql -d oeasydb -f ./db/pg.sql
 - 我们现在就是数据库工程师
 - 需要选择一个数据库引擎
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220501-1651360247590)
+![图片描述](uid1190679-20220501-1651360247590.png)
 
 - 我们选择postgresql数据库
 - 然后就要想办法让这个引擎运行起来

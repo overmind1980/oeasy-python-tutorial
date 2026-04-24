@@ -34,7 +34,7 @@ print(add(a, b))
 
 ### 原料与产品
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221010-1665379308104)
+![图片描述](uid1190679-20221010-1665379308104.jpg)
 
 - 模型车间
 	- 原料 是 木材
@@ -43,7 +43,7 @@ print(add(a, b))
 	- 原料 是 木头模型
 	- 工艺 是给木块 上色
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221011-1665475725532)
+![图片描述](uid1190679-20221011-1665475725532.jpg)
 
 - 本车间的产品 是 下一个车间的原料
 	- 函数的嵌套 也是如此
@@ -64,7 +64,7 @@ print (ascii_time)
 - time 是一个module(包)
 	- 这个包里面 有些什么呢？
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220925-1664114987198)
+![图片描述](uid1190679-20220925-1664114987198.png)
 
 - 这个帮助文件好长啊
 
@@ -73,7 +73,7 @@ print (ascii_time)
 - dir(time)
   - 这里面有这些函数吗？
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220925-1664115145674)
+![图片描述](uid1190679-20220925-1664115145674.jpg)
 
 - 确实有的
 
@@ -84,7 +84,7 @@ print (ascii_time)
 	- time.localtime()
 	- time.asctime()
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221010-1665379024417)
+![图片描述](uid1190679-20221010-1665379024417.jpg)
 
 - 这3个都是 time包里面的函数
 - 可以只看 time.time的帮助吗?
@@ -93,7 +93,7 @@ print (ascii_time)
 
 - help(time.time)
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210813-1628837673343)
+![图片描述](uid1190679-20210813-1628837673343.png)
 
 - show_time.py中
 	- 时间日期字符串 是 一行写成的
@@ -110,7 +110,7 @@ print (ascii_time)
 	- 只用一行
 	- 函数 嵌套调用
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220318-1647597703048)
+![图片描述](uid1190679-20220318-1647597703048.jpg)
 
 - 现在
 	- 试试 把函数嵌套调用 拆开
@@ -128,17 +128,17 @@ print (ascii_time)
 	- 最后通过调用 asctime(localtime) 
 		- 得到了ascii_time
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220318-1647598144662)
+![图片描述](uid1190679-20220318-1647598144662.jpg)
 
 - 这分步的过程 就像工厂车间
 
 ### 车间 和 原料
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221011-1665475725532)
+![图片描述](uid1190679-20221011-1665475725532.jpg)
 
 - 落实到我们这里就是
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230412-1681286168306)
+![图片描述](uid1190679-20230412-1681286168306.jpg)
 
 - 那么 这些函数
 	- time
@@ -151,7 +151,7 @@ print (ascii_time)
 
 - help(time.time)
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210813-1628837778251)
+![图片描述](uid1190679-20210813-1628837778251.png)
 
 - 这里有两个time有点乱
 - 我们区分一下颜色
@@ -177,10 +177,10 @@ print (ascii_time)
 - 最里面是
 	- 调用一下<span style="color:red">time</span>.<span style="color:green">time()</span>看看
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210813-1628837973195)
+![图片描述](uid1190679-20210813-1628837973195.png)
 
 - <span style="color:red">time</span>.<span style="color:green">time()</span>返回的这一串长长的数字是什么意思呢？🤔
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220318-1647599035064)
+![图片描述](uid1190679-20220318-1647599035064.png)
 
 - 我们下次再说！👋

@@ -15,7 +15,7 @@ enable_checker: true
 	- dividend 被除数 
 	- quotient 商
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230813-1691890304269)
+![图片描述](uid1190679-20230813-1691890304269.png)
 
 - 中文汉字来源
 	- 除 
@@ -32,7 +32,7 @@ enable_checker: true
 
 >Division is the method of dividing a group of things into equal parts. It is one of the four basic arithmetic operations that produce a fair-shared result. The division operation is the inverse of the multiplication operation.
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230803-1691053320381)
+![图片描述](uid1190679-20230803-1691053320381.png)
 
 - 将 47 分成 相等的3组
 	- 每组 各有15个
@@ -54,7 +54,7 @@ enable_checker: true
 		- 介绍了 除法 
 			- 主要用于分红
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230830-1693363079205)
+![图片描述](uid1190679-20230830-1693363079205.png)
 
 - 除法 开启了 数字化的 合作模式
 	- 为今天的 股票市场 打下数字基础 
@@ -66,7 +66,7 @@ enable_checker: true
 - 除法分成
 	- 两种
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230928-1695908430491)
+![图片描述](uid1190679-20230928-1695908430491.png)
 
 1. 除不尽
 	- 也叫不能整除 
@@ -82,7 +82,7 @@ enable_checker: true
   - 除法运算 结果类型 都是 float
 	- 浮点类型
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230803-1691053821304)
+![图片描述](uid1190679-20230803-1691053821304.png)
 
 - 如果想要得到的商是一个整数
 	- 应该怎么办呢？🤔
@@ -96,7 +96,7 @@ enable_checker: true
 	- <kbd>/</kbd><kbd>/</kbd>
 	- 2 个 <kbd>/</kbd>
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230928-1695909170688)
+![图片描述](uid1190679-20230928-1695909170688.png)
 
 - 整除运算符
 	- 得到的结果是
@@ -108,7 +108,7 @@ enable_checker: true
 	- quotient
 	- 被除数里面 包含 几个 除数
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230928-1695909278270)
+![图片描述](uid1190679-20230928-1695909278270.png)
 
 - 8 整除以 5 商 1
 	- 或者说 5 整除 8 商 1
@@ -125,7 +125,7 @@ enable_checker: true
 	-  c语言 也是如此
 	- python 还是如此
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210904-1630724978238)
+![图片描述](uid1190679-20210904-1630724978238.png)
 
 - 除法和整除不同
   - 除法的结果是小数
@@ -141,7 +141,7 @@ enable_checker: true
 	- 被除数 除了商 的那部分之外
 		- 余下的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230813-1691891015989)
+![图片描述](uid1190679-20230813-1691891015989.png)
 
 - 如何理解余数呢？
 

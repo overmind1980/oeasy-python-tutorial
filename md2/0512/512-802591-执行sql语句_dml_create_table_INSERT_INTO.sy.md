@@ -12,7 +12,7 @@ enable_checker: true
 	- pg最流行的python适配器
 	- 有了他就可以用python对数据库读写！
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221229-1672309582787)
+![图片描述](uid1190679-20221229-1672309582787.png)
 
 - 具体怎么读写呢？
 
@@ -22,7 +22,7 @@ enable_checker: true
 	- pg是否开启
 	- 是否已经新建了oeasydb这个数据库
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230330-1680174997037)
+![图片描述](uid1190679-20230330-1680174997037.png)
 
 - 确定环境已经ok
 - 开机之后
@@ -35,7 +35,7 @@ enable_checker: true
 
 - https://www.psycopg.org/psycopg3/docs/basic/usage.html
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221229-1672321254236)
+![图片描述](uid1190679-20221229-1672321254236.png)
 
 - 将代码整合进入py文件
 
@@ -64,7 +64,7 @@ with psycopg.connect(conninfo) as conn:
 - 先将代码复制到
 	- 系统剪贴板
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230330-1680168161942)
+![图片描述](uid1190679-20230330-1680168161942.png)
 
 - 确认后
 	- 点击一下保存
@@ -73,7 +73,7 @@ with psycopg.connect(conninfo) as conn:
 - 键入vi c.py
 	- 然后依次输入"*p
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230330-1680168253682)
+![图片描述](uid1190679-20230330-1680168253682.png)
 
 - 连接建立起来之后
 	- 先建表
@@ -86,7 +86,7 @@ with psycopg.connect(conninfo) as conn:
 - :q退出vim
 - 然后sudo -u postgres psql 进入pg
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230203-1675417021125)
+![图片描述](uid1190679-20230203-1675417021125.png)
 
 - 确实
 	- 建了表
@@ -99,7 +99,7 @@ with psycopg.connect(conninfo) as conn:
 		- create table
 		- insert
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221229-1672323440515)
+![图片描述](uid1190679-20221229-1672323440515.png)
 
 - 可以 通过python来进行查询吗？
 	- 可以 得到select查询的结果 吗？

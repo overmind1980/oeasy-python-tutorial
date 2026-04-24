@@ -13,7 +13,7 @@ enable_checker: true
 		- 总共有 7 种基本色
 - 还有什么 好玩的 么？🤔
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210924-1632457941215)
+![图片描述](uid1190679-20210924-1632457941215.png)
 
 - 可以 用字符做出 `小动物` 吗？🤔
 
@@ -29,7 +29,7 @@ sudo apt install cowsay
 - 装完 之后
 	- cow 就可以 say 了吗？
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210306-1614993917284)
+![图片描述](uid1190679-20210306-1614993917284.png)
 
 - 还可以怎么 `say`呢？
 
@@ -37,7 +37,7 @@ sudo apt install cowsay
 
 - 利用 管道(pipe)来say
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210306-1614993957714)
+![图片描述](uid1190679-20210306-1614993957714.png)
  
 - 这里的
 	- -n
@@ -55,7 +55,7 @@ man cowsay
 - -n 是
 	- 用来控制换行的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240418-1713407507466)
+![图片描述](uid1190679-20240418-1713407507466.png)
 
 - -f moose呢？
 
@@ -65,7 +65,7 @@ man cowsay
 	- 指的是 使用 驯鹿
 	- moose.cow 这个文件
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240418-1713407561970)
+![图片描述](uid1190679-20240418-1713407561970.png)
 
 - 还有什么具体的小动物吗？
 
@@ -79,7 +79,7 @@ cowsay -f
 	- 比如 驼鹿moose
 	- 野牛gnu 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230420-1681949323297)
+![图片描述](uid1190679-20230420-1681949323297.jpg)
 
 - 如何 与报时函数 `整合`呢？
 
@@ -104,22 +104,22 @@ print(time.asctime())
 - python3 show_time.py 输出的时间
 	- 通过管道 送figlet
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221012-1665552184723)
+![图片描述](uid1190679-20221012-1665552184723.png)
 
 - figlet输出的大字时间结果 
 	- 再通过管道 送cowsay
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221012-1665552226279)
+![图片描述](uid1190679-20221012-1665552226279.png)
 
 
 ### 管道原理
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230424-1682302726134)
+![图片描述](uid1190679-20230424-1682302726134.png)
 
 - 然后 尝试`循环`起来
 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210306-1614994076733)
+![图片描述](uid1190679-20210306-1614994076733.png)
 
 - 这确实 有点`亚`文化😓
 - 可以来点 更`亚`的文化 吗？😄
@@ -142,7 +142,7 @@ echo oeasy | figlet | lolcat
 - 这样 就可以
 	- 输出 `彩`色效果 了
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221011-1665485149853)
+![图片描述](uid1190679-20221011-1665485149853.png)
 
 - 这个 可以！
 	- 真的 很`亚` ☺
@@ -154,7 +154,7 @@ echo oeasy | figlet | lolcat
 - 有时 会因为 文字长度问题
 	- 显得 很乱
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210812-1628752388506)
+![图片描述](uid1190679-20210812-1628752388506.png)
 
 - 想要 把时间
 	- 简化为 时分秒

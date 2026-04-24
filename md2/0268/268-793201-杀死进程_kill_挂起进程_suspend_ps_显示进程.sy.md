@@ -17,7 +17,7 @@ enable_checker: true
 	- 不断pro - pro - pro
 	- 或者说foreword - foreword - foreword 跑起来了
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221221-1671631515885)
+![图片描述](uid1190679-20221221-1671631515885.png)
 
 - 想让show.py 后台悄悄跑
 	- 可能吗？🤔
@@ -42,13 +42,13 @@ while True:
 
 - 搜索 `debian进程查询`
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210923-1632366568717)
+![图片描述](uid1190679-20210923-1632366568717.png)
 
 ### 进程
 
 - 具体方法
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230415-1681550407191)
+![图片描述](uid1190679-20230415-1681550407191.jpg)
 
 - 想要 结束进程
 	- 只能 新开一个终端 
@@ -60,7 +60,7 @@ while True:
 	- 新开一个终端
 		- 运行ps -elf 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221222-1671711495125)
+![图片描述](uid1190679-20221222-1671711495125.jpg)
 
 - 查看到两条进程信息
 	- 看起来上一个zsh就是pid为281的进程
@@ -71,11 +71,11 @@ while True:
 
 ### 搜索
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221222-1671711597110)
+![图片描述](uid1190679-20221222-1671711597110.png)
 
 - 搜索结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221222-1671711641202)
+![图片描述](uid1190679-20221222-1671711641202.jpg)
 
 ### 杀意
 
@@ -101,7 +101,7 @@ kill -9 PID
 	- 但是 接到了 就要执行
 	- 阿啊阿啊阿啊·～ 💀
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221222-1671711696374)
+![图片描述](uid1190679-20221222-1671711696374.png)
 
 - 真的把 之前的那个zsh进程 干掉了
 	- 窗口 都消失 了 
@@ -121,14 +121,14 @@ ps -lf
 - 这样 只会出现
 	- 本shell相关的进程
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240402-1712060905593)
+![图片描述](uid1190679-20240402-1712060905593.png)
 
 ### killer
 
 - 找到 同属于 一个终端的
 	- 被挂起的 python3 show.py
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240402-1712060974314)
+![图片描述](uid1190679-20240402-1712060974314.png)
 
 - 好像 还挺好玩
 	- 再建 几个进程 放后台
@@ -140,7 +140,7 @@ ps -lf
 	- 然后<kbd>ctrl</kbd> + <kbd>z</kbd>
 	- 挂起 suspend
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230127-1674788381492)
+![图片描述](uid1190679-20230127-1674788381492.png)
 
 - 再试着一个个地kill
 - suspend什么意思来着？
@@ -154,7 +154,7 @@ ps -lf
 	- `kill -9 PID` 给进程发送死亡信号
 	- <kbd>ctrl</kbd> + <kbd>z</kbd> 可以挂起进程
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230414-1681437719569)
+![图片描述](uid1190679-20230414-1681437719569.png)
 
 -  <kbd>ctrl</kbd> + <kbd>z</kbd>
 	- 可以将进程suspend

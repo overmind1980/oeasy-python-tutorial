@@ -16,7 +16,7 @@ enable_checker: true
 	- 以丧失 自主控制力的方式
 		- 获得了 对于 PC架构定义的荣誉
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230211-1676086050993)
+![图片描述](../0770/uid1190679-20230211-1676086050993.png)
 
 - 最终
 	- 后其身而身先
@@ -31,7 +31,7 @@ enable_checker: true
 - ibm已经成为了一个开放的架构
 	- 谁都能来生产
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221113-1668306415921)
+![图片描述](../0771/uid1190679-20221113-1668306415921.png)
 
 - 但是有两个东西不能被替代
 	- 一个是intel的cpu
@@ -46,7 +46,7 @@ enable_checker: true
 	- 在罗伯茨的 帮助下
 	- 成立了微软
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230109-1673233976571)
+![图片描述](../0771/uid1190679-20230109-1673233976571.jpg)
 
 - micro-soft
 	- microprocessor software
@@ -58,7 +58,7 @@ enable_checker: true
 	- 在 家酿俱乐部 发公开信
 		- 声明 免费拷贝软件 是 偷窃行为
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230109-1673235863441)
+![图片描述](../0771/uid1190679-20230109-1673235863441.jpg)
 
 - 微软系统 和 intel的x86指令集
 	- 始终 深度 绑定
@@ -72,7 +72,7 @@ enable_checker: true
 		- 16位数据总线
 	- 29000个 3微米的晶体管
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221103-1667436149787)
+![图片描述](../0771/uid1190679-20221103-1667436149787.png)
 
 - 16位寄存器
 - (1000000)<sub>2进制</sub>根手指
@@ -86,14 +86,14 @@ enable_checker: true
 	- 像其他公司一样创建了微软的Unix变体：Xenix。
 - 微软CEO的鲍尔默曾经在电视广告中卖力地推销过 Xenix
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230918-1695008785349)
+![图片描述](../0771/uid1190679-20230918-1695008785349.png)
 
 ### x86
 
 - 这个汇编指令集就是x86架构
 	- 被后续的cpu所兼容
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221113-1668307859437)
+![图片描述](../0771/uid1190679-20221113-1668307859437.png)
 
 - 这就是 
 	- x86-64架构中 
@@ -113,7 +113,7 @@ enable_checker: true
 	- 操作磁盘上的文件命令
 	- 对计算机进行控制
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221116-1668587153543)
+![图片描述](../0771/uid1190679-20221116-1668587153543.png)
 
 - 1974年
 	- 有公司制作了 
@@ -126,7 +126,7 @@ enable_checker: true
 - PL/M是
 	- Programming Language for Microcomputers
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221113-1668308925941)
+![图片描述](../0771/uid1190679-20221113-1668308925941.png)
 
 - CP/M
 	- 谁做的呢？
@@ -139,7 +139,7 @@ enable_checker: true
 	- 为 基于intel的altair 
 		- 做的编程环境
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221113-1668308976311)
+![图片描述](../0771/uid1190679-20221113-1668308976311.png)
 
 - 操作系统和编程环境
 	- 当时 区分也不是那么大
@@ -156,7 +156,7 @@ enable_checker: true
 	- 主动来谈采购PL/M的时候 
 		- 基尔代尔 刚好飞走 不在
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221116-1668588203456)
+![图片描述](../0771/uid1190679-20221116-1668588203456.png)
 
 - ibm 想用25w 直接买断
 	- 基尔代尔的夫人
@@ -168,7 +168,7 @@ enable_checker: true
 	- 比尔盖茨手里只有一个
 		- 基于 altair8800的Basic
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221103-1667463152420)
+![图片描述](../0771/uid1190679-20221103-1667463152420.png)
 
 - 对于 目前的硬件环境 Xenix还不成熟
 - 比尔盖茨 跟ibm负责人说
@@ -179,7 +179,7 @@ enable_checker: true
 - 然后 离开 新墨西哥州
 	- 去往 西雅图
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230106-1672992373964)
+![图片描述](../0771/uid1190679-20230106-1672992373964.png)
 
 - 用2.5w美元
 	- 从西雅图计算机公司
@@ -193,7 +193,7 @@ enable_checker: true
 - Tim Paterson 制作了 一个QDOS 
 	- (Quick and Dirty Operating System)
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221113-1668309121415)
+![图片描述](../0771/uid1190679-20221113-1668309121415.png)
 
 - QDOS 其实是
 	- CP/M的仿制版
@@ -218,7 +218,7 @@ enable_checker: true
 			- 毕竟抄的像
 				- 大家用起来才方便
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230211-1676101094042)
+![图片描述](../0771/uid1190679-20230211-1676101094042.png)
 
 - IBM 答应 基尔代尔 
 	- 把 cp/m 作为操作系统的选项
@@ -237,7 +237,7 @@ enable_checker: true
 	- 最终完成了
 		- pc架构上 的 大一统
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230211-1676101587536)
+![图片描述](../0771/uid1190679-20230211-1676101587536.png)
 
 - 操作系统层面
 	- IBM 计划让 msdos和cp/m 分庭抗礼

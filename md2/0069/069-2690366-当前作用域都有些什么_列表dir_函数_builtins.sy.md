@@ -19,7 +19,7 @@ enable_checker: true
   - finally
 	- 无论是否发现异常最终都要运行的代码块
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221230-1672366714550)
+![图片描述](uid1190679-20221230-1672366714550.jpg)
 
 - 上图就是python连接数据库的类库psycopg中
 	- try的具体应用
@@ -37,7 +37,7 @@ enable_checker: true
 	- 能认识 print？
 	- 而不认识 pront？？🤔
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220917-1663383962521)
+![图片描述](uid1190679-20220917-1663383962521.png)
 
 - 上次 把print函数 删除了
 	- 是怎么做的来着？🤔
@@ -59,7 +59,7 @@ print
 
 - 想要再找print
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/842335/uid1190679-20241110-1731243749853) 
+![图片描述](uid1190679-20241110-1731243749853.png) 
 
 - 也出现了 NameError 
 	- name 'print' is not defined!😊
@@ -79,7 +79,7 @@ help(print)
 
 - 喊救命也没有用
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/2690366/uid1190679-20241125-1732496209566) 
+![图片描述](uid1190679-20241125-1732496209566.png) 
 
 ### 重启游乐场
 
@@ -96,7 +96,7 @@ help(print)
 
 - 再喊救命
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240928-1727490541899)
+![图片描述](uid1190679-20240928-1727490541899.png)
 
 - print是
 	- 系统 内建模块(`__builtins__`)中的 函数
@@ -108,7 +108,7 @@ help(print)
 	- help(chr)
 	- help(input)
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/2690366/uid1190679-20241125-1732501955315) 
+![图片描述](uid1190679-20241125-1732501955315.png) 
 
 - 都是 in module builtins
 	- builtins 具体是什么呢？
@@ -117,7 +117,7 @@ help(print)
 
 - 查看本地变量
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240928-1727490908888)
+![图片描述](uid1190679-20240928-1727490908888.png)
 
 - locals函数 返回值
 	- 既有变量名
@@ -138,7 +138,7 @@ help(__builtins__)
 
 - 查看帮助
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240928-1727491058927)
+![图片描述](uid1190679-20240928-1727491058927.png)
 
 - 这模块里有些什么？
 
@@ -149,7 +149,7 @@ help(__builtins__)
 	- 内容 真的很多 啊
 	- 找找 我们 的 老熟人
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231108-1699438103505)
+![图片描述](uid1190679-20231108-1699438103505.png)
 
 - NameError 是 
 	- `__builtins__` 内建模块 里面的
@@ -169,7 +169,7 @@ help(__builtins__)
 	- backward
 - 操作方法 与vim 相同
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240521-1716297938180)
+![图片描述](uid1190679-20240521-1716297938180.png)
 
 - 想要直接 跳转到 print函数那里
 
@@ -182,7 +182,7 @@ help(__builtins__)
 - 注意左下角
 	- 回车
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231108-1699438539471)
+![图片描述](uid1190679-20231108-1699438539471.png)
 
 - <kbd>n</kbd>
 	- 下一个匹配单词
@@ -200,7 +200,7 @@ help(__builtins__)
 
 - 找到 print的帮助
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231108-1699438886260)
+![图片描述](uid1190679-20231108-1699438886260.png)
 
 ### 对比
 
@@ -211,7 +211,7 @@ help(__builtins__.print)
 
 - 这和help(print)完全一样
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231108-1699439381889)
+![图片描述](uid1190679-20231108-1699439381889.png)
 
 - print 是 `__builtins__` 里面的 内建函数
 	- 其中.(点)的意思 就是 `里面的`
@@ -226,7 +226,7 @@ help(__builtins__.print)
 	- 有很多成员类、错误
 		- 大驼峰命名法
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240928-1727491320733)
+![图片描述](uid1190679-20240928-1727491320733.png)
 
 - 很多熟悉的身影
 
@@ -236,14 +236,14 @@ help(__builtins__.print)
 	- 蛇形命名法
 	- 老熟人不少
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240928-1727491394548)
+![图片描述](uid1190679-20240928-1727491394548.png)
 
 - 还有 什么`更快`的方法
 	- 可以 查询 模块中的成员 吗？
 
 ### 问问ai
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/2690366/uid1190679-20241110-1731243264000) 
+![图片描述](uid1190679-20241110-1731243264000.png) 
 
 - python3(游乐场) 中
 	- 键入 `dir()`
@@ -257,7 +257,7 @@ dir()
 - dir的 意思 是
 	- `directory`(文档目录)
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240521-1716296967486)
+![图片描述](uid1190679-20240521-1716296967486.png)
 
 - dir函数  列出 
 	- 自带模块 列表
@@ -269,7 +269,7 @@ dir()
 
 - 换个角度观察	
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220727-1658884446668)
+![图片描述](uid1190679-20220727-1658884446668.png)
 
 - 让我们祈祷
 	- a 往生 极乐世界
@@ -284,7 +284,7 @@ dir()
 	- 还有 变量的值
 	- 返回的是 所有本地成员的 字典
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240928-1727492037669)
+![图片描述](uid1190679-20240928-1727492037669.png)
 
 - 但是只能看本地
 	- 当前作用域之下的
@@ -300,7 +300,7 @@ help(dir)
 	- 当前作用域(scope)内 
 	- 所有成员 列表
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231124-1700830344959)
+![图片描述](uid1190679-20231124-1700830344959.png)
 
 - dir函数 还可以将 模块作为 参数 
 	- 列出 模块中的成员
@@ -311,7 +311,7 @@ help(dir)
 
 - `dir(__builtins__)`
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240521-1716299070369)
+![图片描述](uid1190679-20240521-1716299070369.png)
 
 - 看见 很多 老熟人
 	- 他们 都是 干什么的 来着？
@@ -326,7 +326,7 @@ help(dir)
 	- 这些函数 位于 `__builtins__` 模块
 	- 都是 内建函数
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20241122-1732282899499)
+![图片描述](uid1190679-20241122-1732282899499.png)
 
 
 - 新函数 dir

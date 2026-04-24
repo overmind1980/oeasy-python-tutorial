@@ -24,7 +24,7 @@ enable_checker: true
 
 - json.org
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231008-1696771883096)
+![图片描述](uid1190679-20231008-1696771883096.png)
 
 - python如何应用json呢？
 
@@ -32,15 +32,15 @@ enable_checker: true
 
 - https://docs.python.org/3.8/library/json.html
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231008-1696771950867)
+![图片描述](uid1190679-20231008-1696771950867.png)
 
 ### 最初基础
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221219-1671455394329)
+![图片描述](uid1190679-20221219-1671455394329.png)
 
 - 我们有这么一个字典
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221219-1671454511376)
+![图片描述](uid1190679-20221219-1671454511376.png)
 
 - 运行的结果告诉我
 	- 这确实是一个字典
@@ -50,11 +50,11 @@ enable_checker: true
 
 - str可以把复杂容器转化为str类型对象
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221219-1671455447644)
+![图片描述](uid1190679-20221219-1671455447644.png)
 
 - 转化结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221219-1671454776459)
+![图片描述](uid1190679-20221219-1671454776459.png)
 
 - 转化成功
 - 可以转化回dict去吗？
@@ -63,7 +63,7 @@ enable_checker: true
 
 - 转化回去用什么方式呢？
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221218-1671368405672)
+![图片描述](uid1190679-20221218-1671368405672.png)
 
 - 试试eval
 	- 意思是 evaluate 衡量
@@ -72,11 +72,11 @@ enable_checker: true
 
 - 尝试eval
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221219-1671455516719)
+![图片描述](uid1190679-20221219-1671455516719.png)
 
 - 这种解析确实是可以做的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221218-1671368205003)
+![图片描述](uid1190679-20221218-1671368205003.png)
 
 - 还有其他方式吗？
 
@@ -84,7 +84,7 @@ enable_checker: true
 
 - import json
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221218-1671368546854)
+![图片描述](uid1190679-20221218-1671368546854.png)
 
 - 观察例程
 
@@ -94,27 +94,27 @@ enable_checker: true
 	- 原意指的是倾倒
 	- 计算机术语中指的是转储
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221218-1671368613920)
+![图片描述](uid1190679-20221218-1671368613920.png)
 
 - dumps 将容器类对象转储成字符串
 
 ### 修改代码
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221219-1671455590002)
+![图片描述](uid1190679-20221219-1671455590002.png)
 
 - 实现转储功能
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221218-1671369243891)
+![图片描述](uid1190679-20221218-1671369243891.png)
 
 - 可以把字符串加载成容器类型吗？
 
 ### loads
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221219-1671455677433)
+![图片描述](uid1190679-20221219-1671455677433.png)
 
 - loads 功能
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221218-1671369422645)
+![图片描述](uid1190679-20221218-1671369422645.png)
 
 - 可以将字符串对象转化为容器对象！
 - 这两个都能用
@@ -125,7 +125,7 @@ enable_checker: true
 - 内建的函数
 	- 不用import
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221218-1671369743255)
+![图片描述](uid1190679-20221218-1671369743255.png)
 
 - 方便省事
 
@@ -134,15 +134,15 @@ enable_checker: true
 - json包要求
 	- 字典中的key必须使用双引号引用
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221218-1671369718632)
+![图片描述](uid1190679-20221218-1671369718632.jpg)
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221219-1671456340845)
+![图片描述](uid1190679-20221219-1671456340845.png)
 
 - 双引号的就没有问题
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221219-1671456581026)
+![图片描述](uid1190679-20221219-1671456581026.png)
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221219-1671456588692)
+![图片描述](uid1190679-20221219-1671456588692.png)
 
 - json.loads有什么好处呢？
 
@@ -150,29 +150,29 @@ enable_checker: true
 
 - 自带解码功能
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221218-1671369778353)
+![图片描述](uid1190679-20221218-1671369778353.png)
 
 - 可以解码字节序列
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221218-1671370034083)
+![图片描述](uid1190679-20221218-1671370034083.png)
 
 ### json包的好处2 - 速度快
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221218-1671370069955)
+![图片描述](uid1190679-20221218-1671370069955.png)
 
 - 加载同样的数据json性能比eval块
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221218-1671370108465)
+![图片描述](uid1190679-20221218-1671370108465.png)
 
 ### json包的好处3 - 更安全
 
 - eval有可能执行一些系统命令
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221218-1671370352109)
+![图片描述](uid1190679-20221218-1671370352109.png)
 
 - 执行结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221218-1671370365371)
+![图片描述](uid1190679-20221218-1671370365371.png)
 
 - 真的读了test2.py
 	- 并且删了文件
@@ -184,7 +184,7 @@ enable_checker: true
 - json
 	- 全称是JavaScript Object Notation
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221218-1671370472593)
+![图片描述](uid1190679-20221218-1671370472593.png)
 
 - 目前是通用的数据交换格式
 	- 所有编程语言都可以很好地读写json
@@ -196,7 +196,7 @@ enable_checker: true
 
 - 可以将json数据复制粘贴进去
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221219-1671457967988)
+![图片描述](uid1190679-20221219-1671457967988.png)
 
 - 就会在左边的视图中
 	- 看到json对应的树形结构
@@ -204,7 +204,7 @@ enable_checker: true
 
 ### 序列化
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221220-1671503011036)
+![图片描述](uid1190679-20221220-1671503011036.png)
 
 - serialize 来自于serial
 	- 系列
@@ -214,7 +214,7 @@ enable_checker: true
 
 - *ser- 的意思是 排成一行
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221220-1671509208636)
+![图片描述](uid1190679-20221220-1671509208636.png)
 
 - sort 排序、整理
 	- consort 一组
@@ -231,35 +231,35 @@ enable_checker: true
 
 - 将字节流转化为对象
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221220-1671504539458)
+![图片描述](uid1190679-20221220-1671504539458.png)
 
 ### 查询文档
 
 - 先查文档
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221220-1671509504531)
+![图片描述](uid1190679-20221220-1671509504531.jpg)
 
 ### 编码
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221220-1671509565418)
+![图片描述](uid1190679-20221220-1671509565418.png)
 
 - 确实写了文件
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221220-1671509580784)
+![图片描述](uid1190679-20221220-1671509580784.png)
 
 - 如何反序列化呢？
 
 ### 观察文档
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221220-1671509691295)
+![图片描述](uid1190679-20221220-1671509691295.jpg)
 
 ### 读文件
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221220-1671509750252)
+![图片描述](uid1190679-20221220-1671509750252.png)
 
 - 读取结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221220-1671509765614)
+![图片描述](uid1190679-20221220-1671509765614.png)
 
 - 不是说序列化是将对象转化为字节序列吗？
 - 这里怎么转化为文本然后存在文件里呢？
@@ -271,7 +271,7 @@ enable_checker: true
 	- 文件肯定是用二进制方式存储的
 	- 二进制方式存储的是文本而已
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221220-1671509898604)
+![图片描述](uid1190679-20221220-1671509898604.png)
 
 - 文本最终表现为字节形态
 - 这依然是序列化和反序列化的过程！

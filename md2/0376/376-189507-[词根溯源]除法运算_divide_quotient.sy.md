@@ -15,7 +15,7 @@ enable_checker: true
 	- multiple 
 	- prodcut
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230812-1691812473356)
+![图片描述](uid1190679-20230812-1691812473356.png)
 
 - 除法应该如何理解呢？🤪
 
@@ -27,7 +27,7 @@ enable_checker: true
 
 >Division is the method of dividing a group of things into equal parts. It is one of the four basic arithmetic operations that produce a fair-shared result. The division operation is the inverse of the multiplication operation.
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230803-1691053320381)
+![图片描述](uid1190679-20230803-1691053320381.png)
 
 - 将 47 分成 相等的3组
 	- 每组 各有15个
@@ -46,7 +46,7 @@ enable_checker: true
 
 ### divide
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230812-1691844432364)
+![图片描述](uid1190679-20230812-1691844432364.png)
 
 - divide 来自于
 	- di-
@@ -91,7 +91,7 @@ enable_checker: true
 
 > number oftimes one quantity is contained in another
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230812-1691845358762)
+![图片描述](uid1190679-20230812-1691845358762.png)
 
 - quo 来自于
 	- *kwo-
@@ -103,7 +103,7 @@ enable_checker: true
 - 也用来表示 量
 	-  quality; quandary; quantity; quasar; quasi; query; quib; quibble; 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230812-1691845850856)
+![图片描述](uid1190679-20230812-1691845850856.png)
 
 - 中文如何理解呢？
 
@@ -115,7 +115,7 @@ enable_checker: true
 	- 在中国古代把担任新职离开旧职称为“除”
 	- 后授官也称为“除”
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230812-1691847776424)
+![图片描述](uid1190679-20230812-1691847776424.png)
 
 > 寻蒙国恩，除臣冼马。
 >>《陈情表》 
@@ -125,7 +125,7 @@ enable_checker: true
 - 乘 是 加法的累加
 - 除 里面 有 累减的 意思
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230812-1691847787262)
+![图片描述](uid1190679-20230812-1691847787262.png)
 
 - 而且 也有 按阶梯、阶级、等级
 	- 等分的意思
@@ -137,7 +137,7 @@ enable_checker: true
 	- 改造 穴，岩洞、石洞
 	- 表示开凿安全栖居的岩洞
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230812-1691847958781)
+![图片描述](uid1190679-20230812-1691847958781.png)
 
 - 指的是 开凿 半地下的穴居 
 
@@ -153,7 +153,7 @@ enable_checker: true
 		- 所以叫做部落
 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230813-1691889445538)
+![图片描述](uid1190679-20230813-1691889445538.png)
 
 - 具体 怎么进行交换呢？
 	- 得商量 商议 协商
@@ -176,7 +176,7 @@ enable_checker: true
 		- 奄（山东曲阜）
 		- 殷（河南安阳西）
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230813-1691914033263)
+![图片描述](uid1190679-20230813-1691914033263.png)
 
 
 - 殷商世系不确定
@@ -193,7 +193,7 @@ enable_checker: true
 	- dividend 被除数 
 	- quotient 商
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230813-1691890304269)
+![图片描述](uid1190679-20230813-1691890304269.png)
 
 - 中文汉字来源
 	- 除 

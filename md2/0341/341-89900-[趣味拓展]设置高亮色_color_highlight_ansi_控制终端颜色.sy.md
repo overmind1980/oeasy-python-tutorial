@@ -12,11 +12,11 @@ enable_checker: true
   - FG foreground 前景色 30-37
   - BG background 背景色 40-47
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210225-1614227808523)
+![图片描述](uid1190679-20210225-1614227808523.png)
 
 - 这些 都可以和字体样式 结合起来
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210225-1614230252445)
+![图片描述](uid1190679-20210225-1614230252445.png)
 
 - 难道 就这几种颜色 吗？？🤔
 - 有点`少`啊！
@@ -56,14 +56,14 @@ enable_checker: true
 	- 直接转义就可以
 	- `\\` 会被输出为 `\`
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221025-1666698867612)
+![图片描述](uid1190679-20221025-1666698867612.png)
 
 - 各厂商终端 都开始支持 VT100的控制序列
 	- 控制信息的参数
 		- 最终统一
 - 并形成了相关 ansi标准
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210225-1614264500107)
+![图片描述](uid1190679-20210225-1614264500107.png)
 
 - 于是 终端
 	- <span style="color:red;">有</span><span style="color:blue;">了</span><span style="color:orange;">色</span><span style="color:purple;">彩</span>
@@ -73,29 +73,29 @@ enable_checker: true
 - 31-37 对应八种常见的前景色
 - 41-47 对应八种常见的背景色
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210225-1614227808523)
+![图片描述](uid1190679-20210225-1614227808523.png)
 
 ### 高亮色设置
 
 - 91-97 对应八种高亮的常见前景色
 - 100-107对应 八种高亮的常见背景色
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210225-1614230130640)
+![图片描述](uid1190679-20210225-1614230130640.png)
 
 ### 尝试
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220505-1651743489643)
+![图片描述](uid1190679-20220505-1651743489643.png)
 
 - Bright Red和Red确实不一样
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220505-1651743498240)
+![图片描述](uid1190679-20220505-1651743498240.png)
 
 - Green也有区别
 - 高亮绿真的比原来更高亮啊！！😳
 
 ### 高亮背景色
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220505-1651743580422)
+![图片描述](uid1190679-20220505-1651743580422.png)
 
 - 高亮蓝色确实让蓝色高亮了起来
 - 但是 高亮红色 和 红色加高亮
@@ -103,7 +103,7 @@ enable_checker: true
 
 ### 具体实验
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210225-1614230148675)
+![图片描述](uid1190679-20210225-1614230148675.png)
 
 - 各种控制符
 	- 31是普通红色
@@ -139,7 +139,7 @@ enable_checker: true
 	- 都是 红的
 	- 但 具体会有 一些`差异`
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210225-1614230347860)
+![图片描述](uid1190679-20210225-1614230347860.png)
 
 - 在这个 xfce终端上
 	- 就是想要 一个大红🟥啊！😫
@@ -149,7 +149,7 @@ enable_checker: true
 - 高亮红、红+亮
 	- 都不够<span style="color:red">红</span>😫
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221101-1667266499919)
+![图片描述](uid1190679-20221101-1667266499919.png)
 
 - 可以 再<span style="color:red">红</span>🟥😫些 么？
 
@@ -159,7 +159,7 @@ enable_checker: true
 	- 91-97 是 高亮 前景色
 	- 101-107是 高亮 背景色
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210225-1614231595731)
+![图片描述](uid1190679-20210225-1614231595731.png)
 
 - 颜色 种类 
 	- 在原来基础上 增加了一些

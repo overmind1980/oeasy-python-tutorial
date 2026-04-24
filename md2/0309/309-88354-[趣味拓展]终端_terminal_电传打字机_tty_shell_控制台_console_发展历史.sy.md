@@ -13,7 +13,7 @@ enable_checker: true
 - terminal 
 	- 来自于词源 term
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230728-1690545029168)
+![图片描述](uid1190679-20230728-1690545029168.png)
 
 - term的意思 是 边缘
 	- 在最边缘上的 就是 终端terminal
@@ -27,7 +27,7 @@ enable_checker: true
 	- 通过 终端的shell 和 主机的kernel 交互
 	- 主机的kernel 再去 和主机硬件 交互
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20211120-1637407886132)
+![图片描述](uid1190679-20211120-1637407886132.png)
 
 - 可以说 终端上的 `shell` 
 	- 就是 当时的`主界面`
@@ -54,11 +54,11 @@ enable_checker: true
 
 -  IBM 7094 控制台
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230909-1694224212416)
+![图片描述](uid1190679-20230909-1694224212416.png)
 
 - 使用开关和指示灯
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230909-1694224301400)
+![图片描述](uid1190679-20230909-1694224301400.png)
 
 - 指令对应相应编号
 
@@ -74,7 +74,7 @@ enable_checker: true
 - python游乐场 
 	- 也可以理解为 一个外壳(`shell`)
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230129-1674946807076)
+![图片描述](uid1190679-20230129-1674946807076.png)
 
 - 一套外壳 就是 一套命令解释系统
     - 比如 执行 `ls` 命令
@@ -90,7 +90,7 @@ enable_checker: true
     - 通过(kernel) 控制硬件
     	- 方便 `tty` 和电脑主机 交互
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210812-1628754254744)
+![图片描述](uid1190679-20210812-1628754254744.png)
 
 - 远程登录的ssh 是 `Secure Shell `
 - `shell`的硬件装置 是 `tty`
@@ -100,12 +100,12 @@ enable_checker: true
 - `TTY TeleTYpewriter` 电传打印机
   - 连接主机 位于终端的 硬件
  
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210923-1632374467523)
+![图片描述](uid1190679-20210923-1632374467523.png)
 
 - 接收 主机发送过来的 字节
   - 发送字节 给主机
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220408-1649379344798)
+![图片描述](uid1190679-20220408-1649379344798.png)
 
 - 可以发送 `abc`之类 的 字符
 - 也可以发送 `\n`、 `\r`等 转义字符
@@ -116,7 +116,7 @@ enable_checker: true
 - 想要知道 `\r`(return) 是什么...
 	- 先回忆 `\n`(line-feed) 是什么?
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221018-1666065115131)
+![图片描述](uid1190679-20221018-1666065115131.png)
 
 - 早年间 想要换行时
   - 就得 传过来 一个`\n`字符
@@ -132,12 +132,12 @@ enable_checker: true
 	- 输入 ab12 
 - 中间加一个回车
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210923-1632389971431)
+![图片描述](uid1190679-20210923-1632389971431.png)
 
 - `:%!xxd`
 	- 将 文件 转化为 字节形态
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220408-1649379610156)
+![图片描述](uid1190679-20220408-1649379610156.jpg)
 
 - 可以看到 回车换行的位置
 	- 是 `0x0a`
@@ -165,7 +165,7 @@ enable_checker: true
   - `Console` 控制台
 	- 主机旁边 的 控制面板
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210221-1613916532296)
+![图片描述](uid1190679-20210221-1613916532296.png)
 
 - 存储文件 的 时候
 	- 在文件里 打了回车`\n`

@@ -24,7 +24,7 @@ enable_checker: true
 
 - 黑暗森林已经渐渐清晰
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221015-1665810012766)
+![图片描述](uid1190679-20221015-1665810012766.png)
 
 - 上图中提到的`续行符`
 	- line continuation character
@@ -38,7 +38,7 @@ enable_checker: true
 - python3 在 多行输出的时候
 	- 也有 特别的应用
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221015-1665810012766)
+![图片描述](uid1190679-20221015-1665810012766.png)
 
 - 结尾处有`\` 
 	- 下一行 需要 `连`在一起来执行
@@ -49,7 +49,7 @@ enable_checker: true
 
 ### 具体试试
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221015-1665810190526)
+![图片描述](uid1190679-20221015-1665810190526.png)
 
 - 好像 确实可以
 	- 这有什么意义吗？
@@ -61,7 +61,7 @@ enable_checker: true
 	- 就没有必要一行 写完
 		- 适当时候加上 `续行符`
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230731-1690779387496)
+![图片描述](uid1190679-20230731-1690779387496.png)
 
 - 也能得到 相应的效果
 	- 各个被加数 对齐
@@ -69,27 +69,27 @@ enable_checker: true
 
 ### 字符串续行符
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230118-1674050615344)
+![图片描述](uid1190679-20230118-1674050615344.png)
 
 - Σὺ καὶ δέδορκας κοὐ βλέπεις. 
 	- 性格是长期延续的习惯(希腊谚语)
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230118-1674050305469)
+![图片描述](uid1190679-20230118-1674050305469.png)
 
 - 运行结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230118-1674050550826)
+![图片描述](uid1190679-20230118-1674050550826.png)
 
 - 究竟应该如何理解continue呢？
 
 ### contain
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230118-1674050658970)
+![图片描述](uid1190679-20230118-1674050658970.png)
 
 - con 一起
 - ten 拉伸
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230118-1674051480569)
+![图片描述](uid1190679-20230118-1674051480569.png)
 
 - contain
 	- 一起拉伸 
@@ -99,19 +99,19 @@ enable_checker: true
 
 - 一个挨一个
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230118-1674051654213)
+![图片描述](uid1190679-20230118-1674051654213.png)
 
 - 以不间断的连续方式连接在一起
 	- 连续地
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230118-1674051870962)
+![图片描述](uid1190679-20230118-1674051870962.png)
 
 ### continent
 
 - 各大洲本来都是
 	- 手拉手连在一起的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230118-1674052406615)
+![图片描述](uid1190679-20230118-1674052406615.png)
 
 - 所以叫大陆
 
@@ -119,7 +119,7 @@ enable_checker: true
 
 - line continuation character
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230118-1674052952645)
+![图片描述](uid1190679-20230118-1674052952645.png)
 
 - 让行也手拉手连续起来的符号
 	- 续行符
@@ -132,7 +132,7 @@ enable_checker: true
 	- 续行是`\` 
 		- 把上下的行都连起来
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220312-1647051056319)
+![图片描述](uid1190679-20220312-1647051056319.png)
 
 - 能把cowsay输出的 字符画
 	- 放到 python程序 里面么？
@@ -140,7 +140,7 @@ enable_checker: true
 
 ### 得到cow
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221015-1665810945457)
+![图片描述](uid1190679-20221015-1665810945457.png)
 
 - 然后将输出 重定向到cow.py
 
@@ -148,11 +148,11 @@ enable_checker: true
 
 - 第一行加上print("
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221015-1665811137437)
+![图片描述](uid1190679-20221015-1665811137437.png)
 
 - 最后一行加上")
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221017-1665984520506)
+![图片描述](uid1190679-20221017-1665984520506.png)
 
 - 批量替换
 	- :1,9s/$/\\\\n\\\\/
@@ -164,7 +164,7 @@ enable_checker: true
 	- 1,9s
 		- 在1-9行范围内替换substitute
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221015-1665811278129)
+![图片描述](uid1190679-20221015-1665811278129.png)
 
 - 各部分之间用`/`进行分割
 	- 被替换模式
@@ -177,22 +177,22 @@ enable_checker: true
 
 - :nohls 取消高亮
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230118-1674053452973)
+![图片描述](uid1190679-20230118-1674053452973.png)
 
 - 结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221015-1665811590622)
+![图片描述](uid1190679-20221015-1665811590622.png)
 
 - 出现了一个不合理的换行
 
 
 ### 修改
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221018-1666074410443)
+![图片描述](uid1190679-20221018-1666074410443.png)
 
 - 修改牛尾巴的位置
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221018-1666074429715)
+![图片描述](uid1190679-20221018-1666074429715.png)
 
 - 运行正常
 
@@ -213,7 +213,7 @@ enable_checker: true
   - 放在 行尾
   - 可以让 下一行和本行 连成一行
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230118-1674052952645)
+![图片描述](uid1190679-20230118-1674052952645.png)
 
 - 有 什么方法 让字符串 
 	- `原样`输出吗？🤔

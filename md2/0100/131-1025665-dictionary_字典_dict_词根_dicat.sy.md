@@ -13,24 +13,24 @@ enable_checker: true
 	    - 根据一个 key
 		- 可以查到相应的 value
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221215-1671068161732)
+![图片描述](../0130/uid1190679-20221215-1671068161732.webp)
 
 - 字典 这个词 怎么来的呢？？🤔
 
 ### dictionary
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1025665/uid1190679-20260321-1774085563484) 
+![图片描述](../0131/uid1190679-20260321-1774085563484.png) 
 
 - dict 来自于 *deik-
 	- 意思是 郑重的发声
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230807-1691412010245)
+![图片描述](../0131/uid1190679-20230807-1691412010245.png)
 
 - diction 
 	- ['dɪkʃən] 
 	- n. 用词，措辞
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230807-1691412230866)
+![图片描述](../0131/uid1190679-20230807-1691412230866.png)
 
 - dictionary
 	- -ary 与...有关的
@@ -44,11 +44,11 @@ enable_checker: true
 	- ation 名词
 	- 照说的写下来
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230807-1691417677894)
+![图片描述](../0131/uid1190679-20230807-1691417677894.png)
 
 - 老师朗读，学生听写
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1025665/uid1190679-20260321-1774085616961) 
+![图片描述](../0131/uid1190679-20260321-1774085616961.png) 
 
 - 上级口授，下级记录
 
@@ -73,7 +73,7 @@ enable_checker: true
 	- 将卸去 独裁官职务
 	- 权力 交还给 元老院
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1025665/uid1190679-20260321-1774085685958) 
+![图片描述](../0131/uid1190679-20260321-1774085685958.png) 
 
 - 凯撒大帝
 	- 在 五次担任独裁官 后
@@ -84,7 +84,7 @@ enable_checker: true
 - 元老院议员
 	- 担心他颠覆共和制度的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230807-1691412671575)
+![图片描述](../0131/uid1190679-20230807-1691412671575.png)
 
 - 凯撒 被刺身亡
 - 在西方历史上
@@ -108,12 +108,12 @@ enable_checker: true
 		- 使丧失自主性
 		- 使产生依赖性
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1025665/uid1190679-20260321-1774086963996) 
+![图片描述](../0131/uid1190679-20260321-1774086963996.png) 
 
 - 暗指上瘾
 	- 献身或放弃（自己）于一种习惯或职业
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230807-1691413585494)
+![图片描述](../0131/uid1190679-20230807-1691413585494.png)
 
 - addiction
 	- [əˈdɪkʃn] 
@@ -134,12 +134,12 @@ enable_checker: true
 	- 反着说
 	- 反驳；矛盾
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230807-1691413792051)
+![图片描述](../0131/uid1190679-20230807-1691413792051.png)
 
 - contradiction
 	- 矛盾 对立
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230807-1691413900958)
+![图片描述](../0131/uid1190679-20230807-1691413900958.png)
 
 - contradictory
 	- 矛盾的
@@ -152,12 +152,12 @@ enable_checker: true
 	- 预先说
 	- 预言
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230807-1691414076729)
+![图片描述](../0131/uid1190679-20230807-1691414076729.png)
 
 - prediction
 	- 预言
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230807-1691414227561)
+![图片描述](../0131/uid1190679-20230807-1691414227561.png)
 
 - prodictive
 	- 有预见性的
@@ -171,7 +171,7 @@ enable_checker: true
 	-  在里面说 
 	-  暗示 指出
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230807-1691417883661)
+![图片描述](../0131/uid1190679-20230807-1691417883661.png)
 
 - indication
 	- [,ɪndɪ'keʃən] 
@@ -186,7 +186,7 @@ enable_checker: true
 - indicate finger
 	- index finger
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230807-1691418140177)
+![图片描述](../0131/uid1190679-20230807-1691418140177.png)
 
 - index
 	- in（表示动作指向，对着
@@ -206,7 +206,7 @@ enable_checker: true
 	- ['dɛdɪket] 
 	- 献出 奉献献出
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230807-1691418388682)
+![图片描述](../0131/uid1190679-20230807-1691418388682.png)
 
 - dedication
 	- dedicat(e)（奉献）
@@ -226,7 +226,7 @@ enable_checker: true
 	- ['æbdɪket]
 	- 放弃，退位
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230807-1691418582059)
+![图片描述](../0131/uid1190679-20230807-1691418582059.png)
 
 - abdication
 	- abdicat(e)（退位）
@@ -244,9 +244,9 @@ enable_checker: true
 	- 公平公正说真话
 	- (陪审团)裁定
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230807-1691419542007)
+![图片描述](../0131/uid1190679-20230807-1691419542007.png)
 
-### ![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230807-1691420574573)
+### ![图片描述](../0131/uid1190679-20230807-1691420574573.png)
 
 - jurisdiction
 	- juris 法律 
@@ -263,7 +263,7 @@ enable_checker: true
 	- dic 说
 	- 说出好的话
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230807-1691419850165)
+![图片描述](../0131/uid1190679-20230807-1691419850165.png)
 
 - benediction
 	- benedict  说出好的话 
@@ -278,7 +278,7 @@ enable_checker: true
 	- 内部说的戒律
 	- 禁令
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230807-1691420174947)
+![图片描述](../0131/uid1190679-20230807-1691420174947.png)
 
 - 怎么存取 `字典项`吗？
 
@@ -286,11 +286,11 @@ enable_checker: true
 
 - 翻翻文档手册
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210914-1631606460009)
+![图片描述](../0131/uid1190679-20210914-1631606460009.png)
 
 - 哪个方法呢？
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221215-1671068085473)
+![图片描述](../0131/uid1190679-20221215-1671068085473.png)
 
 - 先去总结一下
 
@@ -299,7 +299,7 @@ enable_checker: true
 - 这次 研究了 
 	- dictionay 的 词根和同义词
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1025665/uid1190679-20260321-1774086581902) 
+![图片描述](../0131/uid1190679-20260321-1774086581902.png) 
 
 - 如何操作字典项呢？🤔
 - 下次再说！👋

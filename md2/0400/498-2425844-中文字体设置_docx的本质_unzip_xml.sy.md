@@ -12,12 +12,12 @@ enable_checker: true
 	- document文档 包含 多个 prargraph段落
 	- prargraph段落 包含 多个 run文本
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240313-1710336759716)
+![图片描述](../0497/uid1190679-20240313-1710336759716.png)
 
 - 文本可以设置颜色
 	- 主题颜色 配合 亮度、暗度
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240329-1711719220541)
+![图片描述](../0497/uid1190679-20240329-1711719220541.png)
 
 - 如何设置中文字体呢？🤔
 
@@ -26,16 +26,16 @@ enable_checker: true
 - 选中段落
 	- 设置字体
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240329-1711683641453)
+![图片描述](../0498/uid1190679-20240329-1711683641453.png)
 
 - 找到 中文字体
 	- 设置 文泉驿点阵正黑
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240329-1711683681498)
+![图片描述](../0498/uid1190679-20240329-1711683681498.png)
 
 - 然后选中 中文部分
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240329-1711683707160)
+![图片描述](../0498/uid1190679-20240329-1711683707160.png)
 
 - 如何 从python中观察到中文字体呢？
 
@@ -58,7 +58,7 @@ print(f"亚洲字体: {rFonts}")
 
 - 结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240329-1711719620472)
+![图片描述](../0498/uid1190679-20240329-1711719620472.png)
 
 - 这个rFonts到底是什么呢？
 
@@ -66,7 +66,7 @@ print(f"亚洲字体: {rFonts}")
 
 - 看起来像一个字典
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240329-1711719692552)
+![图片描述](../0498/uid1190679-20240329-1711719692552.png)
 
 - 尝试遍历
 
@@ -87,7 +87,7 @@ for key,value in rFonts.items():
 
 - 结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240329-1711719809339)
+![图片描述](../0498/uid1190679-20240329-1711719809339.png)
 
 - 查找到了 中文字体
 	- 但这都怎么理解呢？
@@ -100,7 +100,7 @@ for key,value in rFonts.items():
 	- https://schamas.openxmlformats.org
 	- https://schamas.openxmlformats.org/wordprocessingml/2006/main
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240330-1711759167837)
+![图片描述](../0498/uid1190679-20240330-1711759167837.png)
 
 - 线索全部中断
 
@@ -112,7 +112,7 @@ vi oeasy.docx
 
 - 尝试直接打开
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240330-1711759257144)
+![图片描述](../0498/uid1190679-20240330-1711759257144.png)
 
 - oeasy.docx本质是一个zip包
 	- 可以给他解压缩吗？
@@ -128,7 +128,7 @@ unzip -d oeasy oeasy.docx
 	- 作为一个zip包
 	- 进行解压缩
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240329-1711720171276)
+![图片描述](../0498/uid1190679-20240329-1711720171276.png)
 
 ### 进去看看
 
@@ -141,7 +141,7 @@ ls
 
 - 查看效果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240329-1711720268712)
+![图片描述](../0498/uid1190679-20240329-1711720268712.png)
 
 ### 查看
 
@@ -151,7 +151,7 @@ firefox document.xml
 
 - 查看文档
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240329-1711720518616)
+![图片描述](../0498/uid1190679-20240329-1711720518616.png)
 
 - w:p 就是 paragraph
 - w:r 就是 run
@@ -178,12 +178,12 @@ document.save("oeasy.docx")
 
 - 直接打开 oeasy.docx
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240330-1711759476812)
+![图片描述](../0498/uid1190679-20240330-1711759476812.png)
 
 - 直观观察 
 	- 中文字体已经设置
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240330-1711759570560)
+![图片描述](../0498/uid1190679-20240330-1711759570560.png)
 
 - 观察 默认样式的 
 	- 确实已经设置
@@ -204,7 +204,7 @@ firefox styles.xml
 
 - 找到Normal字体样式
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240330-1711759847743)
+![图片描述](../0498/uid1190679-20240330-1711759847743.png)
 
 - 确实 字体 已经修改
 - 如果我新建 一个样式
@@ -243,7 +243,7 @@ if result.stderr:
 
 - 查看结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240330-1711760743576)
+![图片描述](../0498/uid1190679-20240330-1711760743576.png)
 
 - 确实找到了 
 	- 新建的样式oeasy
@@ -262,7 +262,7 @@ firefox document.xml
 	- o2z的样式
 	- 是oeasy
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240330-1711760936105)
+![图片描述](../0498/uid1190679-20240330-1711760936105.png)
 
 - 如果修改xml
 	- 再压缩成zip形式的docx
@@ -282,7 +282,7 @@ vi document.xml
 - /o2z
 	- 找到o2z位置
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240330-1711765329400)
+![图片描述](../0498/uid1190679-20240330-1711765329400.png)
 
 - 将o2z修改为
 	- o2zo3z
@@ -323,7 +323,7 @@ whereis libreoffice
 
 - 结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240330-1711768092208)
+![图片描述](../0498/uid1190679-20240330-1711768092208.png)
 
 - 确实将o3z作为文本
 	- 插入到了 文档中

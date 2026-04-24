@@ -31,7 +31,7 @@ enable_checker: true
   - pretty_print = True 
 	- 可以控制输出结果包含缩进信息
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192644/uid1190679-20250423-1745362457112) 
+![图片描述](uid1190679-20250423-1745362457112.png) 
 
 - 想要把 节点下面
 	- 所有的节点 的文本
@@ -55,7 +55,7 @@ etree.SubElement(et_html[1], "h1").text = "o3z"
 
 - 构建出html这棵树
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/2811712/uid1190679-20260323-1774267475088) 
+![图片描述](uid1190679-20260323-1774267475088.png) 
 
 ### 输出
 
@@ -67,7 +67,7 @@ print(etree.tostring(et_html,pretty_print=True).decode())
 
 - 可以生成etree
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/2811712/uid1190679-20260323-1774267529241) 
+![图片描述](uid1190679-20260323-1774267529241.png) 
 
 ### 找到提示
 
@@ -77,7 +77,7 @@ et_html.
 
 - 通过按下<kbd>tab</kbd>做提示
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20250424-1745495266131)
+![图片描述](uid1190679-20250424-1745495266131.png)
 
 - iter() 看起来 很像 遍历函数
 
@@ -94,7 +94,7 @@ for element in et_html.iter():
 	- head下的 title
 	- body下的 h1
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221126-1669431487379)
+![图片描述](uid1190679-20221126-1669431487379.png)
 
 - iter()函数 返回的容器
 	- 是 `什么`类型 呢？
@@ -111,7 +111,7 @@ print(html.iter())
 	- Element Depth First Iterator
 	- 元素 深度优先 迭代器
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220912-1662979607390)
+![图片描述](uid1190679-20220912-1662979607390.png)
 
 - 什么是 深度优先 ？
 
@@ -126,7 +126,7 @@ print(html.iter())
 - 这就是深度优先
 	- DepthFirst
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221126-1669435909964)
+![图片描述](uid1190679-20221126-1669435909964.jpg)
 
 - 和深度优先相对的
 	- 是广度优先
@@ -143,7 +143,7 @@ print(html.iter())
 	- 嫡长子 - 娣长孙
 	- 一枝捋到底
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240829-1724901390428)
+![图片描述](uid1190679-20240829-1724901390428.png)
 
 - `广`度优先是
 	- 先找 最近的弟弟 
@@ -186,7 +186,7 @@ traversal(et_html)
 	- 深度优先 遍历节点
 	- Depth First
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221126-1669435857616)
+![图片描述](uid1190679-20221126-1669435857616.jpg)
 
 - 遍历 和 迭代有什么区别吗？
 
@@ -235,14 +235,14 @@ def traversal(et):
 
 - 先查文档
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210901-1630463660607)
+![图片描述](uid1190679-20210901-1630463660607.png)
 
 ```
 root.iter("child")
 #可以遍历root下 所有标签是child的 子元素
 ```
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20211106-1636195307288)
+![图片描述](uid1190679-20211106-1636195307288.png)
 
 ```
 root.iter("child","another")
@@ -262,7 +262,7 @@ for element in et_html.iter("head"):
 
 - 真把 head 筛出来了
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221126-1669436555598)
+![图片描述](uid1190679-20221126-1669436555598.png)
 
 - 可以筛出 `多`个标签吗？
 
@@ -278,7 +278,7 @@ for element in et_html.iter("head","h1"):
 		- head头
 		- 所有 标题一级别的文本
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220912-1662980770206)
+![图片描述](uid1190679-20220912-1662980770206.png)
 
 - 除了 tag 和 text
 	- 可以将 tails 也输出出来吗？
@@ -293,7 +293,7 @@ for element in et_html.iter("head","h1"):
 
 - 结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240401-1711940459728)
+![图片描述](uid1190679-20240401-1711940459728.png)
 
 - 树 具体 长成`啥`样 来着？
 
@@ -305,7 +305,7 @@ print(etree.tostring(et_html,pretty_print=True).decode())
 
 - 树形结构
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/2811712/uid1190679-20260323-1774268093452) 
+![图片描述](uid1190679-20260323-1774268093452.png) 
 
 ## 总结
 
@@ -318,7 +318,7 @@ print(etree.tostring(et_html,pretty_print=True).decode())
 	- 可以`筛`元素 
     - 深度优先遍历
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240829-1724901390428)
+![图片描述](uid1190679-20240829-1724901390428.png)
 
 - `怎么` 把etree上的文本
 	- ` 都`输出来着？🤔

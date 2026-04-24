@@ -60,18 +60,18 @@ doc.save(current_date + ".docx")
 	- 进一步提高效率
 - 我们后面会有爬虫的内容
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240430-1714442699333)
+![图片描述](../0494/uid1190679-20240430-1714442699333.png)
 
 - 这里面提到了作者是oeasy
 - 但是文档也有个属性是关于作者的
 
 ### 文档属性
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240430-1714443568258)
+![图片描述](../0494/uid1190679-20240430-1714443568258.png)
 
 ### 更多属性
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240430-1714443580767)
+![图片描述](../0494/uid1190679-20240430-1714443580767.png)
 
 - 这些属性怎么设置呢？
 
@@ -79,7 +79,7 @@ doc.save(current_date + ".docx")
 
 - https://python-docx.readthedocs.io/en/latest/dev/analysis/features/coreprops.html?highlight=properties
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240430-1714443612604)
+![图片描述](../0494/uid1190679-20240430-1714443612604.png)
 
 ### 设置属性
 
@@ -90,7 +90,7 @@ core_properties.keywords = "oeasy,"+ current_date
 
 - 生成关键字
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240430-1714444096718)
+![图片描述](../0494/uid1190679-20240430-1714444096718.png)
 
 - 还可以生成什么呢？
 
@@ -139,7 +139,7 @@ doc.save(name + ".docx")
 - 按照学生的名字
 	- 将文档存储在相应的docx文件中
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240430-1714445204192)
+![图片描述](../0494/uid1190679-20240430-1714445204192.png)
 
 - 如果有多个学生 
 	- 可以将信息存储于csv或者excel文档中

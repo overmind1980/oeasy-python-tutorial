@@ -18,13 +18,13 @@ enable_checker: true
 	- 拜这个字
 	- 在字节中应该是b"\x62\xdc"两个字节
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220507-1651913535341)
+![图片描述](../0421/uid1190679-20220507-1651913535341.png)
 
 - 该如何理解b"\x62\xdc"这两个字节呢?🤔
 	- 究竟是"拜"
 	- 还是"bÜ"呢？
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221022-1666446876981)
+![图片描述](../0425/uid1190679-20221022-1666446876981.png)
 
 ### 在文件系统中验证
 
@@ -34,11 +34,11 @@ enable_checker: true
 	- 在右下角的键盘位置选择中文
 	- 然后就可以输入中文了
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220406-1649238220199)
+![图片描述](../0426/uid1190679-20220406-1649238220199.png)
 
 - :%!xxd
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210228-1614490061444)
+![图片描述](../0426/uid1190679-20210228-1614490061444.png)
 
 - `一`字
 	- 存储的状态是 
@@ -68,7 +68,7 @@ enable_checker: true
 	- 既是字符集
 	- 又是字符编码
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221022-1666448965740)
+![图片描述](../0416/uid1190679-20221022-1666448965740.png)
 
 - unicode如何呢？
 
@@ -78,7 +78,7 @@ enable_checker: true
 	- 可以用ord和chr
 	- 但Unicode一般不做字符集编码
  
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221022-1666447964966)
+![图片描述](../0426/uid1190679-20221022-1666447964966.png)
 
 - 用字符集什么来进行字符编码呢？
 
@@ -93,7 +93,7 @@ enable_checker: true
 - utf-8 的意思是 
 	- Unicode Transformation Format – 8-bit
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220515-1652607952686)
+![图片描述](../0426/uid1190679-20220515-1652607952686.png)
 
 - 这和 unicode 到底有什么区别呢？
 
@@ -106,7 +106,7 @@ enable_checker: true
   - 可以在 https://home.unicode.org/ 
 	- 找到每一个字符的唯一编码
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221030-1667134994520)
+![图片描述](../0426/uid1190679-20221030-1667134994520.jpg)
 
 - utf-8 是 `字符集编码方案`
   - Unicode Transformation Format – 8-bit
@@ -118,7 +118,7 @@ enable_checker: true
 
 - 那这个东西怎么具体存储和操作呢？
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210228-1614485114416)
+![图片描述](../0426/uid1190679-20210228-1614485114416.png)
 
 - 一(4E00) 在上图中
 	- 属于第三行的范围
@@ -126,7 +126,7 @@ enable_checker: true
 	- 所以三个字节
 - 如下图套入模板
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210403-1617424477908)
+![图片描述](../0426/uid1190679-20210403-1617424477908.png)
 
 - 具体存储的状态呢？
 
@@ -134,12 +134,12 @@ enable_checker: true
 
 - :%!xxd
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210228-1614490061444)
+![图片描述](../0426/uid1190679-20210228-1614490061444.png)
 
 - 说明我们用的确实是utf-8编码
 - 可以解码回来吗？
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210403-1617425229938)
+![图片描述](../0426/uid1190679-20210403-1617425229938.png)
 
 - utf-8 解码 E4B080 转化为 unicode 编码是 4E00
 - 后面的 `0a` 是 换行`LineFeed`
@@ -150,11 +150,11 @@ enable_checker: true
 
 - 两个字符相同的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220512-1652368299799)
+![图片描述](../0426/uid1190679-20220512-1652368299799.png)
 
 - 得到两个同样的三字节utf-8存储
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220512-1652368281263)
+![图片描述](../0426/uid1190679-20220512-1652368281263.png)
 
 - 以及最后的
 	-  `0a` 依然是 换行`LineFeed`
@@ -170,7 +170,7 @@ enable_checker: true
   - 具体就是把 unicode 值 `0x4e00` 编码为 `0xe4b880`
   - 可以落实到字节里
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220507-1651929012054)
+![图片描述](../0426/uid1190679-20220507-1651929012054.png)
 
 - 第一次解码
   - 把 `utf-8` 解码为 `unicode`
@@ -196,7 +196,7 @@ enable_checker: true
 - 先解码再编码
   - b"\xe4\xb8\x80".decode("utf-8").encode("utf-8")
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210814-1628898487507)
+![图片描述](../0426/uid1190679-20210814-1628898487507.png)
 
 - b"\xe4\xb8\x80"是几个字节的类型呢？
 
@@ -205,19 +205,19 @@ enable_checker: true
 - 前缀 b 表示 byte 字节
 	- 后面的是 bytes类型对应的 字节序列
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20211009-1633749225283)
+![图片描述](../0426/uid1190679-20211009-1633749225283.png)
 
 - \x 是前缀
 	- b"\xe4\xb8\x80"是三个字节的序列
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20211009-1633749288714)
+![图片描述](../0426/uid1190679-20211009-1633749288714.png)
 
 ### 默认编码
 
 - utf-8 是系统默认的编码格式
 	- 一般都是这种编码格式
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210905-1630841346626)
+![图片描述](../0426/uid1190679-20210905-1630841346626.png)
 
 - 这一个字符就对应三个字节
 	- 可以用长度来描述字符么？
@@ -228,7 +228,7 @@ enable_checker: true
   - 可以衡量出字符串的长度
   - 也可以衡量出编码后字节序列的长度
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230216-1676548989190)
+![图片描述](../0426/uid1190679-20230216-1676548989190.png)
 
 - ascii[0,127] 字符 的长度
 	- 就是字节的长度
@@ -239,14 +239,14 @@ enable_checker: true
 - 字母`a`对应着一个字节
 	- 汉字`一`对应着三个字节
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230216-1676549105244)
+![图片描述](../0426/uid1190679-20230216-1676549105244.png)
 
 - 这个unicode的编码空间
 	- 究竟是怎么安排的呢？
 
 ### 排好座次
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210228-1614502810249)
+![图片描述](../0426/uid1190679-20210228-1614502810249.png)
 
 - 所有unicode字符 被分成了4档
 	- ascii 
@@ -256,7 +256,7 @@ enable_checker: true
 		- 3 字节
 		- 4 字节
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210228-1614485114416)
+![图片描述](../0426/uid1190679-20210228-1614485114416.png)
 
 - 0开头的
 	- ascii
@@ -290,9 +290,9 @@ enable_checker: true
 		- 到了 2021 已经达到了 97.4%
 - 感觉这是全球化一体最终的编码方式
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210228-1614477725488)
+![图片描述](../0426/uid1190679-20210228-1614477725488.png)
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20211031-1635678132266)
+![图片描述](../0426/uid1190679-20211031-1635678132266.png)
 
 - https://w3techs.com/technologies/overview/character_encoding
 
@@ -300,7 +300,7 @@ enable_checker: true
 
 - 关于编码的世界大战
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221023-1666511973260)
+![图片描述](../0426/uid1190679-20221023-1666511973260.png)
 
 - 分久必合
 	- 最终的胜利者是unicode和utf-8
@@ -314,7 +314,7 @@ enable_checker: true
 	- `utf-8`是一种可变长度的编码方式
 	- `utf-8`是实现`unicode`的存储和传输的现实的方式
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/92423/uid1190679-20250222-1740193730661) 
+![图片描述](../0426/uid1190679-20250222-1740193730661.png) 
 
 - 这种utf-8编码方式编码了世界上各种国家和地区的语言文字
 - 比如 我国的藏文

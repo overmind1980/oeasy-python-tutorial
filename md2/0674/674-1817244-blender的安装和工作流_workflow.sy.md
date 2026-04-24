@@ -13,7 +13,7 @@ enable_checker: true
 - 我们首先要从零开始
 - 安装3d软件
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240527-1716775021875)
+![图片描述](uid1190679-20240527-1716775021875.png)
 
 - 装哪个呢?
 
@@ -22,7 +22,7 @@ enable_checker: true
 - 3dmax、maya先后争霸
 	- blender后来居上
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240527-1716775040740)
+![图片描述](uid1190679-20240527-1716775040740.png)
 
 - 目前第一 blender 还是开源的
 	- 就选blender😊
@@ -37,14 +37,14 @@ yes | sudo apt install blender
 
 - 安装
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1817244/uid1190679-20241209-1733716807391) 
+![图片描述](uid1190679-20241209-1733716807391.png) 
 
 ### 安装成功后
 
 - 可以在开始菜单找到
 	- 图形 - Blender
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240108-1704718729508)
+![图片描述](uid1190679-20240108-1704718729508.png)
 
 - 也可以在shell中
 	- 直接运行
@@ -58,12 +58,12 @@ blender
 
 ### 控制语言和字体比例
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1817244/uid1190679-20241213-1734089800129) 
+![图片描述](uid1190679-20241213-1734089800129.png) 
 
 - 在Edit(编辑)中
 	- 找到preferences(预设)
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1817244/uid1190679-20251210-1765365710663) 
+![图片描述](uid1190679-20251210-1765365710663.png) 
 
 - 修改界面分辨率
 
@@ -78,7 +78,7 @@ blender
 | shift + <kbd> 鼠标中键</kbd> | 点击拖动 | 镜头平移 |
 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240108-1704721017891)
+![图片描述](uid1190679-20240108-1704721017891.png)
 
 - 尝试控制立方体
 
@@ -86,7 +86,7 @@ blender
 
 - 默认的工具是框选工具
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1817244/uid1190679-20250616-1750033520672) 
+![图片描述](uid1190679-20250616-1750033520672.png) 
 
 - 目前立方体没有被选择
 
@@ -95,7 +95,7 @@ blender
 - 右手 用鼠标 
 	- 框选`选中`立方体
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240831-1725070527265)
+![图片描述](uid1190679-20240831-1725070527265.png)
 
 - 选中后 会有`橙色`外轮廓
 
@@ -106,11 +106,11 @@ blender
 	- 同时放开 两个按键
 	- 调出上下文菜单
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240108-1704720379817)
+![图片描述](uid1190679-20240108-1704720379817.png)
 
 - 左手食指 按一下<kbd>g</kbd>
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1817244/uid1190679-20250616-1750041244785) 
+![图片描述](uid1190679-20250616-1750041244785.png) 
 
 - 工具栏图标切换
 	- 从 框选 到 移动
@@ -123,12 +123,12 @@ blender
 	- 由左手完成
 	- 注意 应该是 英文输入法
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240527-1716775290308)
+![图片描述](uid1190679-20240527-1716775290308.png)
 
 - 如果不能切换工具的话
 	- 就用鼠标点击侧面的移动工具
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240831-1725070695605)
+![图片描述](uid1190679-20240831-1725070695605.png)
 
 - 效果一样
 
@@ -138,13 +138,13 @@ blender
 	- 鼠标放在 暗红色的坐标轴上 
 	- 坐标轴变成 亮红色之后 出现提示
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240831-1725070896491)
+![图片描述](uid1190679-20240831-1725070896491.png)
 
 ### 控制面板
 
 - 将右侧面板拉宽
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1817244/uid1190679-20251210-1765366076911) 
+![图片描述](uid1190679-20251210-1765366076911.png) 
 
 - 可以看到立方体的位置信息
 
@@ -155,7 +155,7 @@ blender
 	- 出现 拖动光标 
 	- 让立方体沿着 红色轴移动
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1817244/uid1190679-20241213-1734094063248) 
+![图片描述](uid1190679-20241213-1734094063248.png) 
 
 - 与此同时	
 	- 观察 上图红框中 
@@ -169,7 +169,7 @@ blender
 	- x坐标数值上
 	- 鼠标变成 双向箭头
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1817244/uid1190679-20251210-1765366298036) 
+![图片描述](uid1190679-20251210-1765366298036.png) 
 
 - 左右移动 可以调整数值
 
@@ -178,7 +178,7 @@ blender
 - 将鼠标移动到 暗绿轴 位置
 	- 绿轴高亮之后
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240831-1725071081278)
+![图片描述](uid1190679-20240831-1725071081278.png)
 
 - 可以沿着 绿色坐标轴 移动
 	- 同时观察到 y轴数值 变化
@@ -190,7 +190,7 @@ blender
 - 可以 移动 蓝色坐标轴
 	- 同时观察到 z轴数值变化
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240831-1725071223157)
+![图片描述](uid1190679-20240831-1725071223157.png)
 
 - <span style="color:red">红</span><span style="color:green">绿</span><span style="color:blue">蓝</span> 的 移动轴
 	- 分别代表什么呢？
@@ -203,7 +203,7 @@ blender
 	- 找到 Tranform里
 	- Location的数值
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240229-1709169884300)
+![图片描述](uid1190679-20240229-1709169884300.png)
 
 - 可以 把鼠标放到数值上
 	- 鼠标变化后 按下 鼠标
@@ -226,12 +226,12 @@ blender
 	- 同时放开 两个按键
 	- 调出上下文菜单
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240831-1725071472597)
+![图片描述](uid1190679-20240831-1725071472597.png)
 
 - 左手食指 按一下<kbd>r</kbd>
 	- 意味着 `r`otation
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1817244/uid1190679-20250616-1750041443151) 
+![图片描述](uid1190679-20250616-1750041443151.png) 
 
 - 工具栏 从 移动 切换到 旋转
 	- 物体周围 出现 旋转轴 
@@ -246,7 +246,7 @@ blender
 	- 沿着 <span style="color:red">红</span><span style="color:green">绿</span><span style="color:blue">蓝</span> 三个坐标轴旋转
 	- 分别对应着 <span style="color:red">x</span><span style="color:green">y</span><span style="color:blue">z</span> 三个旋转轴
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1817244/uid1190679-20241213-1734094325922) 
+![图片描述](uid1190679-20241213-1734094325922.png) 
 
 - 观察 `R`otation 数值 
 	- 确实变化了
@@ -262,7 +262,7 @@ blender
 	- 同时放开 两个按键
 	- 调出上下文菜单
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240831-1725072447710)
+![图片描述](uid1190679-20240831-1725072447710.png)
 
 - 左手食指 按一下<kbd>s</kbd>
 	- `s`cale
@@ -274,7 +274,7 @@ blender
 	- 颜色高亮 后 
 	- 可以缩放 
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1817244/uid1190679-20241213-1734094436596) 
+![图片描述](uid1190679-20241213-1734094436596.png) 
 
 - 还是三种颜色 
 	- 沿着 <span style="color:red">红</span><span style="color:green">绿</span><span style="color:blue">蓝</span> 三个坐标轴缩放
@@ -288,7 +288,7 @@ blender
 	- 旋转 
 	- 缩放
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1817244/uid1190679-20250616-1750041737184) 
+![图片描述](uid1190679-20250616-1750041737184.png) 
 
 
 ### 总结
@@ -301,12 +301,12 @@ blender
 	- 旋转 rotate
 	- 缩放 scale
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240523-1716427822360)
+![图片描述](uid1190679-20240523-1716427822360.png)
 
 - 变化后的 数值
 	- 在属性调版 里面 可以看到
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240831-1725072899148)
+![图片描述](uid1190679-20240831-1725072899148.png)
 
 - 整个blender的布局 是 `如何`分布的 呢？🤔
 - 我们下次再说！👋

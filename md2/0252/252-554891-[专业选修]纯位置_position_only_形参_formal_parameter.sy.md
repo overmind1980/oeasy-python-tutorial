@@ -16,11 +16,11 @@ enable_checker: true
 - 我们用到的都是第三种
 - 真的可以有纯位置的形参么？
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220904-1662253940991)
+![图片描述](uid1190679-20220904-1662253940991.png)
 
 ### 查看文档
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220829-1661783640535)
+![图片描述](uid1190679-20220829-1661783640535.jpg)
 
 - /之前的是纯位置的
 - /、*之间的是两可的(位置、关键字都可以)
@@ -28,11 +28,11 @@ enable_checker: true
 
 ### 修改代码
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220830-1661821831889)
+![图片描述](uid1190679-20220830-1661821831889.png)
 
 - 结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220830-1661821969553)
+![图片描述](uid1190679-20220830-1661821969553.png)
 
 - 3 个参数
 	- 1 个 positiononly
@@ -62,23 +62,23 @@ def sentence(sub: str="I",\
 
 sentence(sub="oeasy")
 ```
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220830-1661822146207)
+![图片描述](uid1190679-20220830-1661822146207.png)
 
 - sub声明了是纯position
 - 不能用keyword来调用他
 
 ### 后面呢？
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220830-1661822250155)
+![图片描述](uid1190679-20220830-1661822250155.png)
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220830-1661822258226)
+![图片描述](uid1190679-20220830-1661822258226.png)
 
 - 后面都是两可得
 	- 既可以是position
 	- 也可以是keyword
 	- 不only
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/554891/uid1190679-20250112-1736652621889) 
+![图片描述](uid1190679-20250112-1736652621889.png) 
 
 
 ### 总结 
@@ -90,6 +90,6 @@ sentence(sub="oeasy")
 - 纯关键字(keyword only)
 - 如何理解呢🤔
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220829-1661783640535)
+![图片描述](uid1190679-20220829-1661783640535.jpg)
 
 - 我们下次再说👋

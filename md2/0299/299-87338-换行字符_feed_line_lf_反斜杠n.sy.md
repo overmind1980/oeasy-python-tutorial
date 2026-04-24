@@ -15,7 +15,7 @@ enable_checker: true
 	- 每行 有7个 输入位
 		- 总共 可以表示128个字符
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221121-1669026867213)
+![图片描述](uid1190679-20221121-1669026867213.jpg)
 
 - 这就是 ASCII的由来
 	- 有些字符 我们是能看到的
@@ -32,7 +32,7 @@ enable_checker: true
 
 - 输出结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230607-1686108234672)
+![图片描述](uid1190679-20230607-1686108234672.png)
 
 - 如果 有`\n`的话
 	- 就换 `2` 行
@@ -44,7 +44,7 @@ enable_checker: true
 
 - 每多一个就会多换一行
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230607-1686145623336)
+![图片描述](uid1190679-20230607-1686145623336.png)
 
 - 这`\n`对应哪个字符呢？
 
@@ -57,11 +57,11 @@ enable_checker: true
 
 - 运行结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230329-1680100727947)
+![图片描述](uid1190679-20230329-1680100727947.png)
 
 - `\n`确实是第十个字符
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230331-1680224389728)
+![图片描述](uid1190679-20230331-1680224389728.jpg)
 
 - 看看 ascii码表是
 	- 如何定义 这`第10个`字符的
@@ -72,7 +72,7 @@ enable_checker: true
 	- 我们 找到了 一个突破口
 		- 第十个字符 为 LF 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221021-1666358203788)
+![图片描述](uid1190679-20221021-1666358203788.jpg)
 
 - 十进制的`10` 就是 十六进制的 `0x0A`
 	- 这个数值在 `ascii` 码表中意思是 `LF`
@@ -87,7 +87,7 @@ enable_checker: true
 - 喂行
 	- 喂一行纸
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220925-1664106259312)
+![图片描述](uid1190679-20220925-1664106259312.jpg)
 
 - 那我可以用这个`\n`
 	- 在字符中间换行吗？
@@ -102,7 +102,7 @@ print("Hello\nWorld")
 
 - 在游乐场中 尝试
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210220-1613824459904)
+![图片描述](uid1190679-20210220-1613824459904.png)
 
 - 中途换行 成功！
 - 可以 多来几个换行符 吗？
@@ -125,7 +125,7 @@ print("He\nllo\nWor\nld")
 	- 其实比 ascii的历史 还要悠久
     - 从打字机的时代 就有了
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210220-1613824638913)
+![图片描述](uid1190679-20210220-1613824638913.png)
 
 - 为什么 要有`换行符`呢？
 
@@ -138,7 +138,7 @@ print("He\nllo\nWor\nld")
   - 一键 就直接换行 了
 	 - `L`ine`F`eed 提高了效率
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220930-1664531333906)
+![图片描述](uid1190679-20220930-1664531333906.png)
  
 - 两个换行符 
 	- 就换两行
@@ -162,7 +162,7 @@ print("hello"+chr(10)+"world")
 - 使用 加号
 	- 进行 字符串的拼接
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220930-1664531394392)
+![图片描述](uid1190679-20220930-1664531394392.png)
 
 - 纯文本中 也会有 换行符 么？
 - 我们去看看 纯文本文件
@@ -176,7 +176,7 @@ git clone https://github.com/overmind1980/oeasy-python-tutorial.git
 - 首先下载 这个仓库
 	- 然后找到 安德森仙话 这个本书
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220930-1664542671566)
+![图片描述](uid1190679-20220930-1664542671566.jpg)
 
 - 然后编辑这个文件
 
@@ -193,15 +193,15 @@ vi oeasy-python-tutorial/samples/000016/anderson_fairy_tales.txt
 	- 从百度网盘下载
 		- 链接: https://pan.baidu.com/s/1IzuIMVEpiCIGklCW5YWmSg?pwd=mfjb 提取码: mfjb
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230323-1679529027270)
+![图片描述](uid1190679-20230323-1679529027270.jpg)
 
 ### 上传到云
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230323-1679529172481)
+![图片描述](uid1190679-20230323-1679529172481.jpg)
 
 - 然后可以在~/Code文件夹下找到
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230321-1679390777174)
+![图片描述](uid1190679-20230321-1679390777174.png)
 
 - 然后再用vim
 	- 打开这个txt文件
@@ -212,7 +212,7 @@ vi oeasy-python-tutorial/samples/000016/anderson_fairy_tales.txt
 	- 318k 大概有 318000个字节
 	- 大概是 31.8万个 字符
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220925-1664109266044)
+![图片描述](uid1190679-20220925-1664109266044.png)
 
 - 这就是 纯文本文档
 	- 第一行的Andersen 后面有应该有两个换行符
@@ -222,7 +222,7 @@ vi oeasy-python-tutorial/samples/000016/anderson_fairy_tales.txt
 
 - <kbd>G</kbd>到最后一行
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230405-1680668115084)
+![图片描述](uid1190679-20230405-1680668115084.jpg)
 
 - 总共6206行
 	- 那这6206行
@@ -234,11 +234,11 @@ vi oeasy-python-tutorial/samples/000016/anderson_fairy_tales.txt
 	- 在从头到尾的范围内
 		- 统计\n的数量
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230405-1680668562819)
+![图片描述](uid1190679-20230405-1680668562819.png)
 
 - 统计结果
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230405-1680668581264)
+![图片描述](uid1190679-20230405-1680668581264.png)
 
 - 确实是6206个换行符
 	- 每个换行符对应一行
@@ -250,7 +250,7 @@ vi oeasy-python-tutorial/samples/000016/anderson_fairy_tales.txt
 - 查找0a
 	- /0a
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220930-1664542902104)
+![图片描述](uid1190679-20220930-1664542902104.jpg)
 
 - 0a0d 总是一起出现
 - 确实 能够找到 
@@ -270,7 +270,7 @@ vi oeasy-python-tutorial/samples/000016/anderson_fairy_tales.txt
 - 在 原始模式下 是换行
 	- 真的是换了两行
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220930-1664543068068)
+![图片描述](uid1190679-20220930-1664543068068.png)
 
 - 这本书到底有多少个字符呢？
 
@@ -278,7 +278,7 @@ vi oeasy-python-tutorial/samples/000016/anderson_fairy_tales.txt
 
 - <kbd>G</kbd>到最后一行
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230330-1680136688169)
+![图片描述](uid1190679-20230330-1680136688169.png)
 
 - 总共20305个行
 	- 每行 16个字符
@@ -289,16 +289,16 @@ vi oeasy-python-tutorial/samples/000016/anderson_fairy_tales.txt
 
 ### 再找换行符
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230330-1680136801450)
+![图片描述](uid1190679-20230330-1680136801450.png)
 
 - 在 字节模式下 0a 对应着
 	- 换行符 `\n`
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220930-1664543076624)
+![图片描述](uid1190679-20220930-1664543076624.png)
 
 - 对照文本模式
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220930-1664543068068)
+![图片描述](uid1190679-20220930-1664543068068.png)
 
 - 有的地方换两行
 - 有的地方换一行
@@ -325,7 +325,7 @@ vi oeasy-python-tutorial/samples/000016/anderson_fairy_tales.txt
 - 其中 6206个"\n"字符 
 	- 对应着 字节b"\x0a"
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220930-1664542902104)
+![图片描述](uid1190679-20220930-1664542902104.jpg)
 
 - 《安德森仙话》 这书的名字
 	- 好像听起来有点耳熟？🤔

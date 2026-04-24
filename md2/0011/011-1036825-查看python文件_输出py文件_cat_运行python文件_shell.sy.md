@@ -18,7 +18,7 @@ enable_checker: true
 	- :w 进入 底行命令模式 保存
 	- 将文件 保存在了 本地的硬盘上
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230815-1692080488167)
+![图片描述](uid1190679-20230815-1692080488167.png)
 
 - 把程序 写到文件里	
 	- 有什么好处吗？🤔
@@ -34,7 +34,7 @@ enable_checker: true
 	- `复制或修改` 文件
 	- 就像 图纸
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240112-1705033692749)
+![图片描述](uid1190679-20240112-1705033692749.png)
 
 - 板子 画成 图纸
 	- 存住 元件之间的连接方式 
@@ -45,13 +45,13 @@ enable_checker: true
 - 将程序 烧录在 
 	- 存储器(ROM) 里
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240112-1705033704378)
+![图片描述](uid1190679-20240112-1705033704378.png)
 
 - 每次重启 
 	- 都 自动从头 加载执行
 	- 就像 从硬盘启动系统 一样
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240112-1705033716702)
+![图片描述](uid1190679-20240112-1705033716702.png)
 
 - 甚至 我们人体自身 也是 
 	- 固化好的 程序
@@ -61,12 +61,12 @@ enable_checker: true
 - 这 程序 
 	- 固化在 DNA的排列顺序 里
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240112-1705033726882)
+![图片描述](uid1190679-20240112-1705033726882.png)
 
 - 通过 `遗传` 和 `变异`
 	- 产生 新的个体 和 世界交互
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240112-1705033742758)
+![图片描述](uid1190679-20240112-1705033742758.png)
 
 -  生物的 `遗传` 和 `变异`
 	- 就像程序的 `复制` 和 `修改`一样
@@ -80,7 +80,7 @@ enable_checker: true
 	- 某些 特定意义的 神经元之间的连接
 	- 被 `反复` 强调
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240112-1705033758160)
+![图片描述](uid1190679-20240112-1705033758160.png)
 
 - `固化` 成 思维定势
 
@@ -93,7 +93,7 @@ enable_checker: true
 - 而 文化也在随着时间
 	- 不断变化
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240112-1705033769385)
+![图片描述](uid1190679-20240112-1705033769385.png)
 
 - 话说回来
 	- python文件
@@ -107,7 +107,7 @@ enable_checker: true
 	- 总共 存储了
 	- 15字节(15-bytes)
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240112-1705033816295)
+![图片描述](uid1190679-20240112-1705033816295.png)
 
 - oeasy.py 怎么 `运行` 呢？
 	- 先要 退出`vim`应用
@@ -122,7 +122,7 @@ enable_checker: true
 	- 再次进入 
 	- `底行命令`模式
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220909-1662710995340)
+![图片描述](uid1190679-20220909-1662710995340.png)
 
 - 输入`quit`
   - `quit` 
@@ -137,7 +137,7 @@ enable_checker: true
 - `shell` 是 
 	- 外面 整体的 系统环境
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230214-1676381859420)
+![图片描述](uid1190679-20230214-1676381859420.png)
 
 - vi 和 python 都是 shell中的具体应用 
 	- vi 是 
@@ -152,7 +152,7 @@ enable_checker: true
 	- 这张图 也可以 `拍摄`下来
 	- 反复查
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240112-1705033831336)
+![图片描述](uid1190679-20240112-1705033831336.png)
 
 - oeasy.py 编写好了 之后
 	- 可以在终端里 `查看` 吗？🤔
@@ -172,7 +172,7 @@ enable_checker: true
 	-  <span style="color:orange">oeasy.py</span>  
 		-  是<span style="color:green">ls</span> 命令的参数 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240304-1709531662849)
+![图片描述](uid1190679-20240304-1709531662849.png)
 
 - 可以看到 
 	- 当前 文件大小为 15	
@@ -194,7 +194,7 @@ enable_checker: true
 		- 意思是 用`cat` 
 		- 来查看 `oeasy.py` 内容
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220909-1662711353786)
+![图片描述](uid1190679-20220909-1662711353786.png)
 
 - `oeasy.py` 里面
 	- 虽然 只有一句
@@ -214,7 +214,7 @@ enable_checker: true
 - 输入`python3 oeasy.py`
   - 运行 `python3`程序
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220923-1663926813738)
+![图片描述](uid1190679-20220923-1663926813738.png)
 
 - 如果 没成功的话 
 	- 观看报错信息
@@ -233,7 +233,7 @@ enable_checker: true
 	- 可以截图 
 		- 记录下这伟大的 一天！！！
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240112-1705033857624)
+![图片描述](uid1190679-20240112-1705033857624.png)
 
 - 恭喜 你第一个程序 用的就是
 	- `linux`系统
@@ -246,7 +246,7 @@ enable_checker: true
 - 为什么 不用图形用户界面(GUI)的方式
 	- 学习编程 呢？
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230618-1687081671425)
+![图片描述](uid1190679-20230618-1687081671425.png)
 
 - 桌面 不是有 vscode 吗？
 	- vscode 不是自称
@@ -258,7 +258,7 @@ enable_checker: true
 	- 本质上也是 在shell中  执行命令 
 	- 最终 把输出结果 显示在指定位置
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240112-1705033877451)
+![图片描述](uid1190679-20240112-1705033877451.png)
 
 - GUI的本质
 	- 是 用 图形用户界面 
@@ -275,7 +275,7 @@ enable_checker: true
 	- 过于安逸
 	- 使人堕落
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240112-1705033897554)
+![图片描述](uid1190679-20240112-1705033897554.png)
 
 - 接触 原生态
 	- 接受 底层全部的 报错信息
@@ -285,7 +285,7 @@ enable_checker: true
 
 - 亲手搭建！！！
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240112-1705033912618)
+![图片描述](uid1190679-20240112-1705033912618.png)
 
 - 暂时 远离 智能提示
 	- 不断`撞板` 
@@ -304,7 +304,7 @@ enable_checker: true
 	- 被动接收 
 	- 人工智能的 推荐
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240112-1705033935017)
+![图片描述](uid1190679-20240112-1705033935017.png)
 
 - 隔壁 网安和运维的高手
 	- 也都是 用命令行工具的
@@ -314,7 +314,7 @@ enable_checker: true
 - 若干年后
 	- 已成 行内编程专家 的 你
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240112-1705033952188)
+![图片描述](uid1190679-20240112-1705033952188.png)
 
 - 再回首
 
@@ -339,7 +339,7 @@ enable_checker: true
 	- `百分之百` 可以得到 正确结果
 	- 这就是 千真万确的编程
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240112-1705033965855)
+![图片描述](uid1190679-20240112-1705033965855.png)
 
 - 获得 
 	- 真实可靠的 快乐
@@ -354,7 +354,7 @@ enable_checker: true
 	- `python3 oeasy.py`
 		- 用 python3 `运行` oeasy.py
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240112-1705033172180)
+![图片描述](uid1190679-20240112-1705033172180.png)
 
 - 空格之前的 是
 	- `命令` 

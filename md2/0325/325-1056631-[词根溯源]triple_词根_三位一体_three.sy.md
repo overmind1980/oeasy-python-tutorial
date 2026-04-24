@@ -14,7 +14,7 @@ enable_checker: true
 	- 结尾处的 `\` 还是会被理解为 续行符(line continuation)
 		- 需要 批量替换为 `\\` 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210224-1614173286539)
+![图片描述](uid1190679-20210224-1614173286539.png)
 
 - 三引号(triple quote) 中的 triple
 	- 从词源上如何理解呢？
@@ -25,11 +25,11 @@ enable_checker: true
 	- tri 来自于 three
 	- ple 来自于 plus
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230119-1674132538473)
+![图片描述](uid1190679-20230119-1674132538473.png)
 
 - triple 是 三倍的、三重的
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230822-1692692763423)
+![图片描述](uid1190679-20230822-1692692763423.png)
 
 ### triangle
 
@@ -38,7 +38,7 @@ enable_checker: true
 	- angle 角
 	- 三个角的形状
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230822-1692693764919)
+![图片描述](uid1190679-20230822-1692693764919.png)
 
 - 三角形
 
@@ -49,7 +49,7 @@ enable_checker: true
 	- cycle 圆圈
 	- 三个圆圈(轮子)
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230822-1692693946950)
+![图片描述](uid1190679-20230822-1692693946950.png)
 
 - 三轮车
 
@@ -60,7 +60,7 @@ enable_checker: true
 	- coloured 颜色
 	- 三种颜色
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230822-1692695065063)
+![图片描述](uid1190679-20230822-1692695065063.png)
 
 - 三花
 
@@ -71,12 +71,12 @@ enable_checker: true
 	- tri- 三
 	- partite 部分
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230822-1692695497789)
+![图片描述](uid1190679-20230822-1692695497789.png)
 
 - tripartite system of separation of powers
 	- 三权分立 
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230822-1692695705628)
+![图片描述](uid1190679-20230822-1692695705628.png)
 
 - 三方协议
 
@@ -87,7 +87,7 @@ enable_checker: true
 	- pod 脚
 	- 三只脚
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230822-1692696840217)
+![图片描述](uid1190679-20230822-1692696840217.png)
 
 - 三脚架
 
@@ -98,7 +98,7 @@ enable_checker: true
 	- gram 写或者画的东西
 	- 三个图
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230822-1692709769592)
+![图片描述](uid1190679-20230822-1692709769592.png)
 
 - 三爻八卦
 	- trigram_sun(乾)
@@ -116,13 +116,13 @@ enable_checker: true
 	- tri- 三
 	- nity 名词
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230822-1692710155681)
+![图片描述](uid1190679-20230822-1692710155681.png)
 
 - 圣父
 - 圣子
 - 圣灵
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230822-1692710144723)
+![图片描述](uid1190679-20230822-1692710144723.png)
 
 - 三位一体
 - 三一学院
@@ -134,7 +134,7 @@ enable_checker: true
 	- ad  单倍，单体
 	- 三合的事物
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230823-1692754275442)
+![图片描述](uid1190679-20230823-1692754275442.png)
 
 - 三和弦
 
@@ -143,7 +143,7 @@ enable_checker: true
 - 这次讲了 triple 的来源
 	- tri- 代表三
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230823-1692754598303)
+![图片描述](uid1190679-20230823-1692754598303.png)
 
 - 三引号中
 	- 可以让字符串原样输出
@@ -152,7 +152,7 @@ enable_checker: true
 	- 还有哪个 转义字符
 		- 没 研究过吗？
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210224-1614173286539)
+![图片描述](uid1190679-20210224-1614173286539.png)
 
 - 转义字符
 	- 和字符一样 也存储于 字节当中

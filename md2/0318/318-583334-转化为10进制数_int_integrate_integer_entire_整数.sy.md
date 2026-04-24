@@ -28,12 +28,12 @@ enable_checker: true
 
 - 可以用 int 函数
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230113-1673602827387)
+![图片描述](uid1190679-20230113-1673602827387.png)
 
 - 其实上述函数调用的参数都相等
 	- 就算不用int也可以
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231008-1696770465812)
+![图片描述](uid1190679-20231008-1696770465812.png)
 
 - 这个`int ` 怎么用呢？
 
@@ -41,7 +41,7 @@ enable_checker: true
 
 - help(int)
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210220-1613810392455)
+![图片描述](uid1190679-20210220-1613810392455.png)
 
 - int
 	- 来自于integer
@@ -55,7 +55,7 @@ enable_checker: true
 - 确实可以 将其他进制形态的字符串
 	- 转化为`整数`
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220918-1663505594116)
+![图片描述](uid1190679-20220918-1663505594116.png)
 
 - 但是要加上`base=0`这样的参数
 	- base 可以 设置为`2`么？
@@ -71,7 +71,7 @@ enable_checker: true
 	- 就是 用`二进制`的方式
 		- 理解字符串
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221015-1665796045454)
+![图片描述](uid1190679-20221015-1665796045454.png)
 
 - 基数base 可以
 	- 不是常见的2、8、10、16吗？
@@ -80,7 +80,7 @@ enable_checker: true
 
 - 只要设置好 base就可以
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221015-1665797354454)
+![图片描述](uid1190679-20221015-1665797354454.png)
 
 - 如何理解 函数int 所对应的
 	- integer这个词呢？
@@ -90,7 +90,7 @@ enable_checker: true
 - integer 意思是整的
 	- 和零散相反
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220220-1645316688057)
+![图片描述](uid1190679-20220220-1645316688057.png)
 
 - integer
 	- in  
@@ -117,7 +117,7 @@ enable_checker: true
 		- Integrated Circuit Chip
 		- 把分立件集成到一块电路板上
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230113-1673607866305)
+![图片描述](uid1190679-20230113-1673607866305.png)
 
 - integrate 
 	- 又可以派生有一系列单词
@@ -134,7 +134,7 @@ enable_checker: true
 - disintegration
 	- 崩解; 瓦解
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230113-1673608780268)
+![图片描述](uid1190679-20230113-1673608780268.png)
 
 - integrity
 	- 诚实正直; 完整; 完好;
@@ -144,11 +144,11 @@ enable_checker: true
 
 - whole 完整的
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/583334/uid1190679-20250430-1745980625608) 
+![图片描述](uid1190679-20250430-1745980625608.png) 
 
 - holy 神圣的
 
-![图片描述](https://doc.shiyanlou.com/courses/3584/labs/583334/uid1190679-20250430-1745980875880) 
+![图片描述](uid1190679-20250430-1745980875880.png) 
 
 - healthy 健康的
 - 暗示 完整的 才是 神圣的、健康的
@@ -166,7 +166,7 @@ enable_checker: true
 - entirety
 	- 整体性
 
-![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230113-1673609383804)
+![图片描述](uid1190679-20230113-1673609383804.jpg)
 
 - 仔细想想 这些单词 其实是一个
 	- 只是 不同口音
