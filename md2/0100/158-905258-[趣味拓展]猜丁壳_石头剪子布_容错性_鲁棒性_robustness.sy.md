@@ -1,0 +1,279 @@
+---
+show: step
+version: 1.0
+enable_checker: true
+---
+
+# 猜丁壳
+
+## 回忆
+
+- 其实条件语句 很就有了
+	- 律法
+	- 历法
+- 今天的 很多决策 
+	- 都依赖于 数字 和 算法
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1019969/uid1190679-20260406-1775472534758) 
+
+- 我们写过 条件语句的程序
+	- if条件语句 包括
+		- if条件表达式
+		- if语句执行体
+	- 满足条件 
+		- 执行语句
+- if语句 还有 啥要 `注意`的吗？🤔
+
+### 来玩游戏
+
+- 石头剪子布
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210920-1632133206978)
+
+### 两个变量
+
+- 面对两个变量
+	1. 我出的
+	2. 电脑随机出的
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210919-1632057911165)
+
+- 构建手势元组
+
+```
+from random import randint
+hands = ("石头","剪子","布")
+choice = int(input("input(0:石头,1:剪子,2:布):"))
+computer = randint(0,3)
+```
+
+- 然后 讨论 可能性
+
+### 第一层条件
+
+- 我的选择 有
+	- 3种可能性
+
+```
+if choice == 0:
+	pass
+elif choice == 1:
+	pass
+else:
+	pass
+```
+
+- 每种可能性下
+	- 电脑 也有3种可能性
+
+### 第二层条件
+
+- 可以完成程序
+
+```
+from random import randint
+hands = ("🪨石头", "✂️剪刀", "📄布")
+choice = int(input("请输入(0:🪨石头,1:✂️剪刀,2:📄布):"))
+computer = randint(0,2)
+print("你出:", hands[choice], " ; 电脑出:", hands[computer])
+
+if choice == 0:
+    if computer == 0:
+        print("平局！")
+    elif computer == 1:
+        print("你赢了！")
+    else:
+        print("你输了！")
+elif choice == 1:
+    if computer == 0:
+        print("你输了！")
+    elif computer == 1:
+        print("平局！")
+    else:
+        print("你赢了！")
+else:
+    if computer == 0:
+        print("你赢了！")
+    elif computer == 1:
+        print("你输了！")
+    else:
+        print("平局！")
+```
+
+- 可以简化一下吗？
+
+### 简化
+
+- 如果 手势相同 
+	- 肯定是平局
+	- 合并 三种可能性
+- 然后
+	- 再对 手势 分类讨论
+
+```
+from random import randint
+
+# 手势列表
+hands = ("石头", "剪刀", "布")
+
+# 输入选择
+choice = int(input("请输入(0:石头,1:剪刀,2:布):"))
+
+# 电脑随机出拳
+computer = randint(0, 3)
+
+# 展示结果
+print("你出:", hands[choice], "; 电脑出:", hands[computer])
+
+# ======================
+# 核心：先判断平局（合并三种情况）
+# ======================
+if choice == computer:
+    print("平局！")
+
+# 不是平局，再判断输赢
+elif choice == 0:  # 玩家出石头
+    if computer == 1:
+        print("你赢了！")
+    else:
+        print("你输了！")
+
+elif choice == 1:  # 玩家出剪刀
+    if computer == 2:
+        print("你赢了！")
+    else:
+        print("你输了！")
+
+else:  # 玩家出布
+    if computer == 0:
+        print("你赢了！")
+    else:
+        print("你输了！")
+```
+
+- 但还有点复杂
+	- 可以再简化吗？
+
+### 减法 取模数
+
+- 胜负规则对应数字
+	- 石头 = 0
+	- 剪刀 = 1
+	- 布 = 2
+- 克制关系
+	- 0赢1
+	- 1赢2
+	- 2赢0
+	- （循环克制）
+
+- 完整验证
+
+| 玩家 | 电脑 | 玩家-电脑 | 取模%3 | 结果 |
+|------|------|-----------|--------|------|
+| 0(石)| 0(石)| 0         | 0      | 平局 |
+| 0(石)| 1(剪)| -1        | 2      | 玩家赢 |
+| 0(石)| 2(布)| -2        | 1      | 玩家输 |
+| 1(剪)| 0(石)| 1         | 1      | 玩家输 |
+| 1(剪)| 1(剪)| 0         | 0      | 平局 |
+| 1(剪)| 2(布)| -1        | 2      | 玩家赢 |
+| 2(布)| 0(石)| 2         | 2      | 玩家赢 |
+| 2(布)| 1(剪)| 1         | 1      | 玩家输 |
+| 2(布)| 2(布)| 0         | 0      | 平局 |
+
+### 编写代码
+
+```
+from random import randint
+
+hands = ("石头", "剪刀", "布")
+me = int(input("请出拳(0:石头,1:剪刀,2:布):"))
+computer = randint(0, 3)
+
+print("你:", hands[me], " 电脑:", hands[computer])
+
+# 核心：减法 + 取模，1行公式搞定胜负逻辑
+diff = (me - computer) % 3
+if diff == 0:
+    print("平局！")
+elif diff == 1:
+    print("你赢了！")
+else:
+    print("你输了！")
+```
+
+- 如果输入abc怎么办？
+
+### 控制输入
+
+```
+from random import randint
+
+hands = ("石头", "剪刀", "布")
+
+# 循环直到输入合法数字
+while True:
+    try:
+        me = input("请出拳(0:石头,1:剪刀,2:布):")
+        me = int(me)  # 尝试转数字
+        
+        # 必须是 0、1、2 才合法
+        if me in (0, 1, 2):
+            break
+        else:
+            print("❌ 只能输入 0、1、2 哦！")
+            
+    # 如果输入abc等非数字，会触发 ValueError
+    except ValueError:
+        print("❌ 请输入合法数字，不要输入字母/文字！")
+
+# 电脑随机：修复成 0~2（原代码 0~3 会崩溃）
+computer = randint(0, 2)
+
+print("你:", hands[me], " 电脑:", hands[computer])
+
+# 胜负逻辑（保留你原来的聪明算法）
+diff = (me - computer) % 3
+if diff == 0:
+    print("🤝 平局！")
+elif diff == 1:
+    print("🎉 你赢了！")
+else:
+    print("💻 电脑赢了！")
+
+```
+
+- 这样可以提高 容错性
+
+### 容错性
+
+- 容错性 也叫
+	- Robustness
+	- 鲁棒性
+	- 在不可预料的环境下怎么搞它都搞不坏
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/905258/uid1190679-20260406-1775475635689) 
+
+- 鲁棒性 
+	- 鲁，粗鲁，强壮
+	- 棒，坚挺，坚韧
+	- 皮实
+
+### 总结
+
+- 这次完成了猜丁壳
+	- 程序可以优化
+	- 也需要提高鲁棒性
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/905258/uid1190679-20260406-1775475713141) 
+
+- 注意 鲁棒性的判断
+
+```
+0 <= choice <= 2:
+```
+
+- 相当于2个比较都为真
+	1. 0 <= choice
+	2. choice <= 2
+- 这里面 的逻辑 是什么呢？？🤔
+- 下次再说 👋

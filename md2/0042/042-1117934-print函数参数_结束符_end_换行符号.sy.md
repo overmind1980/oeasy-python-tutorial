@@ -1,0 +1,251 @@
+---
+show: step
+version: 1.0
+enable_checker: true
+---
+
+#   print函数参数_结束符_end_换行符号 
+
+## 回忆上次内容
+
+- [配套视频](https://www.bilibili.com/video/BV1jDU7YkErg)
+- 上次 我们了解了`ASCII`码表
+	- `A`merican `S`tandard `C`ode for `I`nformation `I`nterchange
+	- 美国信息交换标准代码
+- ASCII 码表范围
+  - `48-57` 这个范围是 `数字`
+  - `65-90` 这个范围是 `大` 写字母
+  - `97-122` 这个范围是 `小` 写字母
+  - 标点 穿插其中
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220925-1664108814250)
+
+- 我们可以自己做个 
+	- 一屏看完的
+	- ASCII码表 吗 ？？🤔
+
+### 目前状态
+
+```python
+for num in range(128):
+    print(num, chr(num), sep=":")
+```
+
+- 目前结果
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230919-1695093270222)
+
+- 问题就是
+	- 结束的位置 总会 
+	- 自动换行
+- 能 `取消` 自动换行 吗？
+
+### 询问
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1117934/uid1190679-20241021-1729481080235) 
+
+- ai说需要控制
+	- print的参数 end
+	- 这好像和之前的 sep 有点像
+
+### 查询帮助
+
+- 先进入游乐场
+
+```
+:!python3
+```
+
+- 从底行命令模式
+	- 执行vim外部的命令
+		- python
+		- 进入游乐场
+
+```
+help(print)
+```
+
+- 对着print喊救命
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230919-1695094052384)
+
+### 结束字符串end
+
+- 上次研究print的参数是
+	- sep 
+	- separator 
+	- 还有印象吗？
+	- 默认是空格
+
+- 这次print的参数
+	- 叫做`end`
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1117934/uid1190679-20241018-1729260930552) 
+
+- 应该是结束的意思
+
+### python帮助
+
+- end的作用是 
+	- 在结尾处 输出的字符串
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230602-1685711068860)
+
+- end 的默认值 为 `\n`
+	- `\n` 是什么意思呢？
+
+### 尝试换行符
+
+- <kbd>q</kbd>  
+	- 退出 帮助状态
+	- 回到游乐场
+
+```
+print("abc\n123")
+ord("\n")
+```
+
+- `\n` 是一个字符
+	- 可以起到 换行 作用
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231108-1699454136481)
+
+- 这个10号对应什么字符呢？
+
+### 对应字符
+
+- 10号字符为
+	- LF 
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240318-1710752719306)
+
+- 具体含义 是什么意思呢？
+
+### LF
+
+- 搜索 LF+ascii
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240924-1727147900431)
+
+- LF为换行
+	- LineFeed 
+
+### linefeed
+
+- linefeed 就是 
+	- 给打字机 喂一行纸
+	- 也叫换行
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1117934/uid1190679-20241018-1729261074980) 
+
+### end
+
+- 参数end默认值为
+	- \n
+	- 换行LF
+
+```
+print("abc")
+print("abc",end="\n")
+```
+
+- 运行结果
+	- abc后面回车的原因是因为
+		- 结束符end默认值为\n
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231122-1700609538580)
+
+- 如果 将 end的值
+	- 从 结束符 变成 空串 呢？
+
+### 空串
+
+- 由于end的值
+	- 从 结束符 变成 空串 
+
+```
+print("abc",end="")
+```
+
+- 原来的换行没了
+	- abc 直接把大于号顶出来了
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231108-1699454267887)
+
+- 可以把\n直接放到abc后面吗？
+
+### 特殊结束符
+
+- 把\n直接加到输出结尾
+
+```
+print("abc\n")
+```
+
+- 最终输出两个空行
+	1. 第一个换行 来自于abc\n
+	2. 第二个换行 来自于默认的end="\n"
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/2917033/uid1190679-20241019-1729289272835) 
+
+- "abc\n"已经有了换行
+	- 可以再让end=""吗？
+
+### 清空end
+
+```
+print("abc\n",end="")
+```
+
+- 输出abc
+	- 再输出换行符
+	- 结尾处没有默认的换行符
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1117934/uid1190679-20241018-1729261321676) 
+
+- 感觉 
+	- 不但 可以
+		- 给 结尾加换行符
+	- 而且 可以控制
+		- 哪里换行 
+		- 哪里不换行
+
+### 修改代码
+
+- 将end参数 
+	- 设置为逗号(，)
+
+```python
+for num in range(128):
+    print(num, end=",")
+```
+
+- range(128)
+	- 循环范围是[0,128)
+	- 前闭后开
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1117934/uid1190679-20241018-1729261435906) 
+
+- 128 刚好是 
+	- 从0 到 2<sup>7</sup>
+- 下次把这范围以内的字符`都`输出
+	- 自制ascii码表
+
+## 总结
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1117934/uid1190679-20241019-1729290510151) 
+
+- 这次了解了 
+	- print函数中的另一个参数
+		- 结束符 end 
+		- 默认是 换行符\n
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1117934/uid1190679-20241019-1729290478851) 
+
+- 可以输出ascii码表吗？？🤔
+- 我们下次再说👋
+- [配套视频](https://www.bilibili.com/video/BV1jDU7YkErg)
+
+
+
+

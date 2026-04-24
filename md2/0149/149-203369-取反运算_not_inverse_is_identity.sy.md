@@ -1,0 +1,271 @@
+---
+show: step
+version: 1.0
+enable_checker: true
+---
+
+# 比较运算符
+
+## 回忆
+
+- 这次研究了 in
+	- 成员测试 运算符
+	- Membership test operations
+
+| 判断 | 结果 |
+| :--- | :--- |
+| 在容器里 | True |
+| 不在容器里 | False |
+
+- in 和 not in  都是
+	- 成员测试运算符
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210918-1631970031254)
+
+- 这个 not in 是什么意思呢？？🤔
+
+### 查看帮助
+
+- not 就是否定
+	- 对 真值 反转
+	- inverse true value
+		- True 变 False
+		- False 变 True
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210919-1632014747857)
+
+- 动手试试
+
+### not in
+
+```
+1 in [0, 1]
+1 not in [0, 1]
+```
+
+- 原来是 True
+	- 反转 就是 False 了
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210919-1632023734152)
+
+- 能给 True /False	
+	- 直接加not吗？
+
+### not
+
+- 不真就是假
+- 不假就是真
+
+```
+not True
+not False
+```
+
+- 真假 可以通过 not
+	- 反转 
+	- inverse
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/203369/uid1190679-20260329-1774785189702) 
+
+- 反转 再 反转 会发生什么？
+
+### 回到原点
+
+```
+not not True
+not not False
+```
+
+- not not True
+	- 其实就是True
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/203369/uid1190679-20260329-1774785322124) 
+
+### 否定
+
+- 取反再取反
+	- 就会回到原点
+
+- 否定之否定
+	- 就是肯定
+	- 负负为正
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/203369/uid1190679-20260402-1775091134846) 
+
+- 比较运算的结果
+	- 可以 再not 吗？
+
+### 比较结果
+
+```
+2 > 1
+not 2 > 1
+1 in [1]
+not 1 in [1] 
+```
+
+- 先 比较 得到 真值 
+	- 再 反转
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/203369/uid1190679-20260329-1774785429964) 
+ 
+- 可以改成 
+	- 不带not的吗？
+
+### 观察帮助
+
+- 进入帮助
+
+```
+help()
+COMPARISON
+```
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220102-1641089034994)
+
+- 这应该如何理解
+
+### 深入
+
+- 下面的命题等价
+	- 等于 就不是 不等于
+	- 小于 就是 不大于等于
+	- 大于 就是 不小于等于
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/203369/uid1190679-20260402-1775091900827) 
+
+- 动手试试
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220102-1641089083378)
+
+- 这里的 not {1} >= {1, 2}
+	- 相当于 not ({1} >= {1, 2})
+	- 相当于 not False
+	- 结果为True
+
+### 回到 COMPARISON
+
+- 比较运算符 
+	- 还有个is
+	- 身份比较
+	- Identity comparision
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/203369/uid1190679-20260329-1774787575795) 
+
+- is 身份比较
+	- 比的是 identity
+- 什么 是 identity？
+
+### id
+
+- 这个我们见过
+
+```
+help(id)
+```
+
+- id 可以看 
+	- 内存地址
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/203369/uid1190679-20260329-1774787629912) 
+
+- 具体试试
+
+### b比较
+
+```
+lst1 = [0]
+lst2 = [0]
+lst1 == lst2 
+lst1 is lst2
+```
+
+- 两个列表 相等
+	- 但指向 不同地址
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/203369/uid1190679-20260329-1774788667252) 
+
+- 想让 is 也是 True
+
+### 赋值
+
+- 使用lst1 给lst2赋值
+
+```python
+lst1 = [0]
+lst2 = lst1
+lst1 == lst2 
+lst1 is lst2
+```
+
+- 此时两个变量
+	- 指向同一地址
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/203369/uid1190679-20260329-1774788761764) 
+
+- 返回结果为True
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/203369/uid1190679-20260402-1775092418872) 
+
+- https://pythontutor.com/visualize.html#mode=edit
+- 想要 赋值 也不等
+	- 怎么办？
+
+### 拷贝
+
+```python
+lst1 = [0]
+lst2 = lst1.copy()
+lst1 == lst2 
+lst1 is lst2
+```
+
+- 浅拷贝 就可以完成
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/203369/uid1190679-20260402-1775092507384) 
+
+- is 的 not 
+	- 该 放到 哪？
+
+### 否定
+
+- not  
+	- 可以加在 最前面
+	- 也可以 加在is 后面
+
+```
+lst1 is lst2
+not lst1 is lst2
+lst1 is not lst2
+```
+
+- is not 
+	- 说起来 也合理
+	- 不是
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/203369/uid1190679-20260329-1774788921990) 
+
+
+### 总结
+
+- 这次研究了 is
+	- 身份比较
+	- Identity comparision
+	- 看的是 变量 是否 相同
+
+| 关键词 | 含义 |
+|--------|------|
+| in     | 是否在容器里 |
+| is     | 是否是同一个对象 |
+
+- not
+	- not 就是取反
+	- True 变 False
+	- False 变 True
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210919-1632032534495)
+
+- 如果 我想对 比较结果 
+	- `分别处理`
+	- 该怎么办呢？？？🤔
+- 下次再说 👋

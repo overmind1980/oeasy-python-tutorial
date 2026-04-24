@@ -1,0 +1,301 @@
+---
+show: step
+version: 1.0
+enable_checker: true
+---
+
+# 字典类型
+
+## 回忆
+
+- 上次我们有两个可以将容器对象和字符序列对象相互转化的工具
+	- eval 
+	- json
+- eval
+	- 简单好用
+	- 可处理单引号数据
+- json
+	- 可解码
+	- 速度快
+	- 更安全
+- 我们可以把容器类的对象持久化吗？
+- 就是说
+	- 把容器对象存成一个硬盘里面的文件
+	- 然后再读出来，还原成一个容器对象
+	- 可以吗?🤔
+
+### 回忆序列化
+
+```
+name = "oeasy"
+age = 41
+b_name = bytes(name,"ascii")
+import struct
+b_age = struct.pack("b",age)
+b_serial = b_name + b"\n" + b_age
+print(b_serial)
+
+```
+
+- 这是给 str 和 单字节整型数字 pack 打包的过程
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/203868/uid1190679-20250728-1753707643708) 
+
+- 那如何解包呢？
+
+### 解包
+
+```
+name = "oeasy"
+age = 41
+b_name = bytes(name,"ascii")
+import struct
+b_age = struct.pack("b",age)
+b_serial = b_name + b"\n" + b_age
+print(b_serial)
+
+b_info = b_serial.split(b"\n")
+print(b_info)
+```
+
+- 得到变量的列表
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/203868/uid1190679-20250728-1753707714542) 
+
+- 需要分别解码出来
+
+### 继续解码
+
+```
+name = "oeasy"
+age = 41
+b_name = bytes(name,"ascii")
+import struct
+b_age = struct.pack("b",age)
+b_serial = b_name + b"\n" + b_age
+print(b_serial)
+
+b_info = b_serial.split(b"\n")
+print(b_info)
+
+print(b_info[0])
+print(b_info[0].decode("ascii"))
+
+print(b_info[1])
+print(struct.unpack("b",b_info[1]))
+print(struct.unpack("b",b_info[1])[0])
+```
+
+- 把名字字符串解码回来
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/203868/uid1190679-20250728-1753707889571) 
+
+- 把年龄解码出来
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/203868/uid1190679-20250728-1753707898048) 
+
+- 但是 容器的结构 都得手动控制
+	- 这么做太麻烦了
+	- 有什么好方法么？🤔
+
+### 腌制
+
+- 有这么一个包叫做 pickle
+	- 可以帮助我们存储容器
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210924-1632481407196)
+
+- pickle 什么意思呢？
+
+### 腌咸菜
+
+- 这个新鲜的芥菜大头菜水分太多
+	- 得腌制
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210924-1632481513974)
+
+- 一般就是用糖、盐、酒、醋之类的东西
+	- 把这个菜里面的水分置换出来
+	- 菜就不那么容易腐烂了
+	- 就能留得住了
+	- 我们的容器对象也是如此
+	- 字符串里面可压缩的水分太大
+
+### 腌制
+
+- 腌好了
+	- 里面存的数据就能留住了
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210924-1632481523785)
+
+- 留住精华
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240930-1727702818698)
+
+- 具体怎么腌制呢？
+
+### 查看帮助
+
+- https://docs.python.org/3/library/pickle.html
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/203868/uid1190679-20250728-1753708166664) 
+
+- 就像 编解码 和 封包解包
+	- pickle 可以把 对象序列化 成 字节流
+	- pickle 还可以把 字节流反序列化 成 对象
+
+### 初步尝试
+
+```
+d = {"oeasy":41}
+print(d)
+```
+
+- 先定一个字典
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/203868/uid1190679-20250728-1753708320800) 
+
+### 打包
+
+```
+d = {"oeasy":41}
+print(d)
+import pickle
+b = pickle.dumps(d)
+print()
+```
+
+- 能从直接层面找到对应关系
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/203868/uid1190679-20250728-1753708479959) 
+
+- 确实可以 
+	- 把 容器对象 整成 字节序列
+
+### 试试
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210924-1632489584647)
+
+
+```
+d = {
+    'dahong': {'r': 255, 'g': 33, 'b': 33},
+   'shiqing': {'r': 23, 'g': 34, 'b': 52}
+}
+print(d)
+```
+
+- 首先准备基础数据
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/203868/uid1190679-20250728-1753709580844) 
+
+- 然后进行序列化
+
+### 序列化
+
+```
+import pickle
+d_colors = {
+    'dahong': {'r': 255, 'g': 33, 'b': 33},
+   'shiqing': {'r': 23, 'g': 34, 'b': 52}
+}
+b_colors = pickle.dumps(d_colors)
+print(d_colors)
+print(b_colors)
+```
+
+- 注意这里的 rgb 颜色元组
+  - 是作为字典中的某个颜色的 value 存在的
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/203868/uid1190679-20250728-1753709686781) 
+
+### 压缩
+
+- 这个过程就是腌制
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/203868/uid1190679-20250728-1753709886605) 
+
+- 把原来在内存里面枝枝叉叉的容器对象
+  - 腌制成这种容易存储和读写的字节序列
+  - 腌制成存得住的、好携带的一个罐子
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/203868/uid1190679-20250728-1753709958543) 
+
+- 那怎么把腌好的黄瓜还原呢呢？🤔
+
+### 解压
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210924-1632489649972)
+
+```
+import pickle
+d_colors = {
+    'dahong': {'r': 255, 'g': 33, 'b': 33},
+   'shiqing': {'r': 23, 'g': 34, 'b': 52}
+}
+b_colors = pickle.dumps(d_colors)
+print(d_colors)
+print(b_colors)
+d2 = pickle.loads(b_colors)
+print(d2, type(d2))
+```
+
+- 把 字节序列 还原回 字典
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221219-1671460915364)
+
+- 如果 要把容器存在 `一个文件` 里呢？
+
+### 序列化写到文件
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210924-1632489917007)
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221219-1671461139923)
+
+- 其实就是 把 字节序列
+	- 写到文件中   
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221219-1671461150250)
+
+- 写了之后 能读取吗？
+
+### 读取序列化文件
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210924-1632490067908)
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221219-1671461279421)
+
+- 读取成功
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210924-1632490082125)
+
+- 中文也可以么？
+
+### 中文
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221219-1671461451780)
+
+- 写文件没有报错
+
+### 读文件
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221219-1671461504484)
+
+- 可以正常读出
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210924-1632490302212)
+
+- utf-8 编码的中文字符是没有问题的
+
+### 总结
+
+- 这次我们把容器序列化了
+	- 并且存储在文件当中
+	- 这些容器是重要的数据结构
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/203868/uid1190679-20250728-1753711046352) 
+
+- 打开文件之后 
+	- 得到了f
+	- 这f 是 `什么`类型的变量 呢？🤔
+- 下次再说 👋

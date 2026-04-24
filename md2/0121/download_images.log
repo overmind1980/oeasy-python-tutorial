@@ -1,0 +1,41 @@
+2026-04-23 20:01:17,780 INFO start mode=single md=md2/0121/0121.md out=md2/0121
+2026-04-23 20:01:17,781 INFO file: md2/0121/0121.md images=19
+2026-04-23 20:01:17,781 INFO image: 1/19 (5.26%) https://doc.shiyanlou.com/courses/3584/labs/562231/uid1190679-20260306-1772756834822
+2026-04-23 20:01:17,781 INFO image: 2/19 (10.53%) https://doc.shiyanlou.com/courses/3584/labs/562231/uid1190679-20260301-1772375556283
+2026-04-23 20:01:17,781 INFO image: 3/19 (15.79%) https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260305-1772716259592
+2026-04-23 20:01:17,781 INFO image: 4/19 (21.05%) https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260306-1772754094954
+2026-04-23 20:01:17,781 INFO image: 5/19 (26.32%) https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260306-1772754479924
+2026-04-23 20:01:17,781 INFO image: 6/19 (31.58%) https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260306-1772755371707
+2026-04-23 20:01:17,781 INFO image: 7/19 (36.84%) https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260306-1772755482118
+2026-04-23 20:01:17,781 INFO image: 8/19 (42.11%) https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260306-1772755665586
+2026-04-23 20:01:17,781 INFO image: 9/19 (47.37%) https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260306-1772756494703
+2026-04-23 20:01:17,781 INFO image: 10/19 (52.63%) https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260306-1772756556463
+2026-04-23 20:01:17,781 INFO image: 11/19 (57.89%) https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260306-1772756592286
+2026-04-23 20:01:17,781 INFO image: 12/19 (63.16%) https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260310-1773104365074
+2026-04-23 20:01:17,781 INFO image: 13/19 (68.42%) https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260307-1772837195802
+2026-04-23 20:01:17,781 INFO image: 14/19 (73.68%) https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260309-1773059928772
+2026-04-23 20:01:17,781 INFO image: 15/19 (78.95%) https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260307-1772837364415
+2026-04-23 20:01:17,781 INFO image: 16/19 (84.21%) https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20251103-1762140281495
+2026-04-23 20:01:17,781 INFO image: 17/19 (89.47%) https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20251104-1762214091236
+2026-04-23 20:01:17,781 INFO image: 18/19 (94.74%) https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260317-1773718729586
+2026-04-23 20:01:17,781 INFO image: 19/19 (100.00%) https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260307-1772837587917
+2026-04-23 20:01:18,092 INFO image-result: downloaded (https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260305-1772716259592) done=1/19 (5.26%)
+2026-04-23 20:01:18,247 INFO image-result: downloaded (https://doc.shiyanlou.com/courses/3584/labs/562231/uid1190679-20260301-1772375556283) done=2/19 (10.53%)
+2026-04-23 20:01:18,302 INFO image-result: downloaded (https://doc.shiyanlou.com/courses/3584/labs/562231/uid1190679-20260306-1772756834822) done=3/19 (15.79%)
+2026-04-23 20:01:18,571 INFO image-result: downloaded (https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260306-1772754479924) done=4/19 (21.05%)
+2026-04-23 20:01:18,621 INFO image-result: downloaded (https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260306-1772754094954) done=5/19 (26.32%)
+2026-04-23 20:01:18,753 INFO image-result: downloaded (https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260306-1772755371707) done=6/19 (31.58%)
+2026-04-23 20:01:19,061 INFO image-result: downloaded (https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260306-1772755482118) done=7/19 (36.84%)
+2026-04-23 20:01:19,073 INFO image-result: downloaded (https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260306-1772756494703) done=8/19 (42.11%)
+2026-04-23 20:01:19,209 INFO image-result: downloaded (https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260306-1772755665586) done=9/19 (47.37%)
+2026-04-23 20:01:19,430 INFO image-result: downloaded (https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260306-1772756592286) done=10/19 (52.63%)
+2026-04-23 20:01:19,750 INFO image-result: downloaded (https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260306-1772756556463) done=11/19 (57.89%)
+2026-04-23 20:01:19,752 INFO image-result: downloaded (https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260310-1773104365074) done=12/19 (63.16%)
+2026-04-23 20:01:19,937 INFO image-result: downloaded (https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260307-1772837195802) done=13/19 (68.42%)
+2026-04-23 20:01:20,191 INFO image-result: downloaded (https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260307-1772837364415) done=14/19 (73.68%)
+2026-04-23 20:01:20,356 INFO image-result: downloaded (https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20251104-1762214091236) done=15/19 (78.95%)
+2026-04-23 20:01:20,366 INFO image-result: downloaded (https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260309-1773059928772) done=16/19 (84.21%)
+2026-04-23 20:01:20,473 INFO image-result: downloaded (https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260307-1772837587917) done=17/19 (89.47%)
+2026-04-23 20:01:20,475 INFO image-result: downloaded (https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20251103-1762140281495) done=18/19 (94.74%)
+2026-04-23 20:01:21,019 INFO image-result: downloaded (https://doc.shiyanlou.com/courses/3584/labs/763906/uid1190679-20260317-1773718729586) done=19/19 (100.00%)
+2026-04-23 20:01:21,020 INFO done urls=19 downloaded=19 exists=0 failed=0

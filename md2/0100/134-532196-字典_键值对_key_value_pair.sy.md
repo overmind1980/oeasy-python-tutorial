@@ -1,0 +1,452 @@
+---
+show: step
+version: 1.0
+enable_checker: true
+---
+
+# 字典类型
+
+## 回忆
+
+- 上次学习了字典
+	- 字典可以更新
+		- update
+		- {**d1,**d2}
+	- 可以试着来
+		- 试着设置字典项
+			- setdefault
+		- 试着获取字典项
+			- get
+	- 字典还可以直接赋值
+- 字典
+	- 本质上是键值对的集合
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/558806/uid1190679-20251112-1762924384042) 
+
+- 可以把 字典 `遍历`一遍吗？🤔
+
+###  帮助
+
+```
+help(dict)
+```
+
+- 去游乐场问问
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220801-1659323567709)
+
+- 还是从例子开始
+
+### 字典大小
+
+```
+d = dict(one = 1, two = 2, three = 3)
+d
+len(d)
+```
+
+- 用 len 看看
+	- 有3条字典项
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221215-1671071490245)
+
+- 哪3条呢？
+
+### 细节
+
+- 依次按下
+	- <kbd>d</kbd>
+	- <kbd>.</kbd>
+	- <kbd>tab</kbd>
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/532196/uid1190679-20260313-1773365090049) 
+
+- 字典 有个keys方法 
+	- 可以查看
+
+### keys
+
+- keys返回的
+	- 好像是 列表
+	- 列表里的 东西 都可以查
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221215-1671074181420)
+
+- 帮助怎么说呢？
+
+### keys
+
+```
+help(dict.keys)
+```
+
+- 帮助说 keys 是 set-like的
+	- 类似于集合
+		- 无序性
+		- 元素唯一性
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221215-1671074229667)
+
+- 转化为集合
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221215-1671074396978)
+
+- 可以根据key遍历字典吗？
+
+### 遍历字典
+
+```
+for key in d.keys():
+	print(key)
+```
+
+- 列出keys
+
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/532196/uid1190679-20260314-1773431788633) 
+
+- 可以直接找所有value吗？
+
+### 所有的values
+
+- 依次按下
+	- <kbd>d</kbd>
+	- <kbd>.</kbd>
+	- <kbd>tab</kbd>
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/532196/uid1190679-20260313-1773365335918) 
+
+- 好像有个values方法
+- 去试试！
+
+### 遍历
+
+- 先查帮助
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221215-1671075674128)
+
+- 动手
+
+```
+for value in d.values():
+	print(value)
+```
+
+- values方法
+	- 确实可以将value全部遍历出来
+	- 但是 不能通过value 反查key😭
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/532196/uid1190679-20260313-1773365415486) 
+
+- value可以相同吗？
+
+### value 
+
+```python
+d = dict(oeasy = 123, o2z = 123)
+d
+```
+
+- value 是可以相同的
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/532196/uid1190679-20260313-1773379639883) 
+
+- key 可以相同吗？
+
+### key不可以相同
+
+- 构造函数中	
+	- 如果key相同的话
+
+```python3
+d = dict(oeasy = 123, oeasy = 456)
+```
+
+- 报错
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/532196/uid1190679-20260313-1773379687633) 
+
+- 直接赋值中 
+	- 如果key相同的话
+
+```python3
+d = {
+	"oeasy": 123, 
+	"oeasy": 456
+}
+```
+
+- 后面的 会把前面的覆盖
+	- 总之 key必须唯一 
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/532196/uid1190679-20260316-1773642876932) 
+
+- key嘛
+	- 关键的东西 唯一
+- 决定 key-value pair 
+	- 主要 看key
+
+### 回忆
+
+- keys()返回的是
+	- set-like类型
+
+```
+d = dict(one = 1, two = 2, three = 3)
+d
+d.keys()
+set(d.keys())
+```
+
+- set元素唯一性
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221215-1671074396978)
+
+- 字典中key 必须是 唯一的
+- values 为啥能重复？
+
+### values
+
+- value 重复的前提
+	- 前提是 key不相同
+	- 关键还是 key！！！
+
+```python
+d = dict(oeasy = 123, o2z = 123)
+```
+
+- 实际上 是 可以的
+	- 甚至有 专门的方法
+
+### 设置
+
+```python
+names = ("oeasy", "o2z")
+tels = 123
+d = dict.fromkeys(names, tels)
+d
+```
+
+- 函数dict.fromkeys()
+	- 可以构造一个字典
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/532196/uid1190679-20260316-1773622378708) 
+
+- 如何理解fromkeys呢？
+
+### 帮助
+
+```
+help(dict.fromkeys)
+```
+
+- 对于可迭代的对象names
+	- 每个成员 都当作key
+	- 然后设置value
+	- value 均为 123
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/532196/uid1190679-20260313-1773379437596) 
+
+- 可以用value查key吗？
+
+### key-value
+
+- 如果给value
+	- 想要 查到key
+
+```python3
+d
+for key in d.keys():
+	if d[key] == 123:
+		print(key)
+
+d["oeasy"]
+```
+
+- 需要把所有的字典项 
+	- 遍历一遍才能找到字典项
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/532196/uid1190679-20260316-1773663982121) 
+
+- 而且找到的key
+	- 可能还不止一个
+- 因为key是unique的
+	- 但是value不是
+
+- 把keys都列出来
+	- 通过key就可以找到
+	- 相应的value吗？
+
+### key和value
+
+- 根据这个 key 
+	-  查value
+	-  很自然
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210830-1630318953375)
+
+- 或者说 从 key(键)
+	- map(映射)到 
+	- 这个 值(value) 上
+
+### 遍历key
+
+- 根据key找value
+
+```
+for key in d.keys():
+	print(key, d[key], sep=":")
+```
+
+- 确实可以
+	- 找到 单词对应的含义
+	- 这就是字典的意义
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/532196/uid1190679-20260313-1773365297674) 
+- 可以一把
+	- 把key和value`都`查出来吗？
+
+### 查询
+
+- 依次按下
+	- <kbd>d</kbd>
+	- <kbd>.</kbd>
+	- <kbd>tab</kbd>
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221215-1671076323100)
+
+- 找到 items
+
+### items
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221215-1671076485067)
+
+- items()返回的是一个容器
+
+```
+d = {"one": 1, "two": 2}
+for key, value in d.items():
+	print(key, ":", value)
+```
+
+- 容器中存的是
+	- key和value的pair 的 序列
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221215-1671076565435)
+
+- 去遍历 一个真实的 字典
+
+### 遍历字典
+
+```
+import sys
+for key, value in sys.modules.items():
+	print(key, ":", value, ",")
+```
+
+- 观察系统模块
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220802-1659423823433)
+
+- 这样我们就可以得到python中的各种默认模块
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220802-1659423882074)
+
+- 可以根据包(module)名来的得到包的相关信息
+	- 有的是内置的(built-in)
+	- 也有的是对应一个python文件
+
+### 字典(dict)的结构
+
+- 数据类型 是 python的基础
+	- int、str 是 最基本的 基础数据类型
+	- list、tuple、dict 是最基本的容器类型
+
+```
+d = {"one": 1, "two": 2}
+d.keys()
+list(d.keys())
+d.values()
+list(d.values())
+d.items()
+list(d.values())
+```
+
+- 本质上来说
+  - keys 是key的集合
+  - values 是value的列表
+  - items 是key-value pair的集合
+	- 名值对 的 集合
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/532196/uid1190679-20260316-1773643173148) 
+
+### 魔鬼词典
+
+- 现代 
+	- 对词语有了新的解释
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221215-1671077383185)
+
+- 有了魔鬼辞典
+
+### 具体条目
+
+- 一个辞典 就是一套世界观
+
+|中文 | 英文 | 含义 |
+|---|---|---|
+|先生|husband|吃完饭后负责洗碗却老是显得不甘愿的人|
+|新娘|bride|一个把美好前程抛诸脑后的人|
+|亲戚|relations|这样的一些人：你把他们召唤来，或者他们把你召唤去，这得看他们是比你富足还是比你穷而定|
+|朋友|friend|在落魄时随之消逝的一个名词|
+|熟人|acquaintance|就是这么一类人，我们和他们熟到可以向他们借钱，但没有熟悉到可以借钱给他们|这种友谊，在对方倒霉时走远，对方红火时亲近|
+|乞丐|beggar|一种依赖朋友们接济度日的人|
+|律师|lawyer|一个对法律圈套极为娴熟的人|
+|失业|leisure|空闲，混乱生活中的一段清静|
+|懒惰|laziness|下等人无权享用的一种悠闲|
+|道歉|apologize|为将来的再次冒犯打下伏笔|
+|可恶的|abominable|别人意见的实质|
+|习惯|habit|为自由而设的镣铐|
+|忍耐|longanimity|在报复可行之前，对欺辱照单全收|
+|勇敢|daring|男人处在安全中时表现得最显著的品德之一|
+|年|year|包含了三百六十五次失望的时间段落|
+|订婚|affianced|为获得一个母夜叉而戴上脚镯|
+|刺猬|hedgehog|动物里面的仙人球|
+|自由|liberty|人类所想象出来的最珍贵的资产之一|
+
+### 新时代的百科
+
+- 众人编辑的百科
+	- 成为 互联网时代的 词典
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192414/uid1190679-20260314-1773431509413) 
+
+- 掌握词汇定义 其实就是 掌握叙事
+
+### ai时代
+
+| 维度 | 传统百科（维基/百度/搜狗） | AI百科（Grokipedia/Baidu Wiki） |
+|---|---|---|
+| **内容生产** | 人类志愿者协作编辑 | AI自动生成+人类审核/建议 |
+| **更新速度** | 小时/天级，依赖人工 | **分钟/实时级**，自动抓取最新信息 |
+| **规模扩张** | 慢，数十年积累 | 极快，数月达数百万条 |
+| **中立性** | 受编辑立场影响 | 宣称**AI中立、偏见过滤** |
+| **交互方式** | 静态阅读 | 可**对话AI、Ask AI、动态解释** |
+| **成本** | 人力成本高 | 算力成本为主，边际成本低 |
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192414/uid1190679-20260314-1773432261403) 
+
+### 总结
+
+- 这次学习了字典
+	- 字典是用来查的
+	  - 根据一个 key
+	  - 可以查到相应的 value
+	- 字典项就是 key-value 键值对
+- 字典的本质 就是 键值对的 集合
+	- set of key-value pair
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/532196/uid1190679-20250427-1745704732312) 
+
+- 字典可以有什么应用场景吗？🤔
+- 下次再说 👋

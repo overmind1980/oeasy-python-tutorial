@@ -1,0 +1,41 @@
+2026-04-23 16:46:26,012 INFO start mode=single md=md2/0001/0001.md out=md2/0001
+2026-04-23 16:46:26,013 INFO file: md2/0001/0001.md images=19
+2026-04-23 16:46:26,013 INFO image: 1/19 (5.26%) https://doc.shiyanlou.com/courses/uid1190679-20231223-1703301475319
+2026-04-23 16:46:27,584 INFO image-result: exists (https://doc.shiyanlou.com/courses/uid1190679-20231223-1703301475319)
+2026-04-23 16:46:27,585 INFO image: 2/19 (10.53%) https://doc.shiyanlou.com/courses/uid1190679-20231223-1703301492841
+2026-04-23 16:46:29,251 INFO image-result: exists (https://doc.shiyanlou.com/courses/uid1190679-20231223-1703301492841)
+2026-04-23 16:46:29,251 INFO image: 3/19 (15.79%) https://doc.shiyanlou.com/courses/uid1190679-20231223-1703301514939
+2026-04-23 16:46:31,238 INFO image-result: exists (https://doc.shiyanlou.com/courses/uid1190679-20231223-1703301514939)
+2026-04-23 16:46:31,238 INFO image: 4/19 (21.05%) https://doc.shiyanlou.com/courses/uid1190679-20231223-1703301539321
+2026-04-23 16:46:33,625 INFO image-result: exists (https://doc.shiyanlou.com/courses/uid1190679-20231223-1703301539321)
+2026-04-23 16:46:33,625 INFO image: 5/19 (26.32%) https://doc.shiyanlou.com/courses/uid1190679-20231223-1703301558104
+2026-04-23 16:46:35,964 INFO image-result: exists (https://doc.shiyanlou.com/courses/uid1190679-20231223-1703301558104)
+2026-04-23 16:46:35,964 INFO image: 6/19 (31.58%) https://doc.shiyanlou.com/courses/uid1190679-20231223-1703301574694
+2026-04-23 16:46:38,012 INFO image-result: exists (https://doc.shiyanlou.com/courses/uid1190679-20231223-1703301574694)
+2026-04-23 16:46:38,013 INFO image: 7/19 (36.84%) https://doc.shiyanlou.com/courses/uid1190679-20231223-1703301595760
+2026-04-23 16:46:40,388 INFO image-result: exists (https://doc.shiyanlou.com/courses/uid1190679-20231223-1703301595760)
+2026-04-23 16:46:40,388 INFO image: 8/19 (42.11%) https://doc.shiyanlou.com/courses/uid1190679-20230211-1676118376556
+2026-04-23 16:46:42,148 INFO image-result: exists (https://doc.shiyanlou.com/courses/uid1190679-20230211-1676118376556)
+2026-04-23 16:46:42,148 INFO image: 9/19 (47.37%) https://doc.shiyanlou.com/courses/uid1190679-20230910-1694348863924
+2026-04-23 16:46:44,561 INFO image-result: exists (https://doc.shiyanlou.com/courses/uid1190679-20230910-1694348863924)
+2026-04-23 16:46:44,562 INFO image: 10/19 (52.63%) https://doc.shiyanlou.com/courses/uid1190679-20230211-1676118407108
+2026-04-23 16:46:46,231 INFO image-result: exists (https://doc.shiyanlou.com/courses/uid1190679-20230211-1676118407108)
+2026-04-23 16:46:46,231 INFO image: 11/19 (57.89%) https://doc.shiyanlou.com/courses/uid1190679-20231007-1696664518884
+2026-04-23 16:46:48,444 INFO image-result: exists (https://doc.shiyanlou.com/courses/uid1190679-20231007-1696664518884)
+2026-04-23 16:46:48,444 INFO image: 12/19 (63.16%) https://doc.shiyanlou.com/courses/uid1190679-20240409-1712626922589
+2026-04-23 16:46:50,964 INFO image-result: exists (https://doc.shiyanlou.com/courses/uid1190679-20240409-1712626922589)
+2026-04-23 16:46:50,964 INFO image: 13/19 (68.42%) https://doc.shiyanlou.com/courses/uid1190679-20231223-1703301648889
+2026-04-23 16:46:53,458 INFO image-result: exists (https://doc.shiyanlou.com/courses/uid1190679-20231223-1703301648889)
+2026-04-23 16:46:53,459 INFO image: 14/19 (73.68%) https://doc.shiyanlou.com/courses/uid1190679-20231107-1699354808882
+2026-04-23 16:46:55,990 INFO image-result: exists (https://doc.shiyanlou.com/courses/uid1190679-20231107-1699354808882)
+2026-04-23 16:46:55,990 INFO image: 15/19 (78.95%) https://doc.shiyanlou.com/courses/uid1190679-20231107-1699354701874
+2026-04-23 16:46:58,454 INFO image-result: exists (https://doc.shiyanlou.com/courses/uid1190679-20231107-1699354701874)
+2026-04-23 16:46:58,454 INFO image: 16/19 (84.21%) https://doc.shiyanlou.com/courses/uid1190679-20230325-1679754112318
+2026-04-23 16:47:00,254 INFO image-result: exists (https://doc.shiyanlou.com/courses/uid1190679-20230325-1679754112318)
+2026-04-23 16:47:00,254 INFO image: 17/19 (89.47%) https://doc.shiyanlou.com/courses/uid1190679-20231223-1703301687714
+2026-04-23 16:47:02,073 INFO image-result: exists (https://doc.shiyanlou.com/courses/uid1190679-20231223-1703301687714)
+2026-04-23 16:47:02,073 INFO image: 18/19 (94.74%) https://doc.shiyanlou.com/courses/uid1190679-20231223-1703301700081
+2026-04-23 16:47:03,846 INFO image-result: exists (https://doc.shiyanlou.com/courses/uid1190679-20231223-1703301700081)
+2026-04-23 16:47:03,846 INFO image: 19/19 (100.00%) https://doc.shiyanlou.com/courses/uid1190679-20231223-1703301710201
+2026-04-23 16:47:06,397 INFO image-result: exists (https://doc.shiyanlou.com/courses/uid1190679-20231223-1703301710201)
+2026-04-23 16:47:06,397 INFO done urls=19 downloaded=0 exists=19 failed=0

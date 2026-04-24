@@ -1,0 +1,471 @@
+---
+show: step
+version: 1.0
+enable_checker: true
+---
+
+# 列表 - 嵌套 embedded
+
+## 回忆
+
+- 上次 我们
+	- 对于 关雎 的基础动机
+	- 调内 上行 模进 
+	- 得到 了 完整的 《关雎》 
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4096075/uid1190679-20250618-1750247466628) 
+## 回忆
+
+- 上次我们给《关雎》谱了曲
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4078549/uid1190679-20250518-1747528102472) 
+
+- 还看了 上古时代 
+	- 尧舜禹 的 史诗
+	- 到了 大禹 时代 
+	- 国家就建立起来了
+- 关于 夏商周 的建立 
+	- 有什么 史诗 吗？
+
+### 大禹治水
+
+- 文中提到的“籥”读音为yuè 
+	- 古代乐器
+	- 像笛 
+	- 演出时被用作伴奏
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4078549/uid1190679-20250523-1747957732424) 
+
+- 这首史诗 有伴舞
+	- 编舞 是 大禹
+	- 名字叫 禹步
+- 商朝 有什么歌曲吗？
+
+### 商朝
+
+- 国之大事 在祀与戎
+	- 祭祀 和 战争 
+	- 是 史诗的 主要题材
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4078549/uid1190679-20250527-1748350409630) 
+
+- 周朝呢？
+
+### 周朝
+
+|诗歌名称|大致创作时间|简介|
+|---|---|---|
+|《周颂·我将》|周武王时期|《大武》首章，是武王祭祀上天和文王的乐歌，用于祭祀仪式，表达对上天和祖先的敬畏与祈求保佑。|
+|《周颂·武》|周武王时期|《大武》乐歌之一，歌颂武王继承文王遗志，战胜殷商，建立功勋。|
+|《周颂·赉》|西周初期|《大武》中的篇章，是武王克商后大封诸侯时所唱的乐歌，有赏赐、分封诸侯，彰显周王恩德之意。|
+|《大雅·文王》|西周初年，一般认为作者是周公|为歌颂周王朝的奠基者文王姬昌而作，强调文王的德行以及周受天命的合理性。|
+|《周颂·酌》|西周初年|《大武》五成的歌诗，是歌颂周武王战胜殷商、建立丰功伟业的赞歌。|
+|《周颂·桓》|周公、成王时期|《大武》六成的歌诗，是举行阅兵仪式前的祷词，歌颂武王灭商、安定万邦。|
+
+### 后来
+
+- 春秋时代 的 诗经
+- 战国时代 的 成语
+- 今天的 顺口溜
+
+- 铺床四言八句示例
+    ‌基础祝福类‌。
+        铺床铺床，喜气洋洋；百年好合，地久天长。‌‌1
+        先铺四角，后铺中央；夫妻恩爱，共枕同床。‌‌2
+        铺床铺床，龙凤呈祥；先生贵子，后生姑娘。‌‌3
+
+    ‌进阶吉祥语‌。
+        铺床铺床，富贵堂皇；财源满地，米粮满仓（结合农耕与财富意象）。‌‌2‌‌4
+        铺床铺床，四角鸳鸯；早生贵子，播种成双（强调生育祈福）。‌‌1‌‌3
+        今年铺床，状元来降；大枣撒罢，子孙满堂（融入科举文化元素
+
+- 想要个 所有朝代的 列表
+
+### 提问
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/744319/uid1190679-20250527-1748354618003) 
+
+```
+dynasties = ["夏", "商", "周", "秦", "汉", "三国", "晋", "南北朝", "隋", "唐", "五代十国", "宋", "辽", "西夏", "金", "元", "明", "清"]
+for dynasty in dynasties:
+    print(dynasty)
+```
+
+- 想为 《短歌行》 谱曲 
+	- 应该如何做呢？
+
+### 确定调式
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4096199/uid1190679-20250618-1750247904489) 
+
+- 决定选择 商调式
+	- 慷慨 沉郁
+
+### 继续 
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4096199/uid1190679-20250618-1750248042217) 
+
+- 感觉可以接受 
+
+### 生成mid
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4096199/uid1190679-20250618-1750248176056) 
+
+```
+from mido import Message, MidiFile, MidiTrack, MetaMessage
+import mido
+
+def generate_short_ode_midi():
+    # 创建MIDI文件和轨道
+    mid = MidiFile()
+    track = MidiTrack()
+    mid.tracks.append(track)
+
+    # === 添加元消息（Meta Message）===
+    # 作者信息
+    track.append(MetaMessage('text', text='dshang', time=0))
+    # 拍速设置（BPM=100）
+    tempo = mido.bpm2tempo(100)
+    track.append(MetaMessage('set_tempo', tempo=tempo, time=0))
+    # 时间签名（4/4拍）
+    track.append(MetaMessage('time_signature', numerator=4, denominator=2, clocks_per_click=24, notated_32nd_notes_per_beat=8, time=0))
+    # 调号（D调，对应商调式）
+    track.append(MetaMessage('key_signature', key='D', time=0))
+
+    # === 定义D商调式音高（MIDI音符编号）===
+    # D4(62)为商音主音，对应简谱2
+    note_map = {
+        2: 62,  # 商音 D4
+        3: 64,  # 角音 E4
+        5: 67,  # 徵音 G4
+        6: 69   # 羽音 A4
+    }
+
+    # === 前八字旋律（两小节，四分音符）===
+    # 旋律：2 3 5 2 | 2 6 5 2
+    melody = [2, 3, 5, 2, 2, 6, 5, 2]
+    # 设置MIDI分辨率（每拍480个tick）
+    mid.ticks_per_beat = 480
+    quarter_note = mid.ticks_per_beat  # 四分音符时长
+
+    # === 生成钢琴声部音符 ===
+    track.append(Message('program_change', program=0, time=0))  # 0号乐器为钢琴
+
+    start_time = 0
+    for note in melody:
+        # 获取MIDI音符
+        midi_note = note_map[note]
+        # 音符开启（力度80）
+        track.append(Message('note_on', note=midi_note, velocity=80, time=start_time))
+        # 音符关闭（四分音符后）
+        track.append(Message('note_off', note=midi_note, velocity=64, time=quarter_note))
+        start_time = 0  # 每拍重置时间
+
+    # === 保存MIDI文件 ===
+    mid.save('短歌行_前八字_商调式.mid')
+    print("MIDI文件已生成：短歌行_前八字_商调式.mid")
+
+if __name__ == "__main__":
+    generate_short_ode_midi()
+```
+
+### 目前现状
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4096199/uid1190679-20250618-1750248689231) 
+
+- 经过试听 
+	- 感觉 太平稳了
+	- 没有 歌起来的感觉
+
+### 手动调整
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4096199/uid1190679-20250618-1750253801865) 
+
+- 由于 我们对于这个曲子的感觉 非常明确
+	- 提出的要求 非常具体
+	- 会降低 ai的泛化能力
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4096199/uid1190679-20250618-1750249014191) 
+
+```
+from mido import Message, MidiFile, MidiTrack, MetaMessage
+import mido
+
+
+def generate_short_ode_midi():
+    # 创建MIDI文件和轨道
+    mid = MidiFile()
+    track = MidiTrack()
+    mid.tracks.append(track)
+
+    # === 添加元消息（Meta Message）===
+    # 拍速设置（BPM=100）
+    tempo = mido.bpm2tempo(100)
+    track.append(MetaMessage('set_tempo', tempo=tempo, time=0))
+    # 时间签名（4/4拍）
+    track.append(MetaMessage('time_signature', numerator=4, denominator=2, clocks_per_click=24,
+                             notated_32nd_notes_per_beat=8, time=0))
+    # 调号（D调，对应商调式）
+    track.append(MetaMessage('key_signature', key='D', time=0))
+
+    # === 定义D商调式音高（MIDI音符编号）===
+    # D4(62)为商音主音，对应简谱2；高八度D为D5(74)；C5（高八度C）对应的MIDI音符编号是72
+    note_map = {
+        2: 62,  # 商音 D4
+        3: 64,  # 角音 E4
+        5: 67,  # 徵音 G4
+        6: 69,  # 羽音 A4
+        '2_': 74,  # 自定义键表示高八度商音 D5
+        '1_': 72  # 自定义键表示高八度C音 C5
+    }
+
+    # === 前八字旋律（两小节，四分音符）===
+    # 原旋律：2 3 5 2 | 2 6 5 2
+    # 修改后：2 3 5 2_ | 1_ 6 5 2
+    melody = [2, 3, 5, '2_', '1_', 6, 5, 2]
+
+    # 设置MIDI分辨率（每拍480个tick）
+    mid.ticks_per_beat = 480
+    quarter_note = mid.ticks_per_beat  # 四分音符时长
+
+    # === 生成钢琴声部音符 ===
+    track.append(Message('program_change', program=0, time=0))  # 0号乐器为钢琴
+
+    start_time = 0
+    for note in melody:
+        # 获取MIDI音符
+        if note == '2_high':
+            midi_note = note_map['2_high']
+        elif note == 'C5':
+            midi_note = note_map['C5']
+        else:
+            midi_note = note_map[note]
+        # 音符开启（力度80）
+        track.append(Message('note_on', note=midi_note, velocity=80, time=start_time))
+        # 音符关闭（四分音符后）
+        track.append(Message('note_off', note=midi_note, velocity=64, time=quarter_note))
+        start_time = 0  # 每拍重置时间
+
+    # === 保存MIDI文件 ===
+    mid.save('dgx.mid')
+    print("MIDI文件已生成：短歌行_前八字_商调式.mid")
+
+
+if __name__ == "__main__":
+    generate_short_ode_midi()
+```
+
+### 继续深入
+
+- 以此代码为上下文
+	- 继续提出要求
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4096199/uid1190679-20250618-1750254185828) 
+
+```
+from mido import Message, MidiFile, MidiTrack, MetaMessage
+import mido
+
+
+def generate_short_ode_midi():
+    # 创建MIDI文件和轨道
+    mid = MidiFile()
+    track = MidiTrack()
+    mid.tracks.append(track)
+
+    # === 添加元消息（Meta Message）===
+    # 拍速设置（BPM=100）
+    tempo = mido.bpm2tempo(100)
+    track.append(MetaMessage('set_tempo', tempo=tempo, time=0))
+    # 时间签名（4/4拍）
+    track.append(MetaMessage('time_signature', numerator=4, denominator=2, clocks_per_click=24,
+                             notated_32nd_notes_per_beat=8, time=0))
+    # 调号（D调，对应商调式）
+    track.append(MetaMessage('key_signature', key='D', time=0))
+
+    # === 定义D商调式音高（MIDI音符编号）===
+    note_map = {
+        2: 62,   # 商音 D4
+        3: 64,   # 角音 E4
+        5: 67,   # 徵音 G4
+        6: 69,   # 羽音 A4
+        '2_': 74, # 高八度商音 D5
+        '1_': 72  # 高八度C音 C5
+    }
+
+    # === 前八字旋律（两小节，四分音符）===
+    melody = [2, 3, 5, '2_', '1_', 6, 5, 2]  # 第四个和第八个为韵脚
+
+    # 设置MIDI分辨率
+    mid.ticks_per_beat = 480
+    quarter_note = mid.ticks_per_beat
+
+    # === 生成钢琴声部音符 ===
+    track.append(Message('program_change', program=0, time=0))  # 钢琴音色
+
+    start_time = 0
+    for idx, note in enumerate(melody):
+        # 获取音高（不变）
+        midi_note = note_map[note] if isinstance(note, int) else note_map[note]
+        # 力度设置：第四个（idx=3）和第八个（idx=7）音符力度加强
+        velocity = 100 if idx in (3, 7) else 80
+        # 音符开启（修改力度）
+        track.append(Message('note_on', note=midi_note, velocity=velocity, time=start_time))
+        # 音符关闭（时长不变）
+        track.append(Message('note_off', note=midi_note, velocity=64, time=quarter_note))
+        start_time = 0  # 重置时间
+
+    # 保存MIDI文件
+    mid.save('dgx.mid')
+    print("MIDI文件已生成：短歌行_前八字_商调式.mid")
+
+
+if __name__ == "__main__":
+    generate_short_ode_midi()
+
+```
+
+### 力度现状
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4096199/uid1190679-20250618-1750254279356) 
+
+- 动机需要重复
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4096199/uid1190679-20250618-1750254558693) 
+
+### 新要求
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4096199/uid1190679-20250618-1750254711785) 
+
+```
+from mido import Message, MidiFile, MidiTrack, MetaMessage
+import mido
+import re
+
+# 《短歌行》完整歌词
+lyrics = """对酒当歌，人生几何！譬如朝露，去日苦多。
+慨当以慷，忧思难忘。何以解忧？唯有杜康。
+青青子衿，悠悠我心。但为君故，沉吟至今。
+呦呦鹿鸣，食野之苹。我有嘉宾，鼓瑟吹笙。
+明明如月，何时可掇？忧从中来，不可断绝。
+越陌度阡，枉用相存。契阔谈䜩，心念旧恩。
+月明星稀，乌鹊南飞。绕树三匝，何枝可依？
+山不厌高，海不厌深。周公吐哺，天下归心。"""
+
+def generate_short_ode_full_midi():
+    # 创建MIDI文件与轨道
+    mid = MidiFile()
+    track = MidiTrack()
+    mid.tracks.append(track)
+
+    # === 元数据设置 ===
+    track.append(MetaMessage('set_tempo', tempo=mido.bpm2tempo(100), time=0))  # 100 BPM
+    track.append(MetaMessage('time_signature', numerator=4, denominator=2, clocks_per_click=24, notated_32nd_notes_per_beat=8, time=0))
+    track.append(MetaMessage('key_signature', key='D', time=0))  # D商调式对应调号
+
+    # === 调式与音符映射（含高音2和高音1）===
+    note_map = {
+        # 低音区
+        2: 62,   # 低音2（D4）
+        3: 64,   # 低音3（E4）
+        5: 67,   # 低音5（G4）
+        6: 69,   # 低音6（A4）
+        # 高音区
+        '2_': 74, # 高音2（D5）
+        '1_': 72  # 高音1（C5）
+    }
+    # 基础旋律框架（每字对应一个四分音符，高音位置可调整）
+    # 示例旋律（实际使用时需根据歌词情感调整）
+    basic_melody = [
+        2, 3, 5, '2_', '1_', 6, 5, 2,  # 前八字旋律（含高音）
+        2, 3, 5, '2_', 5, 6, 5, 2   # 后八字旋律
+    ]
+    # 气口小节（4个四分音符休止符）
+    rest_bar = [0] * 4  # 休止符对应note=0
+
+    # === 歌词处理 ===
+    # 清理标点符号与换行
+    clean_lyrics = re.sub(r'[，！？。\n]', '', lyrics)
+    # 按每16字分节
+    verse_sections = [clean_lyrics[i:i+16] for i in range(0, len(clean_lyrics), 16)]
+
+    # === MIDI参数设置 ===
+    mid.ticks_per_beat = 480  # 每拍480tick
+    quarter_note = mid.ticks_per_beat  # 四分音符时长
+    track.append(Message('program_change', program=0, time=0))  # 钢琴音色
+
+    # === 生成音符与气口 ===
+    start_time = 0
+    for section in verse_sections:
+        # 生成段落旋律（循环使用basic_melody，不足部分重复）
+        for i, char in enumerate(section):
+            # 适配旋律长度与歌词字数
+            melody_idx = i % len(basic_melody)
+            note = basic_melody[melody_idx]
+            # 解析音符（处理高音2和高音1）
+            midi_note = note_map[note] if isinstance(note, int) else note_map[note]
+            # 统一力度（可根据需要调整）
+            velocity = 80
+            # 音符事件
+            track.append(Message('note_on', note=midi_note, velocity=velocity, time=start_time))
+            track.append(Message('note_off', note=midi_note, velocity=64, time=quarter_note))
+            start_time = 0
+        # 插入气口小节（4拍休止符）
+        for _ in range(4):
+            track.append(Message('note_on', note=0, velocity=0, time=start_time))
+            track.append(Message('note_off', note=0, velocity=0, time=quarter_note))
+            start_time = 0
+
+    # === 保存文件 ===
+    mid.save('短歌行_完整歌词_气口.mid')
+    print(f"已生成MIDI文件，共{len(verse_sections)}个段落，每16字后有1个小节气口")
+
+if __name__ == "__main__":
+    generate_short_ode_full_midi()
+
+```
+
+### 顺利完成
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4096199/uid1190679-20250618-1750255499401) 
+
+### 唱出来
+
+```
+对酒当歌人生几何譬如朝露去日苦多慨当以慷忧思难忘何以解忧唯有杜康青青子衿悠悠我心但为君故沉吟至今呦呦鹿鸣食野之苹我有嘉宾鼓瑟吹笙明明如月何时可掇忧从中来不可断绝越陌度阡枉用相存契阔谈䜩心念旧恩月明星稀乌鹊南飞绕树三匝何枝可依山不厌高海不厌深周公吐哺天下归心
+```
+
+- 放入演唱工具xstudio
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4096199/uid1190679-20250625-1750809759147) 
+
+- 收尾处 
+	- 有点低落
+	- 豪情不够 
+
+### 修改代码
+
+- 想要把尾音提高一个八度
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4096199/uid1190679-20250625-1750809851268) 
+
+- 修改尾音
+
+```
+# 示例旋律（实际使用时需根据歌词情感调整）
+basic_melody = [
+    2, 3, 5, '2_', '1_', 6, 5, 2,  # 前八字旋律（含高音）
+    2, 3, 5, '2_', 5, 6, 5, '2_'   # 后八字旋律
+]
+```
+
+### 总结
+- 这次 完成了 对《短歌行》的谱曲
+
+- 还想给这个曲子 
+	- 配上 伴奏 
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4096199/uid1190679-20250625-1750810183583) 
+
+- 该 如何做呢？🤔
+- 下次再说 👋

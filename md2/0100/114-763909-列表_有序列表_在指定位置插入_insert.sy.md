@@ -1,0 +1,298 @@
+---
+show: step
+version: 1.0
+enable_checker: true
+---
+
+#  列表_有序列表_在指定位置插入_insert
+
+## 回忆
+
+- [配套视频](https://www.bilibili.com/video/BV1c9fuB5Eob)
+| 类别 | 核心定义 | 关键特征 | 简单示例 |
+| :--- | :--- | :--- | :--- |
+| **方法** | 依附于类/对象 | 谁调用就改谁  |sl.reverse()  <br> sl.sort() |
+| **函数** | 实现特定功能| 调用时 <br>把列表当参数传进去 | sorted(sl) |
+| **参数** | 函数/方法<br> 输入变量 | 根据参数<br> 实现功能 | sorted(reverse = True) <br>sl.sort(revserse = True) |
+
+
+- 排好序的列表 
+	- 就是 `有序列表`
+- 再向 `有序列表` 新插 列表项
+	- 就得 讲究 位置
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192295/uid1190679-20251113-1763005997045) 
+
+- 插入后
+	- 有序列表 
+	- 还得 `依然`有序
+- 那 `咋`插入 呢？🤔
+
+### 新插列表项
+
+```
+nl = list(range(0, 10, 3))
+print(nl)
+nl.append(5)
+print(nl)
+nl.sort()
+print(nl)
+```
+
+- 排好序 的 列表
+	- 再追加 `新`列表项
+	- 还得 `再`排序
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20251123-1763862706825)
+
+- 可以 在 `合适的`位置 
+	- 直接插入 吗？
+
+### 提问
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/763909/uid1190679-20251127-1764210037404) 
+
+### 手册
+
+- 好像list有个方法
+	- 叫做insert
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/763909/uid1190679-20250112-1736651710965)
+
+- 查看手册
+
+```
+help(list.insert)
+```
+
+- 可以在指定索引之前插入
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210829-1630227872898)
+
+- 先找索引
+
+### 复原列表
+
+```
+nl = [0,3,6,9]
+```
+
+- 对 列表 重新赋值
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/763909/uid1190679-20251123-1763864037186) 
+
+- 应该在`谁`之前插入？
+
+### 找索引
+
+- 5 应该 插在6 之前
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/763909/uid1190679-20251123-1763862787225)
+
+- 6 的索引是多少呢？
+
+```
+nl.index(6)
+```
+
+- 6 的索引 是 2
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/763909/uid1190679-20251123-1763864063740) 
+
+- 在 第2个 列表项 之前 插入
+
+### 插入
+
+- 在 第2个 列表项 之前
+	- 插入 5 这个数字
+
+```
+print(nl)
+nl.insert(2, 5)
+print(nl)
+```
+
+- 效果合适
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/763909/uid1190679-20251123-1763864173921) 
+
+- 插入后的列表
+	- 依然`有序`
+
+### insert
+
+- 这三个函数都是插入列表项
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701487151745)
+
+| 方法     | 功能                                                                 |
+|----------|----------------------------------------------------------------------|
+| append   | 末尾添加元素|
+| insert   | 指定索引位置插元素                      |
+| extend   | 将其元素 逐个添加到末尾           |
+
+- 有什么区别呢？
+
+### 区别
+
+- 观察区别
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/763909/uid1190679-20251120-1763598828819) 
+
+- 可以利用插入来排序吗？
+
+### sort
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/763909/uid1190679-20251127-1764252485415) 
+
+### 这就是插入排序
+
+- 把 列表中的 每个列表项 
+	- 都按顺序 插入 空列表
+- 就得到了 排好序的 新列表
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20251206-1764988152880)
+
+- list.sort 用的 
+	- 就是 `插入排序`
+
+### 观察源代码
+
+- 找到binary sort
+	- https://github.com/python/cpython/blob/main/Objects/listobject.c
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/763909/uid1190679-20251114-1763077072686) 
+
+- 这是排序算法的核心
+	- 二叉树 的 搜索
+
+### 以2为底
+
+- 找到 插入位置的工作
+	- 通过 二叉树搜索 
+	- binary search
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20251114-1763076367282)
+
+- 通过二叉树 找到位置
+	- 然后把 新元素插入
+	- 每次插入 只需要
+	- log(n)次比较
+- 总共n个位置
+	- 每个 都要找到合适的值
+- 所以
+	- 外层循环次数 * 内层循环次数
+	- n * log(n)
+
+### Big O Notation
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/688967/uid1190679-20241108-1731024209341) 
+
+- 各种排序算法的对比
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/763909/uid1190679-20251114-1763076494616) 
+
+- 这 Timsort 谁写的？
+
+### 回到最初
+
+- 点击history
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/763909/uid1190679-20251127-1764251265441) 
+
+- 回到1998年
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/763909/uid1190679-20251127-1764251695209) 
+
+- Guido 还在荷兰 孤军奋战
+	- Tim 通过电子邮件 
+	- 把代码 发给了 Guido
+
+### 插入排序
+
+- https://github.com/python/cpython/commit/82e6a8f80deaecc7ba3a1bd66dda7c1988c72dbf
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/763909/uid1190679-20251127-1764252064772) 
+
+- tim 写下了插入排序的方法
+
+### 命名
+
+- 这个函数 一度被 
+	- 叫做timsort
+	- 可见 Guido 对于 Tim 认可和推举
+
+```
+def timsort(the_array):
+    runs, sorted_runs = [], []
+    length = len(the_array)
+    new_run = [the_array[0]]
+
+    # for every i in the range of 1 to length of array
+    for i in range(1, length):
+        # if i is at the end of the list
+        if i == length - 1:
+            new_run.append(the_array[i])
+            runs.append(new_run)
+            break
+        # if the i'th element of the array is less than the one before it
+        if the_array[i] < the_array[i-1]:
+            # if new_run is set to None (NULL)
+            if not new_run:
+                runs.append([the_array[i]])
+                new_run.append(the_array[i])
+            else:
+                runs.append(new_run)
+                new_run = []
+        # else if its equal to or more than
+        else:
+            new_run.append(the_array[i])
+
+    # for every item in runs, append it using insertion sort
+    for item in runs:
+        sorted_runs.append(insertion_sort(item))
+    
+    # for every run in sorted_runs, merge them
+    sorted_array = []
+    for run in sorted_runs:
+        sorted_array = merge(sorted_array, run)
+
+    print(sorted_array)
+
+timsort([2, 3, 1, 5, 6, 7])
+```
+
+### 插入与排序
+
+1. 排序的目的
+	- 让 列表有序
+
+2. 有序的好处
+	- 可以快速找到元素位置
+	- 方便新元素 后续插入
+
+3.插入新元素后 
+	- 依然保持有序
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/763909/uid1190679-20251114-1763077959929) 
+
+- 两者相互成就
+	- 排序 支撑 插入
+	- 插入 延续 排序
+
+### 总结
+
+- 这次我们了解了
+	- 定点插入 insert
+	- 相对原来的 追加append
+- 排好序之后 
+	- 想要 保持有序
+	- 需要 insert
+	- `定点` 插入
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/763909/uid1190679-20251128-1764306238406) 
+
+- 可以 `定点` 删除吗？
+- 下次再说 👋
+- [配套视频](https://www.bilibili.com/video/BV1c9fuB5Eob)
+

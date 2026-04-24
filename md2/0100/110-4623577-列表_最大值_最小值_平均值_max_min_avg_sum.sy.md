@@ -1,0 +1,202 @@
+---
+show: step
+version: 1.0
+enable_checker: true
+---
+
+#  列表_最大值_最小值_平均值_max_min_avg_sum 
+
+## 回忆
+
+- [配套视频](https://www.bilibili.com/video/BV1LbmTBYE4x)
+- 上次我们 了解了 
+	- 列表的 乘法运算
+	  - 乘法的本质 是 累加
+	  - 规则 和加法类似
+	- 数据特别大时
+		- 会抛异常
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/748098/uid1190679-20250111-1736601551214) 
+
+- 列表 还有啥好玩的 吗？🤔
+
+### 继续查帮助
+
+- 在切片之后
+	- 有 max 和 min
+	- https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221123-1669191099421)
+
+- 这题我会🙋
+	- 最大值 / 最小值
+
+### 最大最小值
+
+```
+nl = list(range(5))
+nl
+maximum = max(nl)
+maximum
+minimum = min(nl)
+minimum
+```
+
+- max 得到最大值
+- min 得到最小值
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192295/uid1190679-20251129-1764402421674) 
+
+- max算是啥呢？
+
+### 救命
+
+```
+help(max)
+```
+
+- max/min 都是 内置函数
+	- builtins
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4623577/uid1190679-20251129-1764422461729) 
+
+- 除了列表之外
+	- 好像还支持 多个参数？
+
+### 多个参数
+
+```
+max(1, 2)
+min(1, 2)
+```
+
+- 可以从一堆值里面 
+	- 找到最大值
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4623577/uid1190679-20251129-1764422582004) 
+
+- 有啥具体应用吗？
+
+### 想要 
+
+- 避免 极端值的影响
+	- 去掉一个最高分
+	- 去掉一个最低分
+	- 再求平均分
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192295/uid1190679-20250111-1736603549955) 
+
+- 去奢去甚去泰
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221123-1669191548799)
+
+###  尝试
+
+```
+nl = list(range(10))
+print(nl)
+nl.remove(max(nl))
+print(nl)
+nl.remove(min(nl))
+print(nl)
+```
+
+- 结果
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192295/uid1190679-20251129-1764402487523) 
+
+- 把 0 和 9 都去掉了
+
+### 平均值
+
+```
+avg(nl)
+```
+
+- 报错了
+	- 没有avg 这个函数
+	- 平均值函数  
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192295/uid1190679-20251129-1764402521459) 
+
+- 该怎么 `求平均值`呢？？🤔
+
+### 绕路
+
+- 根据 平均值 定义
+	- 平均值 = 总和 ➗ 数量
+
+```
+avg = sum(nl) / len(nl)
+avg
+```
+
+- 可以通过sum、len
+	- 间接 得到 avg
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192295/uid1190679-20251129-1764402615108) 
+
+- 字符列表 也能有
+	- `最大值`/`最小值么`？
+
+### 字符列表
+
+```
+cl = list("oeasy")
+max(cl)
+min(cl)
+```
+
+- 找 最大/最小
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192295/uid1190679-20251129-1764402677489) 
+
+- 字符 `怎么` 比大小 呢？
+
+### 序号
+
+```
+ord("a")
+ord("y")
+```
+
+- 字符 有 自己的 序号
+	- ordinal
+
+```
+ord("y") > ord("a")
+```
+
+- 通过 序号 比大小
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192295/uid1190679-20251127-1764204205364) 
+
+- 整体上啥情况
+
+### ascii
+
+- 先退出 游乐场
+	- 回到 shell
+
+```
+sudo apt install ascii
+ascii
+```
+
+- 字符的大小
+	- 由 ascii码的值 决定的
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192295/uid1190679-20251113-1763004806160) 
+
+
+### 总结 
+
+- 这次我们了解 
+	- 最大值/最小值 函数
+	- max/min
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4623577/uid1190679-20251129-1764422751520) 
+
+- 可以直接给列表 排序 吗？
+- 下次再说 👋
+- [配套视频](https://www.bilibili.com/video/BV1LbmTBYE4x)
