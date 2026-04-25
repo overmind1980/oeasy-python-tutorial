@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 多维列表排序_sorted_key_lambda
 
 ## 回忆

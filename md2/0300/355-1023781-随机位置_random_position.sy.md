@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 随机数字运算
 
 ## 回忆上次内容

@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #   什么样的变量名能用_标识符_identifier
 
 ## 回忆上次内容

@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 字符(character)
 
 ## 回忆上次内容

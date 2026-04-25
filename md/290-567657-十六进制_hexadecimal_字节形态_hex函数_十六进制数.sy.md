@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 十六进制(hexadecimal)
 
 ## 回忆上次内容

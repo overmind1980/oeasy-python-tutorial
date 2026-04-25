@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  先跑起来_python_三大系统选择_windows_mac_linux  🥋
 
 ### 什么是 Python？

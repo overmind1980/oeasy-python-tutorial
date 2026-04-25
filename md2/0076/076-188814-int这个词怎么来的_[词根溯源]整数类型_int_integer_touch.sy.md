@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  int这个词怎么来的_[词根溯源]整数类型_int_integer_touch 
 
 ## 回忆上次内容

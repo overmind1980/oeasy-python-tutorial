@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # [oeasy]python086方法_method_函数_function_区别 
 
 ## 回忆

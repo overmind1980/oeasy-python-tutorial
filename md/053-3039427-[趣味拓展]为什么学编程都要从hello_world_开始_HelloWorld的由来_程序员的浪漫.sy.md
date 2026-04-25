@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # [趣味拓展]为什么学编程都要从hello_world_开始_HelloWorld的由来_程序员的浪漫
 
 ## 回忆上次内容

@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  在python中完成输入和输出_input_print 
 
 ## 回忆上次内容

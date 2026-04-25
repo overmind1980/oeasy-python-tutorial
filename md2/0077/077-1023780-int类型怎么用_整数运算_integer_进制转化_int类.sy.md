@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # int类型怎么用_整数运算_integer_进制转化_int类
 
 ## 回忆上次内容

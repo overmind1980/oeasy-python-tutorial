@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  水果程序_fruits_apple_banana_加法_python之禅 
 
 ## 回忆上次内容

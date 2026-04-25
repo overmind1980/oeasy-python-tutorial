@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  删除功能的实现_delete_from_删除按钮
 
 ## 回忆上次

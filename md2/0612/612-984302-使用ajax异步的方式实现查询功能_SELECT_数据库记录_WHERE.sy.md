@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  使用ajax异步的方式实现查询功能_SELECT_数据库记录_WHERE
 
 ## 回忆上次

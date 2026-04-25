@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  列表_切片赋值_slice_assignment_嫁接 
 
 ## 回忆

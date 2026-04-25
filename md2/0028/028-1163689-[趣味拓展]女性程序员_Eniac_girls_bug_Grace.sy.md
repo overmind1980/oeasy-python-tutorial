@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  [趣味拓展]女性程序员_Eniac_girls_bug_Grace 🥋
 
 ## 回忆上次内容

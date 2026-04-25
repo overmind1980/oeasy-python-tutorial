@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 二进制(binary)数数
 
 ## 回忆上次内容

@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 调试程序 🥋
 
 ## 回忆上次内容

@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  oeasy Python 113 内置函数sorted中使用 reverse和key 
 
 ## 回忆

@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 提示符是怎么来的_[词根溯源]prompt_input_输入函数_提示符
 
 ## 回忆上次内容

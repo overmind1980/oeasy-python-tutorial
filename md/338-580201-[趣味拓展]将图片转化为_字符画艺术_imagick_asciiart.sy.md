@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 将图片转化为字符画艺术(asciiart)
 
 ## 回忆上次内容

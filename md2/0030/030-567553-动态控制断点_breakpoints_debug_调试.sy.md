@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  设置断点_break_point_continue_运行到断点 🥋
 
 ## 回忆上次内容

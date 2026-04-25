@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  变量部分总结_variable_summary 
 
 ## 回忆上次内容

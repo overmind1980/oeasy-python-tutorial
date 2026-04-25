@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # python中下划线是什么意思_underscore_理解_声明与赋值_改名字
 
 ## 回忆上次内容

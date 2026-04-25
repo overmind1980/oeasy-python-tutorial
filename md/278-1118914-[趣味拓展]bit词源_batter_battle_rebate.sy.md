@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 编码(encode)
 
 ## 回忆上次内容

@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #   print函数参数_sep分隔符_separator  
 
 ## 回忆上次内容

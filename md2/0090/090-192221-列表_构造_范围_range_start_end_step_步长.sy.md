@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 列表_构造_范围_range_start_end_step_步长 
 
 ## 回忆

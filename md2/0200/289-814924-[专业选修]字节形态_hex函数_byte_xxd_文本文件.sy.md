@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 文件的字节形态
 
 ## 回忆上次内容

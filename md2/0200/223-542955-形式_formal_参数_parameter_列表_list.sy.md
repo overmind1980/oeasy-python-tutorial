@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 形式(formal)参数(parameter)列表(list)
 
 ## 回忆

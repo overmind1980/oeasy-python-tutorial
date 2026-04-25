@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 可迭代 iterable 对象
 
 ## 回忆

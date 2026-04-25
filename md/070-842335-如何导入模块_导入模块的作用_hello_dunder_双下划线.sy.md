@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 如何导入模块_导入模块的作用_hello_dunder_双下划线 
 
 ## 回忆上次内容

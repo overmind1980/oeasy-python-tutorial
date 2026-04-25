@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  使用python控制音符列表_midi_文件制作 
 
 ## 回忆

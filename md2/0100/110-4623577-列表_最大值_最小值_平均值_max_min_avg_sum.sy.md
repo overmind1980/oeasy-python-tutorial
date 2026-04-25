@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  列表_最大值_最小值_平均值_max_min_avg_sum 
 
 ## 回忆

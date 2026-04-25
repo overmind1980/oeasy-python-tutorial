@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 持续集成(Continuous Integration)
 
 ## 回忆

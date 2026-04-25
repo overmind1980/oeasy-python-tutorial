@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # lxml 元素 树形结构
 
 ## 回忆

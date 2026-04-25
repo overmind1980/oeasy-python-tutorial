@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 类_对象_成员方法_method_函数_function_isinstance
 
 ## 回忆

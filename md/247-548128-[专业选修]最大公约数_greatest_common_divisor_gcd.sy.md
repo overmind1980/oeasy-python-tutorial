@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 最大公约数(greatest common divisor)
 
 ## 回忆

@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 修改模型的方法
 
 ## 回忆上次内容

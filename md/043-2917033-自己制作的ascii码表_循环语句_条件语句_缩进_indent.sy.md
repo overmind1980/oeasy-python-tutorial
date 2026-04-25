@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 自己制作的ascii码表_循环语句_条件语句_缩进_indent 
 
 ## 回忆上次内容

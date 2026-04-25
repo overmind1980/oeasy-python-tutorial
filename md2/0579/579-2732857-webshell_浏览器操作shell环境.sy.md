@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 前端和后端
 ## 我们来回顾一下 😌
 

@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  [趣味拓展]Guido的简历_从ABC到python  🥋
 
 ## 回忆上次内容

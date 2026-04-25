@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  指法标准_键盘正位_你好世界_hello_world_单引号_双引号 🥋
 
 ## 回忆上次内容

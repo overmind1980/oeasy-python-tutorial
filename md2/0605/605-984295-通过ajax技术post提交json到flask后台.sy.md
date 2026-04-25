@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  通过ajax技术post提交json到flask后台
 
 ## 回忆上次

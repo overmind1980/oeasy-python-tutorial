@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  lxml_从字符串_str_生成_etree_Element_元素节点_生成树 
 
 ## 回忆

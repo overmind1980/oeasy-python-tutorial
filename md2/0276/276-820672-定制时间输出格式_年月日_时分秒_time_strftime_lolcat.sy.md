@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 牛说(cowsay)
 
 ## 回忆上次内容

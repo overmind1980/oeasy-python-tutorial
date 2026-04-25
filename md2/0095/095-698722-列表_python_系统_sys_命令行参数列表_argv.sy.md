@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # [oeasy]python095_列表_python_系统_sys_命令行参数列表_argv 
 
 ## 回忆

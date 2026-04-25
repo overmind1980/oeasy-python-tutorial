@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  回环诗_旋律模进_开嗓音频生成_sequence 
 
 ## 回忆

@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 进程前后台切换
 
 ## 回忆上次内容

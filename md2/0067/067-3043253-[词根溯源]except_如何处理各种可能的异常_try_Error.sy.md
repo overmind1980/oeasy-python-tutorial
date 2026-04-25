@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  如何处理各种可能的异常_try_except_Error 
 
 ## 回忆上次内容

@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  python编程_容易出现的问题_函数名的重新赋值_print_int 
 
 ## 回忆上次内容

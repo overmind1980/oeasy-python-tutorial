@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  赋值_assignment_usage_使用 
 
 ## 回忆上次内容

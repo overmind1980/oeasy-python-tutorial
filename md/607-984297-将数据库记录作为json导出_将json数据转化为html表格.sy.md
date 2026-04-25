@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  通过异步ajax方式向数据库插入记录_并异步返回所有记录的集合
 
 ## 回忆上次

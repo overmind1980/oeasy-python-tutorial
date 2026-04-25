@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 函数调用(call)栈(stack)中的帧(frame)
 
 ## 回忆

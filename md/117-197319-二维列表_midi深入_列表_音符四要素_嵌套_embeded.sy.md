@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  二维列表_midi深入_列表_音符四要素_嵌套_embeded 
 
 ## 回忆

@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #   range函数_大小写字母的起止范围_start_stop 
 
 ## 回忆上次内容

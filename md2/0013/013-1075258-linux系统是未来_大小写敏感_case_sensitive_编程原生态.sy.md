@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  linux系统是未来_大小写敏感_case_sensitive_编程原生态   🥋
 
 ## 回忆上次内容

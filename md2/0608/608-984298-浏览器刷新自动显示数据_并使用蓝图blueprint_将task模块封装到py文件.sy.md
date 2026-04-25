@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  浏览器刷新自动显示数据_并使用蓝图blueprint_将task模块封装到py文件
 
 ## 回忆上次

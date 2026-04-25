@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  使用ajax异步的方式实现更新功能_update_更新数据库记录
 
 ## 回忆上次

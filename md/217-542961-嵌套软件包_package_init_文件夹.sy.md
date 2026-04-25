@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 自定义命名空间(namespace)
 
 ## 回忆

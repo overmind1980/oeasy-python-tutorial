@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  变量含义_meaning_声明_declaration 
 
 ## 回忆上次内容

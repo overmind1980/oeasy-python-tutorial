@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # markdown效果_解析_转化_渲染_render_conversion_render_parse
 
 ## 总结

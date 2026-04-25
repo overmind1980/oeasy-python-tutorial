@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  列表_拷贝_copy_赋值_assignment 
 
 ## 回忆

@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 执行shell命令字符串
 
 ## 回忆上次内容

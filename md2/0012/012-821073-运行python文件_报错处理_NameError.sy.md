@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #   运行python文件_报错处理_NameError   🥋
 
 ## 回忆上次内容

@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  列表_切片_slice_步长_step_翻转_reverse 
 
 ## 回忆

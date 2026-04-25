@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # ASCII 码表
 
 ## 回忆上次内容

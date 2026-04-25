@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  sorted_排序_列表排序_list_key 
 
 ## 回忆

@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  python有哪些关键字_keyword_list_列表_reserved_words 
 
 ## 回忆上次内容

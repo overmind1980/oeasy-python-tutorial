@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  键盘改造_将esc和capslock对调_hjkl_移动_双手正位   🥋
 
 ## 回忆上次内容

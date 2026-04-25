@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  until_直接跳转到_unt_breakpoint_断点函数 🥋
 
 ## 回忆上次内容

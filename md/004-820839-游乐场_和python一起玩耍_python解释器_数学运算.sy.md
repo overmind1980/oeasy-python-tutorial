@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  游乐场_和python一起玩耍_python解释器_数学运算  🥋
 
 ## 回忆

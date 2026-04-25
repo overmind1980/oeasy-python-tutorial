@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  [趣味拓展]unix起源_Ken_Tompson_Ritchie_multics 🥋
 
 ## 回忆上次内容

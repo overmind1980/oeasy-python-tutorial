@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # [词根溯源]如何删除print函数_dunder_builtins_系统内建模块
 
 ## 回忆上次内容

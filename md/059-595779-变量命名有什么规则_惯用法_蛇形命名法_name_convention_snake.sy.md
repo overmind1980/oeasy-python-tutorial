@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 中文能用在python里吗_汉语拼音变量名_蛇形命名法_驼峰命名法
 
 ## 回忆上次内容

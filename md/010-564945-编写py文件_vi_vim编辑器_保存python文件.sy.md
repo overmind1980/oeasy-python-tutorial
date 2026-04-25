@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  编写py文件_vi_vim编辑器_保存python文件   🥋
 
 ## 回忆上次内容

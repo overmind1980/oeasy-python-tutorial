@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  [词根溯源]count_计数_counter_encounter_country 
 
 ## 回忆

@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 字符画艺术(asciiart)
 
 ## 回忆上次内容

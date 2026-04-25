@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  火星文字幕_os_操作系统的作用_time_sleep_延迟 🥋
 
 ## 回忆上次内容

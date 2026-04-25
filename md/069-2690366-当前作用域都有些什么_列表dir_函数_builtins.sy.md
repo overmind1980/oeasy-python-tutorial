@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  dir_函数_得到当前作用域的所有变量列表_builtins 
 
 ## 回忆上次内容

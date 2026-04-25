@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  [词根溯源]suspend词源_append_depend 
 
 ## 回忆上次内容

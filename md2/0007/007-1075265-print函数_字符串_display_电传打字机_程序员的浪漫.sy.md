@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  print函数_字符串_display_电传打字机_程序员的浪漫 🥋
 
 ## 回忆上次内容

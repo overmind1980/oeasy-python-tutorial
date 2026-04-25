@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #   终端大冒险_终端命令_ls_pwd_whoami  🥋
 
 ## 回忆

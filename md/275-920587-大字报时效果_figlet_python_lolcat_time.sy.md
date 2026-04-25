@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 大字报时效果
 
 ## 回忆上次内容

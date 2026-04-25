@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  python报错怎么办_try_试着来_except_发现异常 
 
 ## 回忆上次内容

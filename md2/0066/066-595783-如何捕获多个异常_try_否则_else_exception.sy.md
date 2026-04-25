@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  如何捕获多个异常_try_否则_else_exception 
 
 ## 回忆上次内容

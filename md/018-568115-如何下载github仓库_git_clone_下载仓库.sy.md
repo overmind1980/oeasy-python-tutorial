@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  如何下载github仓库_git_clone_下载仓库  🥋
 
 ## 回忆上次内容

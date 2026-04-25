@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 语法 html 属性 attrib
 
 ## 回忆

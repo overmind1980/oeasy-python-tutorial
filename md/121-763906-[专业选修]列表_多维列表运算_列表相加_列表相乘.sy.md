@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 列表 - 深拷贝 deepcopy
 
 ## 回忆

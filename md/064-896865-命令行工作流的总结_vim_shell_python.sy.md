@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  命令行工作流的总结_vim_shell_python 
 
 ## 回忆上次内容

@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 #  python如何接收输入_input函数_字符串_str_容器_ 输入输出 
 
 ## 回忆上次内容

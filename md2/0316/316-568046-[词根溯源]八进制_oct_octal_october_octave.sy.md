@@ -1,9 +1,3 @@
----
-show: step
-version: 1.0
-enable_checker: true
----
-
 # 八进制(oct)
 
 ## 回忆上次内容
