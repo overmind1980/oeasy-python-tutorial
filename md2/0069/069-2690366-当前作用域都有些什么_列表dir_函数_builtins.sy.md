@@ -1,3 +1,10 @@
+本教程同步发布在： 
+
+     个人网站： `https://oeasy.org` 
+     蓝桥云课： `https://www.lanqiao.cn/courses/3584` 
+     GitHub： `https://github.com/overmind1980/oeasy-python-tutorial` 
+     Gitee： `https://gitee.com/overmind1980/oeasypython` 
+
 #  dir_函数_得到当前作用域的所有变量列表_builtins 
 
 ## 回忆上次内容

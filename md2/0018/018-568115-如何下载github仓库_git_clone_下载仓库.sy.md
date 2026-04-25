@@ -1,3 +1,10 @@
+本教程同步发布在： 
+
+     个人网站： `https://oeasy.org` 
+     蓝桥云课： `https://www.lanqiao.cn/courses/3584` 
+     GitHub： `https://github.com/overmind1980/oeasy-python-tutorial` 
+     Gitee： `https://gitee.com/overmind1980/oeasypython` 
+
 #  如何下载github仓库_git_clone_下载仓库  🥋
 
 ## 回忆上次内容

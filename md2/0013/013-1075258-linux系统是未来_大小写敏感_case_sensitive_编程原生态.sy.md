@@ -1,3 +1,10 @@
+本教程同步发布在： 
+
+     个人网站： `https://oeasy.org` 
+     蓝桥云课： `https://www.lanqiao.cn/courses/3584` 
+     GitHub： `https://github.com/overmind1980/oeasy-python-tutorial` 
+     Gitee： `https://gitee.com/overmind1980/oeasypython` 
+
 #  linux系统是未来_大小写敏感_case_sensitive_编程原生态   🥋
 
 ## 回忆上次内容

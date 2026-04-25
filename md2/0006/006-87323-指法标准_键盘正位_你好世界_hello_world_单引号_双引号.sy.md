@@ -1,3 +1,10 @@
+本教程同步发布在： 
+
+     个人网站： `https://oeasy.org` 
+     蓝桥云课： `https://www.lanqiao.cn/courses/3584` 
+     GitHub： `https://github.com/overmind1980/oeasy-python-tutorial` 
+     Gitee： `https://gitee.com/overmind1980/oeasypython` 
+
 #  指法标准_键盘正位_你好世界_hello_world_单引号_双引号 🥋
 
 ## 回忆上次内容
