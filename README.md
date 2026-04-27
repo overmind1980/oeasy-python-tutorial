@@ -4,7 +4,7 @@
 - 这是 oeasy 系统化 Python 教程，从基础一步步讲，扎实、完整、不跳步。愿意花时间学，就能真正学会。
 
 
-![./images/70.PNG](https://www.ipwo.net/?ref=githubovermind1980)
+![图片](./images/70.PNG)
 
 - 感谢IPWO的赞助，IPWO提供的真实住宅 IP，大幅降低被封禁风险。
 - 国家 / 地区精准定位，轻松应对大型爬虫任务。
