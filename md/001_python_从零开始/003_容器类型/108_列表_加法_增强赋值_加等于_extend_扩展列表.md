@@ -1,0 +1,390 @@
+---
+show: step
+version: 1.0
+enable_checker: true
+---
+
+#  列表_加法_增强赋值_加等于_extend_扩展列表 
+
+## 回忆
+
+- [配套视频](https://www.bilibili.com/video/BV17mUqBdECE)
+- 列表 赋值运算 两种形式
+  1. 将列表 直接 赋值
+		- 造成两个列表指向同一个对象
+		- 一改全改
+  2. 将 列表副本 赋给 变量
+		- 这两个列表变量指向不同的对象
+		- 互不影响
+
+```
+clist1 = list("oeasy")
+clist2 = clist1
+clist2 = clist1.copy()
+```
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221115-1668500786899)
+
+- 列表 能相加 吗？🤔
+
+```
+lst1 + lst2
+```
+
+
+### 回忆字符串
+
+- 字符串可以进行
+	- 加法
+	- 乘法
+
+```
+"动词打次" + "东东打次"
+"动词打次" * 3 + "东东打次"
+("动词打次" * 3 + "东东打次") * 4
+```
+
+- 字符串加法
+	- 有啥应用 吗？
+
+### 四大名著大乱炖
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192242/uid1190679-20250330-1743339822017) 
+
+```
+import random
+
+# 从四大名著中分别提取角色和事迹
+# 《西游记》
+journey_to_the_west_characters = ["孙悟空", "唐僧", "沙僧"]
+journey_to_the_west_stories = ["大闹天宫", "三打白骨精", "真假美猴王"]
+
+# 《红楼梦》
+dream_of_the_red_chamber_characters = ["林黛玉", "贾宝玉", "薛宝钗"]
+dream_of_the_red_chamber_stories = ["黛玉葬花", "宝玉挨打", "宝钗扑蝶"]
+
+# 《三国演义》
+romance_of_the_three_kingdoms_characters = ["刘备", "关羽", "诸葛亮"]
+romance_of_the_three_kingdoms_stories = ["桃园结义", "草船借箭", "空城计"]
+
+# 《水浒传》
+water_margin_characters = ["宋江", "武松", "鲁智深"]
+water_margin_stories = ["怒杀阎婆惜", "景阳冈打虎", "倒拔垂杨柳"]
+
+# 汇总角色列表
+all_characters = journey_to_the_west_characters + \
+                 dream_of_the_red_chamber_characters + \
+                 romance_of_the_three_kingdoms_characters + \
+                 water_margin_characters
+
+# 汇总事迹列表
+all_stories = journey_to_the_west_stories + \
+              dream_of_the_red_chamber_stories + \
+              romance_of_the_three_kingdoms_stories + \
+              water_margin_stories
+
+# 随机搭配角色和事迹
+random_character = random.choice(all_characters)
+random_story = random.choice(all_stories)
+
+print(f"{random_character}——{random_story}")
+```
+
+### 结果
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192242/uid1190679-20250330-1743339998113) 
+
+- 代码中的反斜杠 是 
+	- 续航符
+	- line-continuation character
+
+```
+# 汇总角色列表
+all_characters = journey_to_the_west_characters + \
+                 dream_of_the_red_chamber_characters + \
+                 romance_of_the_three_kingdoms_characters + \
+                 water_margin_characters
+```
+
+- 可以避免 横向滚动
+
+### 列表加法
+
+- 数字列表
+	- https://pythontutor.com/render.html#mode=display
+
+```
+lst1 = list(range(3))
+print("lst1:", lst1)
+lst2 = [3, 4, 5]
+print("lst2:", lst2)
+print("lst1 + lst2:", lst1 + lst2)
+```
+
+- 数字列表	
+	- 可以相加
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192242/uid1190679-20251019-1760841000202) 
+
+- 字符串列表
+	- 可以 相加 吗？
+
+### 加法运算
+
+- 字符串列表 
+	- 也是可以相加的
+
+```
+lst1 = list("oeasy")
+lst2 = list("o2z")
+print(lst1 + lst2) 
+```
+
+- 但是 相加的结果
+	- 没赋给 任何变量
+	- 直接 就`没`了
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192242/uid1190679-20251019-1760865969388) 
+
+- 想 不让他`没`
+	- 咋办呢？
+
+### 加完了赋值
+
+- 把加完的结果赋给 lst3
+
+```
+lst1 = list("oeasy")
+lst2 = list("o2z")
+lst3 = lst1 + lst2 
+```
+
+- 相加结果 有 变量名引用
+	- 就不会 被 `垃圾回收` 了
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192242/uid1190679-20251019-1760866023644) 
+
+- 什么是`垃圾回收`呢？
+
+### 垃圾回收
+
+- c语言
+	- 手动 分配和释放内存 
+- 内存空间
+	- 分配容易 
+		- 但 容易 忘记释放
+	- 结果
+		- 占用内存 越来愈多
+		- 造成泄漏、崩溃
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231203-1701613574679)
+
+- python 等现代语言 解释器 
+	- 定期观察 已经分配的 内存空间 
+		- 是否 还有变量 在引用
+		- getrefcount
+	- 没有引用的话 
+		- 就垃圾回收
+		- garage collection
+
+
+```
+lst3 = lst1 + lst2 
+```
+
+- 把求和结果 赋给lst3 
+	- 就能存的住了
+- 如果 把 求和结果 
+	- 直接 赋给 lst1 呢？
+
+### 将列表之和赋回给lst1
+
+```
+lst1 = list("oeasy")
+lst2 = list("o2z")
+lst1 = lst1 + lst2 
+```
+
+- 赋值成功
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192242/uid1190679-20251108-1762562451433) 
+
+- 能用 增强赋值 吗？
+
+### 增强赋值
+
+> 增强赋值 
+
+>> 是一种 赋值
+
+>> 在赋值之外 还有增强
+
+- += 就是 增强赋值运算
+	- augmented assignment
+
+```
+lst1 = list("oeasy")
+lst2 = list("o2z")
+lst1 += lst2 
+```
+
+- lst1 += lst2
+	- 相当于 lst1 = lst1 + lst2
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192242/uid1190679-20251108-1762562534824) 
+
+- 这俩完全一样吗？
+
+### 增强赋值运算
+
+- 从求和结果来看
+	- 两者一致
+
+```
+lst1 = list("oeasy")
+print("lst1:", id(lst1))
+lst2 = list("o2z")
+print("lst2:", id(lst2))
+lst1 += lst2 
+print("lst1:", id(lst1))
+```
+- 增强赋值中 lst1 的 地址没有变
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192242/uid1190679-20251107-1762505668980) 
+
+- 先求和 再赋值呢？
+
+### 观察
+
+```
+lst1 = list("oeasy")
+print("lst1:", id(lst1))
+lst2 = list("o2z")
+print("lst2:", id(lst2))
+lst1 = lst1 + lst2 
+print("lst1:", id(lst1))
+```
+
+- 从引用地址 来看 
+	- l1 使用 l1 + l2 的新地址
+	- += 则会保留 l1 原来引用的地址
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192242/uid1190679-20251107-1762501722624) 
+
+- 有啥区别吗？
+
+### 效率
+
+> 效果 相同	- 但效率不同！ 
+
+- 加法运算 效率低
+	- 过程是 新建一个列表
+	- 然后把 lst1 的列表项都拿过来
+	- 再把 lst2 的列表项都拿过来
+	- 最后把相加结果 赋给lst1
+- 效率 不如 
+	- 增强赋值
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210829-1630211451887)
+
+- 增强赋值 就是
+	- 用列表 扩充(extend)列表
+
+### extend
+
+- 列表还真有个成员方法
+	- 就叫做 extend
+
+```
+lst1 = list("oeasy")
+lst2 = list("o2z")
+lst1.extend(lst2)
+```
+
+- 确实能够扩列
+	- 扩展列表
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192242/uid1190679-20251019-1760867144118) 
+
+- 这个extend怎么用？
+
+### 查询帮助
+
+```
+help(list.extend)
+```
+
+- extend 
+	- 把参数里面的列表
+	- 循环地放到extend方法的主体后面
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210829-1630211311655)
+
+- 将列表相加
+	- lst1 = lst1 + lst2
+	- 可以得到列表在 新地址
+- 有 2种方式 可以 扩充列表
+	1. lst1 += lst2
+	2. lst1.extend(l2)
+
+- extend(扩列) 和 append(追加) 
+	- 有什么`区别`呢？
+
+### 区别
+
+```
+num_list = [1, 2, 3]
+print(num_list)
+num_list.append([4, 5])
+print(num_list)
+num_list.remove([4, 5])
+print(num_list)
+num_list.extend([4, 5])
+print(num_list)
+```
+
+- 效果不同
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192242/uid1190679-20251110-1762741407877) 
+
+
+### 对比
+
+- append 
+	- 添加是  列表项
+	- 把列表作为元素 放到最后
+- extend 
+	- 扩展 原始列表 
+	- 把 新列表 对接到 原列表 尾巴上
+	- 对应 加法赋值
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231202-1701487044192)
+
+| 对比项 | append | extend |
+|--------|--------|--------|
+| 描述 | 添加的是列表项 | 扩展原始列表 |
+| 特点 | 将元素作为整体添加到列表末尾 | 把新列表对接到原列表尾巴上，合并两个列表 |
+
+### 总结
+
+- 这次我们了解 列表加法
+	- 3种做法
+		1. lst1 += lst2
+		2. lst1[-1:] = lst2
+		3. lst1.extend(lst2)
+- 上述 3类方法 结果相同 但是稍有区别 
+	 1. 结果地址 
+		- 第一种方法会改变l1地址 
+		- 后两种不改变地址 
+	 2.效率不同 
+		- 第一种效率低
+			- 新建列表再赋值 
+		- 后两种效率高
+			- 直接扩展列表
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192242/uid1190679-20250110-1736518343962) 
+
+- 既然 有 列表`加法`
+	- 那有 列表`乘法` 吗？🤔
+- 下次再说 👋
+- [配套视频](https://www.bilibili.com/video/BV17mUqBdECE)

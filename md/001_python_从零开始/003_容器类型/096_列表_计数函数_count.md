@@ -1,0 +1,348 @@
+---
+show: step
+version: 1.0
+enable_checker: true
+---
+
+# 列表 - 计数 - count
+
+## 回忆
+
+- [配套视频](https://www.bilibili.com/video/BV1ML3rzCESo)
+- 上次研究了python文件运行时的系统参数
+	- sys.argv
+	- 通过sys.argv就可以接收从命令行来的参数了
+	- 可以通过索引来获得第n个参数
+	- 这就是索引(index)的作用
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240101-1704111222477)
+
+- 处理了可能出现的
+	- IndexError
+	- ValueError
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240101-1704113627850)
+
+- 列表(list)还有什么方法呢？🤔
+
+### 索引用法
+
+```
+clist = list("oeasyo2zo3z")
+clist
+```
+
+- 总共有3个`'o'`
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/743981/uid1190679-20250322-1742610001198) 
+
+### index
+
+```
+clist.index("o")
+```
+
+- 我们可以通过index方法
+	- 得到列表中
+	- 第1个"o"的位置
+
+
+ ![图片描述](https://doc.shiyanlou.com/courses/3584/labs/743981/uid1190679-20250322-1742610028696) 
+
+
+- 那如何 才能 得到
+	- 第2个、第3个"o"的位置呢？
+
+### 逐个找索引
+
+```
+first = clist.index("o")
+first
+second = clist.index("o",first + 1)
+second
+third = clist.index("o",second + 1)
+third
+```
+
+- 逐个往后
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/743981/uid1190679-20250322-1742610104962) 
+
+|序号|位置|
+|---|---|
+|第0个 |下标0|
+| 第1个 |下标5|
+| 第2个 |下标8|
+
+- 还能继续找吗？
+
+### 继续查找
+
+```
+fourth = clist.index("o", third + 1)
+```
+
+- 如果此时
+	- 再从9开始
+	- 去查找"o"的索引
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/743981/uid1190679-20250324-1742787377062) 
+
+- 就找不到了
+	- 总共有3个"o"
+- 有什么更快的方法吗？
+
+### 计数方法 count
+
+- 先统计一下有多少个'o'
+
+```
+clist = list("oeasyo2zo3z")
+clist.count("o")
+```
+
+- 总共3个
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/743981/uid1190679-20250322-1742610190001) 
+
+
+- 这个count是什么意思呢?
+
+### 帮助手册
+
+```
+help(list.count)
+```
+
+- 统计参数出现的次数
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221122-1669082183182)
+
+- count 是 计数函数
+	- len 也是 
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221122-1669082491495)
+
+- 有什么区别吗？
+
+### len和count
+
+```
+len(clist)
+clist.count("o")
+```
+
+- 结果
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/743981/uid1190679-20250322-1742610653742) 
+
+| len   | count |
+| :------------- | :---------- |
+| 容器总长度 |  指定列表项的 数量 |
+| builtins的内置函数     |   列表类对象的 方法 |
+| 列表 作为 参数     |   列表对象 作为 主调对象  |
+
+- append 对于 count结果有影响吗？
+
+### append之后
+
+```python3
+clist = list("oeasy")
+clist.count("o")
+clist.append("o")
+clist.count("o")
+```
+
+- append之后
+	- count计数结果会变化
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/743981/uid1190679-20250322-1742610755133) 
+
+- remove呢？
+
+### remove
+
+```python3
+clist = list("oeasy")
+clist.count("o")
+clist.remove("o")
+clist.count("o")
+```
+
+- 删除 对 计数 
+	- 也会有影响
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/743981/uid1190679-20250322-1742610811611) 
+
+- 问题是remove 
+	- 每次都 从开始位置 删
+	- 先删 第1个"o"
+
+- 我想让他
+	- 先删除最后一个"o"
+	- 怎么办？
+
+### 尝试找到位置
+
+```python3
+clist = list("oeasyo2z")
+count = clist.count("o")
+pos = 0
+for num in range(count):
+	pos = clist.index("o", pos)
+	pos = pos + 1
+
+print(pos)
+```
+
+- 先找到最后o的索引序号
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/743981/uid1190679-20250322-1742610917025) 
+
+- 位置找到了 
+	- 第6个 列表项
+	- 其实 索引号 应该 是 5
+
+### 修改代码
+
+```python3
+clist = list("oeasyo2z")
+count = clist.count("o")
+i = 0
+for num in range(count):
+	i = clist.index("o", i)
+	i = i + 1
+
+i = i - 1
+print(i)
+```
+
+- 这样可以得到最后一个o的索引值
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/743981/uid1190679-20250322-1742610963247) 
+
+- 找到了 之后
+	- 怎么`删除`呢？
+
+### 如何删除
+
+- 我要删除第5个列表项
+	- remove方法没有start参数
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231203-1701604891050)
+
+- 怎么办？？
+
+### 先替换再删除
+
+- 找到了这个元素下标为6
+	- 就先替换了
+	- 然后再删除
+
+```
+clist[5] = "sth special!"
+clist
+clist.remove("sth special!")
+clist
+```
+
+- 确实删除成功
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/743981/uid1190679-20250322-1742611435639) 
+
+- 还有更快的办法吗？
+
+### 询问
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/743981/uid1190679-20250108-1736317587940) 
+
+```
+clist = list("oeasyo2z")
+del clist[5]
+print(clist)
+```
+### 执行
+
+- 确实可以👍
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/743981/uid1190679-20250322-1742611517089) 
+ 
+- 回忆del
+
+### del
+
+- del 是	
+	- 关键字
+	- keyword
+
+```
+a
+a = 0
+a
+del a
+a
+```
+
+- 以前是删除 声明过的变量
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/743981/uid1190679-20250322-1742609724395) 
+
+- 现在是 删除 列表中 被索引的列表项
+
+```
+del clist[5]
+```
+
+- 除了 列表类 有 count方法之外
+	- 字符串也有count方法吗？
+
+### 字符串对象的count方法
+
+```
+s = "oeasyo2z"
+s.count("o")
+s.count("easy")
+```
+
+- 确实也有
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221122-1669082615466)
+
+### 查询帮助手册
+
+```
+help(str.count)
+```
+
+- 帮助手册和列表的差不多
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210829-1630202994469)
+
+### 练习
+
+```
+板凳宽，扁担长，板凳比扁担宽，扁担比板凳长，扁担要绑在板凳上，板凳不让扁担绑在板凳上，扁担偏要板凳让扁担绑在板凳上。
+```
+
+- 问 
+	- 扁担 出现次数多？
+	- 还是 板凳 出现次数多？
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240226-1708920883796)
+
+- 我们去总结一下
+
+### 总结
+- 这次研究了 计数函数count
+	- 统计 列表中 某个列表项 出现次数
+	- 统计 某字符串 在 字符串中 出现的次数
+
+- count与len不同
+	- count统计 列表项出现次数
+	- len统计 列表的长度
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/743981/uid1190679-20250108-1736317824279) 
+
+- count 这个词怎么来的呢？🤔
+- 下次再说 👋
+- [配套视频](https://www.bilibili.com/video/BV1ML3rzCESo)

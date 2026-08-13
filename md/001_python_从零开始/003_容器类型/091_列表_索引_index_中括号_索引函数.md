@@ -1,0 +1,393 @@
+---
+show: step
+version: 1.0
+enable_checker: true
+---
+
+#  列表_索引_index_中括号_索引函数 
+
+## 回忆
+
+- [配套视频](https://www.bilibili.com/video/BV1ue5Sz5EZv)
+- 上次 了解 列表生成
+	- 可以通过range函数 返回值
+	- 得到列表
+- 数值序列 range
+  - start、stop、step
+  - 负数
+  - 前闭后开
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231125-1700915693785)
+
+- 找到了所有月份的列表
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221121-1669033654556)
+
+- 可以找到更多的 比如日期吗？？🤔
+
+### 寻找更多等宽字体
+
+- 好像梦回 遍历ascii码表
+	- 那片 黑暗森林
+
+```
+for n in range(256, 15000):
+	print(chr(n), end="  ")
+```
+
+- 找到(256,15000)以内的字符
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192241/uid1190679-20250314-1741928572383) 
+
+- 好玩的东西真不少 
+
+### 物理单位
+
+- 这样 安培 和 毫安 就 等宽了
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192221/uid1190679-20241023-1729646990952) 
+
+### 更多物理量
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192221/uid1190679-20241023-1729647112842) 
+
+- 能找到日期时间吗?😯
+
+### ㍰
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192241/uid1190679-20250314-1741928739646) 
+
+- 这个U+3358什么意思
+
+### 询问ai
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192241/uid1190679-20250314-1741928990011) 
+
+- U+3358代表着
+	- 3358是一个 16进制数
+	- 在python中如何表现(3358)<sub>16</sub>呢？🤔
+
+### 提问
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192241/uid1190679-20250414-1744632605656) 
+
+- 其中的`x`
+	- 是 he`x`adecimal 中的 `x`
+	- 代表 16进制
+
+### 转化
+
+```python
+0x3358
+chr(13144)
+chr(0x3358)
+chr(0x3358+12)
+```
+
+- 0x3358 对应 13114
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192241/uid1190679-20250314-1741929276876) 
+
+- 那日期范围呢？ 
+
+### 日期
+
+- 日期字符范围是
+	- [U+33E0,U+33FF)
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221121-1669034356284)
+
+- 在python中使用0x代表16进制数
+	- 数字范围
+	- [0x33E0,0x33FF)
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192221/uid1190679-20250107-1736254807701) 
+
+- 想把日期做成列表
+
+### 日期
+
+- 注意循环体范围
+
+```
+dates = []
+for n in range(0x33e0,0x33ff):
+    dates.append(chr(n))
+
+print(dates)
+```
+
+- 因为 索引 从0开始
+	- 1日 对应 索引值为 0
+	- 2日 对应 索引值为 1
+	- 3日 对应 索引值为 2
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192241/uid1190679-20250318-1742262082644) 
+
+- 怎样输出 某个日期 呢？
+
+### 输出日期
+
+```
+dates[2]
+```
+
+- 使用索引
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192241/uid1190679-20250318-1742262140541) 
+
+- 我想做一个三月三
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192241/uid1190679-20250318-1742262349307) 
+
+### months
+
+```
+months = []
+for num in range(12992, 12992 + 11):
+	months.append(chr(num))
+
+dates = []
+for n in range(0x33e0,0x33ff):
+    dates.append(chr(n))
+
+months[2] + dates[2]
+```
+
+- 结果
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192241/uid1190679-20250517-1747448289905) 
+
+- 这个加法 就是 字符串加法
+
+### 再次回忆字符串
+
+- 字符串 就是 
+	- 把字符 串起来
+- 字符串里面 
+	- 每个字符 是 一个山楂
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210817-1629153196214)
+
+- 字符串生成的 列表(list)
+	- 是否 也可以用 索引(index) 呢？
+
+### 尝试
+
+```
+char_list = list("oeasy")
+```
+
+- 中括号里面
+	- 放索引数
+	- index number
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192241/uid1190679-20250107-1736257075571) 
+
+- 可以 找到列表(list)中
+	- 第几个列表项
+	- 从零开始
+- 如果 索引值 超了
+	- 会如何
+
+
+### 索引值 越界
+
+- 如果 索引位置 超过了列表 list 大小
+	- 就会报错
+	- IndexError
+		- list index out range
+	- 列表索引超出范围
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192241/uid1190679-20250107-1736257139472) 
+
+- 为什么 用中括号加 索引值
+	- 可以 找到 相应的列表项 呢？
+
+### 查询文档
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192241/uid1190679-20250107-1736257213194) 
+
+- 索引这个词究竟来自于什么来着？
+
+### 索引
+
+- the forefinger
+	- 指出发现的手指
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221123-1669187886440)
+
+- 就是 第二根手指
+	- index 
+
+### 指出
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221123-1669187928135)
+
+- 指数、指标都来自于食指
+
+### 食指
+- 指出的手指
+	- 也是尝试的手指
+	- 不敢直接吃
+	- 试着来
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231203-1701575706980)
+
+- 食指是这个词最根本的含义
+
+### 图书的目录
+
+- 图书的目录
+	- 可以指出章节在第几页
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221123-1669188466146)
+
+- 根据序号
+	- 找到 列表项的方式
+	- 就是 索引
+		- index
+
+- 能否反过来
+	- 根据相应的列表项
+	- 得到 索引位置 呢?
+
+### 帮助手册
+
+```
+help(list)
+```
+
+- 求助文档
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210829-1630201339319)
+
+- 找到这样一个索引函数
+  - index
+- 具体得试一下
+
+### index
+
+```
+char_list = list("oeasy")
+```
+
+- 列表中有 5 个元素
+
+```
+char_list.index("o")
+```
+
+- "o"这个值 是 列表中 第几个对象？
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192241/uid1190679-20250107-1736258247301) 
+
+- o 是第 0 个元素
+	- 所以 char_list.index("o")是 0
+- index函数 和 下标运算[]
+	- 好像互为逆运算
+
+### 绕一圈
+
+```
+char_list
+char_list.index("o")
+char_list[char_list.index("o")]
+```
+
+- 先求索引
+	- 再查元素
+	- 还是得到"o"
+
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192241/uid1190679-20250226-1740537300057) 
+
+- 其他字符也一样吗?
+
+```
+char_list[char_list.index("e")]
+char_list[char_list.index("a")]
+char_list[char_list.index("s")]
+char_list[char_list.index("y")]
+```
+
+- 其他字符也一样
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192241/uid1190679-20250226-1740537326024) 
+
+- 能否先查元素再求索引？
+
+### 先查元素再求索引
+
+```
+char_list
+char_list[0]
+char_list.index(char_list[0])
+```
+
+- 第0个 列表项
+	- 所在的 位置 是 0
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192241/uid1190679-20250226-1740537615500) 
+
+- 其他位置 也一样?
+
+```
+char_list.index(char_list[1])
+char_list.index(char_list[2])
+char_list.index(char_list[3])
+char_list.index(char_list[4])
+```
+
+- 确实一样
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192241/uid1190679-20250226-1740537684360) 
+
+### 列表项的修改
+
+- 列表项 可以直接修改
+
+```
+char_list = list("oeasy")
+char_list[2] = "A"
+```
+
+- 效果
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20250312-1741759034400)
+
+- 字符串支持用[]索引
+	- 直接修改字符吗？
+
+### 字符串索引运算
+
+- 字符串对象 
+	- 支持 索引方式 获取 字符
+	- 但不支持 通过索引 修改字符
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221122-1669083113094)
+
+- 但如果 就想 根据索引 修改字符
+- 怎么办呢?
+
+### 总结
+
+- 上次 把range 转化为 列表
+	- 这次 把str 转化为 列表了
+
+- 还 深入了  index函数 
+	- 可以 找到某对象的位置
+	- 如果 列表中 有多个指定元素
+	- 可以通过 index函数的start和end参数 
+	- 指定位置列表的下标索引
+- 可以 用中括号 索引到 相应的元素
+	- 还可以 替换相应的元素
+	- 和 字符串 效果一样
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221122-1669081080569)
+
+- 字符串中字符
+	- 不能通过 索引下标 直接 修改?
+	- 这怎么办??🤔
+- 下次再说 👋
+- [配套视频](https://www.bilibili.com/video/BV1ue5Sz5EZv)

@@ -1,0 +1,310 @@
+---
+show: step
+version: 1.0
+enable_checker: true
+---
+
+# lxml 元素 树形结构
+
+## 回忆
+
+- 我们 导入了 requests 模块
+	- requests 帮我们 发请求
+	  - 状态码 200
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192576/uid1190679-20250419-1745070923344) 
+
+- 这样 我们就可以
+	- 假装自己是一个浏览器
+	- 完成了 http get 的过程
+	  - 发出了 request
+	  - 得到了 response
+
+|属性|类型|
+|---|---|
+|content | 字节序列|
+| text | 字符串序列|
+
+- 如何找到 网页中具体的内容 呢？🤔
+
+### 开启服务
+
+- 开启服务
+
+```
+sudo service nginx start
+firefox http://localhost &
+```
+
+- 右键 网页
+	- 查看 源文件
+	- View Source
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192577/uid1190679-20250420-1745116003837) 
+
+### 观察源码
+
+- 网页源码
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192577/uid1190679-20250420-1745116064964) 
+
+- 这就是网页的源文件
+	- `html`文件
+- 什么 是 `html` 呢？
+
+### 快速入门
+
+- `html`全称
+	- `h`yper-`t`ext `m`arkup `l`anguage
+	- 超文本标记语言
+    - 是一门 markup(标记性) 的语言
+- 标签是成对儿出现的
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192577/uid1190679-20250420-1745116284703) 
+
+- 元素 使用的 `标签(tag)` 包括
+  - 开始标签
+  - 结束标签
+- 标签 把文档做成了什么呢？
+
+### 操作
+
+- 做成了 一棵dom树
+	- dom 树长 这样
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221127-1669525619191)
+
+- 想要解析 html
+	- 那首先就要了解 html 语言的结构
+- 看起来 有点复杂
+	- 能`简化`一下吗？
+
+### 简化
+
+- 成对儿 的 标签`tag` 
+	- 构成 元素 
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210901-1630451887662)
+
+- 元素 一层一层地 嵌套
+
+### 广告
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192577/uid1190679-20250419-1745071178647) 
+
+- 蓝桥 有一门专门的课
+	- [ai前端-oeasy教您玩转前端三剑客](https://www.lanqiao.cn/courses/3781)
+
+- 能访问
+	- `自定义`网页么？
+
+### 编辑网页
+
+- 首先 在 当前文件夹
+	- 建立一个网页
+
+```
+vi oeasy.html
+```
+
+- 网页文件如下
+
+```html
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<title>menu</title>
+		<meta charset="utf-8">
+	</head>
+	<body width="700px">
+		<h1>menu</h1>
+		<ul id="ulist">
+			<li>豆汁</li>
+			<li>羊瘪汤</li>
+			<li>折耳根</li>
+		</ul>
+	</body>
+</html>
+```
+
+### 保存网页
+
+- 复制后粘贴
+	- <kbd>"</kbd><kbd>+</kbd><kbd>p</kbd>
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20250420-1745133251353)
+
+- 然后:wq
+	- 保存并退出
+
+### 网页的根目录
+
+```shell
+whereis nginx
+```
+
+- 网页服务器根目录在哪呢？
+	- /usr/share/nginx/html/
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240331-1711879932052)
+
+### 拷贝网页 至 服务器
+
+```bash
+ls /usr/share/nginx/html
+sudo cp ./oeasy.html /usr/share/nginx/html
+ls /usr/share/nginx/html
+```
+
+- sudo cp ./oeasy.html /usr/share/nginx/html
+	- sudo 用管理员权限运行
+	- cp 拷贝
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240331-1711879981294)
+
+- 把food.html
+	- 网站服务器根目录下
+
+### 浏览过程
+
+- 文件拷过去之后 
+	- 再浏览
+
+```
+firefox http://localhost/oeasy.html &
+```
+
+- 浏览网页
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20250420-1745133293839)
+
+### 检查元素
+
+- 选中虚拟机中的火狐浏览器
+	- F12 检查元素
+	- 选择网络 Networks
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231015-1697366142481)
+
+- 如果<kbd>F12</kbd>没有用的话
+	- 在键盘最下面一行找到<kbd>Fn</kbd>键
+	- <kbd>Fn</kbd>+<kbd>F12</kbd>
+- 实在不行右键
+	- 检查元素也可以找到
+- 然后刷新
+
+### 刷新
+
+- F5 也可以刷新
+	- 刷新后会看到网络中的的
+		- 请求 requests
+		- 响应 response
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231015-1697366198856)
+
+- 选中 oeasy.html 文件
+	- 这个文件就是nginx  
+	- 响应http的请求 得到的
+
+
+- 可以在浏览器端修改代码吗?
+
+### 修改代码
+
+- F12 可以检查元素
+	- 也可以右键全部展开
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240603-1717391430603)
+
+- 将 `ul` 修改为 `ol`
+	- 从 `u`nordered `l`ist 无需列表
+	- 到 `o`rdered `l`ist 有序列表
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240603-1717391511388)
+
+- `li`是
+	- `l`ist `i`tem
+	- 列表项
+- 可以
+	- 观察整个结构
+	- 追根溯源
+
+### 实例
+
+- 这 构成 一棵树
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210901-1630452159874)
+
+- 一棵什么树？
+
+### Dom树
+
+- 一棵 Dom 树
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221119-1668823401607)
+
+- 什么是 Dom 树呢？
+
+### Dom 树
+
+- Document Object Model
+  - 文档对象模型
+- 根节点 是 
+	- html元素
+- html元素 长出两个分支
+  - head元素
+  - body元素
+- 他们 各自底下
+	- 还有 子节点 
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231215-1702633706544)
+
+- response 到达浏览器后
+	- 就是 一长串 字节序列
+- 字节序列 `咋`变成 
+	- 我们看到的网页 呢?
+
+### 渲染过程
+
+- 渲染过程
+  1. 首先需要分词 parse
+  2. 然后根据语义 semantic
+  3. 尝试生成一棵 dom 语义树
+  4. 然后再根据 css 样式表 渲染页面
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221119-1668824125270)
+
+- 一步步地进行 
+	- 渲染成一个好看的页面
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221119-1668824141134)
+
+- 爬虫也需要渲染吗？
+
+### 爬虫
+
+- 爬虫只看内容
+	- 不需要渲染
+- 但 需要 从 dom树 中 
+  - 捋 叶子
+  - 解析 内容
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221119-1668824279118)
+
+- 怎么 解析 呢？
+
+## 总结
+
+- 这次了解了 html 中的 dom 树
+	- dom树 是 由节点元素组成的
+- html 里面包括子节元素点
+  - head
+  - body
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20250420-1745118101910)
+
+- requests 得到的是 字节序列 
+	- 全都 连在一起
+	- 怎么他 变成 一棵树  
+	- 好来 摘取 需要的元素呢 ？？🤔
+- 下次再说

@@ -1,0 +1,239 @@
+---
+show: step
+version: 1.0
+enable_checker: true
+---
+
+# 颜色常量
+
+## 回忆上次内容
+
+- 上次了解了 常量的英文名称
+	- constant
+	- 并且了解了 
+		- 这词源于康斯坦丁
+- 在进行类型转化的时候
+	- 出现了 这么一个问题
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230801-1690864086720)
+
+- 这literal如何理解呢？🤔
+
+### 查找帮助
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230820-1692542558508)
+
+- LITERALS 是一个帮助主题
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230820-1692542595723)
+
+### Literal
+
+- literal 就是
+	- 字面量
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230823-1692794676850)
+
+- 指的是 源代码中 
+	- 表示固定值 的符号
+
+### 字面量 
+
+- 在python中
+	- literal指的是字面量
+	- 例如
+
+| 类型英文名称 | 字面量类型 | 数值 |
+| --- | --- | --- |
+|integer | 整型数字 | 1235 |
+| string | 字符串 | "abcD" |
+| bytes |  字节序列 | b"123F" |
+| floating point number  |  浮点数 | 123.6 |
+| complex number | 复数 |complex(2, 3) |
+
+### 理解 literal
+
+- 变量a
+	- 是可以被赋值的
+- 但是 literal(字面量) "a" 
+	- 是不能被重新赋值的
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230821-1692626328883)
+
+- 类似的还有
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230821-1692626433478)
+
+- 下面这些类型的值 都是字面量
+  - 字符串 "a"
+  - 字节序列 b"a"
+  - 整型变量 1
+  - 浮点型变量 1.0
+- literal 这个单词 
+	- 怎么来的呢？
+
+### literal
+
+- literal 
+	- 来自于 letter 字母
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20241006-1728202768325)
+
+- 用字母写的 信
+	- A letter written in letters 
+
+### literary
+
+- 意思是 字面上 
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230801-1690864846004)
+
+### literal meaning
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1020828/uid1190679-20241006-1728204311145) 
+
+- literal meaning
+	- 字面意义上
+
+### literally
+- literally
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20241006-1728206033518)
+
+- 字面上地
+
+### literary
+
+- literary
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1020828/uid1190679-20241006-1728203006137) 
+
+- 文学的
+
+### literality
+
+- literality
+	- 文学性
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1020828/uid1190679-20241006-1728206098257) 
+
+-  literalism 
+	- 本本 主义
+
+### literacy
+
+- literacy
+	- 读写能力
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1020828/uid1190679-20241006-1728206167639) 
+
+### literalist
+
+- literalist
+	- 拘泥字面意义的人
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1020828/uid1190679-20241006-1728206500204) 
+
+- sleep with the fishes
+	- 源于船上的说法
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/1020828/uid1190679-20241006-1728206475547) 
+
+- 并不是 
+	- 真的和鱼一起睡觉
+
+### 词根总结
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230801-1690876177218)
+
+- 那我们平时所说的变量重新赋值
+	- 应该如何理解呢？
+
+### 变量赋值
+
+- 将"abc" 赋给变量a
+	- 就是将存储"abc"字符串的地址 
+		- 赋给变量a
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230801-1690864474499)
+
+- 再将"efg" 赋给变量a
+	- 就是将 存储"efg"字符串的 新地址
+		- 赋给变量a 来引用
+	- 而不是 把"efg"这个字符串
+		- 放到 原来存放"abc"的那个地址里面
+- 使用 literal字面量 对变量 进行赋值
+	- 就是 赋给变量 一个 新的 对象地址
+
+### 相同的值
+
+- 将"efg" 赋给a
+	- a引用 "efg"的地址
+- 将"efg" 赋给b
+	- b也引用 "efg"的地址
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230801-1690876216519)
+
+- 这两个变量名 指向 同一个地址
+	- 这个地址 被 两个变量名所引用
+
+- 如果是两个 int 型的数字进行比较会有什么效果呢？
+
+### 1 is not 2
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20211231-1640960360804)
+
+- 看起来这个 is not 如果这么用的话
+- 会报一个语法警告 SyntaxWarning
+- 警告 Warning 不同于错误 Error
+- 仍然可以得到合理的结果
+- 如果想要警告都没有
+- 那就用!=运算符
+  - 这是对于具体值来比较的
+- is 一般是对于对象来比较的
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20211231-1640960534209)
+
+
+- 这个is not 有结合性么？
+	- 如何运算的？
+
+### is not
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220328-1648470960858)
+
+- 这里有一个语法警告
+	- SyntaxWarning 不影响运行
+	- 可以看到结合性可以通过括号来明确
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220328-1648471304499)
+
+- 这种值比较的情况最好使用==进行判断
+	- 这样就避免了警告⚠️
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220328-1648471084981)
+## 总结
+
+- 这次理解了字面量literal 包括
+  - 数字
+  - 字符串
+  - 字节序列
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230821-1692626968751)
+
+- 字面量 都可以
+	- 进行 加法运算
+	    - 中间的 是 加法运算符 加号
+	    - 加号 两边的是 加法操作数
+	- 加法 有 两类
+	  - 字符串 拼接
+	  - 数字 求和
+- 除了加法之外
+	- 有没有减法呢？
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20230823-1692758541752)
+
+- 减法又是 怎么用的呢？🤔
+- 下次再说 👋
+
+

@@ -1,0 +1,415 @@
+---
+show: step
+version: 1.0
+enable_checker: true
+---
+
+# [oeasy]python079_如何产生随机数字_random_随机来源
+
+## 回忆上次内容
+
+- [配套视频](https://www.bilibili.com/video/BV1vNohYFEtj)
+- 上次了解的是 `字符串`
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240929-1727574173215)
+
+- 字符串 就是 `字符的串`
+	- 字符串长度 可以用 `len函数`
+	- 字符可以用`下标索引 []`
+		- 可以有正索引
+		- 也可以有负索引
+
+- 可以有随机数字吗？🤔
+	- 怎么玩呢？🤔
+
+## 搜索
+
+- 向ai提问🙋
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20240929-1727580709433)
+
+- 得到 random.randint 函数
+	- 去游乐场 一探究竟
+
+### 具体使用
+
+```
+import random
+random.randint(1, 10)
+random.randint(1, 10)
+random.randint(1, 10)
+```
+
+- 导入 random 包
+	- 确实可以返回数字
+    - 左右两个端点都能到达
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210818-1629255612885)
+
+- 确实找到了这random包
+	- random包位于 /usr/lib/python3.8/random.py
+	- 就像找到 当时自己做的包(my_file) 一样
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/188927/uid1190679-20241224-1735010306977) 
+
+- random包中的randint啥意思🤔
+
+### 查询帮助
+
+- 查询 random.randint 的 帮助
+
+```
+help(random.randint)
+```
+
+- randint
+	- rand 随机 
+	- int 整数
+	- 随机整数
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20231129-1701261837494)
+
+- random.randint
+	- 有两个参数
+		- `两`个边界端点
+		- 两个边界 都有可能得到
+	- 返回值类型 是 整数
+
+- 离开游乐场
+	- 去写个随机数 py程序
+
+### 尝试
+
+```
+vi random.py
+```
+
+- 编辑random.py
+
+```
+import random
+r = random.randint(1, 10)
+print(r)
+```
+
+- 保存并运行
+
+###  出错了
+
+- 报错了
+	- 注意 红框
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/188927/uid1190679-20241224-1735012892928) 
+
+- random模块
+	- 来自于 /home/shiyanlou/random.py
+	- 这好像 不是系统的random包
+- 系统的random包 
+	- 在哪儿来着呢？
+
+### 寻找
+
+- 退出vim
+	- 向上翻
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/188927/uid1190679-20241224-1735010306977) 
+
+- random包位于
+	- /usr/lib/python3.8/random.py
+	- 引入的random包
+	- 不是系统给的random包？！😱
+
+### 导入过程
+
+- 导入random时
+
+```
+import random
+```
+
+- 程序会在 当前位置 先找 random.py
+	- 找到了 本地这个文件
+		- `/home/shiyanlou/random.py`
+- 就 不再找 了
+	- 真正需要导入的
+		- `/usr/lib/python3.8/random.py`
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/188927/uid1190679-20250105-1736081968352) 
+
+- 说白了就是
+	- 导错 位置了！
+
+### 冷静
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/188927/uid1190679-20250112-1736685964432) 
+
+- 出错
+	- 不是我们无能的标志
+	- 而是 我们努力的见证
+	- 更是 进步的阶梯
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/188927/uid1190679-20250105-1736082036065) 
+
+- 去修改！
+
+### 程序改名
+
+- 本地的random.py 
+	- 不能 再重名了
+	- 必须改名
+	- 改为 random_new.py
+
+```
+mv random.py random_new.py
+```
+
+- 将random.py的文件名
+	- 改为 random_new.py
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/188927/uid1190679-20250105-1736082172261) 
+
+- 目前状态
+	- random.py消失了
+	- 可以看到 random_new.py
+
+### 新想法
+
+- 想求两个随机数的和
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/188927/uid1190679-20250105-1736082228561) 
+
+- 怎么写提示词呢？🤔
+
+### 提问
+
+```
+使用python里面编写终端程序，生成两个十以内的随机整数，然后让这两个数相加，得到结果。显示整个加法过程。不要使用函数，直接执行就好。
+```
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/188927/uid1190679-20241224-1735013429312)
+
+### 新建文件
+
+```
+vi random_add.py
+```
+
+- 新建random_add.py
+
+```
+import random
+
+# 生成两个10以内的随机整数
+num1 = random.randint(0, 10)
+num2 = random.randint(0, 10)
+
+# 计算和
+sum_result = num1 + num2
+
+# 显示加法过程
+print(f"生成的两个随机数是: {num1} 和 {num2}")
+print(f"{num1} + {num2} = {sum_result}")
+```
+
+### 结果
+
+- 效果很好
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/188927/uid1190679-20241224-1735013487930) 
+
+- 想出一道十以内加法的题目
+	- 让小朋友在终端做题
+	- 然后计算机负责判断对错
+	- 对了打✅
+	- 错了打❌
+
+### 提问
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/188927/uid1190679-20241224-1735013601831) 
+
+```
+import random
+
+# 生成两个10以内的随机整数
+num1 = random.randint(0, 10)
+num2 = random.randint(0, 10)
+
+# 计算正确的和
+correct_sum = num1 + num2
+
+# 显示加法题目
+print(f"请计算: {num1} + {num2} = ?")
+
+# 获取用户输入的答案
+user_answer = input("请输入你的答案: ")
+
+# 将用户输入转换为整数
+try:
+    user_answer = int(user_answer)
+except ValueError:
+    print("请输入一个有效的整数！")
+    exit()
+
+# 判断用户答案是否正确
+if user_answer == correct_sum:
+    print("✅ 正确！")
+else:
+    print(f"❌ 错误！正确答案是: {correct_sum}")
+```
+
+### 结果
+
+- 效果达成
+	- 程序也完全能够看懂😄
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/188927/uid1190679-20241224-1735013688916) 
+
+- 想让小朋友做十以内的加法
+	- 做对3道之后
+	- 停止
+
+### 提问
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/188927/uid1190679-20250105-1736082497016) 
+
+```
+import random
+
+# 初始化变量
+correct_count = 0  # 记录做对题目的数量
+max_correct = 3    # 达到这个数量后停止
+
+# 循环，直到小朋友做对三道题
+while correct_count < max_correct:
+    # 生成两个1到10之间的随机数
+    num1 = random.randint(1, 10)
+    num2 = random.randint(1, 10)
+    
+    # 生成题目
+    question = f"{num1} + {num2} = ?"
+    
+    # 获取用户答案
+    try:
+        user_answer = int(input(question + " "))
+        
+        # 计算正确答案
+        correct_answer = num1 + num2
+        
+        # 检查答案是否正确
+        if user_answer == correct_answer:
+            print("Correct!")            
+            correct_count += 1  # 答对题目，计数器增加
+        else:
+            print("Wrong! The correct answer is:", correct_answer)
+            correct_count = 0  # 重置计数器，因为这次没做对
+    except ValueError:
+        print("Please enter a valid number.")
+
+    # 检查是否达到三道题
+    if correct_count == max_correct:
+        print("Great job! You've answered three questions correctly.")
+    else:
+        print(f"Keep going! You've got {max_correct - correct_count} more to go.")
+
+# 结束
+print("Practice finished.")
+```
+
+### 效果
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/188927/uid1190679-20250105-1736082656834) 
+
+- 如果出错了呢？
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/188927/uid1190679-20250105-1736082828611) 
+
+- 目前是必须连续三次答对才退出
+	- 我需要累积三次答对就可以退出
+
+### 三问
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/188927/uid1190679-20250105-1736082935932) 
+
+- 新建文件
+
+```
+vim random_add_2.py
+```
+
+### 新代码
+
+```
+import random
+
+# 初始化变量
+correct_count = 0  # 记录做对题目的数量
+max_correct = 3    # 达到这个数量后停止
+
+# 循环，直到小朋友累积做对三道题
+while correct_count < max_correct:
+    # 生成两个1到10之间的随机数
+    num1 = random.randint(1, 10)
+    num2 = random.randint(1, 10)
+    
+    # 生成题目
+    question = f"{num1} + {num2} = ?"
+    
+    # 获取用户答案
+    try:
+        user_answer = int(input(question + " "))
+        
+        # 计算正确答案
+        correct_answer = num1 + num2
+        
+        # 检查答案是否正确
+        if user_answer == correct_answer:
+            print("Correct!")
+            correct_count += 1  # 答对题目，计数器增加
+        else:
+            print("Wrong! The correct answer is:", correct_answer)
+    except ValueError:
+        print("Please enter a valid number.")
+
+    # 检查是否达到三道题
+    if correct_count == max_correct:
+        print("Great job! You've answered three questions correctly.")
+    else:
+        print(f"Keep going! You've got {max_correct - correct_count} more to go.")
+
+# 结束
+print("Practice finished.")
+```
+
+### 最终效果
+
+- 满足要求了
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/188927/uid1190679-20250105-1736083061620) 
+
+- 两个程序之间有什么区别呢？
+
+### 对比代码
+
+```
+vimdiff random_add.py random_add_2.py
+```
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/188927/uid1190679-20250105-1736084403202)
+
+- 只删了一句话
+	- 原来的29句
+	- 错误之后不清零了
+
+## 总结
+
+- 这次主要是 随机数的生成
+  - 使用 random包中的 randint(a,b)函数
+  - 生成[a,b]范围中的整数
+	  - 包括 两端 a,b
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/188927/uid1190679-20250105-1736084492460) 
+
+- 手机验证码 可以自己生成吗？🤔
+- 下次再说 👋
+- [配套视频](https://www.bilibili.com/video/BV1vNohYFEtj)
+

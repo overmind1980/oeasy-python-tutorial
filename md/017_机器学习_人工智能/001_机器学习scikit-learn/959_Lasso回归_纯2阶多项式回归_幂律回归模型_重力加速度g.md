@@ -1,0 +1,566 @@
+---
+show: step
+version: 1.0
+enable_checker: true
+---
+
+# 从零开始
+
+## 回忆
+
+- 上次 伽利略发现了 
+	- 单摆的周期T 和 摆长L 有关系
+- 从 因果的角度上来说
+	- 周期T 和 摆长的平方根 成正比
+- 从 相关性的角度来说
+	- 因果反转
+	- 摆长 和 周期的平方成正比 
+
+| **分类** | **中文名词** | **英文名词** | **简要说明** |
+|----------|--------------|--------------|--------------|
+| **模型类** | 二阶多项式回归 | Second-Order Polynomial Regression | 基于二次多项式特征构建的线性回归模型，用于拟合非线性关系 |
+| | 岭回归 | Ridge Regression | 带L2正则化的线性回归，解决多重共线性、稳定系数 |
+| | 多项式岭回归 | Polynomial Ridge Regression | 先做多项式特征转换，再用岭回归拟合的组合模型 |
+| | 普通线性回归 | Ordinary Linear Regression (OLR) | 无正则化的基础线性回归，最小化残差平方和 |
+| | 岭回归交叉验证 | Ridge Cross Validation (RidgeCV) | 自动选择最优α的岭回归变体 |
+| **特征处理类** | 多项式特征 | Polynomial Features | 由自变量的一次项、二次项（或更高阶）组成的新特征 |
+| | 特征转换 | Feature Transformation | 将原始特征映射为多项式特征等新特征空间的过程 |
+| | 偏置项 | Bias Term | 模型中的常数项（截距），`include_bias`参数控制是否生成 |
+| **模型参数类** | 系数 | Coefficient | 模型中特征对应的权重（如多项式回归的$w_1,w_2$） |
+| | 截距项 | Intercept | 模型的常数项，`fit_intercept`参数控制是否拟合 |
+| | 最优α | Optimal Alpha | 使岭回归模型泛化能力最优的正则化强度值 |
+| **问题场景类** | 多重共线性 | Multicollinearity | 特征间高度相关导致普通回归系数不稳定的问题 |
+| | 泛化能力 | Generalization Ability | 模型在新的未知数据上的预测性能 |
+
+- 岭回归 可以降低 参数的绝对值
+	- 有什么 方法 把参数 直接降成0吗？🤔
+
+### Lasso回归
+
+```
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression, Lasso  # ✅新增导入Lasso
+from sklearn.preprocessing import PolynomialFeatures
+from sklearn.metrics import r2_score
+
+data = pd.DataFrame({
+    '摆长(米)': [0.20,0.30,0.40,0.54,0.60,0.80,0.81,1.00,1.08,1.35,1.62,1.89,2.00,2.16,2.43,2.70,3.00,3.24,3.78,4.00,4.32,4.86,5.40,6.48,7.00,8.64,10.00,10.80],
+    '周期(秒)': [0.89,1.10,1.27,1.50,1.56,1.79,1.81,2.01,2.12,2.40,2.65,2.88,2.84,3.00,3.19,3.36,3.48,3.67,3.96,4.01,4.22,4.50,4.72,5.09,5.20,5.99,6.35,6.63]
+})
+
+# ========== 文泉驿字体 极简配置 无任何警告 ==========
+plt.rcParams['font.sans-serif'] = ['WenQuanYi Zen Hei']
+plt.rcParams['axes.unicode_minus'] = False
+
+plt.figure(figsize=(10,6),dpi=100)
+
+# 自变量 周期T  因变量 摆长L 【原代码不变】
+T = data['周期(秒)'].values.reshape(-1, 1)
+L = data['摆长(米)'].values
+
+# ========== 核心：关闭多余偏置项 根治系数负数问题 【原代码不变】==========
+poly = PolynomialFeatures(degree=2, include_bias=False)
+T_poly = poly.fit_transform(T) # 特征顺序：[T, T²] 绝对正确无坑
+
+# ========== ✅ 核心修改：替换为Lasso回归（唯一改动核心区） ==========
+# alpha=0.01 最优值：正则化+系数正数+超高拟合度，完美适配你的数据
+model = Lasso(alpha=0.01, fit_intercept=True, random_state=42) 
+model.fit(T_poly, L)
+L_pred = model.predict(T_poly)
+r2 = r2_score(L, L_pred)
+
+# ========== 绝对正确的系数提取 必出正数a 【原代码不变】==========
+b = model.coef_[0]  # T^1 一次项系数
+a = model.coef_[1]  # T^2 二次项系数 【正数，开口向上】
+c = model.intercept_ # 常数项
+
+# ========== 绘图 纯文字 无特殊符号 【只改图例文字，其余不变】==========
+plt.scatter(T, L, color='darkred', s=80, edgecolors='white', linewidth=1, label='原始实验数据')
+T_smooth = np.linspace(T.min(), T.max(), 200).reshape(-1,1)
+T_smooth_poly = poly.transform(T_smooth)
+L_smooth = model.predict(T_smooth_poly)
+plt.plot(T_smooth, L_smooth, color='royalblue', linewidth=3, label=f'Lasso二阶拟合：L={a:.3f}T²{b:+.3f}T{c:+.3f}')
+
+plt.title('伽利略单摆实验 - Lasso二阶回归 (开口向上)', fontsize=16)
+plt.xlabel('周期 T (秒)', fontsize=14)
+plt.ylabel('摆长 L (米)', fontsize=14)
+plt.grid(True, alpha=0.3)
+plt.legend(fontsize=12)
+plt.savefig('伽利略单摆_Lasso二阶回归_无警告.png', dpi=150, bbox_inches='tight')
+plt.close()
+
+# ========== 打印结果 纯文字 无特殊符号 无语法错误 【只改标题，其余不变】==========
+print("="*80)
+print("Lasso二阶多项式回归结果 L = a*T² + b*T + c (正则化优化)")
+print("="*80)
+print(f"T² 二次项系数 (开口系数) a = {a:.3f} 【正数，开口向上 ✔】")
+print(f"T  一次项系数          b = {b:.3f}")
+print(f"常数项                c = {c:.3f}")
+print(f"拟合公式：摆长 = {a:.3f}×周期² {b:+.3f}×周期 {c:+.3f}")
+print(f"拟合优度 R² = {r2:.6f}")
+print("="*80)
+```
+
+### 效果
+
+- 曲线基本没变
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4884500/uid1190679-20260120-1768866469263) 
+
+- R² 也变化不大
+	- 但是公式简化了好多
+
+```
+=================================
+Pipeline+Lasso二阶多项式回归结果 
+L = a*T² + b*T + c (正则化优化+极致精简)
+=================================
+T² 二次项系数 (开口系数) a = 0.247 【正数，开口向上 ✔】
+T  一次项系数          b = -0.000
+常数项                c = -0.033
+拟合公式：摆长 = 0.247×周期² -0.000×周期 -0.033
+拟合优度 R² = 0.998946
+===============================
+```
+
+- 究竟什么是Lasso回归呢？
+
+### Lasso回归
+
+- LASSO 
+	- **Least Absolute Shrinkage and Selection Operator**
+	- **最小绝对收缩与选择算子**
+
+| 英文单词/短语 | 中文含义 | 对应 LASSO 模型的核心特性 |
+|--------------|----------|--------------------------|
+| **Least Absolute** | 最小绝对值 | 模型的正则化项是 **L1 正则化**，即对系数的**绝对值之和**进行惩罚，公式里的 $\sum|\beta_i|$ |
+| **Shrinkage** | 收缩 | 正则化会将模型系数**压缩（收缩）**到更小的范围，避免过拟合 |
+| **Selection** | 选择 | 这是 LASSO 最关键的特性：当正则化强度足够大时，**不重要的特征系数会被直接压缩到 0**，相当于自动“选择”了对因变量有贡献的特征 |
+| **Operator** | 算子/方法 | 表示这是一种用于回归分析的数学方法 |
+
+- LASSO = 最小绝对值惩罚 + 系数收缩 + 特征选择
+
+```
+# ========== 核心：关闭多余偏置项 根治系数负数问题 【原代码不变】==========
+poly = PolynomialFeatures(degree=2, include_bias=False)
+T_poly = poly.fit_transform(T) # 特征顺序：[T, T²] 绝对正确无坑
+
+# ========== ✅ 核心修改：替换为Lasso回归（唯一改动核心区） ==========
+# alpha=0.01 最优值：正则化+系数正数+超高拟合度，完美适配你的数据
+model = Lasso(alpha=0.01, fit_intercept=True, random_state=42) 
+model.fit(T_poly, L)
+```
+
+- 在多项式回归的基础上
+	- 用LASSO回归 
+	- 「无用扩展特征的系数」把 置0 
+
+- 想把 多项式回归啊 + LASSO回归
+	- 做成流水线pipeline
+
+### 流水线制作
+
+```
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.pipeline import Pipeline  # ✅核心：导入管道
+from sklearn.linear_model import Lasso
+from sklearn.preprocessing import PolynomialFeatures
+from sklearn.metrics import r2_score
+
+data = pd.DataFrame({
+    '摆长(米)': [0.20,0.30,0.40,0.54,0.60,0.80,0.81,1.00,1.08,1.35,1.62,1.89,2.00,2.16,2.43,2.70,3.00,3.24,3.78,4.00,4.32,4.86,5.40,6.48,7.00,8.64,10.00,10.80],
+    '周期(秒)': [0.89,1.10,1.27,1.50,1.56,1.79,1.81,2.01,2.12,2.40,2.65,2.88,2.84,3.00,3.19,3.36,3.48,3.67,3.96,4.01,4.22,4.50,4.72,5.09,5.20,5.99,6.35,6.63]
+})
+
+# ========== 字体配置 无任何警告 原代码不变 ==========
+plt.rcParams['font.sans-serif'] = ['WenQuanYi Zen Hei']
+plt.rcParams['axes.unicode_minus'] = False
+plt.figure(figsize=(10,6),dpi=100)
+
+# 自变量 周期T  因变量 摆长L 原代码不变
+T = data['周期(秒)'].values.reshape(-1, 1)
+L = data['摆长(米)'].values
+
+# ========== ✅ 核心极简：Pipeline管道封装【一行搞定特征+模型】 无任何手动转换 ✅ ==========
+pipe_model = Pipeline([
+    ('poly', PolynomialFeatures(degree=2, include_bias=False)),  # 二阶特征 T + T²
+    ('lasso', Lasso(alpha=0.01, fit_intercept=True, random_state=42)) # Lasso正则化回归
+])
+pipe_model.fit(T, L)  # 直接拟合原始数据！管道自动完成特征转换，无需手动生成T_poly
+L_pred = pipe_model.predict(T)
+r2 = r2_score(L, L_pred)
+
+# ========== ✅ 极简系数提取 必出正数a ==========
+b, a = pipe_model.named_steps['lasso'].coef_  # T一次项系数b，T²二次项系数a【正数，开口向上】
+c = pipe_model.named_steps['lasso'].intercept_ # 常数项
+
+# ========== 绘图 极简预测 原样式不变 ==========
+plt.scatter(T, L, color='darkred', s=80, edgecolors='white', linewidth=1, label='原始实验数据')
+T_smooth = np.linspace(T.min(), T.max(), 200).reshape(-1,1)
+L_smooth = pipe_model.predict(T_smooth) # 管道自动转换特征，直接预测
+plt.plot(T_smooth, L_smooth, color='royalblue', linewidth=3, label=f'Lasso二阶拟合：L={a:.3f}T²{b:+.3f}T{c:+.3f}')
+
+plt.title('伽利略单摆实验 - Pipeline+Lasso二阶回归 (开口向上)', fontsize=16)
+plt.xlabel('周期 T (秒)', fontsize=14)
+plt.ylabel('摆长 L (米)', fontsize=14)
+plt.grid(True, alpha=0.3)
+plt.legend(fontsize=12)
+plt.savefig('伽利略单摆_Pipeline_Lasso二阶回归.png', dpi=150, bbox_inches='tight')
+plt.close()
+
+# ========== 打印结果 原格式不变 纯文字无符号 ==========
+print("="*80)
+print("Pipeline+Lasso二阶多项式回归结果 L = a*T² + b*T + c (正则化优化+极致精简)")
+print("="*80)
+print(f"T² 二次项系数 (开口系数) a = {a:.3f} 【正数，开口向上 ✔】")
+print(f"T  一次项系数          b = {b:.3f}")
+print(f"常数项                c = {c:.3f}")
+print(f"拟合公式：摆长 = {a:.3f}×周期² {b:+.3f}×周期 {c:+.3f}")
+print(f"拟合优度 R² = {r2:.6f}")
+print("="*80)
+
+```
+
+### 效果不变
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4884500/uid1190679-20260120-1768866825495) 
+
+```
+T² 二次项系数 (开口系数) a = 0.247 【正数，开口向上 ✔】
+T  一次项系数          b = -0.000
+常数项                c = -0.033
+拟合公式：摆长 = 0.247×周期² -0.000×周期 -0.033
+拟合优度 R² = 0.998946
+```
+
+- 想把常数项也给置0
+
+### 参数项清零
+
+```
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.pipeline import Pipeline
+from sklearn.linear_model import Lasso
+from sklearn.preprocessing import PolynomialFeatures
+from sklearn.metrics import r2_score
+
+data = pd.DataFrame({
+    '摆长(米)': [0.20,0.30,0.40,0.54,0.60,0.80,0.81,1.00,1.08,1.35,1.62,1.89,2.00,2.16,2.43,2.70,3.00,3.24,3.78,4.00,4.32,4.86,5.40,6.48,7.00,8.64,10.00,10.80],
+    '周期(秒)': [0.89,1.10,1.27,1.50,1.56,1.79,1.81,2.01,2.12,2.40,2.65,2.88,2.84,3.00,3.19,3.36,3.48,3.67,3.96,4.01,4.22,4.50,4.72,5.09,5.20,5.99,6.35,6.63]
+})
+
+# 字体配置 无警告
+plt.rcParams['font.sans-serif'] = ['WenQuanYi Zen Hei']
+plt.rcParams['axes.unicode_minus'] = False
+plt.figure(figsize=(10,6),dpi=100)
+
+# 自变量周期T、因变量摆长L
+T = data['周期(秒)'].values.reshape(-1, 1)
+L = data['摆长(米)'].values
+
+# ========== ✅ 核心修改【3处，彻底清零一阶项+常数项】 ==========
+# 1. 多项式特征生成后，只保留T²项（剔除T项）
+poly = PolynomialFeatures(degree=2, include_bias=False)
+T_poly = poly.fit_transform(T)  # 生成 [T, T²]
+T_poly_only_2nd = T_poly[:, 1:2]  # 只取第二列（T²），彻底剔除一阶项
+
+# 2. 模型仅拟合T²特征，fit_intercept=False 清零常数项
+# alpha可适当调小（如0.001），保证a稳定为正且拟合度高
+lasso = Lasso(alpha=0.001, fit_intercept=False, random_state=42)
+lasso.fit(T_poly_only_2nd, L)
+L_pred = lasso.predict(T_poly_only_2nd)
+r2 = r2_score(L, L_pred)
+
+# 3. 仅提取二阶项系数（无一阶项/常数项）
+a = lasso.coef_[0]  # 仅T²项系数（必正）
+b = 0.0  # 一阶项彻底清零
+c = 0.0  # 常数项彻底清零
+
+# ========== 绘图（适配纯二阶项公式） ==========
+plt.scatter(T, L, color='darkred', s=80, edgecolors='white', linewidth=1, label='原始实验数据')
+T_smooth = np.linspace(T.min(), T.max(), 200).reshape(-1,1)
+# 平滑数据也仅保留T²项
+T_smooth_poly = poly.transform(T_smooth)[:, 1:2]
+L_smooth = lasso.predict(T_smooth_poly)
+plt.plot(T_smooth, L_smooth, color='royalblue', linewidth=3, label=f'Lasso纯二阶拟合：L={a:.3f}T²') # 无一阶项/常数项
+
+plt.title('伽利略单摆实验 - Lasso纯二阶回归 (一阶项+常数项=0)', fontsize=16)
+plt.xlabel('周期 T (秒)', fontsize=14)
+plt.ylabel('摆长 L (米)', fontsize=14)
+plt.grid(True, alpha=0.3)
+plt.legend(fontsize=12)
+plt.savefig('伽利略单摆_Lasso_纯二阶项_清零.png', dpi=150, bbox_inches='tight')
+plt.close()
+
+# 打印结果（贴合纯二阶项公式）
+print("="*80)
+print("Lasso纯二阶回归【一阶项+常数项强制清零=0】 L = a*T²")
+print("="*80)
+print(f"T² 二次项系数 (开口系数) a = {a:.3f} 【正数 ✔ 开口向上 ✔】")
+print(f"T  一次项系数          b = {b:.1f} 【精准清零 ✔】")
+print(f"常数项                c = {c:.1f} 【精准清零 ✔】")
+print(f"拟合公式：摆长 = {a:.3f}×周期²")
+print(f"拟合优度 R² = {r2:.6f}")
+print("="*80)
+```
+
+### 核心参数
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4893586/uid1190679-20260120-1768895065443) 
+
+```
+=================================================
+T² 二次项系数 (开口系数) a = 0.246 【正数 ✔ 开口向上 ✔】
+T  一次项系数          b = 0.0 【精准清零 ✔】
+常数项                c = 0.0 【精准清零 ✔】
+拟合公式：摆长 = 0.246×周期²
+拟合优度 R² = 0.998888
+===============================
+```
+
+- 拟合优度
+	- 比原来0.998946
+	- 差一些
+
+- 靠的是
+	- 使用Lasso原生参数
+
+```
+fit_intercept=False 消除截距
+```
+
+- intercept什么意思？
+
+### intercept词源
+
+- intercept 
+	- 前缀 **inter-**
+		- 表示 *在…之间、中途*
+	- 词根 **capere**
+		- 表示 *拿、取、捕获*
+
+- 含义：*在途中夺取、拦截*：
+    - 日常/军事：拦截、截获
+    - 数学/统计学：截距
+
+# intercept 及同源词汇 完整对照表
+| 词汇 | 词根拆解 | 中文释义 | 与 intercept 的同源关联 |
+|------|----------|----------|------------------------|
+| **intercept** | inter-（在…之间、中途） + -cept-（拿、取、捕获） | 1. 动词：拦截、截获（日常/军事）<br>2. 名词：截距（数学/统计学）<br>3. 名词：截距项（机器学习，即模型的常数项） | 本词为词根 **-cept-** 核心衍生词，源自拉丁语 *intercipere* |
+| **accept** | ac-（加强语气） + -cept-（拿、取） | 动词：接受、承认、认可 | 共享词根 **-cept-**，核心语义为“主动拿取、接纳” |
+| **receive** | re-（向后、回来） + -ceive-（-cept- 的变体） | 动词：收到、接收、接待 | -ceive- 是 -cept- 的语音变体，同源词根均为拉丁语 *capere*（拿） |
+| **perceive** | per-（彻底、完全） + -ceive-（-cept- 的变体） | 动词：察觉、感知、理解 | 共享词根变体 **-ceive-**，语义为“完全捕捉到信息/感觉” |
+| **conceive** | con-（一起、共同） + -ceive-（-cept- 的变体） | 动词：构想、构思；怀孕 | 共享词根变体 **-ceive-**，语义为“将想法整合到一起” |
+| **deceive** | de-（偏离、向下） + -ceive-（-cept- 的变体） | 动词：欺骗、蒙蔽、误导 | 共享词根变体 **-ceive-**，语义为“用手段夺取他人信任” |
+| **concept** | con-（一起） + -cept-（拿、取） + -ion（名词后缀） | 名词：概念、观念、理念 | 共享词根 **-cept-**，名词形式，语义为“整合到一起的想法” |
+| **reception** | re-（回来） + -cept-（拿、取） + -ion（名词后缀） | 名词：接待、接收；招待会 | 共享词根 **-cept-**，是 *receive* 的名词形式 |
+| **perception** | per-（彻底） + -cept-（拿、取） + -ion（名词后缀） | 名词：感知、知觉；看法 | 共享词根 **-cept-**，是 *perceive* 的名词形式 |
+| **precept** | pre-（预先） + -cept-（拿、取） | 名词：箴言、戒律、准则 | 共享词根 **-cept-**，语义为“预先定下供人采纳的规则” |
+
+
+### 返回来
+
+- 找到规律之后
+	- 这算是 `纯`二阶多项式 回归模型
+
+```
+L = 0.253 * T²
+```
+
+- 把 自变量 和 因变量 颠倒
+	- 可以发现
+
+> 单摆周期 和 摆长平方根 成正比
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4884500/uid1190679-20260118-1768716645894) 
+
+- 这条规律可以做成模型吗？
+
+### 幂律回归模型
+
+```
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import r2_score
+
+# ========== 1. 加载数据集 ==========
+data = pd.DataFrame({
+    '摆长(米)': [0.20,0.30,0.40,0.54,0.60,0.80,0.81,1.00,1.08,1.35,1.62,1.89,2.00,2.16,2.43,2.70,3.00,3.24,3.78,4.00,4.32,4.86,5.40,6.48,7.00,8.64,10.00,10.80],
+    '周期(秒)': [0.89,1.10,1.27,1.50,1.56,1.79,1.81,2.01,2.12,2.40,2.65,2.88,2.84,3.00,3.19,3.36,3.48,3.67,3.96,4.01,4.22,4.50,4.72,5.09,5.20,5.99,6.35,6.63]
+})
+
+# ========== 2. 字体配置（无警告） ==========
+plt.rcParams['font.sans-serif'] = ['WenQuanYi Zen Hei']
+plt.rcParams['axes.unicode_minus'] = False
+plt.rcParams['figure.dpi'] = 100
+
+# ========== 3. 幂律模型核心：T ∝ √L（开根号线性化） ==========
+# 自变量：摆长的平方根 √L（幂律线性化关键）
+sqrt_L = np.sqrt(data['摆长(米)'].values).reshape(-1, 1)
+# 因变量：周期 T
+T = data['周期(秒)'].values.reshape(-1, 1)
+
+# 拟合幂律线性模型（强制过原点，符合物理规律 T = k·√L）
+power_model = LinearRegression(fit_intercept=False)
+power_model.fit(sqrt_L, T)
+
+# 提取模型参数与评估指标
+k_fit = power_model.coef_[0][0]  # 拟合的比例系数k
+T_pred = power_model.predict(sqrt_L)
+r2 = r2_score(T, T_pred)
+
+# 计算理论比例系数k（基于重力加速度g=9.8m/s²）
+g = 9.8
+k_theory = 2 * np.pi / np.sqrt(g)  # 理论k≈2.010
+
+# ========== 4. 可视化：T 与 √L 的线性关系 ==========
+plt.figure(figsize=(10, 6))
+# 原始实验数据散点
+plt.scatter(sqrt_L, T, color='darkred', s=80, edgecolors='white', linewidth=1, label='原始实验数据')
+
+# 拟合线（平滑曲线）
+sqrt_L_smooth = np.linspace(sqrt_L.min(), sqrt_L.max(), 200).reshape(-1, 1)
+T_smooth = power_model.predict(sqrt_L_smooth)
+plt.plot(sqrt_L_smooth, T_smooth, color='royalblue', linewidth=3, 
+         label=f'幂律拟合：T={k_fit:.3f}√L (R²={r2:.6f})')
+
+# 理论参考线
+plt.plot(sqrt_L_smooth, k_theory * sqrt_L_smooth, color='gray', linestyle='--', linewidth=2, 
+         label=f'理论值：T={k_theory:.3f}√L')
+
+plt.title('单摆幂律模型 - 周期T 与 摆长平方根√L 的线性关系', fontsize=16)
+plt.xlabel('摆长平方根 √L (米^0.5)', fontsize=14)
+plt.ylabel('周期 T (秒)', fontsize=14)
+plt.grid(True, alpha=0.3)
+plt.legend(fontsize=12)
+plt.savefig('单摆_纯幂律模型.png', dpi=150, bbox_inches='tight')
+plt.close()
+
+# ========== 5. 结果输出 ==========
+print("="*80)
+print("📊 单摆纯幂律模型拟合结果（T = k·√L）")
+print("="*80)
+print(f"拟合比例系数 k = {k_fit:.3f}")
+print(f"理论比例系数 k = {k_theory:.3f}")
+print(f"拟合优度 R² = {r2:.6f}")
+print("-"*80)
+if abs(k_fit - k_theory) < 0.01:
+    print("✅ 拟合系数与理论值高度一致，模型完全符合单摆物理规律！")
+else:
+    print("⚠️ 拟合系数与理论值略有偏差，源于实验测量微小噪声（属正常现象）。")
+print("="*80)
+
+```
+
+### 结果
+```
+===============================================
+📊 单摆纯幂律模型拟合结果（T = k·√L）
+=================================================
+拟合比例系数 k = 2.022
+理论比例系数 k = 2.007
+拟合优度 R² = 0.999145
+------------------------------
+```
+
+- 这个模型本质上是
+	- 基于平方根特征工程的
+	- 线性回归模型
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4893586/uid1190679-20260120-1768896042159) 
+
+- 这条规律可以在物理世界验证吗？
+
+### 验证
+
+> 实验 也可以验证
+
+>>  摆长增加4倍
+		-  周期增加2倍
+
+>>  摆长增加9倍
+		-  周期增加3倍
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4893586/uid1190679-20260120-1768896423294) 
+
+- 后人由此 发现了 重力加速度g
+
+###  重力加速度$\boldsymbol{g}$的研究历程
+
+| 关键人物 | 时间 | 核心贡献 | 与重力加速度$\boldsymbol{g}$的关联 |
+|----------|------|----------|----------------------------------|
+| **伽利略**<br>（意大利物理学家） | 17世纪初 | 1. 推翻亚里士多德“重物下落更快”的错误结论；<br>2. 通过**斜面实验**发现：自由落体是**匀加速直线运动**，速度与时间成正比；<br>3. 通过**单摆实验**发现周期规律 $T \propto \sqrt{L}$ | 1. 为$g$的研究奠定**运动学基础**：首次提出“自由落体匀加速度”的概念，但未将其与“重力”直接绑定为专属物理量；<br>2. 未引入任何与$g$相关的符号或定义 |
+| **克里斯蒂安·惠更斯**<br>（荷兰物理学家） | 17世纪中期 | 1. 基于伽利略单摆等时性，**推导单摆周期公式**：$T=2\pi\sqrt{\frac{L}{a}}$（$a$为与重力相关的匀加速度）；<br>2. 利用该公式设计**摆钟**，解决了当时精准计时的难题 | 1. 公式中的$\boldsymbol{a}$**本质就是重力加速度的雏形**，是计算$g$的核心中间量；<br>2. **无“重力加速度”的正式名称，无符号$g$**：惠更斯仅将$a$视为推导单摆规律的工具量，未赋予其物理本质定义（当时尚未发现万有引力） |
+| **艾萨克·牛顿**<br>（英国物理学家） | 17世纪后期 | 1. 1687年发表《自然哲学的数学原理》，提出**万有引力定律**：$F=G\frac{Mm}{r^2}$；<br>2. 揭示重力的本质：**重力是地球对物体的万有引力分力**，自由落体的匀加速度是重力的直接效果 | 1. **正式确立$g$的物理本质**：将惠更斯公式中的$a$，定义为“重力引起的匀加速度”，标志着**重力加速度概念的诞生**；<br>2. 推导理论公式：$g=G\frac{M}{R^2}$，建立$g$与地球质量$M$、半径$R$的关联；<br>3. 后续物理学家为这个物理量赋予专属符号$\boldsymbol{g}$ |
+| **亨利·卡文迪许**<br>（英国物理学家） | 18世纪末 | 1. 通过**扭秤实验**，精准测量出**万有引力常数$G$**；<br>2. 结合地球的质量、半径数据 | 1. 代入牛顿的公式 $g=G\frac{M}{R^2}$，**首次精准计算出$g$的数值**；<br>2. 为后续“单摆实验测$g$”“自由落体实验测$g$”提供了理论参考标准 |
+
+#### 核心总结
+1. **$g$的概念是逐步成型的**：不是某个人一次性提出的，而是从伽利略的“匀加速运动”→惠更斯的“隐含加速度$a$”→牛顿的“重力本质定义”→卡文迪许的“精准数值计算”，历经200余年才完善。
+2. **惠更斯的关键地位**：他是第一个把“重力相关加速度”和单摆周期关联起来的人，为$g$的测量提供了**实验工具**（单摆），但受限于时代（无万有引力理论），无法给$g$下正式定义。
+3. **符号$g$的由来**：不是牛顿或惠更斯提出的，而是18世纪经典力学体系成熟后，物理学家为了统一表述，才赋予“重力加速度”专属符号$\boldsymbol{g}$。
+
+### 仰望星空
+
+- 教会 告诉人们 
+	- 大地之上 有一个天国
+	- 天地二元论
+
+- **天国的运动**：是“完美”的
+	- 天体（太阳、行星、月亮）
+		- 绝对完美、永恒不变、无生无灭
+	- 都在做**匀速圆周运动**
+	- 遵循和地上完全不同的法则
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4884500/uid1190679-20260118-1768729261258) 
+
+- 大地之上的事物
+	- 由四种元素构成
+	- 可朽坏、不完美	
+	- 充满变化、生灭、腐败、缺陷
+	- 运动 也是不完美的 
+
+### 单摆实验的颠覆性意义
+
+- 伽利略通过单摆实验发现了**等时性**
+	- **单摆的周期只和摆长有关，和振幅、摆球质量无关**。
+	- **地上的运动也可以是“完美、规律、周期性”的**
+	- 单摆的摆动是稳定的、可重复的
+	- 和天体的圆周运动一样
+	- 遵循清晰的数学规律
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4884500/uid1190679-20260118-1768734055607) 
+
+- 这直接冲击了“天地运动法则不同”的旧观念
+	- 伽利略由此提出猜想：
+
+> **天上的天体运动，或许和地上的单摆运动一样，遵循统一的、可以用数学描述的规律**
+
+## 总结
+
+- 这次 伽利略发现了 
+	- 单摆的周期T 和 摆长L 有关系
+- 从 因果的角度上来说
+	- 周期T 和 摆长的平方根 成正比
+- 从 相关性的角度来说
+	- 因果反转
+	- 摆长 和 周期的平方成正比 
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4884500/uid1190679-20260118-1768734516719) 
+
+- 然后 进入 二阶多项式回归
+	- 发现了 重力加速度g
+	- 源头是 伽利略 对于单摆的研究
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/4884500/uid1190679-20260118-1768734792666) 
+
+- 伽利略 把视线 投向天空
+	- 他又会有什么发现？🤔
+- 我们下次再说👋

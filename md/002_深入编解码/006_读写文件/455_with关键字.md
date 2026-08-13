@@ -1,0 +1,138 @@
+---
+show: step
+version: 1.0
+enable_checker: true
+---
+
+# with 关键字
+
+## 回忆
+
+- 上次可以用 python 控制文件夹和文件
+- python 的 os 包有一整套文件系统控制的函数
+  - 用这一套可以实现跨系统的同样结果
+- 此外 os.system 函数可以运行外部 shell 的命令
+  - shell 命令就成了我们控制文件系统的 api
+  - 可以随便调用了
+- 当然读写文件的时候
+- 还是用 open()函数
+- 不过 open 之后我总忘了 close
+- 有什么办法避免么？🤔
+
+### 搜索
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210827-1630050072740)
+
+- 好像可以打开
+- 第二个链接
+
+### 具体代码
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210827-1630050173668)
+
+- 这真的可以自动关闭么?
+- 去游乐园试试
+
+### 游乐园
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210827-1630050264651)
+
+- 好像确实可以
+- 在 with 的冒号里面的东西
+- 都可以使用 f
+- 在那个 block 之外再想使用 f
+- 他告诉我这个 f 已经 close 了
+
+### 查看帮助
+
+- help()
+- with
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210827-1630050363939)
+
+- with 语句用来封装一系列语句块的执行
+- 他依靠一个上下文管理器
+- 具体往下翻翻
+
+###继续
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210827-1630050768979)
+
+- 找找对应关系
+
+### 对应
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210827-1630050916154)
+
+- manager 是 open("oeasy.txt","rb")
+- target 是 f
+- 开始的时候 f 进入
+- 最后的时候要让 f 退出
+- 也就是调用了 f.close()
+- 我目前是这样理解的
+- 继续看
+
+### 两个文件
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210827-1630051229041)
+
+- 看起来比较和拷贝文件就可以这样做了
+- 而且结束的时候自动文件关闭
+- 最后提到了一个 PEP343
+
+### PEP343
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210827-1630051464479)
+
+- 什么是 PEP
+
+### PEP
+
+- Python Enhancement Proposals
+- python 增强改进建议
+- 主要问题就是如果写文件打开了
+- 然后写的时候出了问题
+- 但是报了错之后的 close 函数就不执行了
+- 原来用一种 try...finally...的结构
+- 保证 close 在 finally 里面永远执行
+- 用 with 的方法
+- 保证 close 在最后永远执行
+- 而且写的还简单
+- python 是不会随意增加关键字的
+- 就连 int、str 这些都是类而不是关键字
+- 看来 with 确实必要
+- 还有什么PEP呢？
+
+### PEP8
+
+- PEP8是关于python代码风格的一个Enhancement Proposals
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220829-1661737015490)
+
+- 可以看到
+	- 一行不建议超过79个字符
+	- 如果超过了要用反斜杠折行
+- 继续看文档
+
+### 发现
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210827-1630052195612)
+
+- 有两个新函数
+  - f.readlines()
+  - list(f)
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192174/uid1190679-20250110-1736518125780) 
+
+- 上下文管理器
+
+### 总结
+
+- 这次了解了 with 方法
+- 为了避免 f.close()不执行
+- 以后就都用 with
+- 还发现了新函数
+  - f.readlines()
+  - list(f)
+- 什么意思呢？🤔
+- 下次再说 👋

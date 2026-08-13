@@ -1,0 +1,317 @@
+---
+show: step
+version: 1.0
+enable_checker: true
+---
+
+# 导入 request 包
+
+## 新的开始
+
+- 我们 安装并启动了 
+	- nginx 服务器
+	- 了解了 状态码
+
+|状态码 | 状态|
+|---|---|
+|200| Ok|
+|304| Not modified|
+|404| Not found|
+
+- 使用浏览器 访问 服务器上的 网页
+
+|中文|英文|发送方|接收方|
+|---|---|---|---|
+|请求|request|浏览器|服务器|
+|响应|response|服务器|浏览器|
+
+- 爬虫 到底`怎么用` 呢？🤣
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20220912-1662951986226)
+
+### 过程
+
+- 浏览的过程 是
+  - 在客户机上浏览器 
+	- 发请求 request
+  - 服务器接收 请求
+	- 返回响应 response
+  - 浏览器收到 response 并渲染成页面
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210831-1630412050376)
+
+- 爬虫就假装 自己是一个浏览器
+	- 用代码 发请求
+	- 反正都是 0101 的字节流
+
+- 那我应该 如何 假装自己是个浏览器 呢？
+
+### 询问
+
+- 问问ai
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192576/uid1190679-20250419-1745061377074) 
+
+- ai 说先要 导入 requests
+
+### 导入包
+
+```
+import requests
+requests
+help(requests)
+```
+
+- 导入模块
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210831-1630412431769)
+
+-  查看帮助
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192576/uid1190679-20260323-1774256528398) 
+
+- 就照这个帮助来！
+
+### 尝试重现
+
+- 我们来试试
+	- 照猫画虎
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20221118-1668761027794)
+
+### 照猫画虎
+
+```
+import requests
+requests.get("http://localhost/")
+```
+
+- 出现错误
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192576/uid1190679-20250419-1745069493746) 
+
+- 怎么办？
+
+### 分析原因
+
+- 就像之前 浏览器 无法访问一样
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192576/uid1190679-20250419-1745069457934) 
+
+- 因为web服务没开 
+	- 爬虫 就像浏览器一样 无法访问
+
+### 开启服务
+
+- <kbd>ctrl</kbd>+<kbd>d</kbd> 退出游乐场
+
+```
+sudo service nginx start
+sudo service nginx status
+```
+
+- 开启 web服务
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192576/uid1190679-20250419-1745069609403)
+
+### 再进 游乐场
+
+```
+import requests
+requests.get("http://localhost/")
+```
+
+- 可以得到响应(response)了
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192576/uid1190679-20250419-1745069737123)
+
+- 响应(response)里面 到底 有`什么`呢？
+
+### 查看响应
+
+```
+import requests
+r = requests.get("http://localhost/")
+```
+
+- 将 返回结果 赋给 r
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192576/uid1190679-20250419-1745069937583) 
+
+- r 是 什么 `类型` 呢？
+
+### Response 响应
+
+```
+r
+type(r)
+```
+
+- Response 对象 
+	- 包括了一个 http 请求的返回结果
+	- requests.models.Response
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192576/uid1190679-20250419-1745069973532) 
+
+- 具体怎么用呢？
+
+### 只读对象
+
+- 对着r喊救命
+
+```
+help(r)
+```
+
+- r 里面有很多属性
+	- content 就是 可以读出来的内容
+	- 形式是 字节序列 bytes
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210831-1630412969842)
+
+### content
+
+```
+r.content
+type(r.content)
+```
+
+- 得到响应内容
+	- 形式 是 字节序列
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192576/uid1190679-20250419-1745070128736)
+
+- 如果 我们
+	- 只想要 纯文本 
+	- 怎么办呢？
+
+### 文本
+
+```
+help(r)
+```
+
+- 继续查找帮助
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20211015-1634305462282)
+
+- 找到 text属性
+
+### text
+
+```
+r.text
+type(r.text)
+```
+
+- 来看看 r.text
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20211015-1634305478003)
+
+- r.content 和 r.text
+	- 有啥`区别`？
+
+### 对比
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20211016-1634396395638)
+
+|属性|类型|
+|---|---|
+|content | 字节序列|
+| text | 字符串序列|
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20210831-1630413092545)
+
+- 那这 bytes 和str之间
+	- 可以相互`转化`么？
+
+### 解码decode
+
+```
+s = r.content.decode()
+print(s)
+```
+
+- 字节序列
+	- `解码` decode 之后
+		- 得到字符串
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192576/uid1190679-20260323-1774260236085) 
+
+### 编码
+
+```
+b = r.text.encode()
+print(b)
+```
+
+- 字符串 
+	- `编码` encode 之后
+		- 得到字节序列
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192576/uid1190679-20260323-1774260330139) 
+
+### 进一步明确
+
+```
+print(b_html.decode()==s_html)
+print(s_html.encode()==b_html)
+```
+
+- 字节序列 和 字符串的 转化
+	- 就是 字符串的 编码和解码
+
+![图片描述](https://doc.shiyanlou.com/courses/uid1190679-20211016-1634396459875)
+
+- 编码和解码
+	- 互为逆方法
+- 可以查到requests这个包的 帮助 吗？
+
+### 提问
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192576/uid1190679-20250419-1745070652515) 
+
+### 请求 requests
+
+- http://cn.python-requests.org/zh_CN/latest/
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192576/uid1190679-20250419-1745070707943) 
+
+- 为什么requests没有安装就能使用呢？
+
+### 下载包
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192576/uid1190679-20250419-1745070782477) 
+
+- 如果本地没有的话 
+	- 要先下载
+
+### 安装方法
+
+```
+pip3 install requests
+```
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192576/uid1190679-20250419-1745070824420) 
+
+## 总结
+
+- 我们 导入了 requests 模块
+	- requests 帮我们 发请求
+	  - 状态码 200
+
+![图片描述](https://doc.shiyanlou.com/courses/3584/labs/192576/uid1190679-20250419-1745070923344) 
+
+- 这样 我们就可以
+	- 假装自己是一个浏览器
+	- 完成了 http get 的过程
+	  - 发出了 request
+	  - 得到了 response
+
+|属性|类型|
+|---|---|
+|content | 字节序列|
+| text | 字符串序列|
+
+- 如何找到 网页中具体的内容 呢？🤔
+- 下次再说
